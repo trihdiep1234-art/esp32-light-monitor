@@ -1,0 +1,165 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15660
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 13 2026 22:38:43[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0c5c8h ( 50632) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001c5f0 vaddr=3ffb0000 size=027cch ( 10188) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001edc4 vaddr=40080000 size=01254h (  4692) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=180dch ( 98524) map[0m
+[0;32mI (170) esp_image: segment 4: paddr=00038104 vaddr=40081254 size=0c038h ( 49208) load[0m
+[0;32mI (196) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (197) boot: Disabling RNG early entropy source...[0m
+[0;32mI (209) cpu_start: Multicore app[0m
+[0;32mI (217) cpu_start: Pro cpu start user code[0m
+[0;32mI (217) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (217) app_init: Application information:[0m
+[0;32mI (220) app_init: Project name:     nha[0m
+[0;32mI (225) app_init: App version:      v5.3.5-dirty[0m
+[0;32mI (230) app_init: Compile time:     Jun 13 2026 22:38:24[0m
+[0;32mI (236) app_init: ELF file SHA256:  9f1f73152...[0m
+[0;32mI (241) app_init: ESP-IDF:          v5.3.5-dirty[0m
+[0;32mI (247) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (251) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (256) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (261) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (269) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFB31C0 len 0002CE40 (179 KiB): DRAM[0m
+[0;32mI (281) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (294) heap_init: At 4008D28C len 00012D74 (75 KiB): IRAM[0m
+[0;32mI (301) spi_flash: detected chip: generic[0m
+[0;32mI (304) spi_flash: flash io: dio[0m
+[0;33mW (308) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (321) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (330) main_task: Started on CPU0[0m
+[0;32mI (340) main_task: Calling app_main()[0m
+[0;32mI (340) MAIN: System Start[0m
+[0;32mI (340) i2cdev: [Port 0] First initialization. Configuring bus with SDA=21, SCL=22 (Pullups SCL:0 SDA:0)[0m
+[0;33mW (350) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+[0;32mI (360) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) i2cdev: [Port 0] Successfully installed I2C master bus (Handle: 0x3ffb51d4).[0m
+[0;32mI (390) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffb571c, Speed: 400000 Hz).[0m
+[0;32mI (400) i2cdev: [0x3c at 0] Device added successfully (Device Handle: 0x3ffb57a8, Speed: 400000 Hz).[0m
+[0;32mI (410) SSD1306: SSD1306 initialized flawlessly via i2cdev![0m
+[0;32mI (440) MAIN: All sensors ready[0m
+[DEBUG] ADC RAW: 609
+[0;32mI (440) MAIN: BH1750 = 2023 Lux | TEMT6000 = 538.40 Lux[0m
+[DEBUG] ADC RAW: 439
+[0;32mI (1480) MAIN: BH1750 = 2036 Lux | TEMT6000 = 564.40 Lux[0m
+[DEBUG] ADC RAW: 465
+[0;32mI (2520) MAIN: BH1750 = 2039 Lux | TEMT6000 = 560.40 Lux[0m
+[DEBUG] ADC RAW: 456
+[0;32mI (3560) MAIN: BH1750 = 2016 Lux | TEMT6000 = 561.80 Lux[0m
+[DEBUG] ADC RAW: 434
+[0;32mI (4600) MAIN: BH1750 = 2016 Lux | TEMT6000 = 565.20 Lux[0m
+[DEBUG] ADC RAW: 418
+[0;32mI (5640) MAIN: BH1750 = 2016 Lux | TEMT6000 = 567.60 Lux[0m
+[DEBUG] ADC RAW: 403
+[0;32mI (6680) MAIN: BH1750 = 2018 Lux | TEMT6000 = 570.00 Lux[0m
+[DEBUG] ADC RAW: 426
+[0;32mI (7720) MAIN: BH1750 = 2020 Lux | TEMT6000 = 566.40 Lux[0m
+[DEBUG] ADC RAW: 436
+[0;32mI (8760) MAIN: BH1750 = 2016 Lux | TEMT6000 = 565.00 Lux[0m
+[DEBUG] ADC RAW: 413
+[0;32mI (9800) MAIN: BH1750 = 2019 Lux | TEMT6000 = 568.40 Lux[0m
+[DEBUG] ADC RAW: 352
+[0;32mI (10840) MAIN: BH1750 = 2017 Lux | TEMT6000 = 577.80 Lux[0m
+[DEBUG] ADC RAW: 329
+[0;32mI (11880) MAIN: BH1750 = 2018 Lux | TEMT6000 = 581.20 Lux[0m
+[DEBUG] ADC RAW: 278
+[0;32mI (12920) MAIN: BH1750 = 2018 Lux | TEMT6000 = 589.00 Lux[0m
+[DEBUG] ADC RAW: 200
+[0;32mI (13960) MAIN: BH1750 = 2016 Lux | TEMT6000 = 601.00 Lux[0m
+[DEBUG] ADC RAW: 174
+[0;32mI (15000) MAIN: BH1750 = 2021 Lux | TEMT6000 = 605.00 Lux[0m
+[DEBUG] ADC RAW: 143
+[0;32mI (16040) MAIN: BH1750 = 2021 Lux | TEMT6000 = 609.80 Lux[0m
+[DEBUG] ADC RAW: 108
+[0;32mI (17080) MAIN: BH1750 = 2020 Lux | TEMT6000 = 615.00 Lux[0m
+[DEBUG] ADC RAW: 86
+[0;32mI (18120) MAIN: BH1750 = 2019 Lux | TEMT6000 = 618.40 Lux[0m
+[DEBUG] ADC RAW: 49
+[0;32mI (19160) MAIN: BH1750 = 2016 Lux | TEMT6000 = 624.20 Lux[0m
+[DEBUG] ADC RAW: 41
+[0;32mI (20200) MAIN: BH1750 = 2021 Lux | TEMT6000 = 625.40 Lux[0m
+[DEBUG] ADC RAW: 14
+[0;32mI (21240) MAIN: BH1750 = 2036 Lux | TEMT6000 = 629.40 Lux[0m
+[DEBUG] ADC RAW: 5
+[0;32mI (22280) MAIN: BH1750 = 2035 Lux | TEMT6000 = 630.80 Lux[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (23320) MAIN: BH1750 = 2083 Lux | TEMT6000 = 660.00 Lux[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (24360) MAIN: BH1750 = 2022 Lux | TEMT6000 = 660.00 Lux[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (25400) MAIN: BH1750 = 2013 Lux | TEMT6000 = 660.00 Lux[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (26440) MAIN: BH1750 = 17 Lux | TEMT6000 = 660.00 Lux[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (27480) MAIN: BH1750 = 16 Lux | TEMT6000 = 660.00 Lux[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (28520) MAIN: BH1750 = 16 Lux | TEMT6000 = 660.00 Lux[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (29560) MAIN: BH1750 = 16 Lux | TEMT6000 = 660.00 Lux[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (30600) MAIN: BH1750 = 16 Lux | TEMT6000 = 660.00 Lux[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (31640) MAIN: BH1750 = 16 Lux | TEMT6000 = 660.00 Lux[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (32680) MAIN: BH1750 = 1609 Lux | TEMT6000 = 660.00 Lux[0m
+[DEBUG] ADC RAW: 4
+[0;32mI (33720) MAIN: BH1750 = 1787 Lux | TEMT6000 = 631.00 Lux[0m
+[DEBUG] ADC RAW: 36
+[0;32mI (34760) MAIN: BH1750 = 1785 Lux | TEMT6000 = 626.00 Lux[0m
+[DEBUG] ADC RAW: 81
+[0;32mI (35800) MAIN: BH1750 = 1788 Lux | TEMT6000 = 619.20 Lux[0m
+[DEBUG] ADC RAW: 55
+[0;32mI (36840) MAIN: BH1750 = 1790 Lux | TEMT6000 = 623.20 Lux[0m
+[DEBUG] ADC RAW: 92
+[0;32mI (37880) MAIN: BH1750 = 1791 Lux | TEMT6000 = 617.60 Lux[0m
+[DEBUG] ADC RAW: 147
+[0;32mI (38920) MAIN: BH1750 = 1790 Lux | TEMT6000 = 609.20 Lux[0m
+[DEBUG] ADC RAW: 182
+[0;32mI (39960) MAIN: BH1750 = 1792 Lux | TEMT6000 = 603.80 Lux[0m
+[DEBUG] ADC RAW: 195
+[0;32mI (41000) MAIN: BH1750 = 1792 Lux | TEMT6000 = 601.80 Lux[0m
+[DEBUG] ADC RAW: 201
+[0;32mI (42040) MAIN: BH1750 = 1786 Lux | TEMT6000 = 600.80 Lux[0m
+[DEBUG] ADC RAW: 217
+[0;32mI (43080) MAIN: BH1750 = 1792 Lux | TEMT6000 = 598.40 Lux[0m
+[DEBUG] ADC RAW: 162
+[0;32mI (44120) MAIN: BH1750 = 1803 Lux | TEMT6000 = 606.80 Lux[0m
+[DEBUG] ADC RAW: 130
+[0;32mI (45160) MAIN: BH1750 = 2311 Lux | TEMT6000 = 611.80 Lux[0m
+[DEBUG] ADC RAW: 86
+[0;32mI (46200) MAIN: BH1750 = 2304 Lux | TEMT6000 = 618.40 Lux[0m
+[DEBUG] ADC RAW: 26
+[0;32mI (47240) MAIN: BH1750 = 2302 Lux | TEMT6000 = 627.60 Lux[0m
+[DEBUG] ADC RAW: 1
+[0;32mI (48280) MAIN: BH1750 = 2300 Lux | TEMT6000 = 631.40 Lux[0m
+[DEBUG] ADC RAW: 2
+[0;32mI (49320) MAIN: BH1750 = 2293 Lux | TEMT6000 = 631.20 Lux[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (50360) MAIN: BH1750 = 2290 Lux | TEMT6000 = 660.00 Lux[0m
