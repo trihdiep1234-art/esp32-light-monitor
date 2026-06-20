@@ -1,0 +1,269 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15660
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 19 2026 11:15:21[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=20cc0h (134336) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=00030ce8 vaddr=3ffb0000 size=043bch ( 17340) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=000350ac vaddr=40080000 size=0af6ch ( 44908) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9eed8h (650968) map[0m
+[0;32mI (399) esp_image: segment 4: paddr=000def00 vaddr=4008af6c size=0d120h ( 53536) load[0m
+[0;32mI (432) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (432) boot: Disabling RNG early entropy source...[0m
+[0;32mI (444) cpu_start: Multicore app[0m
+[0;32mI (453) cpu_start: Pro cpu start user code[0m
+[0;32mI (453) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (453) app_init: Application information:[0m
+[0;32mI (456) app_init: Project name:     nha[0m
+[0;32mI (460) app_init: App version:      867265d-dirty[0m
+[0;32mI (466) app_init: Compile time:     Jun 19 2026 11:14:40[0m
+[0;32mI (472) app_init: ELF file SHA256:  1c9bbb0a4...[0m
+[0;32mI (477) app_init: ESP-IDF:          v5.3.5-dirty[0m
+[0;32mI (482) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (487) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (492) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (497) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (504) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (510) heap_init: At 3FFB8D90 len 00027270 (156 KiB): DRAM[0m
+[0;32mI (516) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (523) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (529) heap_init: At 4009808C len 00007F74 (31 KiB): IRAM[0m
+[0;32mI (537) spi_flash: detected chip: generic[0m
+[0;32mI (540) spi_flash: flash io: dio[0m
+[0;33mW (544) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (557) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (566) main_task: Started on CPU0[0m
+[0;32mI (576) main_task: Calling app_main()[0m
+[0;32mI (576) MAIN: System Start[0m
+[0;32mI (606) wifi:wifi driver task: 3ffc0e78, prio:23, stack:6656, core=0[0m
+[0;32mI (616) wifi:wifi firmware version: 18db208[0m
+[0;32mI (616) wifi:wifi certification version: v7.0[0m
+[0;32mI (616) wifi:config NVS flash: enabled[0m
+[0;32mI (616) wifi:config nano formating: disabled[0m
+[0;32mI (616) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (626) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (626) wifi:Init management short buffer num: 32[0m
+[0;32mI (636) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (636) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (646) wifi:Init static rx buffer num: 10[0m
+[0;32mI (646) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (646) wifi_init: rx ba win: 6[0m
+[0;32mI (656) wifi_init: accept mbox: 6[0m
+[0;32mI (656) wifi_init: tcpip mbox: 32[0m
+[0;32mI (656) wifi_init: udp mbox: 6[0m
+[0;32mI (666) wifi_init: tcp mbox: 6[0m
+[0;32mI (666) wifi_init: tcp tx win: 5760[0m
+[0;32mI (676) wifi_init: tcp rx win: 5760[0m
+[0;32mI (676) wifi_init: tcp mss: 1440[0m
+[0;32mI (676) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (686) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (686) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (696) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (786) wifi:mode : sta (d4:e9:f4:78:6d:44)[0m
+[0;32mI (786) wifi:enable tsf[0m
+[0;32mI (806) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (806) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (816) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (826) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (846) wifi:connected with Galaxy A54 5G 72B9, aid = 2, channel 6, BW20, bssid = 6e:c9:6e:26:df:aa[0m
+[0;32mI (846) wifi:security: WPA2-PSK, phy: bgn, rssi: -45[0m
+[0;32mI (856) wifi:pm start, type: 1[0m
+
+[0;32mI (856) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (866) wifi:<ba-add>idx:0 (ifx:0, 6e:c9:6e:26:df:aa), tid:0, ssn:0, winSize:64[0m
+[0;32mI (916) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (916) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1866) esp_netif_handlers: sta ip: 10.66.229.218, mask: 255.255.255.0, gw: 10.66.229.160[0m
+[0;32mI (1866) i2cdev: [Port 0] First initialization. Configuring bus with SDA=21, SCL=22 (Pullups SCL:0 SDA:0)[0m
+[0;33mW (1876) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+[0;32mI (1886) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1896) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1906) i2cdev: [Port 0] Successfully installed I2C master bus (Handle: 0x3ffca36c).[0m
+[0;32mI (1916) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffca964, Speed: 50000 Hz).[0m
+[0;31mE (1926) i2c.master: i2c_master_transmit(1193): I2C transaction failed[0m
+[0;33mW (1936) i2cdev: [0x23 at 0] I2C op failed (Try 0, Handle 0x3ffca964): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (1946) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (1946) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffca964 after permanent error[0m
+[0;33mW (1996) i2cdev: [0x23 at 0] Retrying operation...[0m
+[0;32mI (1996) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffca964, Speed: 50000 Hz).[0m
+[0;31mE (1996) i2c.master: i2c_master_transmit(1193): I2C transaction failed[0m
+[0;33mW (2006) i2cdev: [0x23 at 0] I2C op failed (Try 1, Handle 0x3ffca964): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (2016) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (2016) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffca964 after permanent error[0m
+[0;33mW (2106) i2cdev: [0x23 at 0] Retrying operation...[0m
+[0;32mI (2106) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffca964, Speed: 50000 Hz).[0m
+[0;31mE (2106) i2c.master: i2c_master_transmit(1193): I2C transaction failed[0m
+[0;33mW (2116) i2cdev: [0x23 at 0] I2C op failed (Try 2, Handle 0x3ffca964): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (2126) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (2126) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffca964 after permanent error[0m
+[0;33mW (2296) i2cdev: [0x23 at 0] Retrying operation...[0m
+[0;32mI (2296) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffca8f8, Speed: 50000 Hz).[0m
+[0;31mE (2296) i2c.master: i2c_master_transmit(1193): I2C transaction failed[0m
+[0;33mW (2306) i2cdev: [0x23 at 0] I2C op failed (Try 3, Handle 0x3ffca8f8): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (2316) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (2316) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffca8f8 after permanent error[0m
+[0;31mE (2326) i2cdev: [0x23 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;31mE (2346) MAIN: KHONG THE THIET LAP BH1750! Vui long kiem tra lai day va dien tro pull-up.[0m
+[0;32mI (2346) i2cdev: [0x3c at 0] Device added successfully (Device Handle: 0x3ffca950, Speed: 400000 Hz).[0m
+[0;32mI (2366) SSD1306: SSD1306 initialized flawlessly via i2cdev![0m
+[0;32mI (2396) MAIN: All sensors ready[0m
+[0;32mI (2396) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffca984, Speed: 50000 Hz).[0m
+[0;33mW (2396) i2cdev: [0x23 at 0] I2C op failed (Try 0, Handle 0x3ffca984): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (2406) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (2416) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffca984 after permanent error[0m
+[0;33mW (2466) i2cdev: [0x23 at 0] Retrying operation...[0m
+[0;32mI (2466) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffca984, Speed: 50000 Hz).[0m
+[0;33mW (2466) i2cdev: [0x23 at 0] I2C op failed (Try 1, Handle 0x3ffca984): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (2476) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (2486) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffca984 after permanent error[0m
+[0;33mW (2576) i2cdev: [0x23 at 0] Retrying operation...[0m
+[0;32mI (2576) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffca984, Speed: 50000 Hz).[0m
+[0;33mW (2576) i2cdev: [0x23 at 0] I2C op failed (Try 2, Handle 0x3ffca984): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (2586) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (2596) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffca984 after permanent error[0m
+[0;33mW (2766) i2cdev: [0x23 at 0] Retrying operation...[0m
+[0;32mI (2766) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffca984, Speed: 50000 Hz).[0m
+[0;33mW (2766) i2cdev: [0x23 at 0] I2C op failed (Try 3, Handle 0x3ffca984): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (2776) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (2786) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffca984 after permanent error[0m
+[0;31mE (2796) i2cdev: [0x23 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (2806) MAIN: BH1750=0.00 | TEMT=0.00[0m
+[0;32mI (2846) MAIN: SEND: {"lux":0,"temt":0.00}[0m
+[0;32mI (2866) MAIN: MQTT CONNECTED[0m
+[0;32mI (4876) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffca9f0, Speed: 50000 Hz).[0m
+[0;33mW (4876) i2cdev: [0x23 at 0] I2C op failed (Try 0, Handle 0x3ffca9f0): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (4876) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (4886) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffca9f0 after permanent error[0m
+[0;33mW (4936) i2cdev: [0x23 at 0] Retrying operation...[0m
+[0;32mI (4936) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffca9f0, Speed: 50000 Hz).[0m
+[0;33mW (4936) i2cdev: [0x23 at 0] I2C op failed (Try 1, Handle 0x3ffca9f0): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (4946) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (4956) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffca9f0 after permanent error[0m
+[0;33mW (5046) i2cdev: [0x23 at 0] Retrying operation...[0m
+[0;32mI (5046) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffca9f0, Speed: 50000 Hz).[0m
+[0;33mW (5046) i2cdev: [0x23 at 0] I2C op failed (Try 2, Handle 0x3ffca9f0): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (5056) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (5066) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffca9f0 after permanent error[0m
+[0;33mW (5236) i2cdev: [0x23 at 0] Retrying operation...[0m
+[0;32mI (5236) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffca9f0, Speed: 50000 Hz).[0m
+[0;33mW (5236) i2cdev: [0x23 at 0] I2C op failed (Try 3, Handle 0x3ffca9f0): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (5246) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (5256) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffca9f0 after permanent error[0m
+[0;31mE (5266) i2cdev: [0x23 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[DEBUG] ADC RAW: 2
+[0;32mI (5276) MAIN: BH1750=0.00 | TEMT=28.80[0m
+[0;32mI (5326) MAIN: SEND: {"lux":0,"temt":28.80}[0m
+[0;32mI (7336) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffcab30, Speed: 50000 Hz).[0m
+[0;33mW (7336) i2cdev: [0x23 at 0] I2C op failed (Try 0, Handle 0x3ffcab30): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (7336) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (7346) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffcab30 after permanent error[0m
+[0;33mW (7396) i2cdev: [0x23 at 0] Retrying operation...[0m
+[0;32mI (7396) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffcab30, Speed: 50000 Hz).[0m
+[0;33mW (7396) i2cdev: [0x23 at 0] I2C op failed (Try 1, Handle 0x3ffcab30): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (7406) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (7416) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffcab30 after permanent error[0m
+[0;33mW (7506) i2cdev: [0x23 at 0] Retrying operation...[0m
+[0;32mI (7506) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffcab30, Speed: 50000 Hz).[0m
+[0;33mW (7506) i2cdev: [0x23 at 0] I2C op failed (Try 2, Handle 0x3ffcab30): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (7516) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (7526) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffcab30 after permanent error[0m
+[0;33mW (7696) i2cdev: [0x23 at 0] Retrying operation...[0m
+[0;32mI (7696) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffcab30, Speed: 50000 Hz).[0m
+[0;33mW (7696) i2cdev: [0x23 at 0] I2C op failed (Try 3, Handle 0x3ffcab30): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (7706) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (7716) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffcab30 after permanent error[0m
+[0;31mE (7726) i2cdev: [0x23 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (7736) MAIN: BH1750=0.00 | TEMT=0.00[0m
+[0;32mI (7786) MAIN: SEND: {"lux":0,"temt":0.00}[0m
+[0;32mI (9786) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffcab30, Speed: 50000 Hz).[0m
+[0;33mW (9786) i2cdev: [0x23 at 0] I2C op failed (Try 0, Handle 0x3ffcab30): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (9786) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (9796) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffcab30 after permanent error[0m
+[0;33mW (9846) i2cdev: [0x23 at 0] Retrying operation...[0m
+[0;32mI (9846) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffcab30, Speed: 50000 Hz).[0m
+[0;33mW (9846) i2cdev: [0x23 at 0] I2C op failed (Try 1, Handle 0x3ffcab30): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (9856) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (9866) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffcab30 after permanent error[0m
+[0;33mW (9956) i2cdev: [0x23 at 0] Retrying operation...[0m
+[0;32mI (9956) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffcab30, Speed: 50000 Hz).[0m
+[0;33mW (9956) i2cdev: [0x23 at 0] I2C op failed (Try 2, Handle 0x3ffcab30): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (9966) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (9976) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffcab30 after permanent error[0m
+[0;33mW (10146) i2cdev: [0x23 at 0] Retrying operation...[0m
+[0;32mI (10146) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffcab30, Speed: 50000 Hz).[0m
+[0;33mW (10146) i2cdev: [0x23 at 0] I2C op failed (Try 3, Handle 0x3ffcab30): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (10156) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (10166) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffcab30 after permanent error[0m
+[0;31mE (10176) i2cdev: [0x23 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[DEBUG] ADC RAW: 206
+[0;32mI (10186) MAIN: BH1750=0.00 | TEMT=60.00[0m
+[0;32mI (10236) MAIN: SEND: {"lux":0,"temt":60.00}[0m
+[0;32mI (12236) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffcab30, Speed: 50000 Hz).[0m
+[0;33mW (12236) i2cdev: [0x23 at 0] I2C op failed (Try 0, Handle 0x3ffcab30): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (12236) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (12246) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffcab30 after permanent error[0m
+[0;33mW (12296) i2cdev: [0x23 at 0] Retrying operation...[0m
+[0;32mI (12296) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffcab30, Speed: 50000 Hz).[0m
+[0;33mW (12296) i2cdev: [0x23 at 0] I2C op failed (Try 1, Handle 0x3ffcab30): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (12306) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (12316) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffcab30 after permanent error[0m
+[0;33mW (12406) i2cdev: [0x23 at 0] Retrying operation...[0m
+[0;32mI (12406) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffcab30, Speed: 50000 Hz).[0m
+[0;33mW (12406) i2cdev: [0x23 at 0] I2C op failed (Try 2, Handle 0x3ffcab30): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (12416) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (12426) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffcab30 after permanent error[0m
+[0;33mW (12596) i2cdev: [0x23 at 0] Retrying operation...[0m
+[0;32mI (12596) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffcab30, Speed: 50000 Hz).[0m
+[0;33mW (12596) i2cdev: [0x23 at 0] I2C op failed (Try 3, Handle 0x3ffcab30): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (12606) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (12616) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffcab30 after permanent error[0m
+[0;31mE (12626) i2cdev: [0x23 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (12636) MAIN: BH1750=0.00 | TEMT=0.00[0m
+[0;32mI (12686) MAIN: SEND: {"lux":0,"temt":0.00}[0m
+[0;32mI (14686) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffcab30, Speed: 50000 Hz).[0m
+[0;33mW (14686) i2cdev: [0x23 at 0] I2C op failed (Try 0, Handle 0x3ffcab30): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (14686) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (14696) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffcab30 after permanent error[0m
+[0;33mW (14746) i2cdev: [0x23 at 0] Retrying operation...[0m
+[0;32mI (14746) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffcab30, Speed: 50000 Hz).[0m
+[0;33mW (14746) i2cdev: [0x23 at 0] I2C op failed (Try 1, Handle 0x3ffcab30): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (14756) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (14766) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffcab30 after permanent error[0m
+[0;33mW (14856) i2cdev: [0x23 at 0] Retrying operation...[0m
+[0;32mI (14856) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffcab30, Speed: 50000 Hz).[0m
+[0;33mW (14856) i2cdev: [0x23 at 0] I2C op failed (Try 2, Handle 0x3ffcab30): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (14866) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (14876) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffcab30 after permanent error[0m
+[0;33mW (15046) i2cdev: [0x23 at 0] Retrying operation...[0m
+[0;32mI (15046) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffcab30, Speed: 50000 Hz).[0m
+[0;33mW (15046) i2cdev: [0x23 at 0] I2C op failed (Try 3, Handle 0x3ffcab30): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (15056) i2cdev: [0x23 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (15066) i2cdev: [0x23 at 0] Removing potentially corrupted device handle 0x3ffcab30 after permanent error[0m
+[0;31mE (15076) i2cdev: [0x23 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (15086) MAIN: BH1750=0.00 | TEMT=0.00[0m
+[0;32mI (15136) MAIN: SEND: {"lux":0,"temt":0.00}[0m

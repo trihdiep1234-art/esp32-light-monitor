@@ -18,8 +18,8 @@ end
 
 # Load bootloader symbols
 set confirm off
-    add-symbol-file D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader/bootloader.elf
+    add-symbol-file D:/vxlproj/nhakinh/build/bootloader/bootloader.elf
 set confirm on
 
 # Load application symbols
-file D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/nha.elf
+file D:/vxlproj/nhakinh/build/nha.elf

@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/CMakeFiles/bootloader"
+			"file" : "D:/vxlproj/nhakinh/build/CMakeFiles/bootloader"
 		},
 		{
-			"file" : "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/CMakeFiles/bootloader.rule"
+			"file" : "D:/vxlproj/nhakinh/build/CMakeFiles/bootloader.rule"
 		},
 		{
-			"file" : "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/CMakeFiles/bootloader-complete.rule"
+			"file" : "D:/vxlproj/nhakinh/build/CMakeFiles/bootloader-complete.rule"
 		},
 		{
-			"file" : "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+			"file" : "D:/vxlproj/nhakinh/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
 		},
 		{
-			"file" : "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+			"file" : "D:/vxlproj/nhakinh/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
 		},
 		{
-			"file" : "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+			"file" : "D:/vxlproj/nhakinh/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
 		},
 		{
-			"file" : "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+			"file" : "D:/vxlproj/nhakinh/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
 		},
 		{
-			"file" : "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+			"file" : "D:/vxlproj/nhakinh/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
 		},
 		{
-			"file" : "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+			"file" : "D:/vxlproj/nhakinh/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
 		},
 		{
-			"file" : "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+			"file" : "D:/vxlproj/nhakinh/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
 		}
 	],
 	"target" : 

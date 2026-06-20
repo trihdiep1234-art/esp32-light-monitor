@@ -1,0 +1,541 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15660
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 19 2026 11:15:21[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=20d20h (134432) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=00030d48 vaddr=3ffb0000 size=043bch ( 17340) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=0003510c vaddr=40080000 size=0af0ch ( 44812) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9eef8h (651000) map[0m
+[0;32mI (399) esp_image: segment 4: paddr=000def20 vaddr=4008af0c size=0d180h ( 53632) load[0m
+[0;32mI (432) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (432) boot: Disabling RNG early entropy source...[0m
+[0;32mI (444) cpu_start: Multicore app[0m
+[0;32mI (453) cpu_start: Pro cpu start user code[0m
+[0;32mI (453) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (453) app_init: Application information:[0m
+[0;32mI (456) app_init: Project name:     nha[0m
+[0;32mI (460) app_init: App version:      867265d-dirty[0m
+[0;32mI (466) app_init: Compile time:     Jun 19 2026 11:14:40[0m
+[0;32mI (472) app_init: ELF file SHA256:  5ba683018...[0m
+[0;32mI (477) app_init: ESP-IDF:          v5.3.5-dirty[0m
+[0;32mI (482) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (487) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (492) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (497) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (504) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (510) heap_init: At 3FFB8D98 len 00027268 (156 KiB): DRAM[0m
+[0;32mI (516) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (523) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (529) heap_init: At 4009808C len 00007F74 (31 KiB): IRAM[0m
+[0;32mI (537) spi_flash: detected chip: generic[0m
+[0;32mI (540) spi_flash: flash io: dio[0m
+[0;33mW (544) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (557) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (566) main_task: Started on CPU0[0m
+[0;32mI (576) main_task: Calling app_main()[0m
+[0;32mI (576) MAIN: System Start[0m
+[0;32mI (606) wifi:wifi driver task: 3ffc0ea8, prio:23, stack:6656, core=0[0m
+[0;32mI (616) wifi:wifi firmware version: 18db208[0m
+[0;32mI (616) wifi:wifi certification version: v7.0[0m
+[0;32mI (616) wifi:config NVS flash: enabled[0m
+[0;32mI (616) wifi:config nano formating: disabled[0m
+[0;32mI (616) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (626) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (626) wifi:Init management short buffer num: 32[0m
+[0;32mI (636) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (636) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (646) wifi:Init static rx buffer num: 10[0m
+[0;32mI (646) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (646) wifi_init: rx ba win: 6[0m
+[0;32mI (656) wifi_init: accept mbox: 6[0m
+[0;32mI (656) wifi_init: tcpip mbox: 32[0m
+[0;32mI (656) wifi_init: udp mbox: 6[0m
+[0;32mI (666) wifi_init: tcp mbox: 6[0m
+[0;32mI (666) wifi_init: tcp tx win: 5760[0m
+[0;32mI (676) wifi_init: tcp rx win: 5760[0m
+[0;32mI (676) wifi_init: tcp mss: 1440[0m
+[0;32mI (676) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (686) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (686) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (696) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (786) wifi:mode : sta (d4:e9:f4:78:6d:44)[0m
+[0;32mI (786) wifi:enable tsf[0m
+[0;32mI (806) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (806) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (816) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (826) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (856) wifi:connected with Galaxy A54 5G 72B9, aid = 2, channel 6, BW20, bssid = 6e:c9:6e:26:df:aa[0m
+[0;32mI (856) wifi:security: WPA2-PSK, phy: bgn, rssi: -36[0m
+[0;32mI (856) wifi:pm start, type: 1[0m
+
+[0;32mI (856) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (866) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (876) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (886) wifi:<ba-add>idx:0 (ifx:0, 6e:c9:6e:26:df:aa), tid:0, ssn:0, winSize:64[0m
+[0;32mI (1886) esp_netif_handlers: sta ip: 10.66.229.218, mask: 255.255.255.0, gw: 10.66.229.160[0m
+[0;32mI (1896) i2cdev: [Port 0] First initialization. Configuring bus with SDA=21, SCL=22 (Pullups SCL:0 SDA:0)[0m
+[0;33mW (1896) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+[0;32mI (1906) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1916) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1926) i2cdev: [Port 0] Successfully installed I2C master bus (Handle: 0x3ffca39c).[0m
+[0;32mI (1936) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffca938, Speed: 50000 Hz).[0m
+[0;32mI (1946) i2cdev: [0x3c at 0] Device added successfully (Device Handle: 0x3ffcaa28, Speed: 400000 Hz).[0m
+[0;32mI (1956) SSD1306: SSD1306 initialized flawlessly via i2cdev![0m
+[0;32mI (1996) MAIN: All sensors ready[0m
+[0;32mI (2816) MAIN: MQTT CONNECTED[0m
+[0;32mI (3996) MAIN: BH1750=48.00 | TEMT=491.60[0m
+[0;32mI (4036) MAIN: SEND: {"lux":48,"temt":491.60}[0m
+[0;32mI (5996) MAIN: BH1750=48.00 | TEMT=411.00[0m
+[0;32mI (6036) MAIN: SEND: {"lux":48,"temt":411.00}[0m
+[0;32mI (7996) MAIN: BH1750=48.00 | TEMT=66.20[0m
+[0;32mI (8036) MAIN: SEND: {"lux":48,"temt":66.20}[0m
+[0;32mI (9996) MAIN: BH1750=48.00 | TEMT=0.00[0m
+[0;32mI (10036) MAIN: SEND: {"lux":48,"temt":0.00}[0m
+[0;32mI (11996) MAIN: BH1750=48.00 | TEMT=208.80[0m
+[0;32mI (12036) MAIN: SEND: {"lux":48,"temt":208.80}[0m
+[0;32mI (13996) MAIN: BH1750=48.00 | TEMT=402.20[0m
+[0;32mI (14036) MAIN: SEND: {"lux":48,"temt":402.20}[0m
+[0;32mI (15996) MAIN: BH1750=48.00 | TEMT=391.40[0m
+[0;32mI (16036) MAIN: SEND: {"lux":48,"temt":391.40}[0m
+[0;32mI (17996) MAIN: BH1750=48.00 | TEMT=62.40[0m
+[0;32mI (18036) MAIN: SEND: {"lux":48,"temt":62.40}[0m
+[0;32mI (19996) MAIN: BH1750=48.00 | TEMT=0.00[0m
+[0;32mI (20036) MAIN: SEND: {"lux":48,"temt":0.00}[0m
+[0;32mI (21996) MAIN: BH1750=48.00 | TEMT=171.00[0m
+[0;32mI (22036) MAIN: SEND: {"lux":48,"temt":171.00}[0m
+[0;32mI (23996) MAIN: BH1750=48.00 | TEMT=303.40[0m
+[0;32mI (24036) MAIN: SEND: {"lux":48,"temt":303.40}[0m
+[0;32mI (25996) MAIN: BH1750=48.00 | TEMT=425.60[0m
+[0;32mI (26036) MAIN: SEND: {"lux":48,"temt":425.60}[0m
+[0;32mI (27996) MAIN: BH1750=48.00 | TEMT=477.80[0m
+[0;32mI (28036) MAIN: SEND: {"lux":48,"temt":477.80}[0m
+[0;32mI (29996) MAIN: BH1750=48.00 | TEMT=270.60[0m
+[0;32mI (30036) MAIN: SEND: {"lux":48,"temt":270.60}[0m
+[0;32mI (31996) MAIN: BH1750=48.00 | TEMT=136.60[0m
+[0;32mI (32036) MAIN: SEND: {"lux":48,"temt":136.60}[0m
+[0;32mI (33996) MAIN: BH1750=48.00 | TEMT=109.20[0m
+[0;32mI (34036) MAIN: SEND: {"lux":48,"temt":109.20}[0m
+[0;32mI (35996) MAIN: BH1750=48.00 | TEMT=108.60[0m
+[0;32mI (36036) MAIN: SEND: {"lux":48,"temt":108.60}[0m
+[0;32mI (37996) MAIN: BH1750=48.00 | TEMT=139.40[0m
+[0;32mI (38036) MAIN: SEND: {"lux":48,"temt":139.40}[0m
+[0;32mI (39996) MAIN: BH1750=48.00 | TEMT=323.00[0m
+[0;32mI (40036) MAIN: SEND: {"lux":48,"temt":323.00}[0m
+[0;32mI (41996) MAIN: BH1750=48.00 | TEMT=466.40[0m
+[0;32mI (42036) MAIN: SEND: {"lux":48,"temt":466.40}[0m
+[0;32mI (43996) MAIN: BH1750=48.00 | TEMT=395.80[0m
+[0;32mI (44036) MAIN: SEND: {"lux":48,"temt":395.80}[0m
+[0;32mI (45996) MAIN: BH1750=48.00 | TEMT=221.00[0m
+[0;32mI (46036) MAIN: SEND: {"lux":48,"temt":221.00}[0m
+[0;32mI (47996) MAIN: BH1750=48.00 | TEMT=0.00[0m
+[0;32mI (48036) MAIN: SEND: {"lux":48,"temt":0.00}[0m
+[0;32mI (49996) MAIN: BH1750=48.00 | TEMT=55.00[0m
+[0;32mI (50036) MAIN: SEND: {"lux":48,"temt":55.00}[0m
+[0;32mI (51996) MAIN: BH1750=48.00 | TEMT=321.40[0m
+[0;32mI (52036) MAIN: SEND: {"lux":48,"temt":321.40}[0m
+[0;32mI (53996) MAIN: BH1750=48.00 | TEMT=411.80[0m
+[0;32mI (54036) MAIN: SEND: {"lux":48,"temt":411.80}[0m
+[0;32mI (55996) MAIN: BH1750=48.00 | TEMT=84.00[0m
+[0;32mI (56036) MAIN: SEND: {"lux":48,"temt":84.00}[0m
+[0;32mI (57996) MAIN: BH1750=48.00 | TEMT=0.00[0m
+[0;32mI (58036) MAIN: SEND: {"lux":48,"temt":0.00}[0m
+[0;32mI (59996) MAIN: BH1750=48.00 | TEMT=164.60[0m
+[0;32mI (60036) MAIN: SEND: {"lux":48,"temt":164.60}[0m
+[0;32mI (61996) MAIN: BH1750=48.00 | TEMT=417.40[0m
+[0;32mI (62036) MAIN: SEND: {"lux":48,"temt":417.40}[0m
+[0;32mI (63996) MAIN: BH1750=48.00 | TEMT=203.00[0m
+[0;32mI (64036) MAIN: SEND: {"lux":48,"temt":203.00}[0m
+[0;32mI (65996) MAIN: BH1750=48.00 | TEMT=0.00[0m
+[0;32mI (66036) MAIN: SEND: {"lux":48,"temt":0.00}[0m
+[0;32mI (67996) MAIN: BH1750=48.00 | TEMT=268.20[0m
+[0;32mI (68036) MAIN: SEND: {"lux":48,"temt":268.20}[0m
+[0;32mI (69996) MAIN: BH1750=48.00 | TEMT=388.80[0m
+[0;32mI (70036) MAIN: SEND: {"lux":48,"temt":388.80}[0m
+[0;32mI (71996) MAIN: BH1750=48.00 | TEMT=0.00[0m
+[0;32mI (72036) MAIN: SEND: {"lux":48,"temt":0.00}[0m
+[0;32mI (73996) MAIN: BH1750=48.00 | TEMT=64.20[0m
+[0;32mI (74036) MAIN: SEND: {"lux":48,"temt":64.20}[0m
+[0;32mI (75996) MAIN: BH1750=48.00 | TEMT=448.20[0m
+[0;32mI (76036) MAIN: SEND: {"lux":48,"temt":448.20}[0m
+[0;32mI (77996) MAIN: BH1750=48.00 | TEMT=291.80[0m
+[0;32mI (78036) MAIN: SEND: {"lux":48,"temt":291.80}[0m
+[0;32mI (79996) MAIN: BH1750=48.00 | TEMT=0.00[0m
+[0;32mI (80036) MAIN: SEND: {"lux":48,"temt":0.00}[0m
+[0;32mI (81996) MAIN: BH1750=47.00 | TEMT=65.00[0m
+[0;32mI (82036) MAIN: SEND: {"lux":47,"temt":65.00}[0m
+[0;32mI (83996) MAIN: BH1750=48.00 | TEMT=414.40[0m
+[0;32mI (84036) MAIN: SEND: {"lux":48,"temt":414.40}[0m
+[0;32mI (85996) MAIN: BH1750=48.00 | TEMT=398.40[0m
+[0;32mI (86036) MAIN: SEND: {"lux":48,"temt":398.40}[0m
+[0;32mI (87996) MAIN: BH1750=47.00 | TEMT=189.40[0m
+[0;32mI (88046) MAIN: SEND: {"lux":47,"temt":189.40}[0m
+[0;32mI (89996) MAIN: BH1750=48.00 | TEMT=0.00[0m
+[0;32mI (90036) MAIN: SEND: {"lux":48,"temt":0.00}[0m
+[0;32mI (91996) MAIN: BH1750=48.00 | TEMT=31.60[0m
+[0;32mI (92036) MAIN: SEND: {"lux":48,"temt":31.60}[0m
+[0;32mI (93996) MAIN: BH1750=48.00 | TEMT=90.80[0m
+[0;32mI (94036) MAIN: SEND: {"lux":48,"temt":90.80}[0m
+[0;32mI (95996) MAIN: BH1750=47.00 | TEMT=306.20[0m
+[0;32mI (96036) MAIN: SEND: {"lux":47,"temt":306.20}[0m
+[0;32mI (97996) MAIN: BH1750=48.00 | TEMT=430.40[0m
+[0;32mI (98036) MAIN: SEND: {"lux":48,"temt":430.40}[0m
+[0;32mI (99996) MAIN: BH1750=48.00 | TEMT=390.80[0m
+[0;32mI (100036) MAIN: SEND: {"lux":48,"temt":390.80}[0m
+[0;32mI (101996) MAIN: BH1750=48.00 | TEMT=271.80[0m
+[0;32mI (102036) MAIN: SEND: {"lux":48,"temt":271.80}[0m
+[0;32mI (103996) MAIN: BH1750=48.00 | TEMT=166.20[0m
+[0;32mI (104036) MAIN: SEND: {"lux":48,"temt":166.20}[0m
+[0;32mI (105996) MAIN: BH1750=48.00 | TEMT=0.00[0m
+[0;32mI (106036) MAIN: SEND: {"lux":48,"temt":0.00}[0m
+[0;32mI (107996) MAIN: BH1750=48.00 | TEMT=0.00[0m
+[0;32mI (108036) MAIN: SEND: {"lux":48,"temt":0.00}[0m
+[0;32mI (109996) MAIN: BH1750=48.00 | TEMT=0.00[0m
+[0;32mI (110036) MAIN: SEND: {"lux":48,"temt":0.00}[0m
+[0;32mI (111996) MAIN: BH1750=48.00 | TEMT=49.60[0m
+[0;32mI (112036) MAIN: SEND: {"lux":48,"temt":49.60}[0m
+[0;32mI (113996) MAIN: BH1750=48.00 | TEMT=57.80[0m
+[0;32mI (114046) MAIN: SEND: {"lux":48,"temt":57.80}[0m
+[0;32mI (115996) MAIN: BH1750=47.00 | TEMT=63.80[0m
+[0;32mI (116036) MAIN: SEND: {"lux":47,"temt":63.80}[0m
+[0;32mI (117996) MAIN: BH1750=48.00 | TEMT=72.60[0m
+[0;32mI (118036) MAIN: SEND: {"lux":48,"temt":72.60}[0m
+[0;32mI (119996) MAIN: BH1750=48.00 | TEMT=74.60[0m
+[0;32mI (120036) MAIN: SEND: {"lux":48,"temt":74.60}[0m
+[0;32mI (121996) MAIN: BH1750=48.00 | TEMT=134.20[0m
+[0;32mI (122036) MAIN: SEND: {"lux":48,"temt":134.20}[0m
+[0;32mI (123996) MAIN: BH1750=48.00 | TEMT=102.40[0m
+[0;32mI (124036) MAIN: SEND: {"lux":48,"temt":102.40}[0m
+[0;32mI (125996) MAIN: BH1750=48.00 | TEMT=132.60[0m
+[0;32mI (126036) MAIN: SEND: {"lux":48,"temt":132.60}[0m
+[0;32mI (127996) MAIN: BH1750=47.00 | TEMT=120.60[0m
+[0;32mI (128036) MAIN: SEND: {"lux":47,"temt":120.60}[0m
+[0;32mI (129996) MAIN: BH1750=47.00 | TEMT=247.20[0m
+[0;32mI (130036) MAIN: SEND: {"lux":47,"temt":247.20}[0m
+[0;32mI (131996) MAIN: BH1750=47.00 | TEMT=403.40[0m
+[0;32mI (132036) MAIN: SEND: {"lux":47,"temt":403.40}[0m
+[0;32mI (133996) MAIN: BH1750=47.00 | TEMT=456.20[0m
+[0;32mI (134036) MAIN: SEND: {"lux":47,"temt":456.20}[0m
+[0;32mI (135996) MAIN: BH1750=47.00 | TEMT=425.00[0m
+[0;32mI (136036) MAIN: SEND: {"lux":47,"temt":425.00}[0m
+[0;32mI (137996) MAIN: BH1750=47.00 | TEMT=326.00[0m
+[0;32mI (138036) MAIN: SEND: {"lux":47,"temt":326.00}[0m
+[0;32mI (139996) MAIN: BH1750=47.00 | TEMT=230.40[0m
+[0;32mI (140036) MAIN: SEND: {"lux":47,"temt":230.40}[0m
+[0;32mI (141996) MAIN: BH1750=47.00 | TEMT=31.00[0m
+[0;32mI (142036) MAIN: SEND: {"lux":47,"temt":31.00}[0m
+[0;32mI (143996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (144036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (145996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (146036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (147996) MAIN: BH1750=47.00 | TEMT=50.20[0m
+[0;32mI (148046) MAIN: SEND: {"lux":47,"temt":50.20}[0m
+[0;32mI (149996) MAIN: BH1750=47.00 | TEMT=92.60[0m
+[0;32mI (150036) MAIN: SEND: {"lux":47,"temt":92.60}[0m
+[0;32mI (151996) MAIN: BH1750=47.00 | TEMT=345.20[0m
+[0;32mI (152036) MAIN: SEND: {"lux":47,"temt":345.20}[0m
+[0;32mI (153996) MAIN: BH1750=47.00 | TEMT=465.40[0m
+[0;32mI (154036) MAIN: SEND: {"lux":47,"temt":465.40}[0m
+[0;32mI (155996) MAIN: BH1750=47.00 | TEMT=479.00[0m
+[0;32mI (156036) MAIN: SEND: {"lux":47,"temt":479.00}[0m
+[0;32mI (157996) MAIN: BH1750=47.00 | TEMT=327.60[0m
+[0;32mI (158036) MAIN: SEND: {"lux":47,"temt":327.60}[0m
+[0;32mI (159996) MAIN: BH1750=47.00 | TEMT=238.00[0m
+[0;32mI (160036) MAIN: SEND: {"lux":47,"temt":238.00}[0m
+[0;32mI (161996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (162036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (163996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (164036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (165996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (166036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (167996) MAIN: BH1750=47.00 | TEMT=47.00[0m
+[0;32mI (168036) MAIN: SEND: {"lux":47,"temt":47.00}[0m
+[0;32mI (169996) MAIN: BH1750=47.00 | TEMT=52.60[0m
+[0;32mI (170036) MAIN: SEND: {"lux":47,"temt":52.60}[0m
+[0;32mI (171996) MAIN: BH1750=47.00 | TEMT=59.00[0m
+[0;32mI (172036) MAIN: SEND: {"lux":47,"temt":59.00}[0m
+[0;32mI (173996) MAIN: BH1750=47.00 | TEMT=60.40[0m
+[0;32mI (174036) MAIN: SEND: {"lux":47,"temt":60.40}[0m
+[0;32mI (175996) MAIN: BH1750=47.00 | TEMT=62.80[0m
+[0;32mI (176036) MAIN: SEND: {"lux":47,"temt":62.80}[0m
+[0;32mI (177996) MAIN: BH1750=47.00 | TEMT=55.40[0m
+[0;32mI (178036) MAIN: SEND: {"lux":47,"temt":55.40}[0m
+[0;32mI (179996) MAIN: BH1750=47.00 | TEMT=54.00[0m
+[0;32mI (180036) MAIN: SEND: {"lux":47,"temt":54.00}[0m
+[0;32mI (181996) MAIN: BH1750=47.00 | TEMT=52.00[0m
+[0;32mI (182036) MAIN: SEND: {"lux":47,"temt":52.00}[0m
+[0;32mI (183996) MAIN: BH1750=47.00 | TEMT=50.20[0m
+[0;32mI (184036) MAIN: SEND: {"lux":47,"temt":50.20}[0m
+[0;32mI (185996) MAIN: BH1750=47.00 | TEMT=44.60[0m
+[0;32mI (186036) MAIN: SEND: {"lux":47,"temt":44.60}[0m
+[0;32mI (187996) MAIN: BH1750=47.00 | TEMT=28.80[0m
+[0;32mI (188036) MAIN: SEND: {"lux":47,"temt":28.80}[0m
+[0;32mI (189996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (190036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (191996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (192036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (193996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (194036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (195996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (196036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (197996) MAIN: BH1750=47.00 | TEMT=32.60[0m
+[0;32mI (198036) MAIN: SEND: {"lux":47,"temt":32.60}[0m
+[0;32mI (199996) MAIN: BH1750=47.00 | TEMT=165.00[0m
+[0;32mI (200036) MAIN: SEND: {"lux":47,"temt":165.00}[0m
+[0;32mI (201996) MAIN: BH1750=47.00 | TEMT=267.60[0m
+[0;32mI (202036) MAIN: SEND: {"lux":47,"temt":267.60}[0m
+[0;32mI (203996) MAIN: BH1750=47.00 | TEMT=279.80[0m
+[0;32mI (204036) MAIN: SEND: {"lux":47,"temt":279.80}[0m
+[0;32mI (205996) MAIN: BH1750=47.00 | TEMT=334.80[0m
+[0;32mI (206036) MAIN: SEND: {"lux":47,"temt":334.80}[0m
+[0;32mI (207996) MAIN: BH1750=47.00 | TEMT=406.20[0m
+[0;32mI (208036) MAIN: SEND: {"lux":47,"temt":406.20}[0m
+[0;32mI (209996) MAIN: BH1750=47.00 | TEMT=441.60[0m
+[0;32mI (210036) MAIN: SEND: {"lux":47,"temt":441.60}[0m
+[0;32mI (211996) MAIN: BH1750=47.00 | TEMT=406.80[0m
+[0;32mI (212036) MAIN: SEND: {"lux":47,"temt":406.80}[0m
+[0;32mI (213996) MAIN: BH1750=47.00 | TEMT=151.60[0m
+[0;32mI (214036) MAIN: SEND: {"lux":47,"temt":151.60}[0m
+[0;32mI (215996) MAIN: BH1750=47.00 | TEMT=57.60[0m
+[0;32mI (216036) MAIN: SEND: {"lux":47,"temt":57.60}[0m
+[0;32mI (217996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (218036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (219996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (220036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (221996) MAIN: BH1750=47.00 | TEMT=57.60[0m
+[0;32mI (222036) MAIN: SEND: {"lux":47,"temt":57.60}[0m
+[0;32mI (223996) MAIN: BH1750=47.00 | TEMT=250.80[0m
+[0;32mI (224036) MAIN: SEND: {"lux":47,"temt":250.80}[0m
+[0;32mI (225996) MAIN: BH1750=47.00 | TEMT=356.60[0m
+[0;32mI (226036) MAIN: SEND: {"lux":47,"temt":356.60}[0m
+[0;32mI (227996) MAIN: BH1750=47.00 | TEMT=435.20[0m
+[0;32mI (228036) MAIN: SEND: {"lux":47,"temt":435.20}[0m
+[0;32mI (229996) MAIN: BH1750=47.00 | TEMT=457.80[0m
+[0;32mI (230036) MAIN: SEND: {"lux":47,"temt":457.80}[0m
+[0;32mI (231996) MAIN: BH1750=47.00 | TEMT=464.00[0m
+[0;32mI (232036) MAIN: SEND: {"lux":47,"temt":464.00}[0m
+[0;32mI (233996) MAIN: BH1750=47.00 | TEMT=469.20[0m
+[0;32mI (234046) MAIN: SEND: {"lux":47,"temt":469.20}[0m
+[0;32mI (235996) MAIN: BH1750=47.00 | TEMT=435.40[0m
+[0;32mI (236036) MAIN: SEND: {"lux":47,"temt":435.40}[0m
+[0;32mI (237996) MAIN: BH1750=47.00 | TEMT=448.40[0m
+[0;32mI (238036) MAIN: SEND: {"lux":47,"temt":448.40}[0m
+[0;32mI (239996) MAIN: BH1750=47.00 | TEMT=446.80[0m
+[0;32mI (240036) MAIN: SEND: {"lux":47,"temt":446.80}[0m
+[0;32mI (241996) MAIN: BH1750=47.00 | TEMT=465.40[0m
+[0;32mI (242036) MAIN: SEND: {"lux":47,"temt":465.40}[0m
+[0;32mI (243996) MAIN: BH1750=47.00 | TEMT=455.00[0m
+[0;32mI (244036) MAIN: SEND: {"lux":47,"temt":455.00}[0m
+[0;32mI (245996) MAIN: BH1750=47.00 | TEMT=439.60[0m
+[0;32mI (246036) MAIN: SEND: {"lux":47,"temt":439.60}[0m
+[0;32mI (247996) MAIN: BH1750=47.00 | TEMT=334.20[0m
+[0;32mI (248036) MAIN: SEND: {"lux":47,"temt":334.20}[0m
+[0;32mI (249996) MAIN: BH1750=47.00 | TEMT=236.20[0m
+[0;32mI (250036) MAIN: SEND: {"lux":47,"temt":236.20}[0m
+[0;32mI (251996) MAIN: BH1750=47.00 | TEMT=173.40[0m
+[0;32mI (252036) MAIN: SEND: {"lux":47,"temt":173.40}[0m
+[0;32mI (253996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (254036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (255996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (256036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (257996) MAIN: BH1750=47.00 | TEMT=48.20[0m
+[0;32mI (258036) MAIN: SEND: {"lux":47,"temt":48.20}[0m
+[0;32mI (259996) MAIN: BH1750=47.00 | TEMT=110.20[0m
+[0;32mI (260036) MAIN: SEND: {"lux":47,"temt":110.20}[0m
+[0;32mI (261996) MAIN: BH1750=47.00 | TEMT=421.80[0m
+[0;32mI (262036) MAIN: SEND: {"lux":47,"temt":421.80}[0m
+[0;32mI (263996) MAIN: BH1750=47.00 | TEMT=419.20[0m
+[0;32mI (264036) MAIN: SEND: {"lux":47,"temt":419.20}[0m
+[0;32mI (265996) MAIN: BH1750=47.00 | TEMT=265.00[0m
+[0;32mI (266036) MAIN: SEND: {"lux":47,"temt":265.00}[0m
+[0;32mI (267996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (268046) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (269996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (270036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (271996) MAIN: BH1750=47.00 | TEMT=74.20[0m
+[0;32mI (272036) MAIN: SEND: {"lux":47,"temt":74.20}[0m
+[0;32mI (273996) MAIN: BH1750=47.00 | TEMT=384.20[0m
+[0;32mI (274036) MAIN: SEND: {"lux":47,"temt":384.20}[0m
+[0;32mI (275996) MAIN: BH1750=47.00 | TEMT=458.00[0m
+[0;32mI (276036) MAIN: SEND: {"lux":47,"temt":458.00}[0m
+[0;32mI (277996) MAIN: BH1750=47.00 | TEMT=301.00[0m
+[0;32mI (278036) MAIN: SEND: {"lux":47,"temt":301.00}[0m
+[0;32mI (279996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (280036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (281996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (282036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (283996) MAIN: BH1750=47.00 | TEMT=136.20[0m
+[0;32mI (284036) MAIN: SEND: {"lux":47,"temt":136.20}[0m
+[0;32mI (285996) MAIN: BH1750=47.00 | TEMT=425.00[0m
+[0;32mI (286036) MAIN: SEND: {"lux":47,"temt":425.00}[0m
+[0;32mI (287996) MAIN: BH1750=47.00 | TEMT=375.00[0m
+[0;32mI (288036) MAIN: SEND: {"lux":47,"temt":375.00}[0m
+[0;32mI (289996) MAIN: BH1750=47.00 | TEMT=85.60[0m
+[0;32mI (290036) MAIN: SEND: {"lux":47,"temt":85.60}[0m
+[0;32mI (291996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (292036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (293996) MAIN: BH1750=47.00 | TEMT=102.20[0m
+[0;32mI (294036) MAIN: SEND: {"lux":47,"temt":102.20}[0m
+[0;32mI (295996) MAIN: BH1750=47.00 | TEMT=455.60[0m
+[0;32mI (296036) MAIN: SEND: {"lux":47,"temt":455.60}[0m
+[0;32mI (297996) MAIN: BH1750=47.00 | TEMT=288.60[0m
+[0;32mI (298036) MAIN: SEND: {"lux":47,"temt":288.60}[0m
+[0;32mI (299996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (300036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (301996) MAIN: BH1750=47.00 | TEMT=49.20[0m
+[0;32mI (302046) MAIN: SEND: {"lux":47,"temt":49.20}[0m
+[0;32mI (303996) MAIN: BH1750=47.00 | TEMT=265.20[0m
+[0;32mI (304036) MAIN: SEND: {"lux":47,"temt":265.20}[0m
+[0;32mI (305996) MAIN: BH1750=47.00 | TEMT=440.00[0m
+[0;32mI (306036) MAIN: SEND: {"lux":47,"temt":440.00}[0m
+[0;32mI (307996) MAIN: BH1750=47.00 | TEMT=211.80[0m
+[0;32mI (308036) MAIN: SEND: {"lux":47,"temt":211.80}[0m
+[0;32mI (309996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (310036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (311996) MAIN: BH1750=47.00 | TEMT=44.80[0m
+[0;32mI (312036) MAIN: SEND: {"lux":47,"temt":44.80}[0m
+[0;32mI (313996) MAIN: BH1750=47.00 | TEMT=151.60[0m
+[0;32mI (314036) MAIN: SEND: {"lux":47,"temt":151.60}[0m
+[0;32mI (315996) MAIN: BH1750=47.00 | TEMT=438.20[0m
+[0;32mI (316036) MAIN: SEND: {"lux":47,"temt":438.20}[0m
+[0;32mI (317996) MAIN: BH1750=47.00 | TEMT=331.40[0m
+[0;32mI (318036) MAIN: SEND: {"lux":47,"temt":331.40}[0m
+[0;32mI (319996) MAIN: BH1750=47.00 | TEMT=164.20[0m
+[0;32mI (320036) MAIN: SEND: {"lux":47,"temt":164.20}[0m
+[0;32mI (321996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (322036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (323996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (324036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (325996) MAIN: BH1750=47.00 | TEMT=56.60[0m
+[0;32mI (326036) MAIN: SEND: {"lux":47,"temt":56.60}[0m
+[0;32mI (327996) MAIN: BH1750=47.00 | TEMT=121.00[0m
+[0;32mI (328036) MAIN: SEND: {"lux":47,"temt":121.00}[0m
+[0;32mI (329996) MAIN: BH1750=47.00 | TEMT=357.80[0m
+[0;32mI (330036) MAIN: SEND: {"lux":47,"temt":357.80}[0m
+[0;32mI (331996) MAIN: BH1750=47.00 | TEMT=449.20[0m
+[0;32mI (332036) MAIN: SEND: {"lux":47,"temt":449.20}[0m
+[0;32mI (333996) MAIN: BH1750=47.00 | TEMT=433.20[0m
+[0;32mI (334036) MAIN: SEND: {"lux":47,"temt":433.20}[0m
+[0;32mI (335996) MAIN: BH1750=47.00 | TEMT=446.80[0m
+[0;32mI (336036) MAIN: SEND: {"lux":47,"temt":446.80}[0m
+[0;32mI (337996) MAIN: BH1750=47.00 | TEMT=402.60[0m
+[0;32mI (338036) MAIN: SEND: {"lux":47,"temt":402.60}[0m
+[0;32mI (339996) MAIN: BH1750=47.00 | TEMT=368.00[0m
+[0;32mI (340036) MAIN: SEND: {"lux":47,"temt":368.00}[0m
+[0;32mI (341996) MAIN: BH1750=47.00 | TEMT=338.00[0m
+[0;32mI (342036) MAIN: SEND: {"lux":47,"temt":338.00}[0m
+[0;32mI (343996) MAIN: BH1750=47.00 | TEMT=249.00[0m
+[0;32mI (344036) MAIN: SEND: {"lux":47,"temt":249.00}[0m
+[0;32mI (345996) MAIN: BH1750=47.00 | TEMT=276.20[0m
+[0;32mI (346036) MAIN: SEND: {"lux":47,"temt":276.20}[0m
+[0;32mI (347996) MAIN: BH1750=47.00 | TEMT=257.00[0m
+[0;32mI (348036) MAIN: SEND: {"lux":47,"temt":257.00}[0m
+[0;32mI (349996) MAIN: BH1750=47.00 | TEMT=219.00[0m
+[0;32mI (350036) MAIN: SEND: {"lux":47,"temt":219.00}[0m
+[0;32mI (351996) MAIN: BH1750=47.00 | TEMT=77.40[0m
+[0;32mI (352036) MAIN: SEND: {"lux":47,"temt":77.40}[0m
+[0;32mI (353996) MAIN: BH1750=47.00 | TEMT=31.80[0m
+[0;32mI (354036) MAIN: SEND: {"lux":47,"temt":31.80}[0m
+[0;32mI (355996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (356036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (357996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (358036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (359996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (360036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (361996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (362036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (363996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (364036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (365996) MAIN: BH1750=47.00 | TEMT=35.00[0m
+[0;32mI (366036) MAIN: SEND: {"lux":47,"temt":35.00}[0m
+[0;32mI (367996) MAIN: BH1750=47.00 | TEMT=41.80[0m
+[0;32mI (368036) MAIN: SEND: {"lux":47,"temt":41.80}[0m
+[0;32mI (369996) MAIN: BH1750=47.00 | TEMT=40.80[0m
+[0;32mI (370046) MAIN: SEND: {"lux":47,"temt":40.80}[0m
+[0;32mI (371996) MAIN: BH1750=47.00 | TEMT=34.60[0m
+[0;32mI (372036) MAIN: SEND: {"lux":47,"temt":34.60}[0m
+[0;32mI (373996) MAIN: BH1750=46.00 | TEMT=0.00[0m
+[0;32mI (374036) MAIN: SEND: {"lux":46,"temt":0.00}[0m
+[0;32mI (375996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (376036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (377996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (378036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (379996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (380036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (381996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (382036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (383996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (384036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (385996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (386036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (387996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (388046) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (389996) MAIN: BH1750=71.00 | TEMT=0.00[0m
+[0;32mI (390036) MAIN: SEND: {"lux":71,"temt":0.00}[0m
+[0;32mI (391996) MAIN: BH1750=247.00 | TEMT=0.00[0m
+[0;32mI (392036) MAIN: SEND: {"lux":247,"temt":0.00}[0m
+[0;32mI (393996) MAIN: BH1750=276.00 | TEMT=0.00[0m
+[0;32mI (394036) MAIN: SEND: {"lux":276,"temt":0.00}[0m
+[0;32mI (395996) MAIN: BH1750=293.00 | TEMT=0.00[0m
+[0;32mI (396036) MAIN: SEND: {"lux":293,"temt":0.00}[0m
+[0;32mI (397996) MAIN: BH1750=315.00 | TEMT=0.00[0m
+[0;32mI (398036) MAIN: SEND: {"lux":315,"temt":0.00}[0m
+[0;32mI (399996) MAIN: BH1750=313.00 | TEMT=0.00[0m
+[0;32mI (400036) MAIN: SEND: {"lux":313,"temt":0.00}[0m
+[0;32mI (401996) MAIN: BH1750=309.00 | TEMT=0.00[0m
+[0;32mI (402036) MAIN: SEND: {"lux":309,"temt":0.00}[0m
+[0;32mI (403996) MAIN: BH1750=241.00 | TEMT=126.80[0m
+[0;32mI (404036) MAIN: SEND: {"lux":241,"temt":126.80}[0m
+[0;32mI (405996) MAIN: BH1750=47.00 | TEMT=244.60[0m
+[0;32mI (406036) MAIN: SEND: {"lux":47,"temt":244.60}[0m
+[0;32mI (407996) MAIN: BH1750=47.00 | TEMT=328.20[0m
+[0;32mI (408036) MAIN: SEND: {"lux":47,"temt":328.20}[0m
+[0;32mI (409996) MAIN: BH1750=81.00 | TEMT=413.40[0m
+[0;32mI (410036) MAIN: SEND: {"lux":81,"temt":413.40}[0m
+[0;32mI (411996) MAIN: BH1750=95.00 | TEMT=420.20[0m
+[0;32mI (412036) MAIN: SEND: {"lux":95,"temt":420.20}[0m
+[0;32mI (413996) MAIN: BH1750=110.00 | TEMT=453.60[0m
+[0;32mI (414036) MAIN: SEND: {"lux":110,"temt":453.60}[0m
+[0;32mI (415996) MAIN: BH1750=123.00 | TEMT=325.60[0m
+[0;32mI (416036) MAIN: SEND: {"lux":123,"temt":325.60}[0m
+[0;32mI (417996) MAIN: BH1750=136.00 | TEMT=163.20[0m
+[0;32mI (418036) MAIN: SEND: {"lux":136,"temt":163.20}[0m
+[0;32mI (419996) MAIN: BH1750=145.00 | TEMT=91.00[0m
+[0;32mI (420036) MAIN: SEND: {"lux":145,"temt":91.00}[0m
+[0;32mI (421996) MAIN: BH1750=145.00 | TEMT=61.40[0m
+[0;32mI (422046) MAIN: SEND: {"lux":145,"temt":61.40}[0m
+[0;32mI (423996) MAIN: BH1750=151.00 | TEMT=39.20[0m
+[0;32mI (424036) MAIN: SEND: {"lux":151,"temt":39.20}[0m
+[0;32mI (425996) MAIN: BH1750=148.00 | TEMT=0.00[0m
+[0;32mI (426036) MAIN: SEND: {"lux":148,"temt":0.00}[0m
+[0;32mI (427996) MAIN: BH1750=157.00 | TEMT=0.00[0m
+[0;32mI (428036) MAIN: SEND: {"lux":157,"temt":0.00}[0m
+[0;32mI (429996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (430046) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (431996) MAIN: BH1750=47.00 | TEMT=0.00[0m
+[0;32mI (432036) MAIN: SEND: {"lux":47,"temt":0.00}[0m
+[0;32mI (433996) MAIN: BH1750=46.00 | TEMT=0.00[0m
+[0;32mI (434036) MAIN: SEND: {"lux":46,"temt":0.00}[0m
+[0;32mI (435996) MAIN: BH1750=46.00 | TEMT=0.00[0m
+[0;32mI (436036) MAIN: SEND: {"lux":46,"temt":0.00}[0m

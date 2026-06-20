@@ -10,18 +10,18 @@ if(NOT EXISTS "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader/subp
   file(MAKE_DIRECTORY "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader"
-  "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader-prefix"
-  "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader-prefix/tmp"
-  "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader-prefix/src/bootloader-stamp"
-  "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader-prefix/src"
-  "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader-prefix/src/bootloader-stamp"
+  "D:/vxlproj/nhakinh/build/bootloader"
+  "D:/vxlproj/nhakinh/build/bootloader-prefix"
+  "D:/vxlproj/nhakinh/build/bootloader-prefix/tmp"
+  "D:/vxlproj/nhakinh/build/bootloader-prefix/src/bootloader-stamp"
+  "D:/vxlproj/nhakinh/build/bootloader-prefix/src"
+  "D:/vxlproj/nhakinh/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "D:/vxlproj/nhakinh/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "D:/vxlproj/nhakinh/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

@@ -1,0 +1,917 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15660
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 19 2026 11:15:21[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=20cc0h (134336) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=00030ce8 vaddr=3ffb0000 size=043bch ( 17340) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=000350ac vaddr=40080000 size=0af6ch ( 44908) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9eed8h (650968) map[0m
+[0;32mI (399) esp_image: segment 4: paddr=000def00 vaddr=4008af6c size=0d120h ( 53536) load[0m
+[0;32mI (432) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (432) boot: Disabling RNG early entropy source...[0m
+[0;32mI (444) cpu_start: Multicore app[0m
+[0;32mI (453) cpu_start: Pro cpu start user code[0m
+[0;32mI (453) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (453) app_init: Application information:[0m
+[0;32mI (456) app_init: Project name:     nha[0m
+[0;32mI (460) app_init: App version:      867265d-dirty[0m
+[0;32mI (466) app_init: Compile time:     Jun 19 2026 11:14:40[0m
+[0;32mI (472) app_init: ELF file SHA256:  1c9bbb0a4...[0m
+[0;32mI (477) app_init: ESP-IDF:          v5.3.5-dirty[0m
+[0;32mI (482) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (487) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (492) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (497) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (504) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (510) heap_init: At 3FFB8D90 len 00027270 (156 KiB): DRAM[0m
+[0;32mI (516) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (523) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (529) heap_init: At 4009808C len 00007F74 (31 KiB): IRAM[0m
+[0;32mI (537) spi_flash: detected chip: generic[0m
+[0;32mI (540) spi_flash: flash io: dio[0m
+[0;33mW (544) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (557) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (566) main_task: Started on CPU0[0m
+[0;32mI (576) main_task: Calling app_main()[0m
+[0;32mI (576) MAIN: System Start[0m
+[0;32mI (606) wifi:wifi driver task: 3ffc0e78, prio:23, stack:6656, core=0[0m
+[0;32mI (616) wifi:wifi firmware version: 18db208[0m
+[0;32mI (616) wifi:wifi certification version: v7.0[0m
+[0;32mI (616) wifi:config NVS flash: enabled[0m
+[0;32mI (616) wifi:config nano formating: disabled[0m
+[0;32mI (616) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (626) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (626) wifi:Init management short buffer num: 32[0m
+[0;32mI (636) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (636) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (646) wifi:Init static rx buffer num: 10[0m
+[0;32mI (646) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (646) wifi_init: rx ba win: 6[0m
+[0;32mI (656) wifi_init: accept mbox: 6[0m
+[0;32mI (656) wifi_init: tcpip mbox: 32[0m
+[0;32mI (656) wifi_init: udp mbox: 6[0m
+[0;32mI (666) wifi_init: tcp mbox: 6[0m
+[0;32mI (666) wifi_init: tcp tx win: 5760[0m
+[0;32mI (676) wifi_init: tcp rx win: 5760[0m
+[0;32mI (676) wifi_init: tcp mss: 1440[0m
+[0;32mI (676) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (686) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (686) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (696) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (786) wifi:mode : sta (d4:e9:f4:78:6d:44)[0m
+[0;32mI (786) wifi:enable tsf[0m
+[0;32mI (806) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (806) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (816) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (826) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (846) wifi:connected with Galaxy A54 5G 72B9, aid = 2, channel 6, BW20, bssid = 6e:c9:6e:26:df:aa[0m
+[0;32mI (846) wifi:security: WPA2-PSK, phy: bgn, rssi: -42[0m
+[0;32mI (856) wifi:pm start, type: 1[0m
+
+[0;32mI (856) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (866) wifi:<ba-add>idx:0 (ifx:0, 6e:c9:6e:26:df:aa), tid:0, ssn:0, winSize:64[0m
+[0;32mI (906) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (906) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1866) esp_netif_handlers: sta ip: 10.66.229.218, mask: 255.255.255.0, gw: 10.66.229.160[0m
+[0;32mI (1866) i2cdev: [Port 0] First initialization. Configuring bus with SDA=21, SCL=22 (Pullups SCL:0 SDA:0)[0m
+[0;33mW (1876) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+[0;32mI (1886) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1896) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1906) i2cdev: [Port 0] Successfully installed I2C master bus (Handle: 0x3ffca36c).[0m
+[0;32mI (1916) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffca754, Speed: 50000 Hz).[0m
+[0;32mI (1926) i2cdev: [0x3c at 0] Device added successfully (Device Handle: 0x3ffca7d0, Speed: 400000 Hz).[0m
+[0;32mI (1936) SSD1306: SSD1306 initialized flawlessly via i2cdev![0m
+[0;32mI (1966) MAIN: All sensors ready[0m
+[DEBUG] ADC RAW: 56
+[0;32mI (1976) MAIN: BH1750=0.00 | TEMT=37.00[0m
+[0;32mI (2016) MAIN: SEND: {"lux":0,"temt":37.00}[0m
+[0;32mI (3066) MAIN: MQTT CONNECTED[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (5076) MAIN: BH1750=60.00 | TEMT=0.00[0m
+[0;32mI (5116) MAIN: SEND: {"lux":60,"temt":0.00}[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (7126) MAIN: BH1750=63.00 | TEMT=0.00[0m
+[0;32mI (7166) MAIN: SEND: {"lux":63,"temt":0.00}[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (9176) MAIN: BH1750=50.00 | TEMT=0.00[0m
+[0;32mI (9216) MAIN: SEND: {"lux":50,"temt":0.00}[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (11226) MAIN: BH1750=68.00 | TEMT=0.00[0m
+[0;32mI (11266) MAIN: SEND: {"lux":68,"temt":0.00}[0m
+[DEBUG] ADC RAW: 39
+[0;32mI (13276) MAIN: BH1750=44.00 | TEMT=34.40[0m
+[0;32mI (13316) MAIN: SEND: {"lux":44,"temt":34.40}[0m
+[DEBUG] ADC RAW: 9
+[0;32mI (15326) MAIN: BH1750=47.00 | TEMT=29.80[0m
+[0;32mI (15366) MAIN: SEND: {"lux":47,"temt":29.80}[0m
+[DEBUG] ADC RAW: 165
+[0;32mI (17376) MAIN: BH1750=56.00 | TEMT=53.60[0m
+[0;32mI (17416) MAIN: SEND: {"lux":56,"temt":53.60}[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (19426) MAIN: BH1750=110.00 | TEMT=0.00[0m
+[0;32mI (19466) MAIN: SEND: {"lux":110,"temt":0.00}[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (21476) MAIN: BH1750=149.00 | TEMT=0.00[0m
+[0;32mI (21516) MAIN: SEND: {"lux":149,"temt":0.00}[0m
+[DEBUG] ADC RAW: 22
+[0;32mI (23526) MAIN: BH1750=175.00 | TEMT=31.80[0m
+[0;32mI (23566) MAIN: SEND: {"lux":175,"temt":31.80}[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (25576) MAIN: BH1750=173.00 | TEMT=0.00[0m
+[0;32mI (25616) MAIN: SEND: {"lux":173,"temt":0.00}[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (27626) MAIN: BH1750=164.00 | TEMT=0.00[0m
+[0;32mI (27666) MAIN: SEND: {"lux":164,"temt":0.00}[0m
+[DEBUG] ADC RAW: 29
+[0;32mI (29676) MAIN: BH1750=40.00 | TEMT=32.80[0m
+[0;32mI (29716) MAIN: SEND: {"lux":40,"temt":32.80}[0m
+[DEBUG] ADC RAW: 34
+[0;32mI (31726) MAIN: BH1750=41.00 | TEMT=33.60[0m
+[0;32mI (31766) MAIN: SEND: {"lux":41,"temt":33.60}[0m
+[DEBUG] ADC RAW: 33
+[0;32mI (33776) MAIN: BH1750=54.00 | TEMT=33.40[0m
+[0;32mI (33816) MAIN: SEND: {"lux":54,"temt":33.40}[0m
+[DEBUG] ADC RAW: 337
+[0;32mI (35826) MAIN: BH1750=55.00 | TEMT=80.00[0m
+[0;32mI (35866) MAIN: SEND: {"lux":55,"temt":80.00}[0m
+[DEBUG] ADC RAW: 307
+[0;32mI (37876) MAIN: BH1750=55.00 | TEMT=75.40[0m
+[0;32mI (37916) MAIN: SEND: {"lux":55,"temt":75.40}[0m
+[DEBUG] ADC RAW: 11
+[0;32mI (39926) MAIN: BH1750=54.00 | TEMT=30.00[0m
+[0;32mI (39966) MAIN: SEND: {"lux":54,"temt":30.00}[0m
+[DEBUG] ADC RAW: 300
+[0;32mI (41976) MAIN: BH1750=55.00 | TEMT=74.20[0m
+[0;32mI (42016) MAIN: SEND: {"lux":55,"temt":74.20}[0m
+[DEBUG] ADC RAW: 40
+[0;32mI (44026) MAIN: BH1750=55.00 | TEMT=34.60[0m
+[0;32mI (44066) MAIN: SEND: {"lux":55,"temt":34.60}[0m
+[DEBUG] ADC RAW: 7
+[0;32mI (46066) MAIN: BH1750=55.00 | TEMT=29.40[0m
+[0;32mI (46106) MAIN: SEND: {"lux":55,"temt":29.40}[0m
+[DEBUG] ADC RAW: 55
+[0;32mI (48116) MAIN: BH1750=55.00 | TEMT=36.80[0m
+[0;32mI (48156) MAIN: SEND: {"lux":55,"temt":36.80}[0m
+[DEBUG] ADC RAW: 21
+[0;32mI (50166) MAIN: BH1750=55.00 | TEMT=31.60[0m
+[0;32mI (50206) MAIN: SEND: {"lux":55,"temt":31.60}[0m
+[DEBUG] ADC RAW: 219
+[0;32mI (52216) MAIN: BH1750=55.00 | TEMT=61.80[0m
+[0;32mI (52256) MAIN: SEND: {"lux":55,"temt":61.80}[0m
+[DEBUG] ADC RAW: 28
+[0;32mI (54256) MAIN: BH1750=55.00 | TEMT=32.60[0m
+[0;32mI (54296) MAIN: SEND: {"lux":55,"temt":32.60}[0m
+[DEBUG] ADC RAW: 83
+[0;32mI (56306) MAIN: BH1750=55.00 | TEMT=41.00[0m
+[0;32mI (56346) MAIN: SEND: {"lux":55,"temt":41.00}[0m
+[DEBUG] ADC RAW: 108
+[0;32mI (58356) MAIN: BH1750=55.00 | TEMT=45.00[0m
+[0;32mI (58396) MAIN: SEND: {"lux":55,"temt":45.00}[0m
+[DEBUG] ADC RAW: 45
+[0;32mI (60406) MAIN: BH1750=55.00 | TEMT=35.20[0m
+[0;32mI (60446) MAIN: SEND: {"lux":55,"temt":35.20}[0m
+[DEBUG] ADC RAW: 33
+[0;32mI (62456) MAIN: BH1750=55.00 | TEMT=33.40[0m
+[0;32mI (62496) MAIN: SEND: {"lux":55,"temt":33.40}[0m
+[DEBUG] ADC RAW: 11
+[0;32mI (64496) MAIN: BH1750=55.00 | TEMT=30.00[0m
+[0;32mI (64546) MAIN: SEND: {"lux":55,"temt":30.00}[0m
+[DEBUG] ADC RAW: 25
+[0;32mI (66546) MAIN: BH1750=55.00 | TEMT=32.20[0m
+[0;32mI (66586) MAIN: SEND: {"lux":55,"temt":32.20}[0m
+[DEBUG] ADC RAW: 191
+[0;32mI (68596) MAIN: BH1750=55.00 | TEMT=57.60[0m
+[0;32mI (68636) MAIN: SEND: {"lux":55,"temt":57.60}[0m
+[DEBUG] ADC RAW: 102
+[0;32mI (70646) MAIN: BH1750=55.00 | TEMT=44.00[0m
+[0;32mI (70686) MAIN: SEND: {"lux":55,"temt":44.00}[0m
+[DEBUG] ADC RAW: 12
+[0;32mI (72696) MAIN: BH1750=54.00 | TEMT=30.20[0m
+[0;32mI (72736) MAIN: SEND: {"lux":54,"temt":30.20}[0m
+[DEBUG] ADC RAW: 87
+[0;32mI (74736) MAIN: BH1750=53.00 | TEMT=41.80[0m
+[0;32mI (74776) MAIN: SEND: {"lux":53,"temt":41.80}[0m
+[DEBUG] ADC RAW: 151
+[0;32mI (76776) MAIN: BH1750=55.00 | TEMT=51.40[0m
+[0;32mI (76816) MAIN: SEND: {"lux":55,"temt":51.40}[0m
+[DEBUG] ADC RAW: 17
+[0;32mI (78816) MAIN: BH1750=55.00 | TEMT=31.00[0m
+[0;32mI (78856) MAIN: SEND: {"lux":55,"temt":31.00}[0m
+[DEBUG] ADC RAW: 36
+[0;32mI (80856) MAIN: BH1750=55.00 | TEMT=34.00[0m
+[0;32mI (80896) MAIN: SEND: {"lux":55,"temt":34.00}[0m
+[DEBUG] ADC RAW: 42
+[0;32mI (82896) MAIN: BH1750=55.00 | TEMT=34.80[0m
+[0;32mI (82936) MAIN: SEND: {"lux":55,"temt":34.80}[0m
+[DEBUG] ADC RAW: 10
+[0;32mI (84946) MAIN: BH1750=55.00 | TEMT=30.00[0m
+[0;32mI (84986) MAIN: SEND: {"lux":55,"temt":30.00}[0m
+[DEBUG] ADC RAW: 68
+[0;32mI (86996) MAIN: BH1750=55.00 | TEMT=38.80[0m
+[0;32mI (87036) MAIN: SEND: {"lux":55,"temt":38.80}[0m
+[DEBUG] ADC RAW: 59
+[0;32mI (89046) MAIN: BH1750=55.00 | TEMT=37.40[0m
+[0;32mI (89086) MAIN: SEND: {"lux":55,"temt":37.40}[0m
+[DEBUG] ADC RAW: 35
+[0;32mI (91096) MAIN: BH1750=55.00 | TEMT=33.80[0m
+[0;32mI (91136) MAIN: SEND: {"lux":55,"temt":33.80}[0m
+[DEBUG] ADC RAW: 76
+[0;32mI (93146) MAIN: BH1750=55.00 | TEMT=40.00[0m
+[0;32mI (93186) MAIN: SEND: {"lux":55,"temt":40.00}[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (95196) MAIN: BH1750=55.00 | TEMT=0.00[0m
+[0;32mI (95236) MAIN: SEND: {"lux":55,"temt":0.00}[0m
+[DEBUG] ADC RAW: 75
+[0;32mI (97246) MAIN: BH1750=55.00 | TEMT=39.80[0m
+[0;32mI (97286) MAIN: SEND: {"lux":55,"temt":39.80}[0m
+[DEBUG] ADC RAW: 80
+[0;32mI (99296) MAIN: BH1750=55.00 | TEMT=40.60[0m
+[0;32mI (99336) MAIN: SEND: {"lux":55,"temt":40.60}[0m
+[DEBUG] ADC RAW: 20
+[0;32mI (101346) MAIN: BH1750=55.00 | TEMT=31.40[0m
+[0;32mI (101386) MAIN: SEND: {"lux":55,"temt":31.40}[0m
+[DEBUG] ADC RAW: 317
+[0;32mI (103396) MAIN: BH1750=55.00 | TEMT=76.80[0m
+[0;32mI (103436) MAIN: SEND: {"lux":55,"temt":76.80}[0m
+[DEBUG] ADC RAW: 62
+[0;32mI (105446) MAIN: BH1750=55.00 | TEMT=37.80[0m
+[0;32mI (105486) MAIN: SEND: {"lux":55,"temt":37.80}[0m
+[DEBUG] ADC RAW: 36
+[0;32mI (107496) MAIN: BH1750=55.00 | TEMT=34.00[0m
+[0;32mI (107536) MAIN: SEND: {"lux":55,"temt":34.00}[0m
+[DEBUG] ADC RAW: 12
+[0;32mI (109536) MAIN: BH1750=55.00 | TEMT=30.20[0m
+[0;32mI (109576) MAIN: SEND: {"lux":55,"temt":30.20}[0m
+[DEBUG] ADC RAW: 160
+[0;32mI (111586) MAIN: BH1750=55.00 | TEMT=52.80[0m
+[0;32mI (111626) MAIN: SEND: {"lux":55,"temt":52.80}[0m
+[DEBUG] ADC RAW: 13
+[0;32mI (113636) MAIN: BH1750=55.00 | TEMT=30.40[0m
+[0;32mI (113676) MAIN: SEND: {"lux":55,"temt":30.40}[0m
+[DEBUG] ADC RAW: 42
+[0;32mI (115686) MAIN: BH1750=55.00 | TEMT=34.80[0m
+[0;32mI (115726) MAIN: SEND: {"lux":55,"temt":34.80}[0m
+[DEBUG] ADC RAW: 56
+[0;32mI (117736) MAIN: BH1750=55.00 | TEMT=37.00[0m
+[0;32mI (117776) MAIN: SEND: {"lux":55,"temt":37.00}[0m
+[DEBUG] ADC RAW: 8
+[0;32mI (119786) MAIN: BH1750=53.00 | TEMT=29.60[0m
+[0;32mI (119826) MAIN: SEND: {"lux":53,"temt":29.60}[0m
+[DEBUG] ADC RAW: 242
+[0;32mI (121836) MAIN: BH1750=54.00 | TEMT=65.40[0m
+[0;32mI (121876) MAIN: SEND: {"lux":54,"temt":65.40}[0m
+[DEBUG] ADC RAW: 63
+[0;32mI (123886) MAIN: BH1750=54.00 | TEMT=38.00[0m
+[0;32mI (123926) MAIN: SEND: {"lux":54,"temt":38.00}[0m
+[DEBUG] ADC RAW: 16
+[0;32mI (125936) MAIN: BH1750=55.00 | TEMT=30.80[0m
+[0;32mI (125976) MAIN: SEND: {"lux":55,"temt":30.80}[0m
+[DEBUG] ADC RAW: 109
+[0;32mI (127986) MAIN: BH1750=55.00 | TEMT=45.00[0m
+[0;32mI (128026) MAIN: SEND: {"lux":55,"temt":45.00}[0m
+[DEBUG] ADC RAW: 290
+[0;32mI (130036) MAIN: BH1750=55.00 | TEMT=72.80[0m
+[0;32mI (130076) MAIN: SEND: {"lux":55,"temt":72.80}[0m
+[DEBUG] ADC RAW: 33
+[0;32mI (132086) MAIN: BH1750=55.00 | TEMT=33.40[0m
+[0;32mI (132126) MAIN: SEND: {"lux":55,"temt":33.40}[0m
+[DEBUG] ADC RAW: 2
+[0;32mI (134136) MAIN: BH1750=55.00 | TEMT=28.80[0m
+[0;32mI (134176) MAIN: SEND: {"lux":55,"temt":28.80}[0m
+[DEBUG] ADC RAW: 15
+[0;32mI (136176) MAIN: BH1750=55.00 | TEMT=30.60[0m
+[0;32mI (136216) MAIN: SEND: {"lux":55,"temt":30.60}[0m
+[DEBUG] ADC RAW: 300
+[0;32mI (138226) MAIN: BH1750=55.00 | TEMT=74.20[0m
+[0;32mI (138266) MAIN: SEND: {"lux":55,"temt":74.20}[0m
+[DEBUG] ADC RAW: 129
+[0;32mI (140276) MAIN: BH1750=55.00 | TEMT=48.20[0m
+[0;32mI (140316) MAIN: SEND: {"lux":55,"temt":48.20}[0m
+[DEBUG] ADC RAW: 18
+[0;32mI (142326) MAIN: BH1750=55.00 | TEMT=31.20[0m
+[0;32mI (142366) MAIN: SEND: {"lux":55,"temt":31.20}[0m
+[DEBUG] ADC RAW: 53
+[0;32mI (144376) MAIN: BH1750=55.00 | TEMT=36.60[0m
+[0;32mI (144416) MAIN: SEND: {"lux":55,"temt":36.60}[0m
+[DEBUG] ADC RAW: 9
+[0;32mI (146416) MAIN: BH1750=55.00 | TEMT=29.80[0m
+[0;32mI (146456) MAIN: SEND: {"lux":55,"temt":29.80}[0m
+[DEBUG] ADC RAW: 400
+[0;32mI (148466) MAIN: BH1750=55.00 | TEMT=89.60[0m
+[0;32mI (148506) MAIN: SEND: {"lux":55,"temt":89.60}[0m
+[DEBUG] ADC RAW: 133
+[0;32mI (150516) MAIN: BH1750=55.00 | TEMT=48.80[0m
+[0;32mI (150556) MAIN: SEND: {"lux":55,"temt":48.80}[0m
+[DEBUG] ADC RAW: 56
+[0;32mI (152566) MAIN: BH1750=55.00 | TEMT=37.00[0m
+[0;32mI (152606) MAIN: SEND: {"lux":55,"temt":37.00}[0m
+[DEBUG] ADC RAW: 75
+[0;32mI (154616) MAIN: BH1750=55.00 | TEMT=39.80[0m
+[0;32mI (154656) MAIN: SEND: {"lux":55,"temt":39.80}[0m
+[DEBUG] ADC RAW: 17
+[0;32mI (156656) MAIN: BH1750=55.00 | TEMT=31.00[0m
+[0;32mI (156696) MAIN: SEND: {"lux":55,"temt":31.00}[0m
+[DEBUG] ADC RAW: 179
+[0;32mI (158706) MAIN: BH1750=55.00 | TEMT=55.80[0m
+[0;32mI (158746) MAIN: SEND: {"lux":55,"temt":55.80}[0m
+[DEBUG] ADC RAW: 105
+[0;32mI (160756) MAIN: BH1750=55.00 | TEMT=44.40[0m
+[0;32mI (160796) MAIN: SEND: {"lux":55,"temt":44.40}[0m
+[DEBUG] ADC RAW: 85
+[0;32mI (162806) MAIN: BH1750=55.00 | TEMT=41.40[0m
+[0;32mI (162846) MAIN: SEND: {"lux":55,"temt":41.40}[0m
+[DEBUG] ADC RAW: 2
+[0;32mI (164856) MAIN: BH1750=55.00 | TEMT=28.80[0m
+[0;32mI (164896) MAIN: SEND: {"lux":55,"temt":28.80}[0m
+[DEBUG] ADC RAW: 62
+[0;32mI (166896) MAIN: BH1750=55.00 | TEMT=37.80[0m
+[0;32mI (166936) MAIN: SEND: {"lux":55,"temt":37.80}[0m
+[DEBUG] ADC RAW: 53
+[0;32mI (168946) MAIN: BH1750=54.00 | TEMT=36.60[0m
+[0;32mI (168986) MAIN: SEND: {"lux":54,"temt":36.60}[0m
+[DEBUG] ADC RAW: 121
+[0;32mI (170996) MAIN: BH1750=55.00 | TEMT=47.00[0m
+[0;32mI (171036) MAIN: SEND: {"lux":55,"temt":47.00}[0m
+[DEBUG] ADC RAW: 117
+[0;32mI (173046) MAIN: BH1750=55.00 | TEMT=46.20[0m
+[0;32mI (173086) MAIN: SEND: {"lux":55,"temt":46.20}[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (175096) MAIN: BH1750=55.00 | TEMT=0.00[0m
+[0;32mI (175136) MAIN: SEND: {"lux":55,"temt":0.00}[0m
+[DEBUG] ADC RAW: 62
+[0;32mI (177136) MAIN: BH1750=55.00 | TEMT=37.80[0m
+[0;32mI (177176) MAIN: SEND: {"lux":55,"temt":37.80}[0m
+[DEBUG] ADC RAW: 5
+[0;32mI (179186) MAIN: BH1750=55.00 | TEMT=29.20[0m
+[0;32mI (179226) MAIN: SEND: {"lux":55,"temt":29.20}[0m
+[DEBUG] ADC RAW: 40
+[0;32mI (181236) MAIN: BH1750=55.00 | TEMT=34.60[0m
+[0;32mI (181276) MAIN: SEND: {"lux":55,"temt":34.60}[0m
+[DEBUG] ADC RAW: 79
+[0;32mI (183286) MAIN: BH1750=55.00 | TEMT=40.40[0m
+[0;32mI (183326) MAIN: SEND: {"lux":55,"temt":40.40}[0m
+[DEBUG] ADC RAW: 1
+[0;32mI (185336) MAIN: BH1750=55.00 | TEMT=28.60[0m
+[0;32mI (185376) MAIN: SEND: {"lux":55,"temt":28.60}[0m
+[DEBUG] ADC RAW: 5
+[0;32mI (187386) MAIN: BH1750=55.00 | TEMT=29.20[0m
+[0;32mI (187426) MAIN: SEND: {"lux":55,"temt":29.20}[0m
+[DEBUG] ADC RAW: 48
+[0;32mI (189426) MAIN: BH1750=55.00 | TEMT=35.80[0m
+[0;32mI (189466) MAIN: SEND: {"lux":55,"temt":35.80}[0m
+[DEBUG] ADC RAW: 162
+[0;32mI (191476) MAIN: BH1750=55.00 | TEMT=53.20[0m
+[0;32mI (191516) MAIN: SEND: {"lux":55,"temt":53.20}[0m
+[DEBUG] ADC RAW: 46
+[0;32mI (193516) MAIN: BH1750=55.00 | TEMT=35.40[0m
+[0;32mI (193556) MAIN: SEND: {"lux":55,"temt":35.40}[0m
+[DEBUG] ADC RAW: 63
+[0;32mI (195566) MAIN: BH1750=55.00 | TEMT=38.00[0m
+[0;32mI (195606) MAIN: SEND: {"lux":55,"temt":38.00}[0m
+[DEBUG] ADC RAW: 146
+[0;32mI (197606) MAIN: BH1750=55.00 | TEMT=50.80[0m
+[0;32mI (197646) MAIN: SEND: {"lux":55,"temt":50.80}[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (199656) MAIN: BH1750=55.00 | TEMT=0.00[0m
+[0;32mI (199696) MAIN: SEND: {"lux":55,"temt":0.00}[0m
+[DEBUG] ADC RAW: 16
+[0;32mI (201696) MAIN: BH1750=55.00 | TEMT=30.80[0m
+[0;32mI (201736) MAIN: SEND: {"lux":55,"temt":30.80}[0m
+[DEBUG] ADC RAW: 66
+[0;32mI (203736) MAIN: BH1750=55.00 | TEMT=38.40[0m
+[0;32mI (203776) MAIN: SEND: {"lux":55,"temt":38.40}[0m
+[DEBUG] ADC RAW: 50
+[0;32mI (205776) MAIN: BH1750=55.00 | TEMT=36.00[0m
+[0;32mI (205816) MAIN: SEND: {"lux":55,"temt":36.00}[0m
+[DEBUG] ADC RAW: 56
+[0;32mI (207816) MAIN: BH1750=55.00 | TEMT=37.00[0m
+[0;32mI (207856) MAIN: SEND: {"lux":55,"temt":37.00}[0m
+[DEBUG] ADC RAW: 62
+[0;32mI (209866) MAIN: BH1750=55.00 | TEMT=37.80[0m
+[0;32mI (209906) MAIN: SEND: {"lux":55,"temt":37.80}[0m
+[DEBUG] ADC RAW: 55
+[0;32mI (211916) MAIN: BH1750=55.00 | TEMT=36.80[0m
+[0;32mI (211956) MAIN: SEND: {"lux":55,"temt":36.80}[0m
+[DEBUG] ADC RAW: 95
+[0;32mI (213966) MAIN: BH1750=55.00 | TEMT=43.00[0m
+[0;32mI (214006) MAIN: SEND: {"lux":55,"temt":43.00}[0m
+[DEBUG] ADC RAW: 76
+[0;32mI (216016) MAIN: BH1750=55.00 | TEMT=40.00[0m
+[0;32mI (216056) MAIN: SEND: {"lux":55,"temt":40.00}[0m
+[DEBUG] ADC RAW: 238
+[0;32mI (218066) MAIN: BH1750=55.00 | TEMT=64.80[0m
+[0;32mI (218106) MAIN: SEND: {"lux":55,"temt":64.80}[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (220116) MAIN: BH1750=55.00 | TEMT=0.00[0m
+[0;32mI (220156) MAIN: SEND: {"lux":55,"temt":0.00}[0m
+[DEBUG] ADC RAW: 82
+[0;32mI (222166) MAIN: BH1750=55.00 | TEMT=41.00[0m
+[0;32mI (222206) MAIN: SEND: {"lux":55,"temt":41.00}[0m
+[DEBUG] ADC RAW: 16
+[0;32mI (224216) MAIN: BH1750=55.00 | TEMT=30.80[0m
+[0;32mI (224256) MAIN: SEND: {"lux":55,"temt":30.80}[0m
+[DEBUG] ADC RAW: 47
+[0;32mI (226266) MAIN: BH1750=55.00 | TEMT=35.60[0m
+[0;32mI (226306) MAIN: SEND: {"lux":55,"temt":35.60}[0m
+[DEBUG] ADC RAW: 74
+[0;32mI (228316) MAIN: BH1750=55.00 | TEMT=39.80[0m
+[0;32mI (228356) MAIN: SEND: {"lux":55,"temt":39.80}[0m
+[DEBUG] ADC RAW: 20
+[0;32mI (230366) MAIN: BH1750=55.00 | TEMT=31.40[0m
+[0;32mI (230406) MAIN: SEND: {"lux":55,"temt":31.40}[0m
+[DEBUG] ADC RAW: 2
+[0;32mI (232416) MAIN: BH1750=55.00 | TEMT=28.80[0m
+[0;32mI (232456) MAIN: SEND: {"lux":55,"temt":28.80}[0m
+[DEBUG] ADC RAW: 86
+[0;32mI (234466) MAIN: BH1750=55.00 | TEMT=41.60[0m
+[0;32mI (234506) MAIN: SEND: {"lux":55,"temt":41.60}[0m
+[DEBUG] ADC RAW: 77
+[0;32mI (236516) MAIN: BH1750=55.00 | TEMT=40.20[0m
+[0;32mI (236556) MAIN: SEND: {"lux":55,"temt":40.20}[0m
+[DEBUG] ADC RAW: 186
+[0;32mI (238556) MAIN: BH1750=55.00 | TEMT=56.80[0m
+[0;32mI (238596) MAIN: SEND: {"lux":55,"temt":56.80}[0m
+[DEBUG] ADC RAW: 18
+[0;32mI (240606) MAIN: BH1750=55.00 | TEMT=31.20[0m
+[0;32mI (240646) MAIN: SEND: {"lux":55,"temt":31.20}[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (242656) MAIN: BH1750=55.00 | TEMT=0.00[0m
+[0;32mI (242696) MAIN: SEND: {"lux":55,"temt":0.00}[0m
+[DEBUG] ADC RAW: 72
+[0;32mI (244706) MAIN: BH1750=53.00 | TEMT=39.40[0m
+[0;32mI (244746) MAIN: SEND: {"lux":53,"temt":39.40}[0m
+[DEBUG] ADC RAW: 110
+[0;32mI (246756) MAIN: BH1750=55.00 | TEMT=45.20[0m
+[0;32mI (246796) MAIN: SEND: {"lux":55,"temt":45.20}[0m
+[DEBUG] ADC RAW: 17
+[0;32mI (248806) MAIN: BH1750=55.00 | TEMT=31.00[0m
+[0;32mI (248846) MAIN: SEND: {"lux":55,"temt":31.00}[0m
+[DEBUG] ADC RAW: 77
+[0;32mI (250856) MAIN: BH1750=55.00 | TEMT=40.20[0m
+[0;32mI (250896) MAIN: SEND: {"lux":55,"temt":40.20}[0m
+[DEBUG] ADC RAW: 277
+[0;32mI (252906) MAIN: BH1750=55.00 | TEMT=70.80[0m
+[0;32mI (252946) MAIN: SEND: {"lux":55,"temt":70.80}[0m
+[DEBUG] ADC RAW: 24
+[0;32mI (254956) MAIN: BH1750=55.00 | TEMT=32.00[0m
+[0;32mI (254996) MAIN: SEND: {"lux":55,"temt":32.00}[0m
+[DEBUG] ADC RAW: 202
+[0;32mI (257006) MAIN: BH1750=55.00 | TEMT=59.20[0m
+[0;32mI (257046) MAIN: SEND: {"lux":55,"temt":59.20}[0m
+[DEBUG] ADC RAW: 354
+[0;32mI (259056) MAIN: BH1750=55.00 | TEMT=82.60[0m
+[0;32mI (259096) MAIN: SEND: {"lux":55,"temt":82.60}[0m
+[DEBUG] ADC RAW: 300
+[0;32mI (261106) MAIN: BH1750=55.00 | TEMT=74.20[0m
+[0;32mI (261146) MAIN: SEND: {"lux":55,"temt":74.20}[0m
+[DEBUG] ADC RAW: 243
+[0;32mI (263146) MAIN: BH1750=55.00 | TEMT=65.60[0m
+[0;32mI (263186) MAIN: SEND: {"lux":55,"temt":65.60}[0m
+[DEBUG] ADC RAW: 325
+[0;32mI (265186) MAIN: BH1750=55.00 | TEMT=78.20[0m
+[0;32mI (265226) MAIN: SEND: {"lux":55,"temt":78.20}[0m
+[DEBUG] ADC RAW: 17
+[0;32mI (267236) MAIN: BH1750=55.00 | TEMT=31.00[0m
+[0;32mI (267276) MAIN: SEND: {"lux":55,"temt":31.00}[0m
+[DEBUG] ADC RAW: 243
+[0;32mI (269276) MAIN: BH1750=55.00 | TEMT=65.60[0m
+[0;32mI (269316) MAIN: SEND: {"lux":55,"temt":65.60}[0m
+[DEBUG] ADC RAW: 331
+[0;32mI (271316) MAIN: BH1750=55.00 | TEMT=79.00[0m
+[0;32mI (271356) MAIN: SEND: {"lux":55,"temt":79.00}[0m
+[DEBUG] ADC RAW: 379
+[0;32mI (273356) MAIN: BH1750=55.00 | TEMT=86.40[0m
+[0;32mI (273396) MAIN: SEND: {"lux":55,"temt":86.40}[0m
+[DEBUG] ADC RAW: 227
+[0;32mI (275396) MAIN: BH1750=55.00 | TEMT=63.20[0m
+[0;32mI (275436) MAIN: SEND: {"lux":55,"temt":63.20}[0m
+[DEBUG] ADC RAW: 338
+[0;32mI (277436) MAIN: BH1750=55.00 | TEMT=80.00[0m
+[0;32mI (277476) MAIN: SEND: {"lux":55,"temt":80.00}[0m
+[DEBUG] ADC RAW: 389
+[0;32mI (279476) MAIN: BH1750=55.00 | TEMT=87.80[0m
+[0;32mI (279516) MAIN: SEND: {"lux":55,"temt":87.80}[0m
+[DEBUG] ADC RAW: 350
+[0;32mI (281516) MAIN: BH1750=55.00 | TEMT=82.00[0m
+[0;32mI (281556) MAIN: SEND: {"lux":55,"temt":82.00}[0m
+[DEBUG] ADC RAW: 240
+[0;32mI (283556) MAIN: BH1750=55.00 | TEMT=65.20[0m
+[0;32mI (283596) MAIN: SEND: {"lux":55,"temt":65.20}[0m
+[DEBUG] ADC RAW: 243
+[0;32mI (285596) MAIN: BH1750=55.00 | TEMT=65.60[0m
+[0;32mI (285636) MAIN: SEND: {"lux":55,"temt":65.60}[0m
+[DEBUG] ADC RAW: 86
+[0;32mI (287636) MAIN: BH1750=55.00 | TEMT=41.60[0m
+[0;32mI (287676) MAIN: SEND: {"lux":55,"temt":41.60}[0m
+[DEBUG] ADC RAW: 186
+[0;32mI (289676) MAIN: BH1750=55.00 | TEMT=56.80[0m
+[0;32mI (289716) MAIN: SEND: {"lux":55,"temt":56.80}[0m
+[DEBUG] ADC RAW: 223
+[0;32mI (291716) MAIN: BH1750=55.00 | TEMT=62.60[0m
+[0;32mI (291756) MAIN: SEND: {"lux":55,"temt":62.60}[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (293756) MAIN: BH1750=55.00 | TEMT=0.00[0m
+[0;32mI (293796) MAIN: SEND: {"lux":55,"temt":0.00}[0m
+[DEBUG] ADC RAW: 62
+[0;32mI (295796) MAIN: BH1750=55.00 | TEMT=37.80[0m
+[0;32mI (295836) MAIN: SEND: {"lux":55,"temt":37.80}[0m
+[DEBUG] ADC RAW: 57
+[0;32mI (297836) MAIN: BH1750=55.00 | TEMT=37.20[0m
+[0;32mI (297876) MAIN: SEND: {"lux":55,"temt":37.20}[0m
+[DEBUG] ADC RAW: 131
+[0;32mI (299876) MAIN: BH1750=55.00 | TEMT=48.40[0m
+[0;32mI (299916) MAIN: SEND: {"lux":55,"temt":48.40}[0m
+[0;33mW (309106) transport_base: Poll timeout or error, errno=Connection already in progress, fd=54, timeout_ms=10000[0m
+[0;31mE (309106) mqtt_client: Writing didn't complete in specified timeout: errno=119[0m
+[0;31mE (309106) mqtt_client: Error to resend data [0m
+[0;33mW (309116) MAIN: MQTT DISCONNECTED[0m
+[0;33mW (319126) transport_base: Poll timeout or error, errno=Connection already in progress, fd=-1, timeout_ms=10000[0m
+[0;31mE (319126) mqtt_client: Writing didn't complete in specified timeout: errno=119[0m
+[0;31mE (319126) mqtt_client: Error sending ping[0m
+[0;31mE (319136) mqtt_client: Can't send ping, disconnected[0m
+[0;33mW (319136) MAIN: MQTT DISCONNECTED[0m
+[DEBUG] ADC RAW: 77
+[0;32mI (321146) MAIN: BH1750=55.00 | TEMT=40.20[0m
+[0;32mI (321186) MAIN: SEND: {"lux":55,"temt":40.20}[0m
+[DEBUG] ADC RAW: 120
+[0;32mI (323186) MAIN: BH1750=55.00 | TEMT=46.80[0m
+[0;32mI (323226) MAIN: SEND: {"lux":55,"temt":46.80}[0m
+[DEBUG] ADC RAW: 66
+[0;32mI (325226) MAIN: BH1750=55.00 | TEMT=38.40[0m
+[0;32mI (325266) MAIN: SEND: {"lux":55,"temt":38.40}[0m
+[DEBUG] ADC RAW: 177
+[0;32mI (327266) MAIN: BH1750=55.00 | TEMT=55.40[0m
+[0;32mI (327306) MAIN: SEND: {"lux":55,"temt":55.40}[0m
+[DEBUG] ADC RAW: 204
+[0;32mI (329306) MAIN: BH1750=55.00 | TEMT=59.60[0m
+[0;32mI (329346) MAIN: SEND: {"lux":55,"temt":59.60}[0m
+[0;32mI (332796) MAIN: MQTT CONNECTED[0m
+[DEBUG] ADC RAW: 236
+[0;32mI (334796) MAIN: BH1750=55.00 | TEMT=64.40[0m
+[0;32mI (334836) MAIN: SEND: {"lux":55,"temt":64.40}[0m
+[DEBUG] ADC RAW: 70
+[0;32mI (336836) MAIN: BH1750=54.00 | TEMT=39.20[0m
+[0;32mI (336876) MAIN: SEND: {"lux":54,"temt":39.20}[0m
+[DEBUG] ADC RAW: 154
+[0;32mI (338876) MAIN: BH1750=55.00 | TEMT=52.00[0m
+[0;32mI (338916) MAIN: SEND: {"lux":55,"temt":52.00}[0m
+[DEBUG] ADC RAW: 105
+[0;32mI (340916) MAIN: BH1750=55.00 | TEMT=44.40[0m
+[0;32mI (340956) MAIN: SEND: {"lux":55,"temt":44.40}[0m
+[DEBUG] ADC RAW: 155
+[0;32mI (342956) MAIN: BH1750=55.00 | TEMT=52.20[0m
+[0;32mI (342996) MAIN: SEND: {"lux":55,"temt":52.20}[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (344996) MAIN: BH1750=55.00 | TEMT=0.00[0m
+[0;32mI (345036) MAIN: SEND: {"lux":55,"temt":0.00}[0m
+[DEBUG] ADC RAW: 99
+[0;32mI (347036) MAIN: BH1750=55.00 | TEMT=43.60[0m
+[0;32mI (347076) MAIN: SEND: {"lux":55,"temt":43.60}[0m
+[DEBUG] ADC RAW: 235
+[0;32mI (349076) MAIN: BH1750=55.00 | TEMT=64.40[0m
+[0;32mI (349116) MAIN: SEND: {"lux":55,"temt":64.40}[0m
+[DEBUG] ADC RAW: 128
+[0;32mI (351116) MAIN: BH1750=55.00 | TEMT=48.00[0m
+[0;32mI (351156) MAIN: SEND: {"lux":55,"temt":48.00}[0m
+[DEBUG] ADC RAW: 86
+[0;32mI (353156) MAIN: BH1750=55.00 | TEMT=41.60[0m
+[0;32mI (353196) MAIN: SEND: {"lux":55,"temt":41.60}[0m
+[DEBUG] ADC RAW: 227
+[0;32mI (355196) MAIN: BH1750=55.00 | TEMT=63.20[0m
+[0;32mI (355236) MAIN: SEND: {"lux":55,"temt":63.20}[0m
+[DEBUG] ADC RAW: 163
+[0;32mI (357236) MAIN: BH1750=55.00 | TEMT=53.40[0m
+[0;32mI (357276) MAIN: SEND: {"lux":55,"temt":53.40}[0m
+[DEBUG] ADC RAW: 2
+[0;32mI (359276) MAIN: BH1750=55.00 | TEMT=28.80[0m
+[0;32mI (359316) MAIN: SEND: {"lux":55,"temt":28.80}[0m
+[DEBUG] ADC RAW: 130
+[0;32mI (361316) MAIN: BH1750=55.00 | TEMT=48.20[0m
+[0;32mI (361356) MAIN: SEND: {"lux":55,"temt":48.20}[0m
+[DEBUG] ADC RAW: 216
+[0;32mI (363356) MAIN: BH1750=55.00 | TEMT=61.40[0m
+[0;32mI (363396) MAIN: SEND: {"lux":55,"temt":61.40}[0m
+[DEBUG] ADC RAW: 188
+[0;32mI (365396) MAIN: BH1750=55.00 | TEMT=57.20[0m
+[0;32mI (365436) MAIN: SEND: {"lux":55,"temt":57.20}[0m
+[DEBUG] ADC RAW: 233
+[0;32mI (367436) MAIN: BH1750=55.00 | TEMT=64.00[0m
+[0;32mI (367476) MAIN: SEND: {"lux":55,"temt":64.00}[0m
+[DEBUG] ADC RAW: 296
+[0;32mI (369476) MAIN: BH1750=55.00 | TEMT=73.60[0m
+[0;32mI (369516) MAIN: SEND: {"lux":55,"temt":73.60}[0m
+[DEBUG] ADC RAW: 77
+[0;32mI (371516) MAIN: BH1750=55.00 | TEMT=40.20[0m
+[0;32mI (371556) MAIN: SEND: {"lux":55,"temt":40.20}[0m
+[DEBUG] ADC RAW: 161
+[0;32mI (373556) MAIN: BH1750=55.00 | TEMT=53.00[0m
+[0;32mI (373596) MAIN: SEND: {"lux":55,"temt":53.00}[0m
+[DEBUG] ADC RAW: 3
+[0;32mI (375596) MAIN: BH1750=55.00 | TEMT=28.80[0m
+[0;32mI (375636) MAIN: SEND: {"lux":55,"temt":28.80}[0m
+[DEBUG] ADC RAW: 11
+[0;32mI (377636) MAIN: BH1750=55.00 | TEMT=30.00[0m
+[0;32mI (377676) MAIN: SEND: {"lux":55,"temt":30.00}[0m
+[DEBUG] ADC RAW: 311
+[0;32mI (379676) MAIN: BH1750=55.00 | TEMT=76.00[0m
+[0;32mI (379716) MAIN: SEND: {"lux":55,"temt":76.00}[0m
+[DEBUG] ADC RAW: 274
+[0;32mI (381716) MAIN: BH1750=55.00 | TEMT=70.40[0m
+[0;32mI (381756) MAIN: SEND: {"lux":55,"temt":70.40}[0m
+[DEBUG] ADC RAW: 109
+[0;32mI (383756) MAIN: BH1750=55.00 | TEMT=45.00[0m
+[0;32mI (383796) MAIN: SEND: {"lux":55,"temt":45.00}[0m
+[0;33mW (392556) transport_base: Poll timeout or error, errno=Connection already in progress, fd=54, timeout_ms=10000[0m
+[0;31mE (392556) mqtt_client: Writing didn't complete in specified timeout: errno=119[0m
+[0;31mE (392556) mqtt_client: Error to resend data [0m
+[0;33mW (392566) MAIN: MQTT DISCONNECTED[0m
+[DEBUG] ADC RAW: 360
+[0;32mI (394566) MAIN: BH1750=55.00 | TEMT=83.40[0m
+[0;32mI (394606) MAIN: SEND: {"lux":55,"temt":83.40}[0m
+[DEBUG] ADC RAW: 198
+[0;32mI (396606) MAIN: BH1750=55.00 | TEMT=58.60[0m
+[0;32mI (396646) MAIN: SEND: {"lux":55,"temt":58.60}[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (398646) MAIN: BH1750=55.00 | TEMT=0.00[0m
+[0;32mI (398686) MAIN: SEND: {"lux":55,"temt":0.00}[0m
+[DEBUG] ADC RAW: 90
+[0;32mI (400686) MAIN: BH1750=55.00 | TEMT=42.20[0m
+[0;32mI (400726) MAIN: SEND: {"lux":55,"temt":42.20}[0m
+[DEBUG] ADC RAW: 340
+[0;32mI (402726) MAIN: BH1750=55.00 | TEMT=80.40[0m
+[0;32mI (402766) MAIN: SEND: {"lux":55,"temt":80.40}[0m
+[DEBUG] ADC RAW: 200
+[0;32mI (404766) MAIN: BH1750=55.00 | TEMT=59.00[0m
+[0;32mI (404806) MAIN: SEND: {"lux":55,"temt":59.00}[0m
+[DEBUG] ADC RAW: 11
+[0;32mI (406806) MAIN: BH1750=54.00 | TEMT=30.00[0m
+[0;32mI (406846) MAIN: SEND: {"lux":54,"temt":30.00}[0m
+[0;32mI (408566) MAIN: MQTT CONNECTED[0m
+[DEBUG] ADC RAW: 66
+[0;32mI (408846) MAIN: BH1750=54.00 | TEMT=38.40[0m
+[0;32mI (408886) MAIN: SEND: {"lux":54,"temt":38.40}[0m
+[DEBUG] ADC RAW: 88
+[0;32mI (410886) MAIN: BH1750=54.00 | TEMT=41.80[0m
+[0;32mI (410926) MAIN: SEND: {"lux":54,"temt":41.80}[0m
+[DEBUG] ADC RAW: 163
+[0;32mI (412926) MAIN: BH1750=54.00 | TEMT=53.40[0m
+[0;32mI (412966) MAIN: SEND: {"lux":54,"temt":53.40}[0m
+[DEBUG] ADC RAW: 59
+[0;32mI (414976) MAIN: BH1750=54.00 | TEMT=37.40[0m
+[0;32mI (415016) MAIN: SEND: {"lux":54,"temt":37.40}[0m
+[DEBUG] ADC RAW: 100
+[0;32mI (417016) MAIN: BH1750=55.00 | TEMT=43.60[0m
+[0;32mI (417056) MAIN: SEND: {"lux":55,"temt":43.60}[0m
+[DEBUG] ADC RAW: 247
+[0;32mI (419056) MAIN: BH1750=55.00 | TEMT=66.20[0m
+[0;32mI (419096) MAIN: SEND: {"lux":55,"temt":66.20}[0m
+[DEBUG] ADC RAW: 72
+[0;32mI (421096) MAIN: BH1750=54.00 | TEMT=39.40[0m
+[0;32mI (421136) MAIN: SEND: {"lux":54,"temt":39.40}[0m
+[DEBUG] ADC RAW: 21
+[0;32mI (423136) MAIN: BH1750=54.00 | TEMT=31.60[0m
+[0;32mI (423176) MAIN: SEND: {"lux":54,"temt":31.60}[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (425176) MAIN: BH1750=55.00 | TEMT=0.00[0m
+[0;32mI (425216) MAIN: SEND: {"lux":55,"temt":0.00}[0m
+[DEBUG] ADC RAW: 69
+[0;32mI (427216) MAIN: BH1750=55.00 | TEMT=39.00[0m
+[0;32mI (427256) MAIN: SEND: {"lux":55,"temt":39.00}[0m
+[DEBUG] ADC RAW: 75
+[0;32mI (429256) MAIN: BH1750=55.00 | TEMT=39.80[0m
+[0;32mI (429296) MAIN: SEND: {"lux":55,"temt":39.80}[0m
+[DEBUG] ADC RAW: 281
+[0;32mI (431296) MAIN: BH1750=55.00 | TEMT=71.40[0m
+[0;32mI (431336) MAIN: SEND: {"lux":55,"temt":71.40}[0m
+[DEBUG] ADC RAW: 245
+[0;32mI (433336) MAIN: BH1750=55.00 | TEMT=65.80[0m
+[0;32mI (433376) MAIN: SEND: {"lux":55,"temt":65.80}[0m
+[DEBUG] ADC RAW: 231
+[0;32mI (435386) MAIN: BH1750=55.00 | TEMT=63.80[0m
+[0;32mI (435426) MAIN: SEND: {"lux":55,"temt":63.80}[0m
+[DEBUG] ADC RAW: 175
+[0;32mI (437436) MAIN: BH1750=55.00 | TEMT=55.20[0m
+[0;32mI (437476) MAIN: SEND: {"lux":55,"temt":55.20}[0m
+[DEBUG] ADC RAW: 41
+[0;32mI (439486) MAIN: BH1750=55.00 | TEMT=34.60[0m
+[0;32mI (439526) MAIN: SEND: {"lux":55,"temt":34.60}[0m
+[DEBUG] ADC RAW: 6
+[0;32mI (441536) MAIN: BH1750=55.00 | TEMT=29.40[0m
+[0;32mI (441576) MAIN: SEND: {"lux":55,"temt":29.40}[0m
+[DEBUG] ADC RAW: 255
+[0;32mI (443586) MAIN: BH1750=55.00 | TEMT=67.40[0m
+[0;32mI (443626) MAIN: SEND: {"lux":55,"temt":67.40}[0m
+[DEBUG] ADC RAW: 47
+[0;32mI (445626) MAIN: BH1750=55.00 | TEMT=35.60[0m
+[0;32mI (445666) MAIN: SEND: {"lux":55,"temt":35.60}[0m
+[DEBUG] ADC RAW: 278
+[0;32mI (447676) MAIN: BH1750=55.00 | TEMT=71.00[0m
+[0;32mI (447716) MAIN: SEND: {"lux":55,"temt":71.00}[0m
+[DEBUG] ADC RAW: 358
+[0;32mI (449726) MAIN: BH1750=55.00 | TEMT=83.20[0m
+[0;32mI (449766) MAIN: SEND: {"lux":55,"temt":83.20}[0m
+[DEBUG] ADC RAW: 315
+[0;32mI (451766) MAIN: BH1750=55.00 | TEMT=76.60[0m
+[0;32mI (451806) MAIN: SEND: {"lux":55,"temt":76.60}[0m
+[DEBUG] ADC RAW: 70
+[0;32mI (453816) MAIN: BH1750=55.00 | TEMT=39.20[0m
+[0;32mI (453856) MAIN: SEND: {"lux":55,"temt":39.20}[0m
+[DEBUG] ADC RAW: 85
+[0;32mI (455856) MAIN: BH1750=54.00 | TEMT=41.40[0m
+[0;32mI (455896) MAIN: SEND: {"lux":54,"temt":41.40}[0m
+[DEBUG] ADC RAW: 249
+[0;32mI (457896) MAIN: BH1750=55.00 | TEMT=66.40[0m
+[0;32mI (457936) MAIN: SEND: {"lux":55,"temt":66.40}[0m
+[DEBUG] ADC RAW: 92
+[0;32mI (459946) MAIN: BH1750=55.00 | TEMT=42.40[0m
+[0;32mI (459986) MAIN: SEND: {"lux":55,"temt":42.40}[0m
+[DEBUG] ADC RAW: 198
+[0;32mI (461996) MAIN: BH1750=55.00 | TEMT=58.60[0m
+[0;32mI (462036) MAIN: SEND: {"lux":55,"temt":58.60}[0m
+[DEBUG] ADC RAW: 148
+[0;32mI (464046) MAIN: BH1750=55.00 | TEMT=51.00[0m
+[0;32mI (464086) MAIN: SEND: {"lux":55,"temt":51.00}[0m
+[DEBUG] ADC RAW: 90
+[0;32mI (466096) MAIN: BH1750=55.00 | TEMT=42.20[0m
+[0;32mI (466136) MAIN: SEND: {"lux":55,"temt":42.20}[0m
+[DEBUG] ADC RAW: 235
+[0;32mI (468146) MAIN: BH1750=55.00 | TEMT=64.40[0m
+[0;32mI (468186) MAIN: SEND: {"lux":55,"temt":64.40}[0m
+[DEBUG] ADC RAW: 21
+[0;32mI (470196) MAIN: BH1750=55.00 | TEMT=31.60[0m
+[0;32mI (470236) MAIN: SEND: {"lux":55,"temt":31.60}[0m
+[DEBUG] ADC RAW: 255
+[0;32mI (472246) MAIN: BH1750=55.00 | TEMT=67.40[0m
+[0;32mI (472286) MAIN: SEND: {"lux":55,"temt":67.40}[0m
+[DEBUG] ADC RAW: 263
+[0;32mI (474296) MAIN: BH1750=55.00 | TEMT=68.60[0m
+[0;32mI (474336) MAIN: SEND: {"lux":55,"temt":68.60}[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (476346) MAIN: BH1750=54.00 | TEMT=0.00[0m
+[0;32mI (476386) MAIN: SEND: {"lux":54,"temt":0.00}[0m
+[DEBUG] ADC RAW: 83
+[0;32mI (478396) MAIN: BH1750=55.00 | TEMT=41.00[0m
+[0;32mI (478436) MAIN: SEND: {"lux":55,"temt":41.00}[0m
+[DEBUG] ADC RAW: 58
+[0;32mI (480446) MAIN: BH1750=55.00 | TEMT=37.20[0m
+[0;32mI (480486) MAIN: SEND: {"lux":55,"temt":37.20}[0m
+[DEBUG] ADC RAW: 41
+[0;32mI (482496) MAIN: BH1750=55.00 | TEMT=34.60[0m
+[0;32mI (482536) MAIN: SEND: {"lux":55,"temt":34.60}[0m
+[DEBUG] ADC RAW: 267
+[0;32mI (484536) MAIN: BH1750=55.00 | TEMT=69.20[0m
+[0;32mI (484576) MAIN: SEND: {"lux":55,"temt":69.20}[0m
+[DEBUG] ADC RAW: 83
+[0;32mI (486586) MAIN: BH1750=55.00 | TEMT=41.00[0m
+[0;32mI (486626) MAIN: SEND: {"lux":55,"temt":41.00}[0m
+[DEBUG] ADC RAW: 34
+[0;32mI (488636) MAIN: BH1750=55.00 | TEMT=33.60[0m
+[0;32mI (488676) MAIN: SEND: {"lux":55,"temt":33.60}[0m
+[DEBUG] ADC RAW: 102
+[0;32mI (490676) MAIN: BH1750=55.00 | TEMT=44.00[0m
+[0;32mI (490716) MAIN: SEND: {"lux":55,"temt":44.00}[0m
+[DEBUG] ADC RAW: 97
+[0;32mI (492716) MAIN: BH1750=55.00 | TEMT=43.20[0m
+[0;32mI (492756) MAIN: SEND: {"lux":55,"temt":43.20}[0m
+[DEBUG] ADC RAW: 232
+[0;32mI (494756) MAIN: BH1750=55.00 | TEMT=63.80[0m
+[0;32mI (494796) MAIN: SEND: {"lux":55,"temt":63.80}[0m
+[DEBUG] ADC RAW: 246
+[0;32mI (496796) MAIN: BH1750=55.00 | TEMT=66.00[0m
+[0;32mI (496836) MAIN: SEND: {"lux":55,"temt":66.00}[0m
+[DEBUG] ADC RAW: 221
+[0;32mI (498836) MAIN: BH1750=55.00 | TEMT=62.20[0m
+[0;32mI (498876) MAIN: SEND: {"lux":55,"temt":62.20}[0m
+[DEBUG] ADC RAW: 249
+[0;32mI (500876) MAIN: BH1750=55.00 | TEMT=66.40[0m
+[0;32mI (500916) MAIN: SEND: {"lux":55,"temt":66.40}[0m
+[DEBUG] ADC RAW: 145
+[0;32mI (502916) MAIN: BH1750=54.00 | TEMT=50.60[0m
+[0;32mI (502956) MAIN: SEND: {"lux":54,"temt":50.60}[0m
+[DEBUG] ADC RAW: 240
+[0;32mI (504966) MAIN: BH1750=54.00 | TEMT=65.20[0m
+[0;32mI (505006) MAIN: SEND: {"lux":54,"temt":65.20}[0m
+[DEBUG] ADC RAW: 27
+[0;32mI (507006) MAIN: BH1750=55.00 | TEMT=32.60[0m
+[0;32mI (507046) MAIN: SEND: {"lux":55,"temt":32.60}[0m
+[DEBUG] ADC RAW: 76
+[0;32mI (509046) MAIN: BH1750=54.00 | TEMT=40.00[0m
+[0;32mI (509086) MAIN: SEND: {"lux":54,"temt":40.00}[0m
+[DEBUG] ADC RAW: 268
+[0;32mI (511086) MAIN: BH1750=54.00 | TEMT=69.40[0m
+[0;32mI (511126) MAIN: SEND: {"lux":54,"temt":69.40}[0m
+[DEBUG] ADC RAW: 309
+[0;32mI (513126) MAIN: BH1750=54.00 | TEMT=75.60[0m
+[0;32mI (513166) MAIN: SEND: {"lux":54,"temt":75.60}[0m
+[DEBUG] ADC RAW: 124
+[0;32mI (515166) MAIN: BH1750=54.00 | TEMT=47.40[0m
+[0;32mI (515206) MAIN: SEND: {"lux":54,"temt":47.40}[0m
+[DEBUG] ADC RAW: 15
+[0;32mI (517206) MAIN: BH1750=54.00 | TEMT=30.60[0m
+[0;32mI (517246) MAIN: SEND: {"lux":54,"temt":30.60}[0m
+[DEBUG] ADC RAW: 213
+[0;32mI (519246) MAIN: BH1750=54.00 | TEMT=61.00[0m
+[0;32mI (519286) MAIN: SEND: {"lux":54,"temt":61.00}[0m
+[DEBUG] ADC RAW: 323
+[0;32mI (521286) MAIN: BH1750=54.00 | TEMT=77.80[0m
+[0;32mI (521326) MAIN: SEND: {"lux":54,"temt":77.80}[0m
+[DEBUG] ADC RAW: 135
+[0;32mI (523326) MAIN: BH1750=54.00 | TEMT=49.00[0m
+[0;32mI (523366) MAIN: SEND: {"lux":54,"temt":49.00}[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (525366) MAIN: BH1750=55.00 | TEMT=0.00[0m
+[0;32mI (525406) MAIN: SEND: {"lux":55,"temt":0.00}[0m
+[DEBUG] ADC RAW: 154
+[0;32mI (527406) MAIN: BH1750=54.00 | TEMT=52.00[0m
+[0;32mI (527446) MAIN: SEND: {"lux":54,"temt":52.00}[0m
+[DEBUG] ADC RAW: 205
+[0;32mI (529446) MAIN: BH1750=54.00 | TEMT=59.80[0m
+[0;32mI (529486) MAIN: SEND: {"lux":54,"temt":59.80}[0m
+[DEBUG] ADC RAW: 137
+[0;32mI (531486) MAIN: BH1750=54.00 | TEMT=49.40[0m
+[0;32mI (531526) MAIN: SEND: {"lux":54,"temt":49.40}[0m
+[DEBUG] ADC RAW: 87
+[0;32mI (533526) MAIN: BH1750=54.00 | TEMT=41.80[0m
+[0;32mI (533566) MAIN: SEND: {"lux":54,"temt":41.80}[0m
+[DEBUG] ADC RAW: 93
+[0;32mI (535566) MAIN: BH1750=54.00 | TEMT=42.60[0m
+[0;32mI (535606) MAIN: SEND: {"lux":54,"temt":42.60}[0m
+[DEBUG] ADC RAW: 334
+[0;32mI (537606) MAIN: BH1750=55.00 | TEMT=79.40[0m
+[0;32mI (537646) MAIN: SEND: {"lux":55,"temt":79.40}[0m
+[DEBUG] ADC RAW: 23
+[0;32mI (539646) MAIN: BH1750=55.00 | TEMT=32.00[0m
+[0;32mI (539686) MAIN: SEND: {"lux":55,"temt":32.00}[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (541686) MAIN: BH1750=55.00 | TEMT=0.00[0m
+[0;32mI (541726) MAIN: SEND: {"lux":55,"temt":0.00}[0m
+[DEBUG] ADC RAW: 164
+[0;32mI (543726) MAIN: BH1750=55.00 | TEMT=53.40[0m
+[0;32mI (543766) MAIN: SEND: {"lux":55,"temt":53.40}[0m
+[DEBUG] ADC RAW: 45
+[0;32mI (545776) MAIN: BH1750=54.00 | TEMT=35.20[0m
+[0;32mI (545816) MAIN: SEND: {"lux":54,"temt":35.20}[0m
+[DEBUG] ADC RAW: 47
+[0;32mI (547826) MAIN: BH1750=54.00 | TEMT=35.60[0m
+[0;32mI (547866) MAIN: SEND: {"lux":54,"temt":35.60}[0m
+[DEBUG] ADC RAW: 121
+[0;32mI (549866) MAIN: BH1750=44.00 | TEMT=47.00[0m
+[0;32mI (549906) MAIN: SEND: {"lux":44,"temt":47.00}[0m
+[DEBUG] ADC RAW: 83
+[0;32mI (551916) MAIN: BH1750=44.00 | TEMT=41.00[0m
+[0;32mI (551956) MAIN: SEND: {"lux":44,"temt":41.00}[0m
+[DEBUG] ADC RAW: 481
+[0;32mI (553966) MAIN: BH1750=35.00 | TEMT=102.00[0m
+[0;32mI (554006) MAIN: SEND: {"lux":35,"temt":102.00}[0m
+[DEBUG] ADC RAW: 936
+[0;32mI (556016) MAIN: BH1750=40.00 | TEMT=171.60[0m
+[0;32mI (556056) MAIN: SEND: {"lux":40,"temt":171.60}[0m
+[DEBUG] ADC RAW: 447
+[0;32mI (558066) MAIN: BH1750=40.00 | TEMT=96.80[0m
+[0;32mI (558106) MAIN: SEND: {"lux":40,"temt":96.80}[0m
+[DEBUG] ADC RAW: 720
+[0;32mI (560106) MAIN: BH1750=40.00 | TEMT=138.60[0m
+[0;32mI (560146) MAIN: SEND: {"lux":40,"temt":138.60}[0m
+[DEBUG] ADC RAW: 886
+[0;32mI (562156) MAIN: BH1750=40.00 | TEMT=163.80[0m
+[0;32mI (562196) MAIN: SEND: {"lux":40,"temt":163.80}[0m
+[DEBUG] ADC RAW: 566
+[0;32mI (564196) MAIN: BH1750=40.00 | TEMT=115.00[0m
+[0;32mI (564236) MAIN: SEND: {"lux":40,"temt":115.00}[0m
+[DEBUG] ADC RAW: 680
+[0;32mI (566246) MAIN: BH1750=40.00 | TEMT=132.40[0m
+[0;32mI (566286) MAIN: SEND: {"lux":40,"temt":132.40}[0m
+[DEBUG] ADC RAW: 136
+[0;32mI (568296) MAIN: BH1750=55.00 | TEMT=49.20[0m
+[0;32mI (568336) MAIN: SEND: {"lux":55,"temt":49.20}[0m
+[DEBUG] ADC RAW: 0
+[0;32mI (570346) MAIN: BH1750=56.00 | TEMT=0.00[0m
+[0;32mI (570386) MAIN: SEND: {"lux":56,"temt":0.00}[0m
+[DEBUG] ADC RAW: 165
+[0;32mI (572396) MAIN: BH1750=56.00 | TEMT=53.60[0m
+[0;32mI (572436) MAIN: SEND: {"lux":56,"temt":53.60}[0m
+[DEBUG] ADC RAW: 379
+[0;32mI (574446) MAIN: BH1750=56.00 | TEMT=86.40[0m
+[0;32mI (574486) MAIN: SEND: {"lux":56,"temt":86.40}[0m

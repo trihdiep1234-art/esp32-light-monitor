@@ -1,4 +1,4 @@
-# Install script for directory: D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/components/bh1750
+# Install script for directory: D:/vxlproj/nhakinh/components/bh1750
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

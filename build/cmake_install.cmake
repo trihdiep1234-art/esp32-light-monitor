@@ -1,4 +1,4 @@
-# Install script for directory: D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh
+# Install script for directory: D:/vxlproj/nhakinh
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/esp-idf/cmake_install.cmake")
+  include("D:/vxlproj/nhakinh/build/esp-idf/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -57,6 +57,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "D:/vxlproj/nhakinh/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

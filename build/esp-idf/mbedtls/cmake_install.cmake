@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/esp-idf/mbedtls/mbedtls/cmake_install.cmake")
+  include("D:/vxlproj/nhakinh/build/esp-idf/mbedtls/mbedtls/cmake_install.cmake")
 endif()
 

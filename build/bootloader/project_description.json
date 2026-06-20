@@ -4,8 +4,8 @@
     "project_version":    "v5.3.5-dirty",
     "project_path":       "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader/subproject",
     "idf_path":           "D:/Espressif/frameworks/esp-idf-v5.3.5",
-    "build_dir":          "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader",
-    "config_file":        "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/sdkconfig",
+    "build_dir":          "D:/vxlproj/nhakinh/build/bootloader",
+    "config_file":        "D:/vxlproj/nhakinh/sdkconfig",
     "config_defaults":    "",
     "bootloader_elf":     "",
     "app_elf":            "bootloader.elf",
@@ -54,7 +54,7 @@
             "priv_reqs": [ "micro-ecc", "spi_flash", "efuse", "esp_bootloader_format", "esp_app_format", "hal" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader/esp-idf/bootloader_support/libbootloader_support.a",
+            "file": "D:/vxlproj/nhakinh/build/bootloader/esp-idf/bootloader_support/libbootloader_support.a",
             "sources": [ "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader_support/src/bootloader_common.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader_support/src/bootloader_common_loader.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader_support/src/bootloader_clock_init.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader_support/src/bootloader_mem.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader_support/src/bootloader_random.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader_support/src/bootloader_efuse.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader_support/src/flash_encrypt.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader_support/src/secure_boot.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader_support/src/bootloader_random_esp32.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader_support/bootloader_flash/src/bootloader_flash.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader_support/src/bootloader_utility.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader_support/src/flash_partitions.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader_support/src/esp_image_format.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader_support/src/bootloader_init.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader_support/src/bootloader_clock_loader.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader_support/src/bootloader_console.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader_support/src/bootloader_console_loader.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader_support/src/esp32/bootloader_sha.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader_support/src/esp32/bootloader_soc.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader_support/src/esp32/bootloader_esp32.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader_support/src/bootloader_panic.c" ],
             "include_dirs": [ "include", "bootloader_flash/include", "private_include" ]
         },
@@ -69,7 +69,7 @@
             "priv_reqs": [ "bootloader_support", "soc", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader/esp-idf/efuse/libefuse.a",
+            "file": "D:/vxlproj/nhakinh/build/bootloader/esp-idf/efuse/libefuse.a",
             "sources": [ "D:/Espressif/frameworks/esp-idf-v5.3.5/components/efuse/esp32/esp_efuse_table.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/efuse/esp32/esp_efuse_fields.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/efuse/esp32/esp_efuse_utility.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/efuse/src/esp_efuse_api.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/efuse/src/esp_efuse_fields.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/efuse/src/esp_efuse_utility.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/efuse/src/efuse_controller/keys/without_key_purposes/three_key_blocks/esp_efuse_api_key.c" ],
             "include_dirs": [ "include", "esp32/include" ]
         },
@@ -99,7 +99,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader/esp-idf/esp_bootloader_format/libesp_bootloader_format.a",
+            "file": "D:/vxlproj/nhakinh/build/bootloader/esp-idf/esp_bootloader_format/libesp_bootloader_format.a",
             "sources": [ "D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_bootloader_format/esp_bootloader_desc.c" ],
             "include_dirs": [ "include" ]
         },
@@ -114,7 +114,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader/esp-idf/esp_common/libesp_common.a",
+            "file": "D:/vxlproj/nhakinh/build/bootloader/esp-idf/esp_common/libesp_common.a",
             "sources": [ "D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_common/src/esp_err_to_name.c" ],
             "include_dirs": [ "include" ]
         },
@@ -129,7 +129,7 @@
             "priv_reqs": [ "efuse", "spi_flash", "bootloader_support", "esp_system" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader/esp-idf/esp_hw_support/libesp_hw_support.a",
+            "file": "D:/vxlproj/nhakinh/build/bootloader/esp-idf/esp_hw_support/libesp_hw_support.a",
             "sources": [ "D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_hw_support/cpu.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_hw_support/port/esp32/esp_cpu_intr.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_hw_support/esp_memory_utils.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_hw_support/port/esp32/cpu_region_protect.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_hw_support/port/esp32/rtc_clk.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_hw_support/port/esp32/rtc_clk_init.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_hw_support/port/esp32/rtc_init.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_hw_support/port/esp32/rtc_sleep.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_hw_support/port/esp32/rtc_time.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_hw_support/port/esp32/chip_info.c" ],
             "include_dirs": [ "include", "include/soc", "include/soc/esp32", "dma/include", "ldo/include" ]
         },
@@ -144,7 +144,7 @@
             "priv_reqs": [ "soc", "hal" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader/esp-idf/esp_rom/libesp_rom.a",
+            "file": "D:/vxlproj/nhakinh/build/bootloader/esp-idf/esp_rom/libesp_rom.a",
             "sources": [ "D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_rom/patches/esp_rom_crc.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_rom/patches/esp_rom_sys.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_rom/patches/esp_rom_uart.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_rom/patches/esp_rom_spiflash.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_rom/patches/esp_rom_efuse.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_rom/patches/esp_rom_gpio.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_rom/patches/esp_rom_longjmp.S" ],
             "include_dirs": [ "include", "include/esp32", "esp32" ]
         },
@@ -159,7 +159,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader/esp-idf/esp_system/libesp_system.a",
+            "file": "D:/vxlproj/nhakinh/build/bootloader/esp-idf/esp_system/libesp_system.a",
             "sources": [ "D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_system/esp_err.c" ],
             "include_dirs": []
         },
@@ -204,7 +204,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader/esp-idf/hal/libhal.a",
+            "file": "D:/vxlproj/nhakinh/build/bootloader/esp-idf/hal/libhal.a",
             "sources": [ "D:/Espressif/frameworks/esp-idf-v5.3.5/components/hal/hal_utils.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/hal/mpu_hal.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/hal/efuse_hal.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/hal/esp32/efuse_hal.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/hal/wdt_hal_iram.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/hal/mmu_hal.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/hal/esp32/cache_hal_esp32.c" ],
             "include_dirs": [ "platform_port/include", "esp32/include", "include" ]
         },
@@ -219,7 +219,7 @@
             "priv_reqs": [ "soc", "hal", "esp_hw_support" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader/esp-idf/log/liblog.a",
+            "file": "D:/vxlproj/nhakinh/build/bootloader/esp-idf/log/liblog.a",
             "sources": [ "D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/log.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/log_buffers.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/log_noos.c" ],
             "include_dirs": [ "include" ]
         },
@@ -234,7 +234,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader/esp-idf/main/libmain.a",
+            "file": "D:/vxlproj/nhakinh/build/bootloader/esp-idf/main/libmain.a",
             "sources": [ "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader/subproject/main/bootloader_start.c" ],
             "include_dirs": []
         },
@@ -249,7 +249,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader/esp-idf/micro-ecc/libmicro-ecc.a",
+            "file": "D:/vxlproj/nhakinh/build/bootloader/esp-idf/micro-ecc/libmicro-ecc.a",
             "sources": [ "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader/subproject/components/micro-ecc/uECC_verify_antifault.c" ],
             "include_dirs": [ ".", "micro-ecc" ]
         },
@@ -294,7 +294,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader/esp-idf/soc/libsoc.a",
+            "file": "D:/vxlproj/nhakinh/build/bootloader/esp-idf/soc/libsoc.a",
             "sources": [ "D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/lldesc.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/dport_access_common.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/interrupts.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/gpio_periph.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/uart_periph.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/dport_access.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/adc_periph.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/emac_periph.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/spi_periph.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/ledc_periph.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/pcnt_periph.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/rmt_periph.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/sdm_periph.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/i2s_periph.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/i2c_periph.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/timer_periph.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/lcd_periph.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/mcpwm_periph.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/mpi_periph.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/sdmmc_periph.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/touch_sensor_periph.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/twai_periph.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/wdt_periph.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/dac_periph.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/rtc_io_periph.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/sdio_slave_periph.c" ],
             "include_dirs": [ "include", "esp32", "esp32/include" ]
         },
@@ -309,7 +309,7 @@
             "priv_reqs": [ "bootloader_support", "soc" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader/esp-idf/spi_flash/libspi_flash.a",
+            "file": "D:/vxlproj/nhakinh/build/bootloader/esp-idf/spi_flash/libspi_flash.a",
             "sources": [ "D:/Espressif/frameworks/esp-idf-v5.3.5/components/spi_flash/spi_flash_wrap.c" ],
             "include_dirs": [ "include" ]
         },
@@ -324,7 +324,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader/esp-idf/xtensa/libxtensa.a",
+            "file": "D:/vxlproj/nhakinh/build/bootloader/esp-idf/xtensa/libxtensa.a",
             "sources": [ "D:/Espressif/frameworks/esp-idf-v5.3.5/components/xtensa/eri.c", "D:/Espressif/frameworks/esp-idf-v5.3.5/components/xtensa/xt_trax.c" ],
             "include_dirs": [ "esp32/include", "include", "deprecated_include" ]
         }
@@ -412,7 +412,7 @@
             "priv_reqs": [ "esp_driver_uart", "esp_driver_usb_serial_jtag" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha", "kinh/build/bootloader" ]
+            "include_dirs": [ "D:/vxlproj/nhakinh/build/bootloader" ]
         },
         "cxx": {
             "alias": "idf::cxx",
@@ -460,7 +460,7 @@
             "priv_reqs": [ "http_parser", "esp_timer", "lwip" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha", "kinh/build/bootloader", "esp-tls-crypto" ]
+            "include_dirs": [ "D:/vxlproj/nhakinh/build/bootloader", "esp-tls-crypto" ]
         },
         "esp_adc": {
             "alias": "idf::esp_adc",
@@ -1593,10 +1593,10 @@
     },
     "debug_prefix_map_gdbinit": "",
     "gdbinit_files": {
-        "01_symbols": "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader/gdbinit/symbols",
-        "02_prefix_map": "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader/gdbinit/prefix_map",
-        "03_py_extensions": "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader/gdbinit/py_extensions",
-        "04_connect": "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader/gdbinit/connect"
+        "01_symbols": "D:/vxlproj/nhakinh/build/bootloader/gdbinit/symbols",
+        "02_prefix_map": "D:/vxlproj/nhakinh/build/bootloader/gdbinit/prefix_map",
+        "03_py_extensions": "D:/vxlproj/nhakinh/build/bootloader/gdbinit/py_extensions",
+        "04_connect": "D:/vxlproj/nhakinh/build/bootloader/gdbinit/connect"
     },
     "debug_arguments_openocd": "-f board/esp32-wrover-kit-3.3v.cfg"
 }

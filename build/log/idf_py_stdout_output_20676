@@ -1,0 +1,253 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15660
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 19 2026 11:15:21[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=20dd0h (134608) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=00030df8 vaddr=3ffb0000 size=043bch ( 17340) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=000351bc vaddr=40080000 size=0ae5ch ( 44636) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9f040h (651328) map[0m
+[0;32mI (399) esp_image: segment 4: paddr=000df068 vaddr=4008ae5c size=0d230h ( 53808) load[0m
+[0;32mI (432) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (432) boot: Disabling RNG early entropy source...[0m
+[0;32mI (445) cpu_start: Multicore app[0m
+[0;32mI (453) cpu_start: Pro cpu start user code[0m
+[0;32mI (453) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (453) app_init: Application information:[0m
+[0;32mI (456) app_init: Project name:     nha[0m
+[0;32mI (461) app_init: App version:      867265d-dirty[0m
+[0;32mI (466) app_init: Compile time:     Jun 19 2026 11:14:40[0m
+[0;32mI (472) app_init: ELF file SHA256:  5e74cf411...[0m
+[0;32mI (477) app_init: ESP-IDF:          v5.3.5-dirty[0m
+[0;32mI (483) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (487) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (492) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (497) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (504) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (510) heap_init: At 3FFB8D98 len 00027268 (156 KiB): DRAM[0m
+[0;32mI (517) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (523) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (529) heap_init: At 4009808C len 00007F74 (31 KiB): IRAM[0m
+[0;32mI (537) spi_flash: detected chip: generic[0m
+[0;32mI (540) spi_flash: flash io: dio[0m
+[0;33mW (544) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (557) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) MAIN: System Start[0m
+[0;32mI (577) i2cdev: [Port 0] First initialization. Configuring bus with SDA=21, SCL=22 (Pullups SCL:0 SDA:0)[0m
+[0;33mW (587) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+[0;32mI (597) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (617) i2cdev: [Port 0] Successfully installed I2C master bus (Handle: 0x3ffbbfb8).[0m
+[0;32mI (627) i2cdev: [0x3c at 0] Device added successfully (Device Handle: 0x3ffbc4c8, Speed: 400000 Hz).[0m
+[0;32mI (637) SSD1306: SSD1306 initialized flawlessly via i2cdev![0m
+[0;32mI (717) wifi:wifi driver task: 3ffc154c, prio:23, stack:6656, core=0[0m
+[0;32mI (727) wifi:wifi firmware version: 18db208[0m
+[0;32mI (727) wifi:wifi certification version: v7.0[0m
+[0;32mI (727) wifi:config NVS flash: enabled[0m
+[0;32mI (727) wifi:config nano formating: disabled[0m
+[0;32mI (727) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (737) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (737) wifi:Init management short buffer num: 32[0m
+[0;32mI (747) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (747) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (757) wifi:Init static rx buffer num: 10[0m
+[0;32mI (757) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (757) wifi_init: rx ba win: 6[0m
+[0;32mI (767) wifi_init: accept mbox: 6[0m
+[0;32mI (767) wifi_init: tcpip mbox: 32[0m
+[0;32mI (767) wifi_init: udp mbox: 6[0m
+[0;32mI (777) wifi_init: tcp mbox: 6[0m
+[0;32mI (777) wifi_init: tcp tx win: 5760[0m
+[0;32mI (787) wifi_init: tcp rx win: 5760[0m
+[0;32mI (787) wifi_init: tcp mss: 1440[0m
+[0;32mI (787) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (797) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (797) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (807) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (897) wifi:mode : sta (d4:e9:f4:78:6d:44)[0m
+[0;32mI (897) wifi:enable tsf[0m
+[0;33mW (3327) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (5737) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (8157) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (10567) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;31mE (10907) MAIN: WiFi Timeout[0m
+[0;31mE (10947) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (10947) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (10947) mqtt_client: Error transport connect[0m
+[0;33mW (10957) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (10957) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffca3bc, Speed: 50000 Hz).[0m
+[0;32mI (10967) MAIN: All sensors ready[0m
+[0;32mI (11977) MAIN: Sample Time = 11.441 s[0m
+[0;32mI (11977) MAIN: BH1750=20.00 | TEMT=34.60[0m
+[0;32mI (12017) MAIN: SEND: {"lux":20,"temt":34.60}[0m
+[0;32mI (12977) MAIN: Sample Time = 12.441 s[0m
+[0;32mI (12977) MAIN: BH1750=20.00 | TEMT=35.40[0m
+[0;33mW (12987) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (13057) MAIN: SEND: {"lux":20,"temt":35.40}[0m
+[0;32mI (13977) MAIN: Sample Time = 13.441 s[0m
+[0;32mI (13977) MAIN: BH1750=20.00 | TEMT=35.20[0m
+[0;32mI (14017) MAIN: SEND: {"lux":20,"temt":35.20}[0m
+[0;32mI (14977) MAIN: Sample Time = 14.441 s[0m
+[0;32mI (14977) MAIN: BH1750=19.00 | TEMT=34.80[0m
+[0;32mI (15017) MAIN: SEND: {"lux":19,"temt":34.80}[0m
+[0;33mW (15407) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (15977) MAIN: Sample Time = 15.441 s[0m
+[0;32mI (15977) MAIN: BH1750=20.00 | TEMT=34.60[0m
+[0;32mI (16017) MAIN: SEND: {"lux":20,"temt":34.60}[0m
+[0;32mI (16977) MAIN: Sample Time = 16.441 s[0m
+[0;32mI (16977) MAIN: BH1750=19.00 | TEMT=34.40[0m
+[0;32mI (17017) MAIN: SEND: {"lux":19,"temt":34.40}[0m
+[0;33mW (17827) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (17977) MAIN: Sample Time = 17.441 s[0m
+[0;32mI (17977) MAIN: BH1750=19.00 | TEMT=33.00[0m
+[0;32mI (18017) MAIN: SEND: {"lux":19,"temt":33.00}[0m
+[0;32mI (18977) MAIN: Sample Time = 18.441 s[0m
+[0;32mI (18977) MAIN: BH1750=19.00 | TEMT=35.00[0m
+[0;32mI (19017) MAIN: SEND: {"lux":19,"temt":35.00}[0m
+[0;32mI (19977) MAIN: Sample Time = 19.441 s[0m
+[0;32mI (19977) MAIN: BH1750=19.00 | TEMT=33.20[0m
+[0;32mI (20017) MAIN: SEND: {"lux":19,"temt":33.20}[0m
+[0;33mW (20237) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (20977) MAIN: Sample Time = 20.441 s[0m
+[0;32mI (20977) MAIN: BH1750=19.00 | TEMT=34.00[0m
+[0;32mI (21017) MAIN: SEND: {"lux":19,"temt":34.00}[0m
+[0;32mI (21977) MAIN: Sample Time = 21.441 s[0m
+[0;32mI (21977) MAIN: BH1750=19.00 | TEMT=34.00[0m
+[0;32mI (22017) MAIN: SEND: {"lux":19,"temt":34.00}[0m
+[0;33mW (22657) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (22977) MAIN: Sample Time = 22.441 s[0m
+[0;32mI (22977) MAIN: BH1750=19.00 | TEMT=33.40[0m
+[0;32mI (23017) MAIN: SEND: {"lux":19,"temt":33.40}[0m
+[0;32mI (23977) MAIN: Sample Time = 23.441 s[0m
+[0;32mI (23977) MAIN: BH1750=19.00 | TEMT=34.40[0m
+[0;32mI (24017) MAIN: SEND: {"lux":19,"temt":34.40}[0m
+[0;32mI (24977) MAIN: Sample Time = 24.441 s[0m
+[0;32mI (24977) MAIN: BH1750=19.00 | TEMT=34.80[0m
+[0;32mI (25017) MAIN: SEND: {"lux":19,"temt":34.80}[0m
+[0;33mW (25077) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;31mE (25957) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (25957) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (25957) mqtt_client: Error transport connect[0m
+[0;33mW (25967) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (25977) MAIN: Sample Time = 25.441 s[0m
+[0;32mI (25977) MAIN: BH1750=19.00 | TEMT=33.80[0m
+[0;32mI (26017) MAIN: SEND: {"lux":19,"temt":33.80}[0m
+[0;32mI (26977) MAIN: Sample Time = 26.441 s[0m
+[0;32mI (26977) MAIN: BH1750=19.00 | TEMT=34.60[0m
+[0;32mI (27017) MAIN: SEND: {"lux":19,"temt":34.60}[0m
+[0;33mW (27497) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (27977) MAIN: Sample Time = 27.441 s[0m
+[0;32mI (27977) MAIN: BH1750=19.00 | TEMT=33.20[0m
+[0;32mI (28017) MAIN: SEND: {"lux":19,"temt":33.20}[0m
+[0;32mI (28977) MAIN: Sample Time = 28.441 s[0m
+[0;32mI (28977) MAIN: BH1750=19.00 | TEMT=34.00[0m
+[0;32mI (29017) MAIN: SEND: {"lux":19,"temt":34.00}[0m
+[0;33mW (29917) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (29977) MAIN: Sample Time = 29.441 s[0m
+[0;32mI (29977) MAIN: BH1750=19.00 | TEMT=32.80[0m
+[0;32mI (30017) MAIN: SEND: {"lux":19,"temt":32.80}[0m
+[0;32mI (30977) MAIN: Sample Time = 30.441 s[0m
+[0;32mI (30977) MAIN: BH1750=19.00 | TEMT=34.00[0m
+[0;32mI (31017) MAIN: SEND: {"lux":19,"temt":34.00}[0m
+[0;32mI (31977) MAIN: Sample Time = 31.441 s[0m
+[0;32mI (31977) MAIN: BH1750=19.00 | TEMT=32.60[0m
+[0;32mI (32017) MAIN: SEND: {"lux":19,"temt":32.60}[0m
+[0;33mW (32327) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (32977) MAIN: Sample Time = 32.441 s[0m
+[0;32mI (32977) MAIN: BH1750=19.00 | TEMT=32.60[0m
+[0;32mI (33017) MAIN: SEND: {"lux":19,"temt":32.60}[0m
+[0;32mI (33977) MAIN: Sample Time = 33.441 s[0m
+[0;32mI (33977) MAIN: BH1750=19.00 | TEMT=33.60[0m
+[0;32mI (34017) MAIN: SEND: {"lux":19,"temt":33.60}[0m
+[0;33mW (34747) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (34977) MAIN: Sample Time = 34.441 s[0m
+[0;32mI (34977) MAIN: BH1750=19.00 | TEMT=31.80[0m
+[0;32mI (35017) MAIN: SEND: {"lux":19,"temt":31.80}[0m
+[0;32mI (35977) MAIN: Sample Time = 35.441 s[0m
+[0;32mI (35977) MAIN: BH1750=19.00 | TEMT=33.40[0m
+[0;32mI (36017) MAIN: SEND: {"lux":19,"temt":33.40}[0m
+[0;32mI (36977) MAIN: Sample Time = 36.441 s[0m
+[0;32mI (36977) MAIN: BH1750=19.00 | TEMT=33.20[0m
+[0;32mI (37017) MAIN: SEND: {"lux":19,"temt":33.20}[0m
+[0;33mW (37167) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (37977) MAIN: Sample Time = 37.441 s[0m
+[0;32mI (37977) MAIN: BH1750=19.00 | TEMT=32.00[0m
+[0;32mI (38017) MAIN: SEND: {"lux":19,"temt":32.00}[0m
+[0;32mI (38977) MAIN: Sample Time = 38.441 s[0m
+[0;32mI (38977) MAIN: BH1750=19.00 | TEMT=33.80[0m
+[0;32mI (39017) MAIN: SEND: {"lux":19,"temt":33.80}[0m
+[0;33mW (39587) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (39977) MAIN: Sample Time = 39.441 s[0m
+[0;32mI (39977) MAIN: BH1750=19.00 | TEMT=33.00[0m
+[0;32mI (40017) MAIN: SEND: {"lux":19,"temt":33.00}[0m
+[0;31mE (40967) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (40967) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (40967) mqtt_client: Error transport connect[0m
+[0;33mW (40977) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (40977) MAIN: Sample Time = 40.447 s[0m
+[0;32mI (40987) MAIN: BH1750=19.00 | TEMT=33.20[0m
+[0;32mI (41027) MAIN: SEND: {"lux":19,"temt":33.20}[0m
+[0;32mI (41977) MAIN: Sample Time = 41.441 s[0m
+[0;32mI (41977) MAIN: BH1750=19.00 | TEMT=34.60[0m
+[0;33mW (41997) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (42057) MAIN: SEND: {"lux":19,"temt":34.60}[0m
+[0;32mI (42977) MAIN: Sample Time = 42.441 s[0m
+[0;32mI (42977) MAIN: BH1750=19.00 | TEMT=34.00[0m
+[0;32mI (43017) MAIN: SEND: {"lux":19,"temt":34.00}[0m
+[0;32mI (43977) MAIN: Sample Time = 43.441 s[0m
+[0;32mI (43977) MAIN: BH1750=19.00 | TEMT=33.40[0m
+[0;32mI (44017) MAIN: SEND: {"lux":19,"temt":33.40}[0m
+[0;33mW (44417) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (44977) MAIN: Sample Time = 44.441 s[0m
+[0;32mI (44977) MAIN: BH1750=19.00 | TEMT=33.00[0m
+[0;32mI (45017) MAIN: SEND: {"lux":19,"temt":33.00}[0m
+[0;32mI (45977) MAIN: Sample Time = 45.441 s[0m
+[0;32mI (45977) MAIN: BH1750=19.00 | TEMT=33.20[0m
+[0;32mI (46017) MAIN: SEND: {"lux":19,"temt":33.20}[0m
+[0;33mW (46837) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (46977) MAIN: Sample Time = 46.441 s[0m
+[0;32mI (46977) MAIN: BH1750=19.00 | TEMT=32.00[0m
+[0;32mI (47017) MAIN: SEND: {"lux":19,"temt":32.00}[0m
+[0;32mI (47977) MAIN: Sample Time = 47.441 s[0m
+[0;32mI (47977) MAIN: BH1750=19.00 | TEMT=32.60[0m
+[0;32mI (48017) MAIN: SEND: {"lux":19,"temt":32.60}[0m
+[0;32mI (48977) MAIN: Sample Time = 48.441 s[0m
+[0;32mI (48977) MAIN: BH1750=19.00 | TEMT=32.20[0m
+[0;32mI (49017) MAIN: SEND: {"lux":19,"temt":32.20}[0m
+[0;33mW (49257) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (49977) MAIN: Sample Time = 49.441 s[0m
+[0;32mI (49977) MAIN: BH1750=19.00 | TEMT=32.00[0m
+[0;32mI (50017) MAIN: SEND: {"lux":19,"temt":32.00}[0m
+[0;32mI (50977) MAIN: Sample Time = 50.441 s[0m
+[0;32mI (50977) MAIN: BH1750=19.00 | TEMT=33.80[0m
+[0;32mI (51017) MAIN: SEND: {"lux":19,"temt":33.80}[0m
+[0;33mW (51677) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (51977) MAIN: Sample Time = 51.441 s[0m
+[0;32mI (51977) MAIN: BH1750=19.00 | TEMT=33.00[0m
+[0;32mI (52017) MAIN: SEND: {"lux":19,"temt":33.00}[0m
+[0;32mI (52977) MAIN: Sample Time = 52.441 s[0m
+[0;32mI (52977) MAIN: BH1750=19.00 | TEMT=34.60[0m
+[0;32mI (53017) MAIN: SEND: {"lux":19,"temt":34.60}[0m

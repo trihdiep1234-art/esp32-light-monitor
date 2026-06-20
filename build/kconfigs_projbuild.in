@@ -3,4 +3,4 @@ source "D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_app_format/Kconfig
 source "D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_rom/Kconfig.projbuild"
 source "D:/Espressif/frameworks/esp-idf-v5.3.5/components/esptool_py/Kconfig.projbuild"
 source "D:/Espressif/frameworks/esp-idf-v5.3.5/components/partition_table/Kconfig.projbuild"
-source "D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/components/ssd1306/Kconfig.projbuild"
+source "D:/vxlproj/nhakinh/components/ssd1306/Kconfig.projbuild"

@@ -1,4 +1,4 @@
-# Install script for directory: D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/components/temt6000
+# Install script for directory: D:/vxlproj/nhakinh/components/temt6000
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

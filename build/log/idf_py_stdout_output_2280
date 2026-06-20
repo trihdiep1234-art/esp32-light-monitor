@@ -1,0 +1,95 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\vxlproj\nhakinh\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.3_py3.12_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.3.5/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/vxlproj/nhakinh/build/bootloader/bootloader.bin"
+Bootloader binary size 0x68e0 bytes. 0x720 bytes (6%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+In file included from D:/vxlproj/nhakinh/components/temt6000/include/temt6000.h:10,
+                 from D:/vxlproj/nhakinh/main/app_main.c:11:
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from D:/vxlproj/nhakinh/components/temt6000/include/temt6000.h:11:
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+[5/10] Linking C static library esp-idf\main\libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable nha.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.11.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/vxlproj/nhakinh/build/nha.bin
+[9/10] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\vxlproj\nhakinh\build\esp-idf\esptool_py && D:\Espressif\python_env\idf5.3_py3.12_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.3.5/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/vxlproj/nhakinh/build/partition_table/partition-table.bin D:/vxlproj/nhakinh/build/nha.bin"
+nha.bin binary size 0xdc0d0 bytes. Smallest app partition is 0x100000 bytes. 0x23f30 bytes (14%) free.
+[9/10] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Espressif\frameworks\esp-idf-v5.3.5\components\esptool_py && D:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=D:/Espressif/frameworks/esp-idf-v5.3.5 -D SERIAL_TOOL=D:/Espressif/python_env/idf5.3_py3.12_env/Scripts/python.exe;;D:/Espressif/frameworks/esp-idf-v5.3.5/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/vxlproj/nhakinh/build -P D:/Espressif/frameworks/esp-idf-v5.3.5/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM4 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 nha.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.11.0
+Serial port COM4
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: d4:e9:f4:78:6d:44
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000ecfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26848 bytes to 16437...
+Writing at 0x00001000... (50 %)
+Writing at 0x00007892... (100 %)
+Wrote 26848 bytes (16437 compressed) at 0x00001000 in 0.5 seconds (effective 421.7 kbit/s)...
+Hash of data verified.
+Compressed 901328 bytes to 563906...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001e36b... (5 %)
+Writing at 0x0002815b... (8 %)
+Writing at 0x00033307... (11 %)
+Writing at 0x00039dd4... (14 %)
+Writing at 0x0003f7cf... (17 %)
+Writing at 0x00045250... (20 %)
+Writing at 0x0004af43... (22 %)
+Writing at 0x00050e4e... (25 %)
+Writing at 0x00056cc4... (28 %)
+Writing at 0x0005cb66... (31 %)
+Writing at 0x0006260a... (34 %)
+Writing at 0x0006851d... (37 %)
+Writing at 0x0006ea87... (40 %)
+Writing at 0x000748a9... (42 %)
+Writing at 0x0007a2ba... (45 %)
+Writing at 0x0007f801... (48 %)
+Writing at 0x0008508d... (51 %)
+Writing at 0x0008aca8... (54 %)
+Writing at 0x00090539... (57 %)
+Writing at 0x00095be4... (60 %)
+Writing at 0x0009b7bb... (62 %)
+Writing at 0x000a1768... (65 %)
+Writing at 0x000a7145... (68 %)
+Writing at 0x000acd8e... (71 %)
+Writing at 0x000b29a4... (74 %)
+Writing at 0x000b83fa... (77 %)
+Writing at 0x000bded2... (80 %)
+Writing at 0x000c3beb... (82 %)
+Writing at 0x000c96bd... (85 %)
+Writing at 0x000cfc97... (88 %)
+Writing at 0x000d860c... (91 %)
+Writing at 0x000de1b8... (94 %)
+Writing at 0x000e4677... (97 %)
+Writing at 0x000e9994... (100 %)
+Wrote 901328 bytes (563906 compressed) at 0x00010000 in 12.8 seconds (effective 564.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 824.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

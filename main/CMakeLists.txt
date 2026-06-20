@@ -1,13 +1,17 @@
-# main/CMakeLists.txt
-
 idf_component_register(
     SRCS "app_main.c"
     INCLUDE_DIRS "."
-    REQUIRES 
-        bh1750 
-        temt6000 
-        ssd1306 
-        i2cdev
+    REQUIRES
+        esp_wifi
+        esp_event
+        esp_netif
+        esp_timer
+        nvs_flash
+        mqtt
         driver
         esp_adc
+        bh1750
+        temt6000
+        i2cdev
+        ssd1306
 )

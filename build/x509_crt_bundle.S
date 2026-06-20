@@ -1,4 +1,4 @@
-/* * Data converted from D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from D:/vxlproj/nhakinh/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 #if !defined (__APPLE__) && !defined (__linux__)

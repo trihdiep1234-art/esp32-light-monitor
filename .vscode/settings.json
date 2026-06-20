@@ -1,3 +1,4 @@
 {
-    "idf.currentSetup": "D:/Espressif/frameworks/esp-idf-v5.3.5/"
+    "idf.currentSetup": "D:/Espressif/frameworks/esp-idf-v5.3.5/",
+    "idf.flashType": "UART"
 }

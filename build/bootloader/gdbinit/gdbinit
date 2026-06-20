@@ -1,2 +1,2 @@
-source D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader/gdbinit/symbols
-source D:/Espressif/frameworks/esp-idf-v5.3.5/examples/get-started/nha kinh/build/bootloader/gdbinit/connect
+source D:/vxlproj/nhakinh/build/bootloader/gdbinit/symbols
+source D:/vxlproj/nhakinh/build/bootloader/gdbinit/connect
