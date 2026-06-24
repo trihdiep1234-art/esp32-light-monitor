@@ -1,0 +1,158 @@
+[1/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+In file included from D:/vxlproj/nhakinh/components/temt6000/include/temt6000.h:37,
+                 from D:/vxlproj/nhakinh/main/app_main.c:11:
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from D:/vxlproj/nhakinh/components/temt6000/include/temt6000.h:38:
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+[2/12] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\vxlproj\nhakinh\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.3_py3.12_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.3.5/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/vxlproj/nhakinh/build/bootloader/bootloader.bin"
+Bootloader binary size 0x68e0 bytes. 0x720 bytes (6%) free.
+[3/12] No install step for 'bootloader'
+[4/12] Completed 'bootloader'
+[5/12] Building C object esp-idf/temt6000/CMakeFiles/__idf_temt6000.dir/temt6000.c.obj
+FAILED: esp-idf/temt6000/CMakeFiles/__idf_temt6000.dir/temt6000.c.obj 
+ccache D:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20250707\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.3.5-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -ID:/vxlproj/nhakinh/build/config -ID:/vxlproj/nhakinh/components/temt6000/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/newlib/platform_include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/freertos/config/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/freertos/config/include/freertos -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/freertos/config/xtensa/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/freertos/FreeRTOS-Kernel/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/freertos/esp_additions/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_hw_support/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_hw_support/include/soc -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_hw_support/include/soc/esp32 -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_hw_support/dma/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_hw_support/ldo/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_hw_support/port/esp32/. -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_hw_support/port/esp32/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/heap/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32 -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/hal/platform_port/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/hal/esp32/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/hal/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_rom/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_rom/include/esp32 -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_rom/esp32 -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_common/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_system/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_system/port/soc -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_system/port/include/private -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/xtensa/esp32/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/xtensa/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/xtensa/deprecated_include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/lwip/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/lwip/include/apps -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/lwip/include/apps/sntp -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/lwip/lwip/src/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/lwip/port/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/lwip/port/freertos/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/lwip/port/esp32xx/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/lwip/port/esp32xx/include/arch -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/lwip/port/esp32xx/include/sys -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/driver/deprecated -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/driver/i2c/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/driver/touch_sensor/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/driver/twai/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/driver/touch_sensor/esp32/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_pm/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_ringbuf/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_gpio/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_pcnt/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_gptimer/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_spi/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_mcpwm/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_ana_cmpr/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_i2s/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_sdmmc/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/sdmmc/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_sdspi/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_sdio/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_dac/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_rmt/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_tsens/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_sdm/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_i2c/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_uart/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/vfs/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_ledc/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_parlio/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_usb_serial_jtag/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_adc/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_adc/interface -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_adc/esp32/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_adc/deprecated/include -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -Wno-error -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=D:/vxlproj/nhakinh=. -fmacro-prefix-map=D:/Espressif/frameworks/esp-idf-v5.3.5=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/temt6000/CMakeFiles/__idf_temt6000.dir/temt6000.c.obj -MF esp-idf\temt6000\CMakeFiles\__idf_temt6000.dir\temt6000.c.obj.d -o esp-idf/temt6000/CMakeFiles/__idf_temt6000.dir/temt6000.c.obj -c D:/vxlproj/nhakinh/components/temt6000/temt6000.c
+In file included from D:/vxlproj/nhakinh/components/temt6000/include/temt6000.h:37,
+                 from D:/vxlproj/nhakinh/components/temt6000/temt6000.c:48:
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from D:/vxlproj/nhakinh/components/temt6000/include/temt6000.h:38:
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c: In function 'read_single_raw':
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:178:41: error: 'TEMT6000_READ_RETRY' undeclared (first use in this function)
+  178 |     for (uint8_t attempt = 0; attempt < TEMT6000_READ_RETRY; attempt++)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:178:41: note: each undeclared identifier is reported only once for each function it appears in
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:180:38: error: 'TEMT6000_t' has no member named 'adcHandle'
+  180 |         err = adc_oneshot_read(device->adcHandle, device->channel, rawOut);
+      |                                      ^~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c: In function 'raw_to_mv':
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:202:15: error: 'TEMT6000_t' has no member named 'caliEnabled'
+  202 |     if (device->caliEnabled && device->caliHandle)
+      |               ^~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:202:38: error: 'TEMT6000_t' has no member named 'caliHandle'
+  202 |     if (device->caliEnabled && device->caliHandle)
+      |                                      ^~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:205:39: error: 'TEMT6000_t' has no member named 'caliHandle'
+  205 |         adc_cali_raw_to_voltage(device->caliHandle, raw, voltageOut);
+      |                                       ^~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c: In function 'temt6000__Init':
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:246:57: error: 'TEMT6000_t' has no member named 'adcHandle'
+  246 |     if (ESP_OK != adc_oneshot_new_unit(&unitCfg, &device->adcHandle)) {
+      |                                                         ^~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:256:9: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+  256 |         .atten    = TEMT6000_ADC_ATTEN,
+      |         ^
+In file included from D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_adc/include/esp_adc/adc_oneshot.h:12,
+                 from D:/vxlproj/nhakinh/components/temt6000/temt6000.c:44:
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:258:52: error: 'TEMT6000_t' has no member named 'adcHandle'
+  258 |     if (ESP_OK != adc_oneshot_config_channel(device->adcHandle, channel, &chanCfg)) {
+      |                                                    ^~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:260:36: error: 'TEMT6000_t' has no member named 'adcHandle'
+  260 |         adc_oneshot_del_unit(device->adcHandle);
+      |                                    ^~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:265:11: error: 'TEMT6000_t' has no member named 'caliEnabled'
+  265 |     device->caliEnabled = calibration_init(unit, channel,
+      |           ^~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:266:44: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+  266 |                                            TEMT6000_ADC_ATTEN,
+      |                                            ^~~~~~~~~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:267:51: error: 'TEMT6000_t' has no member named 'caliHandle'
+  267 |                                            &device->caliHandle);
+      |                                                   ^~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:275:32: error: 'TEMT6000_t' has no member named 'adcHandle'
+  275 |         adc_oneshot_read(device->adcHandle, channel, &dummy);
+      |                                ^~
+In file included from D:/vxlproj/nhakinh/components/temt6000/temt6000.c:41:
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:284:20: error: 'TEMT6000_t' has no member named 'caliEnabled'
+  284 |              device->caliEnabled ? "ON" : "OFF",
+      |                    ^~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:435:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  435 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:282:5: note: in expansion of macro 'ESP_LOGI'
+  282 |     ESP_LOGI(TAG, "Init OK — ADC%d ch%d | Cali=%s | Threshold=%" PRIu32 "mV | k=%.4f",
+      |     ^~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:284:20: error: 'TEMT6000_t' has no member named 'caliEnabled'
+  284 |              device->caliEnabled ? "ON" : "OFF",
+      |                    ^~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:436:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  436 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:282:5: note: in expansion of macro 'ESP_LOGI'
+  282 |     ESP_LOGI(TAG, "Init OK — ADC%d ch%d | Cali=%s | Threshold=%" PRIu32 "mV | k=%.4f",
+      |     ^~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:284:20: error: 'TEMT6000_t' has no member named 'caliEnabled'
+  284 |              device->caliEnabled ? "ON" : "OFF",
+      |                    ^~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:437:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  437 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:282:5: note: in expansion of macro 'ESP_LOGI'
+  282 |     ESP_LOGI(TAG, "Init OK — ADC%d ch%d | Cali=%s | Threshold=%" PRIu32 "mV | k=%.4f",
+      |     ^~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:284:20: error: 'TEMT6000_t' has no member named 'caliEnabled'
+  284 |              device->caliEnabled ? "ON" : "OFF",
+      |                    ^~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:438:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  438 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:282:5: note: in expansion of macro 'ESP_LOGI'
+  282 |     ESP_LOGI(TAG, "Init OK — ADC%d ch%d | Cali=%s | Threshold=%" PRIu32 "mV | k=%.4f",
+      |     ^~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:284:20: error: 'TEMT6000_t' has no member named 'caliEnabled'
+  284 |              device->caliEnabled ? "ON" : "OFF",
+      |                    ^~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:439:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  439 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:282:5: note: in expansion of macro 'ESP_LOGI'
+  282 |     ESP_LOGI(TAG, "Init OK — ADC%d ch%d | Cali=%s | Threshold=%" PRIu32 "mV | k=%.4f",
+      |     ^~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c: In function 'temt6000__Deinit':
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:300:30: error: 'TEMT6000_t' has no member named 'caliHandle'
+  300 |     calibration_deinit(device->caliHandle);
+      |                              ^~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:302:15: error: 'TEMT6000_t' has no member named 'adcHandle'
+  302 |     if (device->adcHandle) {
+      |               ^~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:303:36: error: 'TEMT6000_t' has no member named 'adcHandle'
+  303 |         adc_oneshot_del_unit(device->adcHandle);
+      |                                    ^~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c: In function 'temt6000__ReadIlluminance':
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:330:16: error: 'TEMT6000_NOT_INIT' undeclared (first use in this function)
+  330 |         return TEMT6000_NOT_INIT;
+      |                ^~~~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c: In function 'temt6000__MeasureNoiseMv':
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:421:40: error: 'TEMT6000_NOT_INIT' undeclared (first use in this function)
+  421 |     if (!device->initialized)   return TEMT6000_NOT_INIT;
+      |                                        ^~~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.

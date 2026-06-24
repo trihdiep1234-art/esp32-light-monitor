@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h> // Thư viện cần thiết cho hàm qsort
 #include "temt6000.h"
 
 #define TEMT6000_ADC_WIDTH                          ADC_WIDTH_BIT_12
@@ -7,6 +8,15 @@
 
 #define TEMT6000_PERCENTAGE_CONVERTER_VALUE         100.f
 #define TEMT6000_INTENSITY_CONVERTER_VALUE          1000.f
+
+// --- HÀM HỖ TRỢ CHO THUẬT TOÁN SẮP XẾP ---
+static int compare_ints(const void* a, const void* b) {
+    int arg1 = (const int)a;
+    int arg2 = (const int)b;
+    if (arg1 < arg2) return -1;
+    if (arg1 > arg2) return 1;
+    return 0;
+}
 
 TEMT6000_error_t temt6000__Init(TEMT6000_t * const device, const adc_unit_t unit, const adc_channel_t channel)
 {
@@ -32,36 +42,53 @@ TEMT6000_error_t temt6000__ReadIlluminance(const TEMT6000_t * const device, cons
 {
     if (!device || !illuminanceOut || samplesNo == 0) return TEMT6000_INV_ARG;
 
-    // Đổi sang uint32_t để chứa được tổng lớn nếu số lần lấy mẫu (samplesNo) cao, chống tràn biến.
-    uint32_t allAdcRaws = 0; 
-    int adcRaw;
+    // Giới hạn max 100 mẫu để tránh tốn quá nhiều RAM của ESP32
+    uint32_t actualSamples = samplesNo > 100 ? 100 : samplesNo;
+    int raw_array[100] = {0}; 
 
-    for (uint32_t i = 0; i < samplesNo; ++i)
+    // 1. LẤY MẪU VÀO MẢNG
+    for (uint32_t i = 0; i < actualSamples; ++i)
     {
         if (ADC_UNIT_1 == device->adcCharacteristics.adc_num) {
-            adcRaw = adc1_get_raw((adc1_channel_t) device->channel);
+            raw_array[i] = adc1_get_raw((adc1_channel_t) device->channel);
         } else {
-            if (ESP_OK != adc2_get_raw((adc2_channel_t) device->channel, TEMT6000_ADC_WIDTH, &adcRaw)) {
+            if (ESP_OK != adc2_get_raw((adc2_channel_t) device->channel, TEMT6000_ADC_WIDTH, &raw_array[i])) {
                 return TEMT6000_ADC_OP_FAIL;
             }
         }
-        allAdcRaws += (uint32_t)adcRaw;
     }
 
-    // Tính trung bình
-    uint32_t avgRaw = allAdcRaws / samplesNo;
+    // 2. LỌC NHIỄU MEDIAN
+    // Sắp xếp mảng từ nhỏ đến lớn
+    qsort(raw_array, actualSamples, sizeof(int), compare_ints);
+    
+    // Tính toán số lượng mẫu cần cắt bỏ ở mỗi đầu (20%)
+    int trim_count = actualSamples * 0.2; 
+    uint32_t sumRaws = 0;
+    uint32_t validSamples = 0;
 
-    // Chuyển đổi ADC thô sang Mili-Volt dựa trên Calibration của ESP32
+    // Chỉ tính tổng các phần tử ở khúc giữa, bỏ qua các xung nhiễu đột biến ở 2 đầu mảng
+    for (int i = trim_count; i < (actualSamples - trim_count); i++) {
+        sumRaws += raw_array[i];
+        validSamples++;
+    }
+
+    // 3. TÍNH TRUNG BÌNH LÕI
+    uint32_t avgRaw = validSamples > 0 ? (sumRaws / validSamples) : 0;
+
+    // 4. CHUYỂN ĐỔI SANG LUX
     uint32_t measuredMilliVoltage = 0;
     if (avgRaw > 0) {
         measuredMilliVoltage = esp_adc_cal_raw_to_voltage(avgRaw, &device->adcCharacteristics);
     }
 
-    // =========================================================================
-    // CÔNG THỨC ĐÃ ĐƯỢC FIX LỖI:
-    // Cảm biến TEMT6000 trả về điện áp tỷ lệ thuận với độ sáng.
-    // Công thức chuẩn cho module có trở kéo xuống 10k: Lux = Điện áp (mV) * 0.2
-    // =========================================================================
+    // Áp dụng khoảng trừ nhiễu điện áp nền tối (giống datasheet của Vishay TEMT6000)
+    // Nếu điện áp dưới 142mV coi như tối hoàn toàn để màn hình không bị nhảy số lẻ tẻ.
+    if (measuredMilliVoltage <= 142) {
+        measuredMilliVoltage = 0;
+    }
+
+    // Công thức tính chuẩn theo module 10k: Lux = Điện áp (mV) * 0.2
     *illuminanceOut = (float)measuredMilliVoltage * 0.2f; 
 
     return TEMT6000_OK;
@@ -82,7 +109,6 @@ TEMT6000_error_t temt6000__ReadLightIntensity(const TEMT6000_t * const device, c
 
 TEMT6000_intensity_t temt6000__IlluminanceToLightIntensity(const TEMT6000_illuminance_t illuminance)
 {
-    // Quy đổi 1000 Lux tương đương 100% cường độ
     float percent = illuminance / TEMT6000_INTENSITY_CONVERTER_VALUE * TEMT6000_PERCENTAGE_CONVERTER_VALUE;
     if(percent > 100.0f) percent = 100.0f;
     if(percent < 0.0f) percent = 0.0f;

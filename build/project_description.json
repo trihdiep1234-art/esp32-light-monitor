@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "nha",
-    "project_version":    "867265d-dirty",
+    "project_version":    "886559c-dirty",
     "project_path":       "D:/vxlproj/nhakinh",
     "idf_path":           "D:/Espressif/frameworks/esp-idf-v5.3.5",
     "build_dir":          "D:/vxlproj/nhakinh/build",

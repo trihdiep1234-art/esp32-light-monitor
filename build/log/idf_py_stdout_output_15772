@@ -1,0 +1,356 @@
+[1/12] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\vxlproj\nhakinh\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.3_py3.12_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.3.5/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/vxlproj/nhakinh/build/bootloader/bootloader.bin"
+Bootloader binary size 0x68e0 bytes. 0x720 bytes (6%) free.
+[2/12] No install step for 'bootloader'
+[3/12] Building C object esp-idf/temt6000/CMakeFiles/__idf_temt6000.dir/temt6000.c.obj
+FAILED: esp-idf/temt6000/CMakeFiles/__idf_temt6000.dir/temt6000.c.obj 
+ccache D:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20250707\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.3.5-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -ID:/vxlproj/nhakinh/build/config -ID:/vxlproj/nhakinh/components/temt6000/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/newlib/platform_include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/freertos/config/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/freertos/config/include/freertos -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/freertos/config/xtensa/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/freertos/FreeRTOS-Kernel/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/freertos/esp_additions/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_hw_support/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_hw_support/include/soc -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_hw_support/include/soc/esp32 -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_hw_support/dma/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_hw_support/ldo/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_hw_support/port/esp32/. -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_hw_support/port/esp32/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/heap/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32 -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/hal/platform_port/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/hal/esp32/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/hal/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_rom/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_rom/include/esp32 -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_rom/esp32 -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_common/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_system/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_system/port/soc -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_system/port/include/private -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/xtensa/esp32/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/xtensa/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/xtensa/deprecated_include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/lwip/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/lwip/include/apps -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/lwip/include/apps/sntp -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/lwip/lwip/src/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/lwip/port/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/lwip/port/freertos/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/lwip/port/esp32xx/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/lwip/port/esp32xx/include/arch -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/lwip/port/esp32xx/include/sys -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/driver/deprecated -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/driver/i2c/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/driver/touch_sensor/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/driver/twai/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/driver/touch_sensor/esp32/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_pm/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_ringbuf/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_gpio/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_pcnt/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_gptimer/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_spi/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_mcpwm/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_ana_cmpr/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_i2s/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_sdmmc/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/sdmmc/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_sdspi/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_sdio/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_dac/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_rmt/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_tsens/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_sdm/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_i2c/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_uart/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/vfs/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_ledc/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_parlio/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_usb_serial_jtag/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_adc/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_adc/interface -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_adc/esp32/include -ID:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_adc/deprecated/include -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -Wno-error -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=D:/vxlproj/nhakinh=. -fmacro-prefix-map=D:/Espressif/frameworks/esp-idf-v5.3.5=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/temt6000/CMakeFiles/__idf_temt6000.dir/temt6000.c.obj -MF esp-idf\temt6000\CMakeFiles\__idf_temt6000.dir\temt6000.c.obj.d -o esp-idf/temt6000/CMakeFiles/__idf_temt6000.dir/temt6000.c.obj -c D:/vxlproj/nhakinh/components/temt6000/temt6000.c
+In file included from D:/vxlproj/nhakinh/components/temt6000/include/temt6000.h:37,
+                 from D:/vxlproj/nhakinh/components/temt6000/temt6000.c:45:
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from D:/vxlproj/nhakinh/components/temt6000/include/temt6000.h:38:
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c: In function 'temt6000__Init':
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:185:50: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+  185 |                                                  TEMT6000_ADC_ATTEN)) {
+      |                                                  ^~~~~~~~~~~~~~~~~~
+In file included from D:/Espressif/frameworks/esp-idf-v5.3.5/components/driver/deprecated/driver/adc_types_legacy.h:8,
+                 from D:/Espressif/frameworks/esp-idf-v5.3.5/components/driver/deprecated/driver/adc.h:15:
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:194:50: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+  194 |                                                  TEMT6000_ADC_ATTEN)) {
+      |                                                  ^~~~~~~~~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:205:30: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+  205 |                              TEMT6000_ADC_ATTEN,
+      |                              ^~~~~~~~~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+In file included from D:/vxlproj/nhakinh/components/temt6000/temt6000.c:44:
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c: In function 'temt6000__ReadIlluminance':
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:331:42: error: 'TEMT6000_ADC_ATTEN_VREF' undeclared (first use in this function); did you mean 'TEMT6000_ADC_ATTEN'?
+  331 |                  (float)(ADC_12BIT_MAX * TEMT6000_ADC_ATTEN_VREF / 1000.0f) * TEMT6000_MV_TO_LUX);
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:435:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  435 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:328:9: note: in expansion of macro 'ESP_LOGW'
+  328 |         ESP_LOGW(TAG, "⚠ ADC bão hòa (raw=%u)! Ánh sáng quá mạnh hoặc sai wiring. "
+      |         ^~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:331:42: note: each undeclared identifier is reported only once for each function it appears in
+  331 |                  (float)(ADC_12BIT_MAX * TEMT6000_ADC_ATTEN_VREF / 1000.0f) * TEMT6000_MV_TO_LUX);
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:435:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  435 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:328:9: note: in expansion of macro 'ESP_LOGW'
+  328 |         ESP_LOGW(TAG, "⚠ ADC bão hòa (raw=%u)! Ánh sáng quá mạnh hoặc sai wiring. "
+      |         ^~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c: In function 'temt6000__MeasureNoiseMv':
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:290:27: error: format '%u' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  290 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:293:27: note: in expansion of macro 'LOG_COLOR'
+  293 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:307:37: note: in expansion of macro 'LOG_COLOR_E'
+  307 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:435:86: note: in expansion of macro 'LOG_FORMAT'
+  435 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:463:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  463 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:401:5: note: in expansion of macro 'ESP_LOGI'
+  401 |     ESP_LOGI(TAG, "Noise floor đo được: %u mV (raw=%u). "
+      |     ^~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:290:27: error: format '%u' expects argument of type 'unsigned int', but argument 7 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  290 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:293:27: note: in expansion of macro 'LOG_COLOR'
+  293 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:307:37: note: in expansion of macro 'LOG_COLOR_E'
+  307 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:435:86: note: in expansion of macro 'LOG_FORMAT'
+  435 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:463:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  463 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:401:5: note: in expansion of macro 'ESP_LOGI'
+  401 |     ESP_LOGI(TAG, "Noise floor đo được: %u mV (raw=%u). "
+      |     ^~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:290:27: error: format '%u' expects argument of type 'unsigned int', but argument 8 has type 'long unsigned int' [-Werror=format=]
+  290 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:293:27: note: in expansion of macro 'LOG_COLOR'
+  293 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:307:37: note: in expansion of macro 'LOG_COLOR_E'
+  307 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:435:86: note: in expansion of macro 'LOG_FORMAT'
+  435 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:463:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  463 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:401:5: note: in expansion of macro 'ESP_LOGI'
+  401 |     ESP_LOGI(TAG, "Noise floor đo được: %u mV (raw=%u). "
+      |     ^~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:290:27: error: format '%u' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  290 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:294:27: note: in expansion of macro 'LOG_COLOR'
+  294 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:307:37: note: in expansion of macro 'LOG_COLOR_W'
+  307 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:436:86: note: in expansion of macro 'LOG_FORMAT'
+  436 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:463:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  463 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:401:5: note: in expansion of macro 'ESP_LOGI'
+  401 |     ESP_LOGI(TAG, "Noise floor đo được: %u mV (raw=%u). "
+      |     ^~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:290:27: error: format '%u' expects argument of type 'unsigned int', but argument 7 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  290 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:294:27: note: in expansion of macro 'LOG_COLOR'
+  294 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:307:37: note: in expansion of macro 'LOG_COLOR_W'
+  307 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:436:86: note: in expansion of macro 'LOG_FORMAT'
+  436 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:463:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  463 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:401:5: note: in expansion of macro 'ESP_LOGI'
+  401 |     ESP_LOGI(TAG, "Noise floor đo được: %u mV (raw=%u). "
+      |     ^~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:290:27: error: format '%u' expects argument of type 'unsigned int', but argument 8 has type 'long unsigned int' [-Werror=format=]
+  290 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:294:27: note: in expansion of macro 'LOG_COLOR'
+  294 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:307:37: note: in expansion of macro 'LOG_COLOR_W'
+  307 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:436:86: note: in expansion of macro 'LOG_FORMAT'
+  436 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:463:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  463 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:401:5: note: in expansion of macro 'ESP_LOGI'
+  401 |     ESP_LOGI(TAG, "Noise floor đo được: %u mV (raw=%u). "
+      |     ^~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:403:1: error: format '%u' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  403 |              *noiseOutMv, medianRaw, *noiseOutMv + 20U);
+      | ^          
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:307:59: note: in definition of macro 'LOG_FORMAT'
+  307 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:463:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  463 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:401:5: note: in expansion of macro 'ESP_LOGI'
+  401 |     ESP_LOGI(TAG, "Noise floor đo được: %u mV (raw=%u). "
+      |     ^~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:403:1: error: format '%u' expects argument of type 'unsigned int', but argument 7 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  403 |              *noiseOutMv, medianRaw, *noiseOutMv + 20U);
+      | ^          
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:307:59: note: in definition of macro 'LOG_FORMAT'
+  307 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:463:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  463 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:401:5: note: in expansion of macro 'ESP_LOGI'
+  401 |     ESP_LOGI(TAG, "Noise floor đo được: %u mV (raw=%u). "
+      |     ^~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:403:1: error: format '%u' expects argument of type 'unsigned int', but argument 8 has type 'long unsigned int' [-Werror=format=]
+  403 |              *noiseOutMv, medianRaw, *noiseOutMv + 20U);
+      | ^          
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:307:59: note: in definition of macro 'LOG_FORMAT'
+  307 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:463:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  463 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:401:5: note: in expansion of macro 'ESP_LOGI'
+  401 |     ESP_LOGI(TAG, "Noise floor đo được: %u mV (raw=%u). "
+      |     ^~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:403:1: error: format '%u' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  403 |              *noiseOutMv, medianRaw, *noiseOutMv + 20U);
+      | ^          
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:307:59: note: in definition of macro 'LOG_FORMAT'
+  307 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:463:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  463 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:401:5: note: in expansion of macro 'ESP_LOGI'
+  401 |     ESP_LOGI(TAG, "Noise floor đo được: %u mV (raw=%u). "
+      |     ^~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:403:1: error: format '%u' expects argument of type 'unsigned int', but argument 7 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  403 |              *noiseOutMv, medianRaw, *noiseOutMv + 20U);
+      | ^          
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:307:59: note: in definition of macro 'LOG_FORMAT'
+  307 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:463:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  463 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:401:5: note: in expansion of macro 'ESP_LOGI'
+  401 |     ESP_LOGI(TAG, "Noise floor đo được: %u mV (raw=%u). "
+      |     ^~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:403:1: error: format '%u' expects argument of type 'unsigned int', but argument 8 has type 'long unsigned int' [-Werror=format=]
+  403 |              *noiseOutMv, medianRaw, *noiseOutMv + 20U);
+      | ^          
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:307:59: note: in definition of macro 'LOG_FORMAT'
+  307 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:463:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  463 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:401:5: note: in expansion of macro 'ESP_LOGI'
+  401 |     ESP_LOGI(TAG, "Noise floor đo được: %u mV (raw=%u). "
+      |     ^~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:290:27: error: format '%u' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  290 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:295:27: note: in expansion of macro 'LOG_COLOR'
+  295 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:307:37: note: in expansion of macro 'LOG_COLOR_I'
+  307 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:439:86: note: in expansion of macro 'LOG_FORMAT'
+  439 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:463:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  463 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:401:5: note: in expansion of macro 'ESP_LOGI'
+  401 |     ESP_LOGI(TAG, "Noise floor đo được: %u mV (raw=%u). "
+      |     ^~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:290:27: error: format '%u' expects argument of type 'unsigned int', but argument 7 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  290 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:295:27: note: in expansion of macro 'LOG_COLOR'
+  295 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:307:37: note: in expansion of macro 'LOG_COLOR_I'
+  307 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:439:86: note: in expansion of macro 'LOG_FORMAT'
+  439 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:463:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  463 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:401:5: note: in expansion of macro 'ESP_LOGI'
+  401 |     ESP_LOGI(TAG, "Noise floor đo được: %u mV (raw=%u). "
+      |     ^~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:290:27: error: format '%u' expects argument of type 'unsigned int', but argument 8 has type 'long unsigned int' [-Werror=format=]
+  290 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:295:27: note: in expansion of macro 'LOG_COLOR'
+  295 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:307:37: note: in expansion of macro 'LOG_COLOR_I'
+  307 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:439:86: note: in expansion of macro 'LOG_FORMAT'
+  439 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:463:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  463 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/vxlproj/nhakinh/components/temt6000/temt6000.c:401:5: note: in expansion of macro 'ESP_LOGI'
+  401 |     ESP_LOGI(TAG, "Noise floor đo được: %u mV (raw=%u). "
+      |     ^~~~~~~~
+cc1.exe: some warnings being treated as errors
+[4/12] Completed 'bootloader'
+[5/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+In file included from D:/vxlproj/nhakinh/components/temt6000/include/temt6000.h:37,
+                 from D:/vxlproj/nhakinh/main/app_main.c:11:
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from D:/vxlproj/nhakinh/components/temt6000/include/temt6000.h:38:
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+ninja: build stopped: subcommand failed.

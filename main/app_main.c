@@ -22,8 +22,8 @@
 // ================= WIFI + THINGSBOARD =================
 // do ESP32 được sử dụng là thế hệ cũ nên chỉ sử dụng băng tần 2.4KHz 
 // --> sử dụng mạng băng tần 2.4 KHz để kết nối và gửi dữ liệu len ThingsBoard
-#define WIFI_SSID      "Galaxy A54 5G 72B9"
-#define WIFI_PASS      "123456789"
+#define WIFI_SSID      "Die"
+#define WIFI_PASS      "@Diepne79"
 
 #define TB_TOKEN       "e71btpt0iljlhwbuwihn"    // Access Token của Device trên ThingsBoard
 #define TB_SERVER      "thingsboard.cloud"       // MQTT Broker của ThingsBoard
@@ -281,8 +281,7 @@ void app_main(void)
         ESP_LOGI(TAG, "BH1750=%.2f | TEMT=%.2f", lux, (float)temt_lux);
 
         // ================= OLED DISPLAY =================
-        char line1[32];
-        char line2[32];
+        char line1[32], line2[32]; 
 
         snprintf(line1, sizeof(line1), "BH:%d lx", bh_lux);
         snprintf(line2, sizeof(line2), "TEMT:%.1f", (float)temt_lux);
