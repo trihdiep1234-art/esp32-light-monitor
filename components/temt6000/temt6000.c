@@ -1,6 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h> // Thư viện cần thiết cho hàm qsort
 #include "temt6000.h"
+#include "esp_log.h"
+
+static const char *TEMT6000_TAG = "TEMT6000";
+
+// Giá trị raw tối đa của ADC 12-bit (2^12 - 1). Khi raw chạm/gần mức này,
+// điện áp ngõ ra cảm biến đã vượt quá dải đo được của ADC (bão hoà phần
+// cứng) -- giá trị lux tính ra sẽ bị "kẹp cứng", KHÔNG phản ánh đúng ánh
+// sáng thực tế nữa.
+#define TEMT6000_ADC_RAW_MAX 4095
 
 #define TEMT6000_ADC_WIDTH                          ADC_WIDTH_BIT_12
 #define TEMT6000_ADC_ATTEN                          ADC_ATTEN_DB_11
@@ -11,8 +20,12 @@
 
 // --- HÀM HỖ TRỢ CHO THUẬT TOÁN SẮP XẾP ---
 static int compare_ints(const void* a, const void* b) {
-    int arg1 = (const int)a;
-    int arg2 = (const int)b;
+    // QUAN TRỌNG: phải dereference (*) để lấy GIÁ TRỊ int mà con trỏ trỏ tới.
+    // Bản cũ ép thẳng con trỏ (const int)a/b sang int => so sánh ĐỊA CHỈ
+    // bộ nhớ thay vì giá trị ADC, khiến qsort không sắp xếp đúng theo giá
+    // trị => bước "cắt 20% hai đầu lọc nhiễu" phía dưới không có tác dụng.
+    int arg1 = *(const int*)a;
+    int arg2 = *(const int*)b;
     if (arg1 < arg2) return -1;
     if (arg1 > arg2) return 1;
     return 0;
@@ -90,6 +103,17 @@ TEMT6000_error_t temt6000__ReadIlluminance(const TEMT6000_t * const device, cons
 
     // Công thức tính chuẩn theo module 10k: Lux = Điện áp (mV) * 0.2
     *illuminanceOut = (float)measuredMilliVoltage * 0.2f; 
+
+    // ================= PHÁT HIỆN BÃO HOÀ ADC =================
+    // Nếu giá trị raw trung bình gần/đạt mức tối đa (4095), nghĩa là điện
+    // áp ngõ ra cảm biến đã vượt quá dải đo của ADC -- giá trị lux ở trên
+    // chỉ là mức TRẦN của phần cứng, không phải ánh sáng thực tế đo được.
+    if (avgRaw >= (TEMT6000_ADC_RAW_MAX - 5)) {
+        ESP_LOGW(TEMT6000_TAG,
+                 "ADC BAO HOA (raw=%lu/%d, mV=%lu) -> lux=%.1f la GIOI HAN PHAN CUNG, KHONG phai gia tri sang thuc te!",
+                 (unsigned long)avgRaw, TEMT6000_ADC_RAW_MAX,
+                 (unsigned long)measuredMilliVoltage, *illuminanceOut);
+    }
 
     return TEMT6000_OK;
 }
