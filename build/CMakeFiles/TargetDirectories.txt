@@ -844,6 +844,13 @@ D:/vxlproj/nhakinh/build/esp-idf/ssd1306/CMakeFiles/list_install_components.dir
 D:/vxlproj/nhakinh/build/esp-idf/ssd1306/CMakeFiles/install.dir
 D:/vxlproj/nhakinh/build/esp-idf/ssd1306/CMakeFiles/install/local.dir
 D:/vxlproj/nhakinh/build/esp-idf/ssd1306/CMakeFiles/install/strip.dir
+D:/vxlproj/nhakinh/build/esp-idf/sds011/CMakeFiles/__idf_sds011.dir
+D:/vxlproj/nhakinh/build/esp-idf/sds011/CMakeFiles/edit_cache.dir
+D:/vxlproj/nhakinh/build/esp-idf/sds011/CMakeFiles/rebuild_cache.dir
+D:/vxlproj/nhakinh/build/esp-idf/sds011/CMakeFiles/list_install_components.dir
+D:/vxlproj/nhakinh/build/esp-idf/sds011/CMakeFiles/install.dir
+D:/vxlproj/nhakinh/build/esp-idf/sds011/CMakeFiles/install/local.dir
+D:/vxlproj/nhakinh/build/esp-idf/sds011/CMakeFiles/install/strip.dir
 D:/vxlproj/nhakinh/build/esp-idf/main/CMakeFiles/__idf_main.dir
 D:/vxlproj/nhakinh/build/esp-idf/main/CMakeFiles/edit_cache.dir
 D:/vxlproj/nhakinh/build/esp-idf/main/CMakeFiles/rebuild_cache.dir

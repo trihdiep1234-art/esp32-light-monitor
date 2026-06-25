@@ -1,0 +1,146 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15660
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 25 2026 14:19:40[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=21e20h (138784) map[0m
+[0;32mI (152) esp_image: segment 1: paddr=00031e48 vaddr=3ffb0000 size=043bch ( 17340) load[0m
+[0;32mI (159) esp_image: segment 2: paddr=0003620c vaddr=40080000 size=09e0ch ( 40460) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a13d8h (660440) map[0m
+[0;32mI (402) esp_image: segment 4: paddr=000e1400 vaddr=40089e0c size=0f130h ( 61744) load[0m
+[0;32mI (439) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (439) boot: Disabling RNG early entropy source...[0m
+[0;32mI (451) cpu_start: Multicore app[0m
+[0;32mI (459) cpu_start: Pro cpu start user code[0m
+[0;32mI (459) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (460) app_init: Application information:[0m
+[0;32mI (462) app_init: Project name:     nha[0m
+[0;32mI (467) app_init: App version:      260b56f-dirty[0m
+[0;32mI (472) app_init: Compile time:     Jun 25 2026 14:19:16[0m
+[0;32mI (478) app_init: ELF file SHA256:  a696d4cae...[0m
+[0;32mI (484) app_init: ESP-IDF:          v5.3.5-dirty[0m
+[0;32mI (489) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (494) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (499) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (504) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (511) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (517) heap_init: At 3FFB8D98 len 00027268 (156 KiB): DRAM[0m
+[0;32mI (523) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (529) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (536) heap_init: At 40098F3C len 000070C4 (28 KiB): IRAM[0m
+[0;32mI (544) spi_flash: detected chip: generic[0m
+[0;32mI (547) spi_flash: flash io: dio[0m
+[0;33mW (550) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (564) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (573) main_task: Started on CPU0[0m
+[0;32mI (583) main_task: Calling app_main()[0m
+[0;32mI (583) MAIN: System Start[0m
+[0;32mI (583) i2cdev: [Port 0] First initialization. Configuring bus with SDA=21, SCL=22 (Pullups SCL:0 SDA:0)[0m
+[0;33mW (593) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+[0;32mI (603) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (613) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (623) i2cdev: [Port 0] Successfully installed I2C master bus (Handle: 0x3ffbbfb8).[0m
+[0;32mI (633) i2cdev: [0x3c at 0] Device added successfully (Device Handle: 0x3ffbc4c8, Speed: 400000 Hz).[0m
+[0;32mI (643) SSD1306: SSD1306 initialized flawlessly via i2cdev![0m
+[0;32mI (723) wifi:wifi driver task: 3ffc154c, prio:23, stack:6656, core=0[0m
+[0;32mI (733) wifi:wifi firmware version: 18db208[0m
+[0;32mI (733) wifi:wifi certification version: v7.0[0m
+[0;32mI (733) wifi:config NVS flash: enabled[0m
+[0;32mI (733) wifi:config nano formating: disabled[0m
+[0;32mI (733) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (743) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (743) wifi:Init management short buffer num: 32[0m
+[0;32mI (753) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (753) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (763) wifi:Init static rx buffer num: 10[0m
+[0;32mI (763) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (763) wifi_init: rx ba win: 6[0m
+[0;32mI (773) wifi_init: accept mbox: 6[0m
+[0;32mI (773) wifi_init: tcpip mbox: 32[0m
+[0;32mI (773) wifi_init: udp mbox: 6[0m
+[0;32mI (783) wifi_init: tcp mbox: 6[0m
+[0;32mI (783) wifi_init: tcp tx win: 5760[0m
+[0;32mI (793) wifi_init: tcp rx win: 5760[0m
+[0;32mI (793) wifi_init: tcp mss: 1440[0m
+[0;32mI (793) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (803) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (803) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (813) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (903) wifi:mode : sta (d4:e9:f4:78:6d:44)[0m
+[0;32mI (913) wifi:enable tsf[0m
+[0;32mI (923) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (923) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (933) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (943) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (963) wifi:connected with Die, aid = 1, channel 1, BW20, bssid = 92:9f:13:e7:14:3b[0m
+[0;32mI (963) wifi:security: WPA2-PSK, phy: bgn, rssi: -36[0m
+[0;32mI (973) wifi:pm start, type: 1[0m
+
+[0;32mI (973) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (983) wifi:<ba-add>idx:0 (ifx:0, 92:9f:13:e7:14:3b), tid:0, ssn:0, winSize:64[0m
+[0;32mI (1023) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1023) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1983) esp_netif_handlers: sta ip: 10.162.80.218, mask: 255.255.255.0, gw: 10.162.80.94[0m
+[0;32mI (1983) MAIN: WiFi Connected[0m
+[0;32mI (2063) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffca8bc, Speed: 50000 Hz).[0m
+[0;32mI (2063) MAIN: All sensors ready - dang chay RAW UART TEST[0m
+[0;32mI (2063) MAIN: === RAW UART TEST TASK STARTED ===[0m
+[0;32mI (2073) MAIN: === SDS011 TX -> GPIO16 (RX ESP32) ===[0m
+[0;32mI (2083) MAIN: === SDS011 RX -> GPIO17 (TX ESP32) ===[0m
+[0;32mI (2763) MAIN: MQTT CONNECTED[0m
+[0;32mI (3073) MAIN: Sample Time = 2.531 s[0m
+[0;32mI (3073) MAIN: BH=33.00 lx | TEMT=46.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (3123) MAIN: SEND: {"lux":33,"temt":46.60,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (4073) MAIN: Sample Time = 3.531 s[0m
+[0;32mI (4073) MAIN: BH=34.00 lx | TEMT=40.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (4083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (4123) MAIN: SEND: {"lux":34,"temt":40.40,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (5073) MAIN: Sample Time = 4.531 s[0m
+[0;32mI (5073) MAIN: BH=35.00 lx | TEMT=55.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (5123) MAIN: SEND: {"lux":35,"temt":55.40,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (6073) MAIN: Sample Time = 5.531 s[0m
+[0;32mI (6073) MAIN: BH=35.00 lx | TEMT=66.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (6083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (6123) MAIN: SEND: {"lux":35,"temt":66.80,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (7073) MAIN: Sample Time = 6.531 s[0m
+[0;32mI (7073) MAIN: BH=35.00 lx | TEMT=71.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (7123) MAIN: SEND: {"lux":35,"temt":71.20,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (8073) MAIN: Sample Time = 7.531 s[0m
+[0;32mI (8073) MAIN: BH=35.00 lx | TEMT=63.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (8083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (8123) MAIN: SEND: {"lux":35,"temt":63.40,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (9073) MAIN: Sample Time = 8.531 s[0m
+[0;32mI (9073) MAIN: BH=35.00 lx | TEMT=50.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (9123) MAIN: SEND: {"lux":35,"temt":50.20,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (10073) MAIN: Sample Time = 9.531 s[0m
+[0;32mI (10073) MAIN: BH=35.00 lx | TEMT=34.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (10083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (10123) MAIN: SEND: {"lux":35,"temt":34.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (11073) MAIN: Sample Time = 10.531 s[0m
+[0;32mI (11073) MAIN: BH=35.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (11123) MAIN: SEND: {"lux":35,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (12073) MAIN: Sample Time = 11.531 s[0m
+[0;32mI (12073) MAIN: BH=35.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (12083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (12123) MAIN: SEND: {"lux":35,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m

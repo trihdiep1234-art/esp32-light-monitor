@@ -1,0 +1,300 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15660
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 25 2026 14:19:40[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=21e20h (138784) map[0m
+[0;32mI (152) esp_image: segment 1: paddr=00031e48 vaddr=3ffb0000 size=043bch ( 17340) load[0m
+[0;32mI (159) esp_image: segment 2: paddr=0003620c vaddr=40080000 size=09e0ch ( 40460) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a13d8h (660440) map[0m
+[0;32mI (402) esp_image: segment 4: paddr=000e1400 vaddr=40089e0c size=0f130h ( 61744) load[0m
+[0;32mI (439) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (439) boot: Disabling RNG early entropy source...[0m
+[0;32mI (451) cpu_start: Multicore app[0m
+[0;32mI (459) cpu_start: Pro cpu start user code[0m
+[0;32mI (459) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (460) app_init: Application information:[0m
+[0;32mI (462) app_init: Project name:     nha[0m
+[0;32mI (467) app_init: App version:      260b56f-dirty[0m
+[0;32mI (472) app_init: Compile time:     Jun 25 2026 14:19:16[0m
+[0;32mI (478) app_init: ELF file SHA256:  a696d4cae...[0m
+[0;32mI (484) app_init: ESP-IDF:          v5.3.5-dirty[0m
+[0;32mI (489) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (494) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (499) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (504) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (511) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (517) heap_init: At 3FFB8D98 len 00027268 (156 KiB): DRAM[0m
+[0;32mI (523) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (529) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (536) heap_init: At 40098F3C len 000070C4 (28 KiB): IRAM[0m
+[0;32mI (544) spi_flash: detected chip: generic[0m
+[0;32mI (547) spi_flash: flash io: dio[0m
+[0;33mW (550) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (564) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (573) main_task: Started on CPU0[0m
+[0;32mI (583) main_task: Calling app_main()[0m
+[0;32mI (583) MAIN: System Start[0m
+[0;32mI (583) i2cdev: [Port 0] First initialization. Configuring bus with SDA=21, SCL=22 (Pullups SCL:0 SDA:0)[0m
+[0;33mW (593) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+[0;32mI (603) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (613) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (623) i2cdev: [Port 0] Successfully installed I2C master bus (Handle: 0x3ffbbfb8).[0m
+[0;32mI (633) i2cdev: [0x3c at 0] Device added successfully (Device Handle: 0x3ffbc4c8, Speed: 400000 Hz).[0m
+[0;32mI (643) SSD1306: SSD1306 initialized flawlessly via i2cdev![0m
+[0;32mI (723) wifi:wifi driver task: 3ffc154c, prio:23, stack:6656, core=0[0m
+[0;32mI (733) wifi:wifi firmware version: 18db208[0m
+[0;32mI (733) wifi:wifi certification version: v7.0[0m
+[0;32mI (733) wifi:config NVS flash: enabled[0m
+[0;32mI (733) wifi:config nano formating: disabled[0m
+[0;32mI (733) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (743) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (743) wifi:Init management short buffer num: 32[0m
+[0;32mI (753) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (753) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (763) wifi:Init static rx buffer num: 10[0m
+[0;32mI (763) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (763) wifi_init: rx ba win: 6[0m
+[0;32mI (773) wifi_init: accept mbox: 6[0m
+[0;32mI (773) wifi_init: tcpip mbox: 32[0m
+[0;32mI (773) wifi_init: udp mbox: 6[0m
+[0;32mI (783) wifi_init: tcp mbox: 6[0m
+[0;32mI (783) wifi_init: tcp tx win: 5760[0m
+[0;32mI (793) wifi_init: tcp rx win: 5760[0m
+[0;32mI (793) wifi_init: tcp mss: 1440[0m
+[0;32mI (793) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (803) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (803) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (813) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (903) wifi:mode : sta (d4:e9:f4:78:6d:44)[0m
+[0;32mI (913) wifi:enable tsf[0m
+[0;32mI (923) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (923) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (933) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (943) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (963) wifi:connected with Die, aid = 1, channel 1, BW20, bssid = 92:9f:13:e7:14:3b[0m
+[0;32mI (963) wifi:security: WPA2-PSK, phy: bgn, rssi: -39[0m
+[0;32mI (973) wifi:pm start, type: 1[0m
+
+[0;32mI (973) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (983) wifi:<ba-add>idx:0 (ifx:0, 92:9f:13:e7:14:3b), tid:0, ssn:0, winSize:64[0m
+[0;32mI (993) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (993) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1983) esp_netif_handlers: sta ip: 10.162.80.218, mask: 255.255.255.0, gw: 10.162.80.94[0m
+[0;32mI (1983) MAIN: WiFi Connected[0m
+[0;32mI (2063) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffca794, Speed: 50000 Hz).[0m
+[0;32mI (2063) MAIN: All sensors ready - dang chay RAW UART TEST[0m
+[0;32mI (2063) MAIN: === RAW UART TEST TASK STARTED ===[0m
+[0;32mI (2073) MAIN: === SDS011 TX -> GPIO16 (RX ESP32) ===[0m
+[0;32mI (2073) MAIN: === SDS011 RX -> GPIO17 (TX ESP32) ===[0m
+[0;32mI (2963) MAIN: MQTT CONNECTED[0m
+[0;32mI (3063) MAIN: Sample Time = 2.529 s[0m
+[0;32mI (3073) MAIN: BH=11.00 lx | TEMT=149.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (3123) MAIN: SEND: {"lux":11,"temt":149.20,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (4063) MAIN: Sample Time = 3.529 s[0m
+[0;32mI (4073) MAIN: BH=28.00 lx | TEMT=99.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (4083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (4113) MAIN: SEND: {"lux":28,"temt":99.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (5063) MAIN: Sample Time = 4.529 s[0m
+[0;32mI (5073) MAIN: BH=31.00 lx | TEMT=104.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (5113) MAIN: SEND: {"lux":31,"temt":104.80,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (6063) MAIN: Sample Time = 5.529 s[0m
+[0;32mI (6073) MAIN: BH=31.00 lx | TEMT=108.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (6083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (6113) MAIN: SEND: {"lux":31,"temt":108.40,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (7063) MAIN: Sample Time = 6.529 s[0m
+[0;32mI (7073) MAIN: BH=27.00 lx | TEMT=29.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (7113) MAIN: SEND: {"lux":27,"temt":29.40,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (8063) MAIN: Sample Time = 7.529 s[0m
+[0;32mI (8073) MAIN: BH=29.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (8083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (8113) MAIN: SEND: {"lux":29,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (9063) MAIN: Sample Time = 8.529 s[0m
+[0;32mI (9073) MAIN: BH=28.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (9123) MAIN: SEND: {"lux":28,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (10063) MAIN: Sample Time = 9.529 s[0m
+[0;32mI (10073) MAIN: BH=29.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (10083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (10123) MAIN: SEND: {"lux":29,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (11063) MAIN: Sample Time = 10.529 s[0m
+[0;32mI (11073) MAIN: BH=25.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (11113) MAIN: SEND: {"lux":25,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (12063) MAIN: Sample Time = 11.529 s[0m
+[0;32mI (12073) MAIN: BH=22.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (12083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (12113) MAIN: SEND: {"lux":22,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (13063) MAIN: Sample Time = 12.529 s[0m
+[0;32mI (13073) MAIN: BH=15.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (13123) MAIN: SEND: {"lux":15,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (14063) MAIN: Sample Time = 13.529 s[0m
+[0;32mI (14073) MAIN: BH=13.00 lx | TEMT=28.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (14083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (14113) MAIN: SEND: {"lux":13,"temt":28.80,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (15063) MAIN: Sample Time = 14.529 s[0m
+[0;32mI (15073) MAIN: BH=14.00 lx | TEMT=32.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (15113) MAIN: SEND: {"lux":14,"temt":32.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (16063) MAIN: Sample Time = 15.529 s[0m
+[0;32mI (16073) MAIN: BH=11.00 lx | TEMT=30.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (16083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (16113) MAIN: SEND: {"lux":11,"temt":30.20,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (17063) MAIN: Sample Time = 16.529 s[0m
+[0;32mI (17073) MAIN: BH=11.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (17113) MAIN: SEND: {"lux":11,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (18063) MAIN: Sample Time = 17.529 s[0m
+[0;32mI (18073) MAIN: BH=12.00 lx | TEMT=33.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (18083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (18123) MAIN: SEND: {"lux":12,"temt":33.40,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (19063) MAIN: Sample Time = 18.529 s[0m
+[0;32mI (19073) MAIN: BH=11.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (19123) MAIN: SEND: {"lux":11,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (20063) MAIN: Sample Time = 19.529 s[0m
+[0;32mI (20073) MAIN: BH=10.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (20083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (20113) MAIN: SEND: {"lux":10,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (21063) MAIN: Sample Time = 20.529 s[0m
+[0;32mI (21073) MAIN: BH=9.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (21113) MAIN: SEND: {"lux":9,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (22063) MAIN: Sample Time = 21.529 s[0m
+[0;32mI (22073) MAIN: BH=10.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (22083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (22113) MAIN: SEND: {"lux":10,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (23063) MAIN: Sample Time = 22.529 s[0m
+[0;32mI (23073) MAIN: BH=10.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (23113) MAIN: SEND: {"lux":10,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (24063) MAIN: Sample Time = 23.529 s[0m
+[0;32mI (24073) MAIN: BH=12.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (24083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (24113) MAIN: SEND: {"lux":12,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (25063) MAIN: Sample Time = 24.529 s[0m
+[0;32mI (25073) MAIN: BH=92.00 lx | TEMT=37.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (25113) MAIN: SEND: {"lux":92,"temt":37.20,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (26063) MAIN: Sample Time = 25.529 s[0m
+[0;32mI (26073) MAIN: BH=90.00 lx | TEMT=75.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (26083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (26123) MAIN: SEND: {"lux":90,"temt":75.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (27063) MAIN: Sample Time = 26.529 s[0m
+[0;32mI (27073) MAIN: BH=38.00 lx | TEMT=141.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (27123) MAIN: SEND: {"lux":38,"temt":141.60,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (28063) MAIN: Sample Time = 27.529 s[0m
+[0;32mI (28073) MAIN: BH=6.00 lx | TEMT=114.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (28083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (28113) MAIN: SEND: {"lux":6,"temt":114.40,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (29063) MAIN: Sample Time = 28.529 s[0m
+[0;32mI (29073) MAIN: BH=7.00 lx | TEMT=116.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (29113) MAIN: SEND: {"lux":7,"temt":116.20,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (30063) MAIN: Sample Time = 29.529 s[0m
+[0;32mI (30073) MAIN: BH=6.00 lx | TEMT=90.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (30083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (30113) MAIN: SEND: {"lux":6,"temt":90.20,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (31063) MAIN: Sample Time = 30.529 s[0m
+[0;32mI (31073) MAIN: BH=51.00 lx | TEMT=57.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (31113) MAIN: SEND: {"lux":51,"temt":57.20,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (32063) MAIN: Sample Time = 31.529 s[0m
+[0;32mI (32073) MAIN: BH=8.00 lx | TEMT=41.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (32083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (32113) MAIN: SEND: {"lux":8,"temt":41.20,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (33063) MAIN: Sample Time = 32.529 s[0m
+[0;32mI (33073) MAIN: BH=10.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (33113) MAIN: SEND: {"lux":10,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (34063) MAIN: Sample Time = 33.529 s[0m
+[0;32mI (34073) MAIN: BH=100.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (34083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (34113) MAIN: SEND: {"lux":100,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (35063) MAIN: Sample Time = 34.529 s[0m
+[0;32mI (35073) MAIN: BH=78.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (35123) MAIN: SEND: {"lux":78,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (36063) MAIN: Sample Time = 35.529 s[0m
+[0;32mI (36073) MAIN: BH=17.00 lx | TEMT=220.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (36083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (36123) MAIN: SEND: {"lux":17,"temt":220.20,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (37063) MAIN: Sample Time = 36.529 s[0m
+[0;32mI (37073) MAIN: BH=14.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (37113) MAIN: SEND: {"lux":14,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (38063) MAIN: Sample Time = 37.529 s[0m
+[0;32mI (38073) MAIN: BH=14.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (38083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (38113) MAIN: SEND: {"lux":14,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (39063) MAIN: Sample Time = 38.529 s[0m
+[0;32mI (39073) MAIN: BH=19.00 lx | TEMT=44.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (39113) MAIN: SEND: {"lux":19,"temt":44.80,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (40063) MAIN: Sample Time = 39.529 s[0m
+[0;32mI (40073) MAIN: BH=8.00 lx | TEMT=29.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (40083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (40113) MAIN: SEND: {"lux":8,"temt":29.40,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (41063) MAIN: Sample Time = 40.529 s[0m
+[0;32mI (41073) MAIN: BH=29.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (41113) MAIN: SEND: {"lux":29,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (42063) MAIN: Sample Time = 41.529 s[0m
+[0;32mI (42073) MAIN: BH=23.00 lx | TEMT=47.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (42083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (42113) MAIN: SEND: {"lux":23,"temt":47.40,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (43063) MAIN: Sample Time = 42.529 s[0m
+[0;32mI (43073) MAIN: BH=18.00 lx | TEMT=29.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (43123) MAIN: SEND: {"lux":18,"temt":29.40,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (44063) MAIN: Sample Time = 43.529 s[0m
+[0;32mI (44073) MAIN: BH=20.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (44083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (44123) MAIN: SEND: {"lux":20,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (45063) MAIN: Sample Time = 44.529 s[0m
+[0;32mI (45073) MAIN: BH=25.00 lx | TEMT=28.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (45113) MAIN: SEND: {"lux":25,"temt":28.80,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (46063) MAIN: Sample Time = 45.529 s[0m
+[0;32mI (46073) MAIN: BH=40.00 lx | TEMT=37.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (46083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (46113) MAIN: SEND: {"lux":40,"temt":37.20,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (47063) MAIN: Sample Time = 46.529 s[0m
+[0;32mI (47073) MAIN: BH=54.00 lx | TEMT=68.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (47123) MAIN: SEND: {"lux":54,"temt":68.40,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (48063) MAIN: Sample Time = 47.529 s[0m
+[0;32mI (48073) MAIN: BH=35.00 lx | TEMT=413.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (48083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (48113) MAIN: SEND: {"lux":35,"temt":413.40,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (49063) MAIN: Sample Time = 48.529 s[0m
+[0;32mI (49073) MAIN: BH=47.00 lx | TEMT=29.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (49123) MAIN: SEND: {"lux":47,"temt":29.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (50063) MAIN: Sample Time = 49.529 s[0m
+[0;32mI (50073) MAIN: BH=60.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (50083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (50113) MAIN: SEND: {"lux":60,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (51063) MAIN: Sample Time = 50.529 s[0m
+[0;32mI (51073) MAIN: BH=25.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (51113) MAIN: SEND: {"lux":25,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (52063) MAIN: Sample Time = 51.529 s[0m
+[0;32mI (52073) MAIN: BH=25.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (52083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (52123) MAIN: SEND: {"lux":25,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (53063) MAIN: Sample Time = 52.529 s[0m
+[0;32mI (53073) MAIN: BH=28.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (53123) MAIN: SEND: {"lux":28,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (54063) MAIN: Sample Time = 53.529 s[0m
+[0;32mI (54073) MAIN: BH=27.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (54083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (54113) MAIN: SEND: {"lux":27,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (55063) MAIN: Sample Time = 54.529 s[0m
+[0;32mI (55073) MAIN: BH=27.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (55113) MAIN: SEND: {"lux":27,"temt":0.00,"pm25":0.0,"pm10":0.0}[0m
+[0;32mI (56063) MAIN: Sample Time = 55.529 s[0m
+[0;32mI (56073) MAIN: BH=27.00 lx | TEMT=29.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (56083) MAIN: !!! KHONG CO DU LIEU - kiem tra day va nguon 5V[0m
+[0;32mI (56113) MAIN: SEND: {"lux":27,"temt":29.60,"pm25":0.0,"pm10":0.0}[0m

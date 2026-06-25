@@ -1,0 +1,494 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15660
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 25 2026 14:19:40[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=22150h (139600) map[0m
+[0;32mI (153) esp_image: segment 1: paddr=00032178 vaddr=3ffb0000 size=043bch ( 17340) load[0m
+[0;32mI (159) esp_image: segment 2: paddr=0003653c vaddr=40080000 size=09adch ( 39644) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a19dch (661980) map[0m
+[0;32mI (402) esp_image: segment 4: paddr=000e1a04 vaddr=40089adc size=0f494h ( 62612) load[0m
+[0;32mI (439) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (440) boot: Disabling RNG early entropy source...[0m
+[0;32mI (452) cpu_start: Multicore app[0m
+[0;32mI (460) cpu_start: Pro cpu start user code[0m
+[0;32mI (460) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (460) app_init: Application information:[0m
+[0;32mI (463) app_init: Project name:     nha[0m
+[0;32mI (468) app_init: App version:      260b56f-dirty[0m
+[0;32mI (473) app_init: Compile time:     Jun 25 2026 14:19:16[0m
+[0;32mI (479) app_init: ELF file SHA256:  d256f9af4...[0m
+[0;32mI (485) app_init: ESP-IDF:          v5.3.5-dirty[0m
+[0;32mI (490) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (495) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (500) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (505) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (512) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (518) heap_init: At 3FFB8DB0 len 00027250 (156 KiB): DRAM[0m
+[0;32mI (524) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (530) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (537) heap_init: At 40098F70 len 00007090 (28 KiB): IRAM[0m
+[0;32mI (544) spi_flash: detected chip: generic[0m
+[0;32mI (547) spi_flash: flash io: dio[0m
+[0;33mW (551) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (565) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (574) main_task: Started on CPU0[0m
+[0;32mI (584) main_task: Calling app_main()[0m
+[0;32mI (584) MAIN: System Start[0m
+[0;32mI (584) i2cdev: [Port 0] First initialization. Configuring bus with SDA=21, SCL=22 (Pullups SCL:0 SDA:0)[0m
+[0;33mW (594) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+[0;32mI (604) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (614) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (624) i2cdev: [Port 0] Successfully installed I2C master bus (Handle: 0x3ffbbfd0).[0m
+[0;32mI (634) i2cdev: [0x3c at 0] Device added successfully (Device Handle: 0x3ffbc4e0, Speed: 400000 Hz).[0m
+[0;32mI (644) SSD1306: SSD1306 initialized flawlessly via i2cdev![0m
+[0;32mI (724) wifi:wifi driver task: 3ffc1564, prio:23, stack:6656, core=0[0m
+[0;32mI (734) wifi:wifi firmware version: 18db208[0m
+[0;32mI (734) wifi:wifi certification version: v7.0[0m
+[0;32mI (734) wifi:config NVS flash: enabled[0m
+[0;32mI (734) wifi:config nano formating: disabled[0m
+[0;32mI (734) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (744) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (744) wifi:Init management short buffer num: 32[0m
+[0;32mI (754) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (754) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (764) wifi:Init static rx buffer num: 10[0m
+[0;32mI (764) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (764) wifi_init: rx ba win: 6[0m
+[0;32mI (774) wifi_init: accept mbox: 6[0m
+[0;32mI (774) wifi_init: tcpip mbox: 32[0m
+[0;32mI (774) wifi_init: udp mbox: 6[0m
+[0;32mI (784) wifi_init: tcp mbox: 6[0m
+[0;32mI (784) wifi_init: tcp tx win: 5760[0m
+[0;32mI (794) wifi_init: tcp rx win: 5760[0m
+[0;32mI (794) wifi_init: tcp mss: 1440[0m
+[0;32mI (794) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (804) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (804) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (814) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (904) wifi:mode : sta (d4:e9:f4:78:6d:44)[0m
+[0;32mI (904) wifi:enable tsf[0m
+[0;33mW (3334) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (5744) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (8164) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (10574) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;31mE (10914) MAIN: WiFi Timeout[0m
+[0;31mE (10954) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (10954) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (10954) mqtt_client: Error transport connect[0m
+[0;33mW (10964) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (10964) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffca3d4, Speed: 50000 Hz).[0m
+[0;32mI (10974) CHECK_CODE: --- TOI DA DAO THU TU HAM THANH CONG ---[0m
+[0;32mI (10984) MAIN: SDS011 ready on UART1 TX=GPIO25 RX=GPIO26[0m
+[0;32mI (11484) MAIN: Da gui lenh WAKE UP[0m
+[0;32mI (11564) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (11874) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (11984) MAIN: Da gui lenh ACTIVE mode[0m
+[0;32mI (12074) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (12874) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (12984) MAIN: Sample Time = 12.441 s[0m
+[0;32mI (12984) MAIN: BH=10.00 lx | TEMT=354.60 lx | PM2.5=6.9 | PM10=11.2[0m
+[0;33mW (12994) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (13074) MAIN: SEND: {"lux":10,"temt":354.60,"pm25":6.9,"pm10":11.2}[0m
+[0;33mW (13884) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (13884) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (13984) MAIN: Sample Time = 13.441 s[0m
+[0;32mI (13984) MAIN: BH=9.00 lx | TEMT=535.60 lx | PM2.5=6.9 | PM10=11.2[0m
+[0;32mI (14034) MAIN: SEND: {"lux":9,"temt":535.60,"pm25":6.9,"pm10":11.2}[0m
+[0;32mI (14884) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (14984) MAIN: Sample Time = 14.441 s[0m
+[0;32mI (14984) MAIN: BH=9.00 lx | TEMT=603.20 lx | PM2.5=7.0 | PM10=11.0[0m
+[0;32mI (15034) MAIN: SEND: {"lux":9,"temt":603.20,"pm25":7.0,"pm10":11.0}[0m
+[0;33mW (15414) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (15884) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (15984) MAIN: Sample Time = 15.441 s[0m
+[0;32mI (15984) MAIN: BH=9.00 lx | TEMT=618.40 lx | PM2.5=6.9 | PM10=10.9[0m
+[0;32mI (16034) MAIN: SEND: {"lux":9,"temt":618.40,"pm25":6.9,"pm10":10.9}[0m
+[0;33mW (16894) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (16894) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (16984) MAIN: Sample Time = 16.441 s[0m
+[0;32mI (16984) MAIN: BH=9.00 lx | TEMT=375.00 lx | PM2.5=6.9 | PM10=10.5[0m
+[0;32mI (17034) MAIN: SEND: {"lux":9,"temt":375.00,"pm25":6.9,"pm10":10.5}[0m
+[0;33mW (17834) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (17894) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (17984) MAIN: Sample Time = 17.441 s[0m
+[0;32mI (17984) MAIN: BH=9.00 lx | TEMT=214.40 lx | PM2.5=6.9 | PM10=10.4[0m
+[0;32mI (18034) MAIN: SEND: {"lux":9,"temt":214.40,"pm25":6.9,"pm10":10.4}[0m
+[0;32mI (18894) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (18984) MAIN: Sample Time = 18.441 s[0m
+[0;32mI (18984) MAIN: BH=9.00 lx | TEMT=133.20 lx | PM2.5=6.8 | PM10=10.0[0m
+[0;32mI (19034) MAIN: SEND: {"lux":9,"temt":133.20,"pm25":6.8,"pm10":10.0}[0m
+[0;33mW (19904) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (19904) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (19984) MAIN: Sample Time = 19.441 s[0m
+[0;32mI (19984) MAIN: BH=10.00 lx | TEMT=69.00 lx | PM2.5=6.9 | PM10=10.2[0m
+[0;32mI (20034) MAIN: SEND: {"lux":10,"temt":69.00,"pm25":6.9,"pm10":10.2}[0m
+[0;33mW (20254) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (20904) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (20984) MAIN: Sample Time = 20.441 s[0m
+[0;32mI (20984) MAIN: BH=8.00 lx | TEMT=0.00 lx | PM2.5=7.0 | PM10=10.3[0m
+[0;32mI (21034) MAIN: SEND: {"lux":8,"temt":0.00,"pm25":7.0,"pm10":10.3}[0m
+[0;32mI (21904) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (21984) MAIN: Sample Time = 21.441 s[0m
+[0;32mI (21984) MAIN: BH=9.00 lx | TEMT=0.00 lx | PM2.5=7.1 | PM10=10.3[0m
+[0;32mI (22034) MAIN: SEND: {"lux":9,"temt":0.00,"pm25":7.1,"pm10":10.3}[0m
+[0;33mW (22674) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (22914) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (22914) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (22984) MAIN: Sample Time = 22.441 s[0m
+[0;32mI (22984) MAIN: BH=10.00 lx | TEMT=0.00 lx | PM2.5=7.0 | PM10=9.8[0m
+[0;32mI (23034) MAIN: SEND: {"lux":10,"temt":0.00,"pm25":7.0,"pm10":9.8}[0m
+[0;32mI (23914) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (23984) MAIN: Sample Time = 23.441 s[0m
+[0;32mI (23984) MAIN: BH=8.00 lx | TEMT=0.00 lx | PM2.5=7.0 | PM10=9.6[0m
+[0;32mI (24034) MAIN: SEND: {"lux":8,"temt":0.00,"pm25":7.0,"pm10":9.6}[0m
+[0;32mI (24914) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (24984) MAIN: Sample Time = 24.441 s[0m
+[0;32mI (24984) MAIN: BH=8.00 lx | TEMT=56.40 lx | PM2.5=7.0 | PM10=9.3[0m
+[0;32mI (25034) MAIN: SEND: {"lux":8,"temt":56.40,"pm25":7.0,"pm10":9.3}[0m
+[0;33mW (25084) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (25924) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;31mE (25964) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (25964) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (25964) mqtt_client: Error transport connect[0m
+[0;33mW (25974) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (25984) MAIN: Sample Time = 25.441 s[0m
+[0;32mI (25984) MAIN: BH=8.00 lx | TEMT=240.60 lx | PM2.5=7.0 | PM10=9.3[0m
+[0;32mI (26034) MAIN: SEND: {"lux":8,"temt":240.60,"pm25":7.0,"pm10":9.3}[0m
+[0;32mI (26924) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (26984) MAIN: Sample Time = 26.441 s[0m
+[0;32mI (26984) MAIN: BH=8.00 lx | TEMT=446.40 lx | PM2.5=7.0 | PM10=9.2[0m
+[0;32mI (27034) MAIN: SEND: {"lux":8,"temt":446.40,"pm25":7.0,"pm10":9.2}[0m
+[0;33mW (27504) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (27924) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (27984) MAIN: Sample Time = 27.441 s[0m
+[0;32mI (27984) MAIN: BH=8.00 lx | TEMT=573.00 lx | PM2.5=7.0 | PM10=9.3[0m
+[0;32mI (28034) MAIN: SEND: {"lux":8,"temt":573.00,"pm25":7.0,"pm10":9.3}[0m
+[0;33mW (28934) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (28934) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (28984) MAIN: Sample Time = 28.441 s[0m
+[0;32mI (28984) MAIN: BH=8.00 lx | TEMT=610.80 lx | PM2.5=7.1 | PM10=9.4[0m
+[0;32mI (29034) MAIN: SEND: {"lux":8,"temt":610.80,"pm25":7.1,"pm10":9.4}[0m
+[0;33mW (29924) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (29934) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (29984) MAIN: Sample Time = 29.441 s[0m
+[0;32mI (29984) MAIN: BH=8.00 lx | TEMT=618.40 lx | PM2.5=7.0 | PM10=9.1[0m
+[0;32mI (30034) MAIN: SEND: {"lux":8,"temt":618.40,"pm25":7.0,"pm10":9.1}[0m
+[0;32mI (30934) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (30984) MAIN: Sample Time = 30.441 s[0m
+[0;32mI (30984) MAIN: BH=8.00 lx | TEMT=453.40 lx | PM2.5=7.0 | PM10=9.1[0m
+[0;32mI (31034) MAIN: SEND: {"lux":8,"temt":453.40,"pm25":7.0,"pm10":9.1}[0m
+[0;32mI (31944) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (31984) MAIN: Sample Time = 31.441 s[0m
+[0;32mI (31984) MAIN: BH=8.00 lx | TEMT=250.80 lx | PM2.5=6.9 | PM10=8.6[0m
+[0;32mI (32034) MAIN: SEND: {"lux":8,"temt":250.80,"pm25":6.9,"pm10":8.6}[0m
+[0;33mW (32344) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (32354) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (32354) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (32364) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (32374) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (32544) wifi:connected with Die, aid = 1, channel 1, BW20, bssid = 92:9f:13:e7:14:3b[0m
+[0;32mI (32544) wifi:security: WPA2-PSK, phy: bgn, rssi: -28[0m
+[0;32mI (32554) wifi:pm start, type: 1[0m
+
+[0;32mI (32554) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (32564) wifi:<ba-add>idx:0 (ifx:0, 92:9f:13:e7:14:3b), tid:0, ssn:0, winSize:64[0m
+[0;32mI (32604) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (32604) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (32944) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (32984) MAIN: Sample Time = 32.441 s[0m
+[0;32mI (32984) MAIN: BH=8.00 lx | TEMT=189.00 lx | PM2.5=6.9 | PM10=8.8[0m
+[0;32mI (33034) MAIN: SEND: {"lux":8,"temt":189.00,"pm25":6.9,"pm10":8.8}[0m
+[0;32mI (33564) esp_netif_handlers: sta ip: 10.162.80.218, mask: 255.255.255.0, gw: 10.162.80.94[0m
+[0;32mI (33944) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (33984) MAIN: Sample Time = 33.441 s[0m
+[0;32mI (33984) MAIN: BH=8.00 lx | TEMT=130.80 lx | PM2.5=6.8 | PM10=8.6[0m
+[0;32mI (34034) MAIN: SEND: {"lux":8,"temt":130.80,"pm25":6.8,"pm10":8.6}[0m
+[0;32mI (34954) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (34984) MAIN: Sample Time = 34.441 s[0m
+[0;32mI (34984) MAIN: BH=9.00 lx | TEMT=88.20 lx | PM2.5=6.9 | PM10=8.7[0m
+[0;32mI (35034) MAIN: SEND: {"lux":9,"temt":88.20,"pm25":6.9,"pm10":8.7}[0m
+[0;32mI (35954) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (35984) MAIN: Sample Time = 35.441 s[0m
+[0;32mI (35984) MAIN: BH=8.00 lx | TEMT=53.80 lx | PM2.5=6.9 | PM10=8.7[0m
+[0;32mI (36034) MAIN: SEND: {"lux":8,"temt":53.80,"pm25":6.9,"pm10":8.7}[0m
+[0;32mI (36954) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (36984) MAIN: Sample Time = 36.441 s[0m
+[0;32mI (36984) MAIN: BH=8.00 lx | TEMT=0.00 lx | PM2.5=6.9 | PM10=8.8[0m
+[0;32mI (37034) MAIN: SEND: {"lux":8,"temt":0.00,"pm25":6.9,"pm10":8.8}[0m
+[0;32mI (37964) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (37984) MAIN: Sample Time = 37.441 s[0m
+[0;32mI (37984) MAIN: BH=9.00 lx | TEMT=0.00 lx | PM2.5=6.9 | PM10=8.9[0m
+[0;32mI (38034) MAIN: SEND: {"lux":9,"temt":0.00,"pm25":6.9,"pm10":8.9}[0m
+[0;32mI (38964) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (38984) MAIN: Sample Time = 38.441 s[0m
+[0;32mI (38984) MAIN: BH=8.00 lx | TEMT=0.00 lx | PM2.5=7.0 | PM10=9.6[0m
+[0;32mI (39034) MAIN: SEND: {"lux":8,"temt":0.00,"pm25":7.0,"pm10":9.6}[0m
+[0;32mI (39964) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (39984) MAIN: Sample Time = 39.441 s[0m
+[0;32mI (39984) MAIN: BH=9.00 lx | TEMT=0.00 lx | PM2.5=7.0 | PM10=9.5[0m
+[0;32mI (40034) MAIN: SEND: {"lux":9,"temt":0.00,"pm25":7.0,"pm10":9.5}[0m
+[0;33mW (40974) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (40974) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (40984) MAIN: Sample Time = 40.441 s[0m
+[0;32mI (40984) MAIN: BH=8.00 lx | TEMT=0.00 lx | PM2.5=6.9 | PM10=9.5[0m
+[0;32mI (41034) MAIN: SEND: {"lux":8,"temt":0.00,"pm25":6.9,"pm10":9.5}[0m
+[0;32mI (41824) MAIN: MQTT CONNECTED[0m
+[0;32mI (41974) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (41984) MAIN: Sample Time = 41.441 s[0m
+[0;32mI (41984) MAIN: BH=9.00 lx | TEMT=0.00 lx | PM2.5=7.0 | PM10=9.5[0m
+[0;32mI (42034) MAIN: SEND: {"lux":9,"temt":0.00,"pm25":7.0,"pm10":9.5}[0m
+[0;32mI (42974) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (42984) MAIN: Sample Time = 42.441 s[0m
+[0;32mI (42984) MAIN: BH=8.00 lx | TEMT=0.00 lx | PM2.5=7.1 | PM10=9.9[0m
+[0;32mI (43034) MAIN: SEND: {"lux":8,"temt":0.00,"pm25":7.1,"pm10":9.9}[0m
+[0;32mI (43984) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (43984) MAIN: Sample Time = 43.441 s[0m
+[0;32mI (43984) MAIN: BH=8.00 lx | TEMT=0.00 lx | PM2.5=7.1 | PM10=9.9[0m
+[0;32mI (44034) MAIN: SEND: {"lux":8,"temt":0.00,"pm25":7.1,"pm10":9.9}[0m
+[0;32mI (44984) MAIN: Sample Time = 44.441 s[0m
+[0;32mI (44984) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (44984) MAIN: BH=8.00 lx | TEMT=0.00 lx | PM2.5=7.1 | PM10=9.9[0m
+[0;32mI (45034) MAIN: SEND: {"lux":8,"temt":0.00,"pm25":7.1,"pm10":9.9}[0m
+[0;32mI (45984) MAIN: Sample Time = 45.441 s[0m
+[0;32mI (45984) MAIN: BH=8.00 lx | TEMT=0.00 lx | PM2.5=7.2 | PM10=10.0[0m
+[0;32mI (45984) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (46034) MAIN: SEND: {"lux":8,"temt":0.00,"pm25":7.2,"pm10":10.0}[0m
+[0;32mI (46984) MAIN: Sample Time = 46.441 s[0m
+[0;32mI (46984) MAIN: BH=8.00 lx | TEMT=29.40 lx | PM2.5=7.2 | PM10=10.0[0m
+[0;32mI (46984) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (47034) MAIN: SEND: {"lux":8,"temt":29.40,"pm25":7.2,"pm10":10.0}[0m
+[0;32mI (47984) MAIN: Sample Time = 47.441 s[0m
+[0;32mI (47984) MAIN: BH=8.00 lx | TEMT=29.00 lx | PM2.5=7.2 | PM10=9.9[0m
+[0;32mI (47994) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (48034) MAIN: SEND: {"lux":8,"temt":29.00,"pm25":7.2,"pm10":9.9}[0m
+[0;32mI (48984) MAIN: Sample Time = 48.441 s[0m
+[0;32mI (48984) MAIN: BH=8.00 lx | TEMT=0.00 lx | PM2.5=7.1 | PM10=9.9[0m
+[0;32mI (48994) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (49034) MAIN: SEND: {"lux":8,"temt":0.00,"pm25":7.1,"pm10":9.9}[0m
+[0;32mI (49984) MAIN: Sample Time = 49.441 s[0m
+[0;32mI (49984) MAIN: BH=8.00 lx | TEMT=29.00 lx | PM2.5=7.0 | PM10=9.7[0m
+[0;32mI (49994) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (50034) MAIN: SEND: {"lux":8,"temt":29.00,"pm25":7.0,"pm10":9.7}[0m
+[0;32mI (50984) MAIN: Sample Time = 50.441 s[0m
+[0;32mI (50984) MAIN: BH=8.00 lx | TEMT=0.00 lx | PM2.5=7.0 | PM10=9.5[0m
+[0;32mI (51004) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (51034) MAIN: SEND: {"lux":8,"temt":0.00,"pm25":7.0,"pm10":9.5}[0m
+[0;32mI (51984) MAIN: Sample Time = 51.441 s[0m
+[0;32mI (51984) MAIN: BH=8.00 lx | TEMT=0.00 lx | PM2.5=7.0 | PM10=9.5[0m
+[0;32mI (52004) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (52034) MAIN: SEND: {"lux":8,"temt":0.00,"pm25":7.0,"pm10":9.5}[0m
+[0;32mI (52984) MAIN: Sample Time = 52.441 s[0m
+[0;32mI (52984) MAIN: BH=8.00 lx | TEMT=0.00 lx | PM2.5=7.0 | PM10=9.9[0m
+[0;32mI (53004) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (53034) MAIN: SEND: {"lux":8,"temt":0.00,"pm25":7.0,"pm10":9.9}[0m
+[0;32mI (53984) MAIN: Sample Time = 53.441 s[0m
+[0;32mI (53984) MAIN: BH=8.00 lx | TEMT=0.00 lx | PM2.5=7.0 | PM10=10.2[0m
+[0;32mI (54014) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (54034) MAIN: SEND: {"lux":8,"temt":0.00,"pm25":7.0,"pm10":10.2}[0m
+[0;32mI (54984) MAIN: Sample Time = 54.441 s[0m
+[0;32mI (54984) MAIN: BH=8.00 lx | TEMT=0.00 lx | PM2.5=7.1 | PM10=10.3[0m
+[0;32mI (55014) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (55034) MAIN: SEND: {"lux":8,"temt":0.00,"pm25":7.1,"pm10":10.3}[0m
+[0;32mI (55984) MAIN: Sample Time = 55.441 s[0m
+[0;32mI (55984) MAIN: BH=8.00 lx | TEMT=0.00 lx | PM2.5=7.1 | PM10=10.2[0m
+[0;32mI (56014) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (56034) MAIN: SEND: {"lux":8,"temt":0.00,"pm25":7.1,"pm10":10.2}[0m
+[0;32mI (56984) MAIN: Sample Time = 56.441 s[0m
+[0;32mI (56984) MAIN: BH=8.00 lx | TEMT=0.00 lx | PM2.5=7.0 | PM10=10.4[0m
+[0;33mW (57024) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (57024) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (57034) MAIN: SEND: {"lux":8,"temt":0.00,"pm25":7.0,"pm10":10.4}[0m
+[0;32mI (57984) MAIN: Sample Time = 57.441 s[0m
+[0;32mI (57984) MAIN: BH=8.00 lx | TEMT=0.00 lx | PM2.5=7.0 | PM10=10.2[0m
+[0;32mI (58024) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (58034) MAIN: SEND: {"lux":8,"temt":0.00,"pm25":7.0,"pm10":10.2}[0m
+[0;32mI (58984) MAIN: Sample Time = 58.441 s[0m
+[0;32mI (58984) MAIN: BH=8.00 lx | TEMT=0.00 lx | PM2.5=6.9 | PM10=10.2[0m
+[0;32mI (59024) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (59034) MAIN: SEND: {"lux":8,"temt":0.00,"pm25":6.9,"pm10":10.2}[0m
+[0;32mI (59984) MAIN: Sample Time = 59.441 s[0m
+[0;32mI (59984) MAIN: BH=9.00 lx | TEMT=0.00 lx | PM2.5=6.9 | PM10=10.2[0m
+[0;33mW (60034) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (60034) MAIN: SEND: {"lux":9,"temt":0.00,"pm25":6.9,"pm10":10.2}[0m
+[0;32mI (60034) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (60984) MAIN: Sample Time = 60.441 s[0m
+[0;32mI (60984) MAIN: BH=8.00 lx | TEMT=0.00 lx | PM2.5=6.9 | PM10=10.2[0m
+[0;32mI (61034) MAIN: SEND: {"lux":8,"temt":0.00,"pm25":6.9,"pm10":10.2}[0m
+[0;32mI (61034) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (61984) MAIN: Sample Time = 61.441 s[0m
+[0;32mI (61984) MAIN: BH=8.00 lx | TEMT=0.00 lx | PM2.5=6.9 | PM10=10.1[0m
+[0;32mI (62034) MAIN: SEND: {"lux":8,"temt":0.00,"pm25":6.9,"pm10":10.1}[0m
+[0;32mI (62034) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (62984) MAIN: Sample Time = 62.441 s[0m
+[0;32mI (62984) MAIN: BH=8.00 lx | TEMT=0.00 lx | PM2.5=7.0 | PM10=10.3[0m
+[0;32mI (63034) MAIN: SEND: {"lux":8,"temt":0.00,"pm25":7.0,"pm10":10.3}[0m
+[0;33mW (63044) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (63044) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (63984) MAIN: Sample Time = 63.441 s[0m
+[0;32mI (63984) MAIN: BH=8.00 lx | TEMT=0.00 lx | PM2.5=7.0 | PM10=10.3[0m
+[0;32mI (64034) MAIN: SEND: {"lux":8,"temt":0.00,"pm25":7.0,"pm10":10.3}[0m
+[0;32mI (64044) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (64984) MAIN: Sample Time = 64.441 s[0m
+[0;32mI (64984) MAIN: BH=8.00 lx | TEMT=31.80 lx | PM2.5=6.9 | PM10=10.0[0m
+[0;32mI (65034) MAIN: SEND: {"lux":8,"temt":31.80,"pm25":6.9,"pm10":10.0}[0m
+[0;32mI (65044) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (65984) MAIN: Sample Time = 65.441 s[0m
+[0;32mI (65984) MAIN: BH=8.00 lx | TEMT=81.00 lx | PM2.5=6.9 | PM10=10.2[0m
+[0;32mI (66034) MAIN: SEND: {"lux":8,"temt":81.00,"pm25":6.9,"pm10":10.2}[0m
+[0;33mW (66054) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (66054) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (66984) MAIN: Sample Time = 66.441 s[0m
+[0;32mI (66984) MAIN: BH=8.00 lx | TEMT=72.80 lx | PM2.5=7.0 | PM10=10.4[0m
+[0;32mI (67034) MAIN: SEND: {"lux":8,"temt":72.80,"pm25":7.0,"pm10":10.4}[0m
+[0;32mI (67054) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (67984) MAIN: Sample Time = 67.441 s[0m
+[0;32mI (67984) MAIN: BH=8.00 lx | TEMT=85.40 lx | PM2.5=7.0 | PM10=10.3[0m
+[0;32mI (68034) MAIN: SEND: {"lux":8,"temt":85.40,"pm25":7.0,"pm10":10.3}[0m
+[0;32mI (68054) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (68984) MAIN: Sample Time = 68.441 s[0m
+[0;32mI (68984) MAIN: BH=8.00 lx | TEMT=98.40 lx | PM2.5=7.0 | PM10=9.6[0m
+[0;32mI (69034) MAIN: SEND: {"lux":8,"temt":98.40,"pm25":7.0,"pm10":9.6}[0m
+[0;33mW (69064) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (69064) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (69984) MAIN: Sample Time = 69.441 s[0m
+[0;32mI (69984) MAIN: BH=8.00 lx | TEMT=109.80 lx | PM2.5=7.0 | PM10=9.6[0m
+[0;32mI (70034) MAIN: SEND: {"lux":8,"temt":109.80,"pm25":7.0,"pm10":9.6}[0m
+[0;32mI (70064) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (70984) MAIN: Sample Time = 70.441 s[0m
+[0;32mI (70984) MAIN: BH=8.00 lx | TEMT=116.20 lx | PM2.5=7.1 | PM10=9.5[0m
+[0;32mI (71034) MAIN: SEND: {"lux":8,"temt":116.20,"pm25":7.1,"pm10":9.5}[0m
+[0;32mI (71064) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (71984) MAIN: Sample Time = 71.441 s[0m
+[0;32mI (71984) MAIN: BH=8.00 lx | TEMT=124.20 lx | PM2.5=7.1 | PM10=9.5[0m
+[0;32mI (72034) MAIN: SEND: {"lux":8,"temt":124.20,"pm25":7.1,"pm10":9.5}[0m
+[0;33mW (72074) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (72074) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (72984) MAIN: Sample Time = 72.441 s[0m
+[0;32mI (72984) MAIN: BH=10.00 lx | TEMT=161.20 lx | PM2.5=7.0 | PM10=9.4[0m
+[0;32mI (73034) MAIN: SEND: {"lux":10,"temt":161.20,"pm25":7.0,"pm10":9.4}[0m
+[0;32mI (73074) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (73984) MAIN: Sample Time = 73.441 s[0m
+[0;32mI (73984) MAIN: BH=3.00 lx | TEMT=98.20 lx | PM2.5=7.0 | PM10=9.3[0m
+[0;32mI (74034) MAIN: SEND: {"lux":3,"temt":98.20,"pm25":7.0,"pm10":9.3}[0m
+[0;32mI (74074) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (74984) MAIN: Sample Time = 74.441 s[0m
+[0;32mI (74984) MAIN: BH=2.00 lx | TEMT=109.60 lx | PM2.5=7.0 | PM10=9.4[0m
+[0;32mI (75034) MAIN: SEND: {"lux":2,"temt":109.60,"pm25":7.0,"pm10":9.4}[0m
+[0;33mW (75084) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (75084) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (75984) MAIN: Sample Time = 75.441 s[0m
+[0;32mI (75984) MAIN: BH=17.00 lx | TEMT=67.00 lx | PM2.5=7.0 | PM10=9.6[0m
+[0;32mI (76034) MAIN: SEND: {"lux":17,"temt":67.00,"pm25":7.0,"pm10":9.6}[0m
+[0;32mI (76084) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (76984) MAIN: Sample Time = 76.441 s[0m
+[0;32mI (76984) MAIN: BH=17.00 lx | TEMT=44.40 lx | PM2.5=7.0 | PM10=9.5[0m
+[0;32mI (77034) MAIN: SEND: {"lux":17,"temt":44.40,"pm25":7.0,"pm10":9.5}[0m
+[0;32mI (77084) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (77984) MAIN: Sample Time = 77.441 s[0m
+[0;32mI (77984) MAIN: BH=20.00 lx | TEMT=45.00 lx | PM2.5=7.1 | PM10=9.7[0m
+[0;32mI (78034) MAIN: SEND: {"lux":20,"temt":45.00,"pm25":7.1,"pm10":9.7}[0m
+[0;33mW (78094) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (78094) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (78984) MAIN: Sample Time = 78.441 s[0m
+[0;32mI (78984) MAIN: BH=20.00 lx | TEMT=47.00 lx | PM2.5=7.1 | PM10=10.6[0m
+[0;32mI (79034) MAIN: SEND: {"lux":20,"temt":47.00,"pm25":7.1,"pm10":10.6}[0m
+[0;32mI (79094) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (79984) MAIN: Sample Time = 79.441 s[0m
+[0;32mI (79984) MAIN: BH=20.00 lx | TEMT=46.20 lx | PM2.5=7.2 | PM10=10.6[0m
+[0;32mI (80034) MAIN: SEND: {"lux":20,"temt":46.20,"pm25":7.2,"pm10":10.6}[0m
+[0;32mI (80094) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (80984) MAIN: Sample Time = 80.441 s[0m
+[0;32mI (80984) MAIN: BH=20.00 lx | TEMT=42.80 lx | PM2.5=7.1 | PM10=10.6[0m
+[0;32mI (81034) MAIN: SEND: {"lux":20,"temt":42.80,"pm25":7.1,"pm10":10.6}[0m
+[0;33mW (81104) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (81104) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (81984) MAIN: Sample Time = 81.441 s[0m
+[0;32mI (81984) MAIN: BH=20.00 lx | TEMT=45.80 lx | PM2.5=7.2 | PM10=10.9[0m
+[0;32mI (82034) MAIN: SEND: {"lux":20,"temt":45.80,"pm25":7.2,"pm10":10.9}[0m
+[0;32mI (82104) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (82984) MAIN: Sample Time = 82.441 s[0m
+[0;32mI (82984) MAIN: BH=20.00 lx | TEMT=43.00 lx | PM2.5=7.2 | PM10=10.5[0m
+[0;32mI (83034) MAIN: SEND: {"lux":20,"temt":43.00,"pm25":7.2,"pm10":10.5}[0m
+[0;32mI (83104) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (83984) MAIN: Sample Time = 83.441 s[0m
+[0;32mI (83984) MAIN: BH=20.00 lx | TEMT=43.80 lx | PM2.5=7.2 | PM10=10.7[0m
+[0;32mI (84034) MAIN: SEND: {"lux":20,"temt":43.80,"pm25":7.2,"pm10":10.7}[0m
+[0;33mW (84114) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (84114) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (84984) MAIN: Sample Time = 84.441 s[0m
+[0;32mI (84984) MAIN: BH=21.00 lx | TEMT=43.00 lx | PM2.5=7.2 | PM10=10.7[0m
+[0;32mI (85034) MAIN: SEND: {"lux":21,"temt":43.00,"pm25":7.2,"pm10":10.7}[0m
+[0;32mI (85114) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (85984) MAIN: Sample Time = 85.441 s[0m
+[0;32mI (85984) MAIN: BH=21.00 lx | TEMT=42.40 lx | PM2.5=7.2 | PM10=10.7[0m
+[0;32mI (86034) MAIN: SEND: {"lux":21,"temt":42.40,"pm25":7.2,"pm10":10.7}[0m
+[0;32mI (86114) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (86984) MAIN: Sample Time = 86.441 s[0m
+[0;32mI (86984) MAIN: BH=22.00 lx | TEMT=41.00 lx | PM2.5=7.2 | PM10=10.9[0m
+[0;32mI (87034) MAIN: SEND: {"lux":22,"temt":41.00,"pm25":7.2,"pm10":10.9}[0m
+[0;33mW (87124) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (87124) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (87984) MAIN: Sample Time = 87.441 s[0m
+[0;32mI (87984) MAIN: BH=24.00 lx | TEMT=44.00 lx | PM2.5=7.3 | PM10=11.2[0m
+[0;32mI (88034) MAIN: SEND: {"lux":24,"temt":44.00,"pm25":7.3,"pm10":11.2}[0m
+[0;32mI (88124) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (88984) MAIN: Sample Time = 88.441 s[0m
+[0;32mI (88984) MAIN: BH=25.00 lx | TEMT=0.00 lx | PM2.5=7.3 | PM10=11.3[0m
+[0;32mI (89034) MAIN: SEND: {"lux":25,"temt":0.00,"pm25":7.3,"pm10":11.3}[0m
+[0;32mI (89124) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (89984) MAIN: Sample Time = 89.441 s[0m
+[0;32mI (89984) MAIN: BH=25.00 lx | TEMT=41.00 lx | PM2.5=7.4 | PM10=11.4[0m
+[0;32mI (90034) MAIN: SEND: {"lux":25,"temt":41.00,"pm25":7.4,"pm10":11.4}[0m
+[0;32mI (90134) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (90984) MAIN: Sample Time = 90.441 s[0m
+[0;32mI (90984) MAIN: BH=25.00 lx | TEMT=37.40 lx | PM2.5=7.4 | PM10=11.6[0m
+[0;32mI (91034) MAIN: SEND: {"lux":25,"temt":37.40,"pm25":7.4,"pm10":11.6}[0m
+[0;32mI (91134) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (91984) MAIN: Sample Time = 91.441 s[0m
+[0;32mI (91984) MAIN: BH=24.00 lx | TEMT=42.40 lx | PM2.5=7.4 | PM10=11.7[0m
+[0;32mI (92034) MAIN: SEND: {"lux":24,"temt":42.40,"pm25":7.4,"pm10":11.7}[0m
+[0;32mI (92134) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (92984) MAIN: Sample Time = 92.441 s[0m
+[0;32mI (92984) MAIN: BH=24.00 lx | TEMT=41.60 lx | PM2.5=7.4 | PM10=11.2[0m
+[0;32mI (93034) MAIN: SEND: {"lux":24,"temt":41.60,"pm25":7.4,"pm10":11.2}[0m
+[0;33mW (93144) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (93144) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (93984) MAIN: Sample Time = 93.441 s[0m
+[0;32mI (93984) MAIN: BH=25.00 lx | TEMT=40.80 lx | PM2.5=7.4 | PM10=11.3[0m
+[0;32mI (94034) MAIN: SEND: {"lux":25,"temt":40.80,"pm25":7.4,"pm10":11.3}[0m
+[0;32mI (94144) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (94984) MAIN: Sample Time = 94.441 s[0m
+[0;32mI (94984) MAIN: BH=21.00 lx | TEMT=40.40 lx | PM2.5=7.5 | PM10=11.3[0m
+[0;32mI (95034) MAIN: SEND: {"lux":21,"temt":40.40,"pm25":7.5,"pm10":11.3}[0m
+[0;32mI (95144) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (95984) MAIN: Sample Time = 95.441 s[0m
+[0;32mI (95984) MAIN: BH=17.00 lx | TEMT=44.20 lx | PM2.5=7.5 | PM10=11.1[0m
+[0;32mI (96034) MAIN: SEND: {"lux":17,"temt":44.20,"pm25":7.5,"pm10":11.1}[0m
+[0;33mW (96154) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (96154) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (96984) MAIN: Sample Time = 96.441 s[0m
+[0;32mI (96984) MAIN: BH=19.00 lx | TEMT=0.00 lx | PM2.5=7.6 | PM10=11.2[0m
+[0;32mI (97034) MAIN: SEND: {"lux":19,"temt":0.00,"pm25":7.6,"pm10":11.2}[0m
+[0;32mI (97154) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m

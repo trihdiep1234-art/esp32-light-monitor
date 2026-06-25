@@ -1,0 +1,120 @@
+[0/1] Re-running CMake...
+-- ccache will be used for faster recompilation
+-- Building ESP-IDF components for target esp32
+-- i2cdev: ESP-IDF v5.3 detected, using new i2c_master driver
+-- i2cdev: Compiling with new I2C master driver (i2cdev.c)
+-- Project sdkconfig file D:/vxlproj/nhakinh/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- USING O3
+-- App "nha" version: 260b56f-dirty
+-- Adding linker script D:/vxlproj/nhakinh/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script D:/vxlproj/nhakinh/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc/esp32/ld/esp32.peripherals.ld
+-- i2cdev: ESP-IDF v5.3 detected, using new i2c_master driver
+-- i2cdev: Compiling with new I2C master driver (i2cdev.c)
+-- Components: app_trace app_update bh1750 bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_idf_lib_helpers esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_vfs_console esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser i2cdev idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread sdmmc sds011 soc spi_flash spiffs ssd1306 tcp_transport temt6000 ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: D:/Espressif/frameworks/esp-idf-v5.3.5/components/app_trace D:/Espressif/frameworks/esp-idf-v5.3.5/components/app_update D:/vxlproj/nhakinh/components/bh1750 D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader_support D:/Espressif/frameworks/esp-idf-v5.3.5/components/bt D:/Espressif/frameworks/esp-idf-v5.3.5/components/cmock D:/Espressif/frameworks/esp-idf-v5.3.5/components/console D:/Espressif/frameworks/esp-idf-v5.3.5/components/cxx D:/Espressif/frameworks/esp-idf-v5.3.5/components/driver D:/Espressif/frameworks/esp-idf-v5.3.5/components/efuse D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp-tls D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_adc D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_app_format D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_bootloader_format D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_coex D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_common D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_ana_cmpr D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_cam D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_dac D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_gpio D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_gptimer D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_i2c D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_i2s D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_isp D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_jpeg D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_ledc D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_mcpwm D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_parlio D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_pcnt D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_ppa D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_rmt D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_sdio D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_sdm D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_sdmmc D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_sdspi D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_spi D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_touch_sens D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_tsens D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_uart D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_driver_usb_serial_jtag D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_eth D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_event D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_gdbstub D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_hid D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_http_client D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_http_server D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_https_ota D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_https_server D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_hw_support D:/vxlproj/nhakinh/components/esp_idf_lib_helpers D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_lcd D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_local_ctrl D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_mm D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_netif D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_netif_stack D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_partition D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_phy D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_pm D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_psram D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_ringbuf D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_rom D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_system D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_timer D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_vfs_console D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_wifi D:/Espressif/frameworks/esp-idf-v5.3.5/components/espcoredump D:/Espressif/frameworks/esp-idf-v5.3.5/components/esptool_py D:/Espressif/frameworks/esp-idf-v5.3.5/components/fatfs D:/Espressif/frameworks/esp-idf-v5.3.5/components/freertos D:/Espressif/frameworks/esp-idf-v5.3.5/components/hal D:/Espressif/frameworks/esp-idf-v5.3.5/components/heap D:/Espressif/frameworks/esp-idf-v5.3.5/components/http_parser D:/vxlproj/nhakinh/components/i2cdev D:/Espressif/frameworks/esp-idf-v5.3.5/components/idf_test D:/Espressif/frameworks/esp-idf-v5.3.5/components/ieee802154 D:/Espressif/frameworks/esp-idf-v5.3.5/components/json D:/Espressif/frameworks/esp-idf-v5.3.5/components/log D:/Espressif/frameworks/esp-idf-v5.3.5/components/lwip D:/vxlproj/nhakinh/main D:/Espressif/frameworks/esp-idf-v5.3.5/components/mbedtls D:/Espressif/frameworks/esp-idf-v5.3.5/components/mqtt D:/Espressif/frameworks/esp-idf-v5.3.5/components/newlib D:/Espressif/frameworks/esp-idf-v5.3.5/components/nvs_flash D:/Espressif/frameworks/esp-idf-v5.3.5/components/nvs_sec_provider D:/Espressif/frameworks/esp-idf-v5.3.5/components/openthread D:/Espressif/frameworks/esp-idf-v5.3.5/components/partition_table D:/Espressif/frameworks/esp-idf-v5.3.5/components/perfmon D:/Espressif/frameworks/esp-idf-v5.3.5/components/protobuf-c D:/Espressif/frameworks/esp-idf-v5.3.5/components/protocomm D:/Espressif/frameworks/esp-idf-v5.3.5/components/pthread D:/Espressif/frameworks/esp-idf-v5.3.5/components/sdmmc D:/vxlproj/nhakinh/components/sds011 D:/Espressif/frameworks/esp-idf-v5.3.5/components/soc D:/Espressif/frameworks/esp-idf-v5.3.5/components/spi_flash D:/Espressif/frameworks/esp-idf-v5.3.5/components/spiffs D:/vxlproj/nhakinh/components/ssd1306 D:/Espressif/frameworks/esp-idf-v5.3.5/components/tcp_transport D:/vxlproj/nhakinh/components/temt6000 D:/Espressif/frameworks/esp-idf-v5.3.5/components/ulp D:/Espressif/frameworks/esp-idf-v5.3.5/components/unity D:/Espressif/frameworks/esp-idf-v5.3.5/components/usb D:/Espressif/frameworks/esp-idf-v5.3.5/components/vfs D:/Espressif/frameworks/esp-idf-v5.3.5/components/wear_levelling D:/Espressif/frameworks/esp-idf-v5.3.5/components/wifi_provisioning D:/Espressif/frameworks/esp-idf-v5.3.5/components/wpa_supplicant D:/Espressif/frameworks/esp-idf-v5.3.5/components/xtensa
+-- Configuring done (18.7s)
+-- Generating done (1.7s)
+-- Build files have been written to: D:/vxlproj/nhakinh/build
+[1/11] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\vxlproj\nhakinh\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.3_py3.12_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.3.5/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/vxlproj/nhakinh/build/bootloader/bootloader.bin"
+Bootloader binary size 0x68e0 bytes. 0x720 bytes (6%) free.
+[2/11] No install step for 'bootloader'
+[3/11] Completed 'bootloader'
+[4/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main3.c.obj
+In file included from D:/vxlproj/nhakinh/components/temt6000/include/temt6000.h:10,
+                 from D:/vxlproj/nhakinh/main/app_main3.c:11:
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from D:/vxlproj/nhakinh/components/temt6000/include/temt6000.h:11:
+D:/Espressif/frameworks/esp-idf-v5.3.5/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+[5/11] Linking C static library esp-idf\main\libmain.a
+[6/11] Generating ld/sections.ld
+[7/11] Linking CXX executable nha.elf
+[8/11] Generating binary image from built executable
+esptool.py v4.11.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/vxlproj/nhakinh/build/nha.bin
+[9/11] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\vxlproj\nhakinh\build\esp-idf\esptool_py && D:\Espressif\python_env\idf5.3_py3.12_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.3.5/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/vxlproj/nhakinh/build/partition_table/partition-table.bin D:/vxlproj/nhakinh/build/nha.bin"
+nha.bin binary size 0xdc4c0 bytes. Smallest app partition is 0x100000 bytes. 0x23b40 bytes (14%) free.
+[9/11] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Espressif\frameworks\esp-idf-v5.3.5\components\esptool_py && D:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=D:/Espressif/frameworks/esp-idf-v5.3.5 -D SERIAL_TOOL=D:/Espressif/python_env/idf5.3_py3.12_env/Scripts/python.exe;;D:/Espressif/frameworks/esp-idf-v5.3.5/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/vxlproj/nhakinh/build -P D:/Espressif/frameworks/esp-idf-v5.3.5/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM4 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 nha.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.11.0
+Serial port COM4
+Connecting......
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: d4:e9:f4:78:6d:44
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000ecfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26848 bytes to 16435...
+Writing at 0x00001000... (50 %)
+Writing at 0x00007892... (100 %)
+Wrote 26848 bytes (16435 compressed) at 0x00001000 in 0.5 seconds (effective 423.2 kbit/s)...
+Hash of data verified.
+Compressed 902336 bytes to 564525...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001e2ab... (5 %)
+Writing at 0x0002820e... (8 %)
+Writing at 0x0003264f... (11 %)
+Writing at 0x00039e4e... (14 %)
+Writing at 0x0003f83f... (17 %)
+Writing at 0x00045284... (20 %)
+Writing at 0x0004af9c... (22 %)
+Writing at 0x00050e7e... (25 %)
+Writing at 0x00056cdd... (28 %)
+Writing at 0x0005cb4e... (31 %)
+Writing at 0x00062623... (34 %)
+Writing at 0x000684f8... (37 %)
+Writing at 0x0006ea8a... (40 %)
+Writing at 0x00074844... (42 %)
+Writing at 0x0007a2f2... (45 %)
+Writing at 0x0007f869... (48 %)
+Writing at 0x00085099... (51 %)
+Writing at 0x0008ad41... (54 %)
+Writing at 0x000905e7... (57 %)
+Writing at 0x00095bb4... (60 %)
+Writing at 0x0009b7eb... (62 %)
+Writing at 0x000a17ad... (65 %)
+Writing at 0x000a7194... (68 %)
+Writing at 0x000acd9e... (71 %)
+Writing at 0x000b29f7... (74 %)
+Writing at 0x000b843b... (77 %)
+Writing at 0x000bdf36... (80 %)
+Writing at 0x000c3c58... (82 %)
+Writing at 0x000c9720... (85 %)
+Writing at 0x000cfbaf... (88 %)
+Writing at 0x000d8606... (91 %)
+Writing at 0x000de185... (94 %)
+Writing at 0x000e4771... (97 %)
+Writing at 0x000e9a35... (100 %)
+Wrote 902336 bytes (564525 compressed) at 0x00010000 in 12.8 seconds (effective 565.5 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 1305.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

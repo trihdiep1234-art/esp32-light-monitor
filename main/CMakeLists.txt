@@ -1,5 +1,5 @@
 idf_component_register(
-    SRCS "app_main.c"
+    SRCS "app_main3.c"
     INCLUDE_DIRS "."
     REQUIRES
         esp_wifi
@@ -14,4 +14,5 @@ idf_component_register(
         temt6000
         i2cdev
         ssd1306
+        sds011
 )
