@@ -1,0 +1,47 @@
+In file included from /home/huyen_202414629/esp/esp-idf/esp32-light-monitor/components/temt6000/include/temt6000.h:10,
+                 from /home/huyen_202414629/esp/esp-idf/esp32-light-monitor/components/temt6000/temt6000.c:3:
+/home/huyen_202414629/esp/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from /home/huyen_202414629/esp/esp-idf/esp32-light-monitor/components/temt6000/include/temt6000.h:11:
+/home/huyen_202414629/esp/esp-idf/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+/home/huyen_202414629/esp/esp-idf/esp32-light-monitor/components/temt6000/temt6000.c: In function 'temt6000__Init':
+/home/huyen_202414629/esp/esp-idf/esp32-light-monitor/components/temt6000/temt6000.c:41:9: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+   41 |         if (ESP_OK != adc1_config_channel_atten((adc1_channel_t) channel, TEMT6000_ADC_ATTEN)) return TEMT6000_ADC_CONF_FAIL;
+      |         ^~
+In file included from /home/huyen_202414629/esp/esp-idf/components/driver/deprecated/driver/adc_types_legacy.h:8,
+                 from /home/huyen_202414629/esp/esp-idf/components/driver/deprecated/driver/adc.h:15:
+/home/huyen_202414629/esp/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+/home/huyen_202414629/esp/esp-idf/esp32-light-monitor/components/temt6000/temt6000.c:45:9: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+   45 |         if (ESP_OK != adc2_config_channel_atten((adc2_channel_t) channel, TEMT6000_ADC_ATTEN)) return TEMT6000_ADC_CONF_FAIL;
+      |         ^~
+/home/huyen_202414629/esp/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+/home/huyen_202414629/esp/esp-idf/esp32-light-monitor/components/temt6000/temt6000.c:48:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+   48 |     esp_adc_cal_characterize(unit, TEMT6000_ADC_ATTEN, TEMT6000_ADC_WIDTH, TEMT6000_ADC_ATTEN_VREF, &device->adcCharacteristics);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/huyen_202414629/esp/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+In file included from /home/huyen_202414629/esp/esp-idf/esp32-light-monitor/components/temt6000/include/temt6000.h:10,
+                 from /home/huyen_202414629/esp/esp-idf/esp32-light-monitor/main/app_main.c:11:
+/home/huyen_202414629/esp/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from /home/huyen_202414629/esp/esp-idf/esp32-light-monitor/components/temt6000/include/temt6000.h:11:
+/home/huyen_202414629/esp/esp-idf/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+/home/huyen_202414629/esp/esp-idf/esp32-light-monitor/main/app_main.c:22:10: fatal error: sds011.h: No such file or directory
+   22 | #include "sds011.h"
+      |          ^~~~~~~~~~
+compilation terminated.
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:5767: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:136: all] Error 2

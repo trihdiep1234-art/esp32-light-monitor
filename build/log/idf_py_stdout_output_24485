@@ -1,0 +1,233 @@
+-- Building ESP-IDF components for target esp32
+-- i2cdev: ESP-IDF v5.3 detected, using new i2c_master driver
+-- i2cdev: Compiling with new I2C master driver (i2cdev.c)
+-- Project sdkconfig file /home/huyen_202414629/esp/esp-idf/esp32-light-monitor/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- USING O3
+-- App "nha" version: aa5baf5-dirty
+-- Adding linker script /home/huyen_202414629/esp/esp-idf/esp32-light-monitor/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/huyen_202414629/esp/esp-idf/esp32-light-monitor/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /home/huyen_202414629/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/huyen_202414629/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/huyen_202414629/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/huyen_202414629/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /home/huyen_202414629/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /home/huyen_202414629/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /home/huyen_202414629/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- i2cdev: ESP-IDF v5.3 detected, using new i2c_master driver
+-- i2cdev: Compiling with new I2C master driver (i2cdev.c)
+-- Components: app_trace app_update bh1750 bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_idf_lib_helpers esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_vfs_console esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser i2cdev idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread sdmmc sds011 soc spi_flash spiffs ssd1306 tcp_transport temt6000 ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/huyen_202414629/esp/esp-idf/components/app_trace /home/huyen_202414629/esp/esp-idf/components/app_update /home/huyen_202414629/esp/esp-idf/esp32-light-monitor/components/bh1750 /home/huyen_202414629/esp/esp-idf/components/bootloader /home/huyen_202414629/esp/esp-idf/components/bootloader_support /home/huyen_202414629/esp/esp-idf/components/bt /home/huyen_202414629/esp/esp-idf/components/cmock /home/huyen_202414629/esp/esp-idf/components/console /home/huyen_202414629/esp/esp-idf/components/cxx /home/huyen_202414629/esp/esp-idf/components/driver /home/huyen_202414629/esp/esp-idf/components/efuse /home/huyen_202414629/esp/esp-idf/components/esp-tls /home/huyen_202414629/esp/esp-idf/components/esp_adc /home/huyen_202414629/esp/esp-idf/components/esp_app_format /home/huyen_202414629/esp/esp-idf/components/esp_bootloader_format /home/huyen_202414629/esp/esp-idf/components/esp_coex /home/huyen_202414629/esp/esp-idf/components/esp_common /home/huyen_202414629/esp/esp-idf/components/esp_driver_ana_cmpr /home/huyen_202414629/esp/esp-idf/components/esp_driver_cam /home/huyen_202414629/esp/esp-idf/components/esp_driver_dac /home/huyen_202414629/esp/esp-idf/components/esp_driver_gpio /home/huyen_202414629/esp/esp-idf/components/esp_driver_gptimer /home/huyen_202414629/esp/esp-idf/components/esp_driver_i2c /home/huyen_202414629/esp/esp-idf/components/esp_driver_i2s /home/huyen_202414629/esp/esp-idf/components/esp_driver_isp /home/huyen_202414629/esp/esp-idf/components/esp_driver_jpeg /home/huyen_202414629/esp/esp-idf/components/esp_driver_ledc /home/huyen_202414629/esp/esp-idf/components/esp_driver_mcpwm /home/huyen_202414629/esp/esp-idf/components/esp_driver_parlio /home/huyen_202414629/esp/esp-idf/components/esp_driver_pcnt /home/huyen_202414629/esp/esp-idf/components/esp_driver_ppa /home/huyen_202414629/esp/esp-idf/components/esp_driver_rmt /home/huyen_202414629/esp/esp-idf/components/esp_driver_sdio /home/huyen_202414629/esp/esp-idf/components/esp_driver_sdm /home/huyen_202414629/esp/esp-idf/components/esp_driver_sdmmc /home/huyen_202414629/esp/esp-idf/components/esp_driver_sdspi /home/huyen_202414629/esp/esp-idf/components/esp_driver_spi /home/huyen_202414629/esp/esp-idf/components/esp_driver_touch_sens /home/huyen_202414629/esp/esp-idf/components/esp_driver_tsens /home/huyen_202414629/esp/esp-idf/components/esp_driver_uart /home/huyen_202414629/esp/esp-idf/components/esp_driver_usb_serial_jtag /home/huyen_202414629/esp/esp-idf/components/esp_eth /home/huyen_202414629/esp/esp-idf/components/esp_event /home/huyen_202414629/esp/esp-idf/components/esp_gdbstub /home/huyen_202414629/esp/esp-idf/components/esp_hid /home/huyen_202414629/esp/esp-idf/components/esp_http_client /home/huyen_202414629/esp/esp-idf/components/esp_http_server /home/huyen_202414629/esp/esp-idf/components/esp_https_ota /home/huyen_202414629/esp/esp-idf/components/esp_https_server /home/huyen_202414629/esp/esp-idf/components/esp_hw_support /home/huyen_202414629/esp/esp-idf/esp32-light-monitor/components/esp_idf_lib_helpers /home/huyen_202414629/esp/esp-idf/components/esp_lcd /home/huyen_202414629/esp/esp-idf/components/esp_local_ctrl /home/huyen_202414629/esp/esp-idf/components/esp_mm /home/huyen_202414629/esp/esp-idf/components/esp_netif /home/huyen_202414629/esp/esp-idf/components/esp_netif_stack /home/huyen_202414629/esp/esp-idf/components/esp_partition /home/huyen_202414629/esp/esp-idf/components/esp_phy /home/huyen_202414629/esp/esp-idf/components/esp_pm /home/huyen_202414629/esp/esp-idf/components/esp_psram /home/huyen_202414629/esp/esp-idf/components/esp_ringbuf /home/huyen_202414629/esp/esp-idf/components/esp_rom /home/huyen_202414629/esp/esp-idf/components/esp_system /home/huyen_202414629/esp/esp-idf/components/esp_timer /home/huyen_202414629/esp/esp-idf/components/esp_vfs_console /home/huyen_202414629/esp/esp-idf/components/esp_wifi /home/huyen_202414629/esp/esp-idf/components/espcoredump /home/huyen_202414629/esp/esp-idf/components/esptool_py /home/huyen_202414629/esp/esp-idf/components/fatfs /home/huyen_202414629/esp/esp-idf/components/freertos /home/huyen_202414629/esp/esp-idf/components/hal /home/huyen_202414629/esp/esp-idf/components/heap /home/huyen_202414629/esp/esp-idf/components/http_parser /home/huyen_202414629/esp/esp-idf/esp32-light-monitor/components/i2cdev /home/huyen_202414629/esp/esp-idf/components/idf_test /home/huyen_202414629/esp/esp-idf/components/ieee802154 /home/huyen_202414629/esp/esp-idf/components/json /home/huyen_202414629/esp/esp-idf/components/log /home/huyen_202414629/esp/esp-idf/components/lwip /home/huyen_202414629/esp/esp-idf/esp32-light-monitor/main /home/huyen_202414629/esp/esp-idf/components/mbedtls /home/huyen_202414629/esp/esp-idf/components/mqtt /home/huyen_202414629/esp/esp-idf/components/newlib /home/huyen_202414629/esp/esp-idf/components/nvs_flash /home/huyen_202414629/esp/esp-idf/components/nvs_sec_provider /home/huyen_202414629/esp/esp-idf/components/openthread /home/huyen_202414629/esp/esp-idf/components/partition_table /home/huyen_202414629/esp/esp-idf/components/perfmon /home/huyen_202414629/esp/esp-idf/components/protobuf-c /home/huyen_202414629/esp/esp-idf/components/protocomm /home/huyen_202414629/esp/esp-idf/components/pthread /home/huyen_202414629/esp/esp-idf/components/sdmmc /home/huyen_202414629/esp/esp-idf/esp32-light-monitor/components/sds011 /home/huyen_202414629/esp/esp-idf/components/soc /home/huyen_202414629/esp/esp-idf/components/spi_flash /home/huyen_202414629/esp/esp-idf/components/spiffs /home/huyen_202414629/esp/esp-idf/esp32-light-monitor/components/ssd1306 /home/huyen_202414629/esp/esp-idf/components/tcp_transport /home/huyen_202414629/esp/esp-idf/esp32-light-monitor/components/temt6000 /home/huyen_202414629/esp/esp-idf/components/ulp /home/huyen_202414629/esp/esp-idf/components/unity /home/huyen_202414629/esp/esp-idf/components/usb /home/huyen_202414629/esp/esp-idf/components/vfs /home/huyen_202414629/esp/esp-idf/components/wear_levelling /home/huyen_202414629/esp/esp-idf/components/wifi_provisioning /home/huyen_202414629/esp/esp-idf/components/wpa_supplicant /home/huyen_202414629/esp/esp-idf/components/xtensa
+-- Configuring done (4.1s)
+-- Generating done (0.6s)
+-- Build files have been written to: /home/huyen_202414629/esp/esp-idf/esp32-light-monitor/build
+[  0%] Built target partition_table_bin
+[  0%] Built target _project_elf_src
+[  0%] Built target sections.ld.in
+[  0%] Built target memory.ld
+[  0%] Built target custom_bundle
+[  0%] Performing build step for 'bootloader'
+[  1%] Built target __idf_esp_https_ota
+[  1%] Built target __idf_esp_http_server
+[  1%] Built target _project_elf_src
+[  5%] Built target __idf_log
+[  2%] Built target __idf_esp_http_client
+[ 12%] Built target __idf_esp_rom
+[ 13%] Built target __idf_esp_common
+[  3%] Built target __idf_tcp_transport
+[ 23%] Built target __idf_esp_hw_support
+[  4%] Built target __idf_esp_eth
+[ 25%] Built target __idf_esp_system
+[  5%] Built target __idf_esp_adc
+[ 32%] Built target __idf_efuse
+[  6%] Built target __idf_esp-tls
+[ 54%] Built target __idf_bootloader_support
+[  6%] Built target __idf_http_parser
+[ 56%] Built target __idf_esp_bootloader_format
+[  7%] Built target __idf_esp_gdbstub
+[ 58%] Built target __idf_spi_flash
+[ 65%] Built target __idf_hal
+[  8%] Built target __idf_esp_wifi
+[ 68%] Built target __idf_micro-ecc
+[  9%] Built target __idf_esp_coex
+[ 92%] Built target __idf_soc
+[ 94%] Built target __idf_xtensa
+[ 95%] Built target __idf_main
+[ 98%] Built target bootloader.elf
+[ 18%] Built target __idf_wpa_supplicant
+[100%] Built target gen_project_binary
+[ 19%] Built target __idf_esp_netif
+Bootloader binary size 0x68e0 bytes. 0x720 bytes (6%) free.
+[100%] Built target bootloader_check_size
+[100%] Built target app
+[ 19%] No install step for 'bootloader'
+[ 19%] Completed 'bootloader'
+[ 28%] Built target __idf_lwip
+[ 29%] Built target bootloader
+[ 29%] Built target __idf_vfs
+[ 30%] Built target __idf_esp_vfs_console
+[ 30%] Built target __idf_esp_phy
+[ 32%] Built target __idf_driver
+[ 32%] Built target __idf_esp_driver_ledc
+[ 32%] Built target __idf_esp_driver_i2c
+[ 32%] Built target __idf_esp_driver_sdm
+[ 32%] Built target __idf_esp_driver_rmt
+[ 33%] Built target __idf_esp_driver_dac
+[ 34%] Built target __idf_esp_driver_sdio
+[ 34%] Built target __idf_esp_driver_sdspi
+[ 34%] Built target __idf_esp_driver_sdmmc
+[ 34%] Built target __idf_sdmmc
+[ 35%] Built target __idf_esp_driver_i2s
+[ 36%] Built target __idf_esp_driver_mcpwm
+[ 37%] Built target __idf_esp_driver_spi
+[ 37%] Built target __idf_esp_driver_pcnt
+[ 39%] Built target __idf_nvs_flash
+[ 40%] Built target __idf_esp_event
+[ 40%] Built target __idf_esp_driver_uart
+[ 40%] Built target __idf_esp_ringbuf
+[ 41%] Built target __idf_esp_driver_gptimer
+[ 41%] Built target __idf_esp_timer
+[ 41%] Built target __idf_cxx
+[ 42%] Built target __idf_pthread
+[ 44%] Built target __idf_newlib
+[ 45%] Built target __idf_freertos
+[ 49%] Built target __idf_esp_hw_support
+[ 51%] Built target __idf_soc
+[ 52%] Built target __idf_heap
+[ 52%] Built target __idf_log
+[ 57%] Built target __idf_hal
+[ 58%] Built target __idf_esp_rom
+[ 58%] Built target __idf_esp_common
+[ 62%] Built target __idf_esp_system
+[ 64%] Built target __idf_spi_flash
+[ 64%] Built target __idf_esp_mm
+[ 65%] Built target __idf_bootloader_support
+[ 65%] Built target __idf_efuse
+[ 66%] Built target __idf_esp_partition
+[ 66%] Built target __idf_app_update
+[ 66%] Built target __idf_esp_bootloader_format
+[ 66%] Built target __idf_esp_app_format
+[ 68%] Built target mbedtls
+[ 69%] Built target mbedx509
+[ 79%] Built target mbedcrypto
+[ 79%] Built target p256m
+[ 79%] Built target everest
+[ 80%] Built target __idf_mbedtls
+[ 81%] Built target __idf_esp_pm
+[ 81%] Built target __idf_esp_driver_gpio
+[ 82%] Built target __idf_xtensa
+[ 82%] Built target __idf_temt6000
+[ 82%] Built target __idf_esp_hid
+[ 82%] Built target __idf_app_trace
+[ 82%] Built target __idf_esp_driver_cam
+[ 82%] Built target __idf_i2cdev
+[ 83%] Built target __idf_json
+[ 83%] Built target __idf_nvs_sec_provider
+[ 83%] Built target __idf_esp_https_server
+[ 83%] Built target __idf_perfmon
+[ 84%] Built target __idf_wear_levelling
+[ 85%] Building C object esp-idf/sds011/CMakeFiles/__idf_sds011.dir/sds011.c.obj
+[ 86%] Built target __idf_unity
+[ 86%] Built target __idf_mqtt
+[ 87%] Built target __idf_espcoredump
+[ 88%] Built target __idf_protobuf-c
+[ 91%] Built target __idf_esp_lcd
+[ 91%] Built target __idf_spiffs
+[ 92%] Built target __idf_console
+[ 93%] Built target __idf_cmock
+[ 93%] Built target __idf_ssd1306
+[ 94%] Built target __idf_bh1750
+[ 95%] Built target __idf_fatfs
+[ 96%] Built target __idf_protocomm
+[ 97%] Built target __idf_esp_local_ctrl
+[ 98%] Built target __idf_wifi_provisioning
+[ 98%] Linking C static library libsds011.a
+[ 98%] Built target __idf_sds011
+[ 98%] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+[ 98%] Linking C static library libmain.a
+[ 98%] Built target __idf_main
+[ 98%] Generating ld/sections.ld
+[ 98%] Built target __ldgen_output_sections.ld
+[100%] Building C object CMakeFiles/nha.elf.dir/project_elf_src_esp32.c.obj
+[100%] Linking CXX executable nha.elf
+[100%] Built target nha.elf
+[100%] Generating binary image from built executable
+esptool.py v4.11.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/huyen_202414629/esp/esp-idf/esp32-light-monitor/build/nha.bin
+[100%] Built target gen_project_binary
+nha.bin binary size 0xe12a0 bytes. Smallest app partition is 0x100000 bytes. 0x1ed60 bytes (12%) free.
+[100%] Built target app_check_size
+[100%] Built target app
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 nha.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.11.0
+Serial port /dev/ttyUSB0
+Connecting.....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: d4:e9:f4:78:6d:44
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000f1fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26848 bytes to 16430...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000789c... (100 %)
+Wrote 26848 bytes (16430 compressed) at 0x00001000 in 0.5 seconds (effective 423.4 kbit/s)...
+Hash of data verified.
+Compressed 922272 bytes to 575609...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001de00... (5 %)
+Writing at 0x00028f6c... (8 %)
+Writing at 0x00032692... (11 %)
+Writing at 0x0003ab0b... (13 %)
+Writing at 0x000405b0... (16 %)
+Writing at 0x000460cb... (19 %)
+Writing at 0x0004c082... (22 %)
+Writing at 0x00051d21... (25 %)
+Writing at 0x00057bb1... (27 %)
+Writing at 0x0005dac2... (30 %)
+Writing at 0x00063615... (33 %)
+Writing at 0x00069467... (36 %)
+Writing at 0x0006fa27... (38 %)
+Writing at 0x00075786... (41 %)
+Writing at 0x0007b56c... (44 %)
+Writing at 0x00080abe... (47 %)
+Writing at 0x00085e6f... (50 %)
+Writing at 0x0008bc57... (52 %)
+Writing at 0x000915c6... (55 %)
+Writing at 0x00096d9f... (58 %)
+Writing at 0x0009c84e... (61 %)
+Writing at 0x000a2883... (63 %)
+Writing at 0x000a82e3... (66 %)
+Writing at 0x000adb89... (69 %)
+Writing at 0x000b37e3... (72 %)
+Writing at 0x000b9543... (75 %)
+Writing at 0x000beee6... (77 %)
+Writing at 0x000c4bbb... (80 %)
+Writing at 0x000ca799... (83 %)
+Writing at 0x000d0084... (86 %)
+Writing at 0x000d9273... (88 %)
+Writing at 0x000defe9... (91 %)
+Writing at 0x000e504a... (94 %)
+Writing at 0x000eaf08... (97 %)
+Writing at 0x000f0378... (100 %)
+Wrote 922272 bytes (575609 compressed) at 0x00010000 in 13.0 seconds (effective 566.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 1382.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+[100%] Built target flash

@@ -1,0 +1,1840 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15660
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.5 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul  2 2026 17:08:13[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=22340h (140096) map[0m
+[0;32mI (152) esp_image: segment 1: paddr=00032368 vaddr=3ffb0000 size=043bch ( 17340) load[0m
+[0;32mI (159) esp_image: segment 2: paddr=0003672c vaddr=40080000 size=098ech ( 39148) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a1bc4h (662468) map[0m
+[0;32mI (402) esp_image: segment 4: paddr=000e1bec vaddr=400898ec size=0f684h ( 63108) load[0m
+[0;32mI (439) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (439) boot: Disabling RNG early entropy source...[0m
+[0;32mI (452) cpu_start: Multicore app[0m
+[0;32mI (460) cpu_start: Pro cpu start user code[0m
+[0;32mI (460) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (460) app_init: Application information:[0m
+[0;32mI (463) app_init: Project name:     nha[0m
+[0;32mI (468) app_init: App version:      aa5baf5-dirty[0m
+[0;32mI (473) app_init: Compile time:     Jul  2 2026 17:08:29[0m
+[0;32mI (479) app_init: ELF file SHA256:  8b0eb6fe9...[0m
+[0;32mI (484) app_init: ESP-IDF:          v5.3.5[0m
+[0;32mI (489) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (494) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (499) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (504) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (511) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (517) heap_init: At 3FFB8DB8 len 00027248 (156 KiB): DRAM[0m
+[0;32mI (523) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (529) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (536) heap_init: At 40098F70 len 00007090 (28 KiB): IRAM[0m
+[0;32mI (544) spi_flash: detected chip: generic[0m
+[0;32mI (547) spi_flash: flash io: dio[0m
+[0;33mW (551) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (564) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (573) main_task: Started on CPU0[0m
+[0;32mI (583) main_task: Calling app_main()[0m
+[0;32mI (583) MAIN: System Start[0m
+[0;32mI (583) i2cdev: [Port 0] First initialization. Configuring bus with SDA=21, SCL=22 (Pullups SCL:0 SDA:0)[0m
+[0;33mW (593) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+[0;32mI (603) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (613) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (623) i2cdev: [Port 0] Successfully installed I2C master bus (Handle: 0x3ffbbfd8).[0m
+[0;32mI (633) i2cdev: [0x3c at 0] Device added successfully (Device Handle: 0x3ffbc4e8, Speed: 400000 Hz).[0m
+[0;32mI (643) SSD1306: SSD1306 initialized flawlessly via i2cdev![0m
+[0;32mI (723) wifi:wifi driver task: 3ffc15f0, prio:23, stack:6656, core=0[0m
+[0;32mI (733) wifi:wifi firmware version: 18db208[0m
+[0;32mI (733) wifi:wifi certification version: v7.0[0m
+[0;32mI (733) wifi:config NVS flash: enabled[0m
+[0;32mI (733) wifi:config nano formating: disabled[0m
+[0;32mI (733) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (743) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (743) wifi:Init management short buffer num: 32[0m
+[0;32mI (753) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (753) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (763) wifi:Init static rx buffer num: 10[0m
+[0;32mI (763) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (763) wifi_init: rx ba win: 6[0m
+[0;32mI (773) wifi_init: accept mbox: 6[0m
+[0;32mI (773) wifi_init: tcpip mbox: 32[0m
+[0;32mI (773) wifi_init: udp mbox: 6[0m
+[0;32mI (783) wifi_init: tcp mbox: 6[0m
+[0;32mI (783) wifi_init: tcp tx win: 5760[0m
+[0;32mI (793) wifi_init: tcp rx win: 5760[0m
+[0;32mI (793) wifi_init: tcp mss: 1440[0m
+[0;32mI (793) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (803) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (803) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (813) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (903) wifi:mode : sta (d4:e9:f4:78:6d:44)[0m
+[0;32mI (913) wifi:enable tsf[0m
+[0;32mI (923) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (923) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (933) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (953) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (983) wifi:connected with Die, aid = 1, channel 11, BW20, bssid = 92:9f:13:e7:14:3b[0m
+[0;32mI (983) wifi:security: WPA2-PSK, phy: bgn, rssi: -29[0m
+[0;32mI (993) wifi:pm start, type: 1[0m
+
+[0;32mI (993) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1003) wifi:<ba-add>idx:0 (ifx:0, 92:9f:13:e7:14:3b), tid:0, ssn:0, winSize:64[0m
+[0;32mI (1083) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1083) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (2003) esp_netif_handlers: sta ip: 10.162.157.218, mask: 255.255.255.0, gw: 10.162.157.229[0m
+[0;32mI (2003) MAIN: WiFi Connected[0m
+[0;32mI (2083) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffca954, Speed: 50000 Hz).[0m
+[0;32mI (2083) CHECK_CODE: --- TOI DA DAO THU TU HAM THANH CONG ---[0m
+[0;32mI (2083) MAIN: SDS011 ready on UART1 TX=GPIO25 RX=GPIO26[0m
+[0;32mI (2593) MAIN: SDS011: WAKE UP[0m
+[0;32mI (2693) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (2803) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (3033) MAIN: MQTT CONNECTED[0m
+[0;32mI (3093) MAIN: SDS011: ACTIVE mode[0m
+[0;32mI (3093) MAIN: All sensors ready[0m
+[0;32mI (3193) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (3803) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (4123) MAIN: Sample Time = 3.587 s[0m
+[0;32mI (4123) MAIN: SDS011: PM2.5=32.5 µg/m³ | PM10=36.0 µg/m³[0m
+[0;32mI (4133) MAIN: BH=404.00 lx | TEMT=115.40 lx | PM2.5=32.5 | PM10=36.0[0m
+[0;32mI (4143) MAIN: SEND: {"lux":404,"temt":115.40,"pm25":32.5,"pm10":36.0,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (4803) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (5123) MAIN: Sample Time = 4.587 s[0m
+[0;32mI (5123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0008%[0m
+[0;32mI (5123) MAIN: SDS011: PM2.5=32.2 µg/m³ | PM10=35.7 µg/m³[0m
+[0;32mI (5133) MAIN: BH=403.00 lx | TEMT=77.40 lx | PM2.5=32.2 | PM10=35.7[0m
+[0;32mI (5153) MAIN: SEND: {"lux":403,"temt":77.40,"pm25":32.2,"pm10":35.7,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0008}[0m
+[0;33mW (5813) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (5813) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (6123) MAIN: Sample Time = 5.587 s[0m
+[0;32mI (6123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (6123) MAIN: SDS011: PM2.5=32.1 µg/m³ | PM10=35.6 µg/m³[0m
+[0;32mI (6133) MAIN: BH=413.00 lx | TEMT=0.00 lx | PM2.5=32.1 | PM10=35.6[0m
+[0;32mI (6153) MAIN: SEND: {"lux":413,"temt":0.00,"pm25":32.1,"pm10":35.6,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (6813) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (7123) MAIN: Sample Time = 6.587 s[0m
+[0;32mI (7123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0028%[0m
+[0;32mI (7123) MAIN: SDS011: PM2.5=31.9 µg/m³ | PM10=35.4 µg/m³[0m
+[0;32mI (7133) MAIN: BH=417.00 lx | TEMT=29.40 lx | PM2.5=31.9 | PM10=35.4[0m
+[0;32mI (7153) MAIN: SEND: {"lux":417,"temt":29.40,"pm25":31.9,"pm10":35.4,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0028}[0m
+[0;32mI (7813) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (8123) MAIN: Sample Time = 7.587 s[0m
+[0;32mI (8123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (8123) MAIN: SDS011: PM2.5=31.9 µg/m³ | PM10=35.5 µg/m³[0m
+[0;32mI (8133) MAIN: BH=416.00 lx | TEMT=84.00 lx | PM2.5=31.9 | PM10=35.5[0m
+[0;32mI (8153) MAIN: SEND: {"lux":416,"temt":84.00,"pm25":31.9,"pm10":35.5,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;32mI (8823) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (9123) MAIN: Sample Time = 8.587 s[0m
+[0;32mI (9123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (9123) MAIN: SDS011: PM2.5=31.9 µg/m³ | PM10=35.5 µg/m³[0m
+[0;32mI (9133) MAIN: BH=415.00 lx | TEMT=85.20 lx | PM2.5=31.9 | PM10=35.5[0m
+[0;32mI (9153) MAIN: SEND: {"lux":415,"temt":85.20,"pm25":31.9,"pm10":35.5,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (9823) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (10123) MAIN: Sample Time = 9.587 s[0m
+[0;32mI (10123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (10133) MAIN: SDS011: PM2.5=32.0 µg/m³ | PM10=35.6 µg/m³[0m
+[0;32mI (10133) MAIN: BH=415.00 lx | TEMT=84.80 lx | PM2.5=32.0 | PM10=35.6[0m
+[0;32mI (10153) MAIN: SEND: {"lux":415,"temt":84.80,"pm25":32.0,"pm10":35.6,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (10823) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (11123) MAIN: Sample Time = 10.587 s[0m
+[0;32mI (11123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (11133) MAIN: SDS011: PM2.5=32.1 µg/m³ | PM10=35.7 µg/m³[0m
+[0;32mI (11133) MAIN: BH=409.00 lx | TEMT=82.20 lx | PM2.5=32.1 | PM10=35.7[0m
+[0;32mI (11153) MAIN: SEND: {"lux":409,"temt":82.20,"pm25":32.1,"pm10":35.7,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (11823) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (12123) MAIN: Sample Time = 11.587 s[0m
+[0;32mI (12123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (12133) MAIN: SDS011: PM2.5=32.1 µg/m³ | PM10=35.7 µg/m³[0m
+[0;32mI (12133) MAIN: BH=407.00 lx | TEMT=78.00 lx | PM2.5=32.1 | PM10=35.7[0m
+[0;32mI (12153) MAIN: SEND: {"lux":407,"temt":78.00,"pm25":32.1,"pm10":35.7,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (12833) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (12833) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (13123) MAIN: Sample Time = 12.587 s[0m
+[0;32mI (13123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (13133) MAIN: SDS011: PM2.5=32.2 µg/m³ | PM10=35.8 µg/m³[0m
+[0;32mI (13133) MAIN: BH=408.00 lx | TEMT=76.00 lx | PM2.5=32.2 | PM10=35.8[0m
+[0;32mI (13153) MAIN: SEND: {"lux":408,"temt":76.00,"pm25":32.2,"pm10":35.8,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (13833) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (14123) MAIN: Sample Time = 13.587 s[0m
+[0;32mI (14123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (14133) MAIN: SDS011: PM2.5=32.2 µg/m³ | PM10=35.8 µg/m³[0m
+[0;32mI (14133) MAIN: BH=407.00 lx | TEMT=77.00 lx | PM2.5=32.2 | PM10=35.8[0m
+[0;32mI (14153) MAIN: SEND: {"lux":407,"temt":77.00,"pm25":32.2,"pm10":35.8,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (14833) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (15123) MAIN: Sample Time = 14.587 s[0m
+[0;32mI (15123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (15133) MAIN: SDS011: PM2.5=32.1 µg/m³ | PM10=35.7 µg/m³[0m
+[0;32mI (15133) MAIN: BH=407.00 lx | TEMT=54.80 lx | PM2.5=32.1 | PM10=35.7[0m
+[0;32mI (15153) MAIN: SEND: {"lux":407,"temt":54.80,"pm25":32.1,"pm10":35.7,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (15843) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (16123) MAIN: Sample Time = 15.587 s[0m
+[0;32mI (16123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (16133) MAIN: SDS011: PM2.5=32.1 µg/m³ | PM10=35.7 µg/m³[0m
+[0;32mI (16133) MAIN: BH=405.00 lx | TEMT=66.00 lx | PM2.5=32.1 | PM10=35.7[0m
+[0;32mI (16153) MAIN: SEND: {"lux":405,"temt":66.00,"pm25":32.1,"pm10":35.7,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (16843) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (17123) MAIN: Sample Time = 16.587 s[0m
+[0;32mI (17123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (17133) MAIN: SDS011: PM2.5=32.2 µg/m³ | PM10=35.8 µg/m³[0m
+[0;32mI (17133) MAIN: BH=414.00 lx | TEMT=83.20 lx | PM2.5=32.2 | PM10=35.8[0m
+[0;32mI (17153) MAIN: SEND: {"lux":414,"temt":83.20,"pm25":32.2,"pm10":35.8,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (17843) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (18123) MAIN: Sample Time = 17.587 s[0m
+[0;32mI (18123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (18133) MAIN: SDS011: PM2.5=32.1 µg/m³ | PM10=35.8 µg/m³[0m
+[0;32mI (18133) MAIN: BH=418.00 lx | TEMT=82.00 lx | PM2.5=32.1 | PM10=35.8[0m
+[0;32mI (18153) MAIN: SEND: {"lux":418,"temt":82.00,"pm25":32.1,"pm10":35.8,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (18843) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (19123) MAIN: Sample Time = 18.587 s[0m
+[0;32mI (19123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (19133) MAIN: SDS011: PM2.5=32.0 µg/m³ | PM10=35.7 µg/m³[0m
+[0;32mI (19133) MAIN: BH=414.00 lx | TEMT=79.40 lx | PM2.5=32.0 | PM10=35.7[0m
+[0;32mI (19153) MAIN: SEND: {"lux":414,"temt":79.40,"pm25":32.0,"pm10":35.7,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (19853) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (20123) MAIN: Sample Time = 19.587 s[0m
+[0;32mI (20123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (20133) MAIN: SDS011: PM2.5=31.7 µg/m³ | PM10=35.4 µg/m³[0m
+[0;32mI (20133) MAIN: BH=400.00 lx | TEMT=79.00 lx | PM2.5=31.7 | PM10=35.4[0m
+[0;32mI (20153) MAIN: SEND: {"lux":400,"temt":79.00,"pm25":31.7,"pm10":35.4,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (20853) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (21123) MAIN: Sample Time = 20.587 s[0m
+[0;32mI (21123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (21133) MAIN: SDS011: PM2.5=31.9 µg/m³ | PM10=35.6 µg/m³[0m
+[0;32mI (21133) MAIN: BH=397.00 lx | TEMT=76.20 lx | PM2.5=31.9 | PM10=35.6[0m
+[0;32mI (21153) MAIN: SEND: {"lux":397,"temt":76.20,"pm25":31.9,"pm10":35.6,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (21853) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (22123) MAIN: Sample Time = 21.587 s[0m
+[0;32mI (22123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (22133) MAIN: SDS011: PM2.5=31.9 µg/m³ | PM10=35.6 µg/m³[0m
+[0;32mI (22133) MAIN: BH=396.00 lx | TEMT=78.20 lx | PM2.5=31.9 | PM10=35.6[0m
+[0;32mI (22153) MAIN: SEND: {"lux":396,"temt":78.20,"pm25":31.9,"pm10":35.6,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (22853) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (23123) MAIN: Sample Time = 22.587 s[0m
+[0;32mI (23123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0032%[0m
+[0;32mI (23133) MAIN: SDS011: PM2.5=31.9 µg/m³ | PM10=35.6 µg/m³[0m
+[0;32mI (23133) MAIN: BH=396.00 lx | TEMT=33.20 lx | PM2.5=31.9 | PM10=35.6[0m
+[0;32mI (23153) MAIN: SEND: {"lux":396,"temt":33.20,"pm25":31.9,"pm10":35.6,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0032}[0m
+[0;32mI (23863) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (24123) MAIN: Sample Time = 23.587 s[0m
+[0;32mI (24123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0032%[0m
+[0;32mI (24133) MAIN: SDS011: PM2.5=31.8 µg/m³ | PM10=35.5 µg/m³[0m
+[0;32mI (24133) MAIN: BH=397.00 lx | TEMT=55.60 lx | PM2.5=31.8 | PM10=35.5[0m
+[0;32mI (24153) MAIN: SEND: {"lux":397,"temt":55.60,"pm25":31.8,"pm10":35.5,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0032}[0m
+[0;32mI (24863) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (25123) MAIN: Sample Time = 24.587 s[0m
+[0;32mI (25123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (25133) MAIN: SDS011: PM2.5=31.7 µg/m³ | PM10=35.4 µg/m³[0m
+[0;32mI (25133) MAIN: BH=397.00 lx | TEMT=84.40 lx | PM2.5=31.7 | PM10=35.4[0m
+[0;32mI (25153) MAIN: SEND: {"lux":397,"temt":84.40,"pm25":31.7,"pm10":35.4,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (25863) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (26123) MAIN: Sample Time = 25.587 s[0m
+[0;32mI (26123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (26133) MAIN: SDS011: PM2.5=31.8 µg/m³ | PM10=35.4 µg/m³[0m
+[0;32mI (26133) MAIN: BH=398.00 lx | TEMT=85.00 lx | PM2.5=31.8 | PM10=35.4[0m
+[0;32mI (26153) MAIN: SEND: {"lux":398,"temt":85.00,"pm25":31.8,"pm10":35.4,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (26873) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (26873) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (27123) MAIN: Sample Time = 26.587 s[0m
+[0;32mI (27123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (27133) MAIN: SDS011: PM2.5=31.5 µg/m³ | PM10=35.1 µg/m³[0m
+[0;32mI (27133) MAIN: BH=397.00 lx | TEMT=86.60 lx | PM2.5=31.5 | PM10=35.1[0m
+[0;32mI (27153) MAIN: SEND: {"lux":397,"temt":86.60,"pm25":31.5,"pm10":35.1,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (27873) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (28123) MAIN: Sample Time = 27.587 s[0m
+[0;32mI (28123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (28133) MAIN: SDS011: PM2.5=31.5 µg/m³ | PM10=35.1 µg/m³[0m
+[0;32mI (28133) MAIN: BH=397.00 lx | TEMT=80.60 lx | PM2.5=31.5 | PM10=35.1[0m
+[0;32mI (28153) MAIN: SEND: {"lux":397,"temt":80.60,"pm25":31.5,"pm10":35.1,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (28873) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (29123) MAIN: Sample Time = 28.587 s[0m
+[0;32mI (29123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (29133) MAIN: SDS011: PM2.5=31.6 µg/m³ | PM10=35.2 µg/m³[0m
+[0;32mI (29133) MAIN: BH=398.00 lx | TEMT=81.80 lx | PM2.5=31.6 | PM10=35.2[0m
+[0;32mI (29153) MAIN: SEND: {"lux":398,"temt":81.80,"pm25":31.6,"pm10":35.2,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (29873) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (30123) MAIN: Sample Time = 29.587 s[0m
+[0;32mI (30123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (30133) MAIN: SDS011: PM2.5=31.6 µg/m³ | PM10=35.3 µg/m³[0m
+[0;32mI (30133) MAIN: BH=398.00 lx | TEMT=80.40 lx | PM2.5=31.6 | PM10=35.3[0m
+[0;32mI (30153) MAIN: SEND: {"lux":398,"temt":80.40,"pm25":31.6,"pm10":35.3,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (30883) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (30883) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (31123) MAIN: Sample Time = 30.587 s[0m
+[0;32mI (31123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (31133) MAIN: SDS011: PM2.5=31.6 µg/m³ | PM10=35.3 µg/m³[0m
+[0;32mI (31133) MAIN: BH=397.00 lx | TEMT=76.60 lx | PM2.5=31.6 | PM10=35.3[0m
+[0;32mI (31153) MAIN: SEND: {"lux":397,"temt":76.60,"pm25":31.6,"pm10":35.3,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (31883) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (32123) MAIN: Sample Time = 31.587 s[0m
+[0;32mI (32123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (32133) MAIN: SDS011: PM2.5=31.5 µg/m³ | PM10=35.2 µg/m³[0m
+[0;32mI (32133) MAIN: BH=398.00 lx | TEMT=58.40 lx | PM2.5=31.5 | PM10=35.2[0m
+[0;32mI (32153) MAIN: SEND: {"lux":398,"temt":58.40,"pm25":31.5,"pm10":35.2,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (32883) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (33123) MAIN: Sample Time = 32.588 s[0m
+[0;32mI (33123) MAIN: [TIMING] dt=1.0007s | f_actual=0.9993Hz | error=0.0659%[0m
+[0;32mI (33133) MAIN: SDS011: PM2.5=31.5 µg/m³ | PM10=35.2 µg/m³[0m
+[0;32mI (33133) MAIN: BH=405.00 lx | TEMT=58.00 lx | PM2.5=31.5 | PM10=35.2[0m
+[0;32mI (33153) MAIN: SEND: {"lux":405,"temt":58.00,"pm25":31.5,"pm10":35.2,"dt":1.0007,"f_actual":0.9993,"error_pct":0.0659}[0m
+[0;33mW (33893) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (33893) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (34123) MAIN: Sample Time = 33.587 s[0m
+[0;32mI (34123) MAIN: [TIMING] dt=0.9993s | f_actual=1.0007Hz | error=-0.0663%[0m
+[0;32mI (34133) MAIN: SDS011: PM2.5=31.4 µg/m³ | PM10=35.0 µg/m³[0m
+[0;32mI (34133) MAIN: BH=415.00 lx | TEMT=82.00 lx | PM2.5=31.4 | PM10=35.0[0m
+[0;32mI (34153) MAIN: SEND: {"lux":415,"temt":82.00,"pm25":31.4,"pm10":35.0,"dt":0.9993,"f_actual":1.0007,"error_pct":-0.0663}[0m
+[0;32mI (34893) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (35123) MAIN: Sample Time = 34.587 s[0m
+[0;32mI (35123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (35133) MAIN: SDS011: PM2.5=31.4 µg/m³ | PM10=35.0 µg/m³[0m
+[0;32mI (35133) MAIN: BH=421.00 lx | TEMT=82.60 lx | PM2.5=31.4 | PM10=35.0[0m
+[0;32mI (35153) MAIN: SEND: {"lux":421,"temt":82.60,"pm25":31.4,"pm10":35.0,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (35893) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (36123) MAIN: Sample Time = 35.587 s[0m
+[0;32mI (36123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (36133) MAIN: SDS011: PM2.5=31.6 µg/m³ | PM10=35.3 µg/m³[0m
+[0;32mI (36133) MAIN: BH=422.00 lx | TEMT=81.80 lx | PM2.5=31.6 | PM10=35.3[0m
+[0;32mI (36153) MAIN: SEND: {"lux":422,"temt":81.80,"pm25":31.6,"pm10":35.3,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (36903) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (37123) MAIN: Sample Time = 36.587 s[0m
+[0;32mI (37123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (37133) MAIN: SDS011: PM2.5=31.7 µg/m³ | PM10=35.4 µg/m³[0m
+[0;32mI (37133) MAIN: BH=421.00 lx | TEMT=80.00 lx | PM2.5=31.7 | PM10=35.4[0m
+[0;32mI (37153) MAIN: SEND: {"lux":421,"temt":80.00,"pm25":31.7,"pm10":35.4,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (37903) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (38123) MAIN: Sample Time = 37.587 s[0m
+[0;32mI (38123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (38133) MAIN: SDS011: PM2.5=31.6 µg/m³ | PM10=35.2 µg/m³[0m
+[0;32mI (38133) MAIN: BH=422.00 lx | TEMT=76.20 lx | PM2.5=31.6 | PM10=35.2[0m
+[0;32mI (38153) MAIN: SEND: {"lux":422,"temt":76.20,"pm25":31.6,"pm10":35.2,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (38903) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (39123) MAIN: Sample Time = 38.587 s[0m
+[0;32mI (39123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (39133) MAIN: SDS011: PM2.5=31.8 µg/m³ | PM10=35.4 µg/m³[0m
+[0;32mI (39133) MAIN: BH=421.00 lx | TEMT=77.00 lx | PM2.5=31.8 | PM10=35.4[0m
+[0;32mI (39153) MAIN: SEND: {"lux":421,"temt":77.00,"pm25":31.8,"pm10":35.4,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (39903) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (40123) MAIN: Sample Time = 39.587 s[0m
+[0;32mI (40123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (40133) MAIN: SDS011: PM2.5=31.8 µg/m³ | PM10=35.4 µg/m³[0m
+[0;32mI (40133) MAIN: BH=422.00 lx | TEMT=73.00 lx | PM2.5=31.8 | PM10=35.4[0m
+[0;32mI (40153) MAIN: SEND: {"lux":422,"temt":73.00,"pm25":31.8,"pm10":35.4,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (40913) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (40913) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (41123) MAIN: Sample Time = 40.587 s[0m
+[0;32mI (41123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (41133) MAIN: SDS011: PM2.5=31.8 µg/m³ | PM10=35.4 µg/m³[0m
+[0;32mI (41133) MAIN: BH=422.00 lx | TEMT=56.80 lx | PM2.5=31.8 | PM10=35.4[0m
+[0;32mI (41153) MAIN: SEND: {"lux":422,"temt":56.80,"pm25":31.8,"pm10":35.4,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (41913) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (42123) MAIN: Sample Time = 41.587 s[0m
+[0;32mI (42123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0028%[0m
+[0;32mI (42133) MAIN: SDS011: PM2.5=31.7 µg/m³ | PM10=35.3 µg/m³[0m
+[0;32mI (42133) MAIN: BH=422.00 lx | TEMT=0.00 lx | PM2.5=31.7 | PM10=35.3[0m
+[0;32mI (42153) MAIN: SEND: {"lux":422,"temt":0.00,"pm25":31.7,"pm10":35.3,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0028}[0m
+[0;32mI (42913) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (43123) MAIN: Sample Time = 42.587 s[0m
+[0;32mI (43123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (43133) MAIN: SDS011: PM2.5=31.6 µg/m³ | PM10=35.2 µg/m³[0m
+[0;32mI (43133) MAIN: BH=420.00 lx | TEMT=81.40 lx | PM2.5=31.6 | PM10=35.2[0m
+[0;32mI (43153) MAIN: SEND: {"lux":420,"temt":81.40,"pm25":31.6,"pm10":35.2,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;32mI (43923) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (44123) MAIN: Sample Time = 43.587 s[0m
+[0;32mI (44123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (44133) MAIN: SDS011: PM2.5=31.6 µg/m³ | PM10=35.2 µg/m³[0m
+[0;32mI (44133) MAIN: BH=420.00 lx | TEMT=83.20 lx | PM2.5=31.6 | PM10=35.2[0m
+[0;32mI (44153) MAIN: SEND: {"lux":420,"temt":83.20,"pm25":31.6,"pm10":35.2,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (44923) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (45123) MAIN: Sample Time = 44.587 s[0m
+[0;32mI (45123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (45133) MAIN: SDS011: PM2.5=31.6 µg/m³ | PM10=35.2 µg/m³[0m
+[0;32mI (45133) MAIN: BH=420.00 lx | TEMT=81.00 lx | PM2.5=31.6 | PM10=35.2[0m
+[0;32mI (45153) MAIN: SEND: {"lux":420,"temt":81.00,"pm25":31.6,"pm10":35.2,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (45923) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (46123) MAIN: Sample Time = 45.587 s[0m
+[0;32mI (46123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (46133) MAIN: SDS011: PM2.5=31.5 µg/m³ | PM10=35.1 µg/m³[0m
+[0;32mI (46133) MAIN: BH=420.00 lx | TEMT=78.40 lx | PM2.5=31.5 | PM10=35.1[0m
+[0;32mI (46153) MAIN: SEND: {"lux":420,"temt":78.40,"pm25":31.5,"pm10":35.1,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (46923) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (47123) MAIN: Sample Time = 46.587 s[0m
+[0;32mI (47123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (47133) MAIN: SDS011: PM2.5=31.4 µg/m³ | PM10=34.9 µg/m³[0m
+[0;32mI (47133) MAIN: BH=420.00 lx | TEMT=74.20 lx | PM2.5=31.4 | PM10=34.9[0m
+[0;32mI (47153) MAIN: SEND: {"lux":420,"temt":74.20,"pm25":31.4,"pm10":34.9,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (47933) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (47933) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (48123) MAIN: Sample Time = 47.587 s[0m
+[0;32mI (48123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (48133) MAIN: SDS011: PM2.5=31.4 µg/m³ | PM10=34.8 µg/m³[0m
+[0;32mI (48133) MAIN: BH=420.00 lx | TEMT=74.20 lx | PM2.5=31.4 | PM10=34.8[0m
+[0;32mI (48153) MAIN: SEND: {"lux":420,"temt":74.20,"pm25":31.4,"pm10":34.8,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (48933) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (49123) MAIN: Sample Time = 48.587 s[0m
+[0;32mI (49123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (49133) MAIN: SDS011: PM2.5=31.5 µg/m³ | PM10=35.0 µg/m³[0m
+[0;32mI (49133) MAIN: BH=420.00 lx | TEMT=66.60 lx | PM2.5=31.5 | PM10=35.0[0m
+[0;32mI (49153) MAIN: SEND: {"lux":420,"temt":66.60,"pm25":31.5,"pm10":35.0,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (49933) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (50123) MAIN: Sample Time = 49.587 s[0m
+[0;32mI (50123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (50133) MAIN: SDS011: PM2.5=31.6 µg/m³ | PM10=35.0 µg/m³[0m
+[0;32mI (50133) MAIN: BH=421.00 lx | TEMT=49.00 lx | PM2.5=31.6 | PM10=35.0[0m
+[0;32mI (50153) MAIN: SEND: {"lux":421,"temt":49.00,"pm25":31.6,"pm10":35.0,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;32mI (50943) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (51123) MAIN: Sample Time = 50.587 s[0m
+[0;32mI (51123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0028%[0m
+[0;32mI (51133) MAIN: SDS011: PM2.5=31.5 µg/m³ | PM10=34.9 µg/m³[0m
+[0;32mI (51133) MAIN: BH=421.00 lx | TEMT=81.00 lx | PM2.5=31.5 | PM10=34.9[0m
+[0;32mI (51153) MAIN: SEND: {"lux":421,"temt":81.00,"pm25":31.5,"pm10":34.9,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0028}[0m
+[0;32mI (51943) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (52123) MAIN: Sample Time = 51.587 s[0m
+[0;32mI (52123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (52133) MAIN: SDS011: PM2.5=31.5 µg/m³ | PM10=35.0 µg/m³[0m
+[0;32mI (52133) MAIN: BH=421.00 lx | TEMT=82.20 lx | PM2.5=31.5 | PM10=35.0[0m
+[0;32mI (52153) MAIN: SEND: {"lux":421,"temt":82.20,"pm25":31.5,"pm10":35.0,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (52943) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (53123) MAIN: Sample Time = 52.587 s[0m
+[0;32mI (53123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0008%[0m
+[0;32mI (53133) MAIN: SDS011: PM2.5=31.4 µg/m³ | PM10=34.8 µg/m³[0m
+[0;32mI (53133) MAIN: BH=423.00 lx | TEMT=0.00 lx | PM2.5=31.4 | PM10=34.8[0m
+[0;32mI (53153) MAIN: SEND: {"lux":423,"temt":0.00,"pm25":31.4,"pm10":34.8,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0008}[0m
+[0;32mI (53943) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (54123) MAIN: Sample Time = 53.587 s[0m
+[0;32mI (54123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0008%[0m
+[0;32mI (54133) MAIN: SDS011: PM2.5=31.5 µg/m³ | PM10=34.9 µg/m³[0m
+[0;32mI (54133) MAIN: BH=422.00 lx | TEMT=74.00 lx | PM2.5=31.5 | PM10=34.9[0m
+[0;32mI (54153) MAIN: SEND: {"lux":422,"temt":74.00,"pm25":31.5,"pm10":34.9,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0008}[0m
+[0;33mW (54953) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (54953) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (55123) MAIN: Sample Time = 54.587 s[0m
+[0;32mI (55123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (55133) MAIN: SDS011: PM2.5=31.7 µg/m³ | PM10=35.2 µg/m³[0m
+[0;32mI (55133) MAIN: BH=421.00 lx | TEMT=73.00 lx | PM2.5=31.7 | PM10=35.2[0m
+[0;32mI (55153) MAIN: SEND: {"lux":421,"temt":73.00,"pm25":31.7,"pm10":35.2,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (55953) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (56123) MAIN: Sample Time = 55.587 s[0m
+[0;32mI (56123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (56133) MAIN: SDS011: PM2.5=31.8 µg/m³ | PM10=35.3 µg/m³[0m
+[0;32mI (56133) MAIN: BH=421.00 lx | TEMT=67.40 lx | PM2.5=31.8 | PM10=35.3[0m
+[0;32mI (56153) MAIN: SEND: {"lux":421,"temt":67.40,"pm25":31.8,"pm10":35.3,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (56953) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (57123) MAIN: Sample Time = 56.587 s[0m
+[0;32mI (57123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (57133) MAIN: SDS011: PM2.5=31.7 µg/m³ | PM10=35.2 µg/m³[0m
+[0;32mI (57133) MAIN: BH=420.00 lx | TEMT=64.20 lx | PM2.5=31.7 | PM10=35.2[0m
+[0;32mI (57153) MAIN: SEND: {"lux":420,"temt":64.20,"pm25":31.7,"pm10":35.2,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (57963) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (57963) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (58123) MAIN: Sample Time = 57.587 s[0m
+[0;32mI (58123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (58133) MAIN: SDS011: PM2.5=31.8 µg/m³ | PM10=35.3 µg/m³[0m
+[0;32mI (58133) MAIN: BH=419.00 lx | TEMT=53.40 lx | PM2.5=31.8 | PM10=35.3[0m
+[0;32mI (58153) MAIN: SEND: {"lux":419,"temt":53.40,"pm25":31.8,"pm10":35.3,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (58963) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (59123) MAIN: Sample Time = 58.587 s[0m
+[0;32mI (59123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (59133) MAIN: SDS011: PM2.5=31.8 µg/m³ | PM10=35.3 µg/m³[0m
+[0;32mI (59133) MAIN: BH=419.00 lx | TEMT=77.40 lx | PM2.5=31.8 | PM10=35.3[0m
+[0;32mI (59153) MAIN: SEND: {"lux":419,"temt":77.40,"pm25":31.8,"pm10":35.3,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (59963) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (60123) MAIN: Sample Time = 59.587 s[0m
+[0;32mI (60123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (60133) MAIN: SDS011: PM2.5=31.8 µg/m³ | PM10=35.3 µg/m³[0m
+[0;32mI (60133) MAIN: BH=419.00 lx | TEMT=77.20 lx | PM2.5=31.8 | PM10=35.3[0m
+[0;32mI (60153) MAIN: SEND: {"lux":419,"temt":77.20,"pm25":31.8,"pm10":35.3,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (60963) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (61123) MAIN: Sample Time = 60.587 s[0m
+[0;32mI (61123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0036%[0m
+[0;32mI (61133) MAIN: SDS011: PM2.5=31.8 µg/m³ | PM10=35.3 µg/m³[0m
+[0;32mI (61133) MAIN: BH=419.00 lx | TEMT=69.20 lx | PM2.5=31.8 | PM10=35.3[0m
+[0;32mI (61153) MAIN: SEND: {"lux":419,"temt":69.20,"pm25":31.8,"pm10":35.3,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0036}[0m
+[0;32mI (61973) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (62123) MAIN: Sample Time = 61.587 s[0m
+[0;32mI (62123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0032%[0m
+[0;32mI (62133) MAIN: SDS011: PM2.5=31.6 µg/m³ | PM10=35.1 µg/m³[0m
+[0;32mI (62133) MAIN: BH=415.00 lx | TEMT=75.60 lx | PM2.5=31.6 | PM10=35.1[0m
+[0;32mI (62153) MAIN: SEND: {"lux":415,"temt":75.60,"pm25":31.6,"pm10":35.1,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0032}[0m
+[0;32mI (62973) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (63123) MAIN: Sample Time = 62.587 s[0m
+[0;32mI (63123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0040%[0m
+[0;32mI (63133) MAIN: SDS011: PM2.5=31.8 µg/m³ | PM10=35.3 µg/m³[0m
+[0;32mI (63133) MAIN: BH=418.00 lx | TEMT=0.00 lx | PM2.5=31.8 | PM10=35.3[0m
+[0;32mI (63153) MAIN: SEND: {"lux":418,"temt":0.00,"pm25":31.8,"pm10":35.3,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0040}[0m
+[0;32mI (63973) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (64123) MAIN: Sample Time = 63.587 s[0m
+[0;32mI (64123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0048%[0m
+[0;32mI (64133) MAIN: SDS011: PM2.5=31.8 µg/m³ | PM10=35.3 µg/m³[0m
+[0;32mI (64133) MAIN: BH=419.00 lx | TEMT=0.00 lx | PM2.5=31.8 | PM10=35.3[0m
+[0;32mI (64153) MAIN: SEND: {"lux":419,"temt":0.00,"pm25":31.8,"pm10":35.3,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0048}[0m
+[0;33mW (64983) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (64983) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (65123) MAIN: Sample Time = 64.587 s[0m
+[0;32mI (65123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0008%[0m
+[0;32mI (65133) MAIN: SDS011: PM2.5=31.8 µg/m³ | PM10=35.3 µg/m³[0m
+[0;32mI (65133) MAIN: BH=419.00 lx | TEMT=69.20 lx | PM2.5=31.8 | PM10=35.3[0m
+[0;32mI (65153) MAIN: SEND: {"lux":419,"temt":69.20,"pm25":31.8,"pm10":35.3,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0008}[0m
+[0;32mI (65983) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (66123) MAIN: Sample Time = 65.587 s[0m
+[0;32mI (66123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (66133) MAIN: SDS011: PM2.5=31.7 µg/m³ | PM10=35.2 µg/m³[0m
+[0;32mI (66133) MAIN: BH=420.00 lx | TEMT=63.20 lx | PM2.5=31.7 | PM10=35.2[0m
+[0;32mI (66153) MAIN: SEND: {"lux":420,"temt":63.20,"pm25":31.7,"pm10":35.2,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (66983) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (67123) MAIN: Sample Time = 66.587 s[0m
+[0;32mI (67123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0028%[0m
+[0;32mI (67133) MAIN: SDS011: PM2.5=31.9 µg/m³ | PM10=35.5 µg/m³[0m
+[0;32mI (67133) MAIN: BH=420.00 lx | TEMT=35.20 lx | PM2.5=31.9 | PM10=35.5[0m
+[0;32mI (67153) MAIN: SEND: {"lux":420,"temt":35.20,"pm25":31.9,"pm10":35.5,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0028}[0m
+[0;32mI (67993) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (68123) MAIN: Sample Time = 67.587 s[0m
+[0;32mI (68123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (68133) MAIN: SDS011: PM2.5=31.9 µg/m³ | PM10=35.4 µg/m³[0m
+[0;32mI (68133) MAIN: BH=420.00 lx | TEMT=72.00 lx | PM2.5=31.9 | PM10=35.4[0m
+[0;32mI (68153) MAIN: SEND: {"lux":420,"temt":72.00,"pm25":31.9,"pm10":35.4,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;32mI (68993) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (69123) MAIN: Sample Time = 68.587 s[0m
+[0;32mI (69123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (69133) MAIN: SDS011: PM2.5=31.6 µg/m³ | PM10=35.1 µg/m³[0m
+[0;32mI (69133) MAIN: BH=419.00 lx | TEMT=64.00 lx | PM2.5=31.6 | PM10=35.1[0m
+[0;32mI (69153) MAIN: SEND: {"lux":419,"temt":64.00,"pm25":31.6,"pm10":35.1,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (69993) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (70123) MAIN: Sample Time = 69.587 s[0m
+[0;32mI (70123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (70133) MAIN: SDS011: PM2.5=31.4 µg/m³ | PM10=34.9 µg/m³[0m
+[0;32mI (70133) MAIN: BH=420.00 lx | TEMT=76.80 lx | PM2.5=31.4 | PM10=34.9[0m
+[0;32mI (70153) MAIN: SEND: {"lux":420,"temt":76.80,"pm25":31.4,"pm10":34.9,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (70993) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (71123) MAIN: Sample Time = 70.587 s[0m
+[0;32mI (71123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (71133) MAIN: SDS011: PM2.5=31.3 µg/m³ | PM10=34.8 µg/m³[0m
+[0;32mI (71133) MAIN: BH=419.00 lx | TEMT=75.60 lx | PM2.5=31.3 | PM10=34.8[0m
+[0;32mI (71153) MAIN: SEND: {"lux":419,"temt":75.60,"pm25":31.3,"pm10":34.8,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (72003) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (72003) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (72123) MAIN: Sample Time = 71.587 s[0m
+[0;32mI (72123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (72133) MAIN: SDS011: PM2.5=31.4 µg/m³ | PM10=34.9 µg/m³[0m
+[0;32mI (72133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=31.4 | PM10=34.9[0m
+[0;32mI (72153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":31.4,"pm10":34.9,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (73003) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (73123) MAIN: Sample Time = 72.587 s[0m
+[0;32mI (73123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (73133) MAIN: SDS011: PM2.5=31.6 µg/m³ | PM10=35.1 µg/m³[0m
+[0;32mI (73133) MAIN: BH=419.00 lx | TEMT=72.20 lx | PM2.5=31.6 | PM10=35.1[0m
+[0;32mI (73153) MAIN: SEND: {"lux":419,"temt":72.20,"pm25":31.6,"pm10":35.1,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (74003) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (74123) MAIN: Sample Time = 73.587 s[0m
+[0;32mI (74123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (74133) MAIN: SDS011: PM2.5=31.7 µg/m³ | PM10=35.2 µg/m³[0m
+[0;32mI (74133) MAIN: BH=420.00 lx | TEMT=67.60 lx | PM2.5=31.7 | PM10=35.2[0m
+[0;32mI (74153) MAIN: SEND: {"lux":420,"temt":67.60,"pm25":31.7,"pm10":35.2,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (75013) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (75123) MAIN: Sample Time = 74.587 s[0m
+[0;32mI (75123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (75133) MAIN: SDS011: PM2.5=31.7 µg/m³ | PM10=35.2 µg/m³[0m
+[0;32mI (75133) MAIN: BH=417.00 lx | TEMT=57.40 lx | PM2.5=31.7 | PM10=35.2[0m
+[0;32mI (75153) MAIN: SEND: {"lux":417,"temt":57.40,"pm25":31.7,"pm10":35.2,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (76013) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (76123) MAIN: Sample Time = 75.587 s[0m
+[0;32mI (76123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (76133) MAIN: SDS011: PM2.5=31.7 µg/m³ | PM10=35.2 µg/m³[0m
+[0;32mI (76133) MAIN: BH=416.00 lx | TEMT=77.00 lx | PM2.5=31.7 | PM10=35.2[0m
+[0;32mI (76153) MAIN: SEND: {"lux":416,"temt":77.00,"pm25":31.7,"pm10":35.2,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (77013) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (77123) MAIN: Sample Time = 76.587 s[0m
+[0;32mI (77123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (77133) MAIN: SDS011: PM2.5=31.8 µg/m³ | PM10=35.4 µg/m³[0m
+[0;32mI (77133) MAIN: BH=417.00 lx | TEMT=77.80 lx | PM2.5=31.8 | PM10=35.4[0m
+[0;32mI (77153) MAIN: SEND: {"lux":417,"temt":77.80,"pm25":31.8,"pm10":35.4,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (78013) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (78123) MAIN: Sample Time = 77.587 s[0m
+[0;32mI (78123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (78133) MAIN: SDS011: PM2.5=31.8 µg/m³ | PM10=35.3 µg/m³[0m
+[0;32mI (78133) MAIN: BH=418.00 lx | TEMT=76.40 lx | PM2.5=31.8 | PM10=35.3[0m
+[0;32mI (78153) MAIN: SEND: {"lux":418,"temt":76.40,"pm25":31.8,"pm10":35.3,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (79023) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (79023) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (79123) MAIN: Sample Time = 78.587 s[0m
+[0;32mI (79123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (79133) MAIN: SDS011: PM2.5=31.7 µg/m³ | PM10=35.2 µg/m³[0m
+[0;32mI (79133) MAIN: BH=417.00 lx | TEMT=70.40 lx | PM2.5=31.7 | PM10=35.2[0m
+[0;32mI (79153) MAIN: SEND: {"lux":417,"temt":70.40,"pm25":31.7,"pm10":35.2,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (80023) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (80123) MAIN: Sample Time = 79.587 s[0m
+[0;32mI (80123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (80133) MAIN: SDS011: PM2.5=31.7 µg/m³ | PM10=35.2 µg/m³[0m
+[0;32mI (80133) MAIN: BH=417.00 lx | TEMT=66.20 lx | PM2.5=31.7 | PM10=35.2[0m
+[0;32mI (80153) MAIN: SEND: {"lux":417,"temt":66.20,"pm25":31.7,"pm10":35.2,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (81023) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (81123) MAIN: Sample Time = 80.587 s[0m
+[0;32mI (81123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (81133) MAIN: SDS011: PM2.5=31.7 µg/m³ | PM10=35.2 µg/m³[0m
+[0;32mI (81133) MAIN: BH=418.00 lx | TEMT=68.80 lx | PM2.5=31.7 | PM10=35.2[0m
+[0;32mI (81153) MAIN: SEND: {"lux":418,"temt":68.80,"pm25":31.7,"pm10":35.2,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (82033) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (82123) MAIN: Sample Time = 81.587 s[0m
+[0;32mI (82123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (82133) MAIN: SDS011: PM2.5=31.5 µg/m³ | PM10=35.0 µg/m³[0m
+[0;32mI (82133) MAIN: BH=418.00 lx | TEMT=64.40 lx | PM2.5=31.5 | PM10=35.0[0m
+[0;32mI (82153) MAIN: SEND: {"lux":418,"temt":64.40,"pm25":31.5,"pm10":35.0,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (83033) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (83123) MAIN: Sample Time = 82.587 s[0m
+[0;32mI (83123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (83133) MAIN: SDS011: PM2.5=31.5 µg/m³ | PM10=35.0 µg/m³[0m
+[0;32mI (83133) MAIN: BH=418.00 lx | TEMT=64.20 lx | PM2.5=31.5 | PM10=35.0[0m
+[0;32mI (83153) MAIN: SEND: {"lux":418,"temt":64.20,"pm25":31.5,"pm10":35.0,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (84033) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (84123) MAIN: Sample Time = 83.588 s[0m
+[0;32mI (84123) MAIN: [TIMING] dt=1.0008s | f_actual=0.9992Hz | error=0.0768%[0m
+[0;32mI (84133) MAIN: SDS011: PM2.5=31.5 µg/m³ | PM10=35.0 µg/m³[0m
+[0;32mI (84133) MAIN: BH=418.00 lx | TEMT=34.20 lx | PM2.5=31.5 | PM10=35.0[0m
+[0;32mI (84153) MAIN: SEND: {"lux":418,"temt":34.20,"pm25":31.5,"pm10":35.0,"dt":1.0008,"f_actual":0.9992,"error_pct":0.0768}[0m
+[0;32mI (85033) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (85123) MAIN: Sample Time = 84.587 s[0m
+[0;32mI (85123) MAIN: [TIMING] dt=0.9992s | f_actual=1.0008Hz | error=-0.0764%[0m
+[0;32mI (85133) MAIN: SDS011: PM2.5=31.4 µg/m³ | PM10=34.9 µg/m³[0m
+[0;32mI (85133) MAIN: BH=417.00 lx | TEMT=73.40 lx | PM2.5=31.4 | PM10=34.9[0m
+[0;32mI (85163) MAIN: SEND: {"lux":417,"temt":73.40,"pm25":31.4,"pm10":34.9,"dt":0.9992,"f_actual":1.0008,"error_pct":-0.0764}[0m
+[0;32mI (86043) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (86123) MAIN: Sample Time = 85.587 s[0m
+[0;32mI (86123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (86133) MAIN: SDS011: PM2.5=31.2 µg/m³ | PM10=34.7 µg/m³[0m
+[0;32mI (86133) MAIN: BH=418.00 lx | TEMT=71.60 lx | PM2.5=31.2 | PM10=34.7[0m
+[0;32mI (86153) MAIN: SEND: {"lux":418,"temt":71.60,"pm25":31.2,"pm10":34.7,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (87043) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (87123) MAIN: Sample Time = 86.587 s[0m
+[0;32mI (87123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (87133) MAIN: SDS011: PM2.5=31.4 µg/m³ | PM10=34.9 µg/m³[0m
+[0;32mI (87133) MAIN: BH=418.00 lx | TEMT=71.80 lx | PM2.5=31.4 | PM10=34.9[0m
+[0;32mI (87153) MAIN: SEND: {"lux":418,"temt":71.80,"pm25":31.4,"pm10":34.9,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (88043) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (88123) MAIN: Sample Time = 87.587 s[0m
+[0;32mI (88123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (88133) MAIN: SDS011: PM2.5=31.3 µg/m³ | PM10=34.8 µg/m³[0m
+[0;32mI (88133) MAIN: BH=417.00 lx | TEMT=71.60 lx | PM2.5=31.3 | PM10=34.8[0m
+[0;32mI (88153) MAIN: SEND: {"lux":417,"temt":71.60,"pm25":31.3,"pm10":34.8,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (89053) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (89053) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (89123) MAIN: Sample Time = 88.587 s[0m
+[0;32mI (89123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (89133) MAIN: SDS011: PM2.5=31.3 µg/m³ | PM10=34.8 µg/m³[0m
+[0;32mI (89133) MAIN: BH=418.00 lx | TEMT=68.20 lx | PM2.5=31.3 | PM10=34.8[0m
+[0;32mI (89153) MAIN: SEND: {"lux":418,"temt":68.20,"pm25":31.3,"pm10":34.8,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (90053) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (90123) MAIN: Sample Time = 89.587 s[0m
+[0;32mI (90123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (90133) MAIN: SDS011: PM2.5=31.2 µg/m³ | PM10=34.7 µg/m³[0m
+[0;32mI (90133) MAIN: BH=415.00 lx | TEMT=63.40 lx | PM2.5=31.2 | PM10=34.7[0m
+[0;32mI (90153) MAIN: SEND: {"lux":415,"temt":63.40,"pm25":31.2,"pm10":34.7,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (91053) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (91123) MAIN: Sample Time = 90.587 s[0m
+[0;32mI (91123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (91133) MAIN: SDS011: PM2.5=31.4 µg/m³ | PM10=34.9 µg/m³[0m
+[0;32mI (91133) MAIN: BH=415.00 lx | TEMT=56.20 lx | PM2.5=31.4 | PM10=34.9[0m
+[0;32mI (91153) MAIN: SEND: {"lux":415,"temt":56.20,"pm25":31.4,"pm10":34.9,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (92063) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (92123) MAIN: Sample Time = 91.587 s[0m
+[0;32mI (92123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (92133) MAIN: SDS011: PM2.5=31.3 µg/m³ | PM10=34.8 µg/m³[0m
+[0;32mI (92133) MAIN: BH=414.00 lx | TEMT=52.20 lx | PM2.5=31.3 | PM10=34.8[0m
+[0;32mI (92153) MAIN: SEND: {"lux":414,"temt":52.20,"pm25":31.3,"pm10":34.8,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (93063) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (93123) MAIN: Sample Time = 92.587 s[0m
+[0;32mI (93123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (93133) MAIN: SDS011: PM2.5=31.2 µg/m³ | PM10=34.7 µg/m³[0m
+[0;32mI (93133) MAIN: BH=414.00 lx | TEMT=72.20 lx | PM2.5=31.2 | PM10=34.7[0m
+[0;32mI (93153) MAIN: SEND: {"lux":414,"temt":72.20,"pm25":31.2,"pm10":34.7,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (94063) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (94123) MAIN: Sample Time = 93.587 s[0m
+[0;32mI (94123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (94133) MAIN: SDS011: PM2.5=31.3 µg/m³ | PM10=34.8 µg/m³[0m
+[0;32mI (94133) MAIN: BH=414.00 lx | TEMT=71.20 lx | PM2.5=31.3 | PM10=34.8[0m
+[0;32mI (94153) MAIN: SEND: {"lux":414,"temt":71.20,"pm25":31.3,"pm10":34.8,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (95063) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (95123) MAIN: Sample Time = 94.587 s[0m
+[0;32mI (95123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (95133) MAIN: SDS011: PM2.5=31.3 µg/m³ | PM10=34.8 µg/m³[0m
+[0;32mI (95133) MAIN: BH=413.00 lx | TEMT=74.80 lx | PM2.5=31.3 | PM10=34.8[0m
+[0;32mI (95153) MAIN: SEND: {"lux":413,"temt":74.80,"pm25":31.3,"pm10":34.8,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (96073) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (96073) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (96123) MAIN: Sample Time = 95.587 s[0m
+[0;32mI (96123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (96133) MAIN: SDS011: PM2.5=31.3 µg/m³ | PM10=34.7 µg/m³[0m
+[0;32mI (96133) MAIN: BH=415.00 lx | TEMT=74.00 lx | PM2.5=31.3 | PM10=34.7[0m
+[0;32mI (96153) MAIN: SEND: {"lux":415,"temt":74.00,"pm25":31.3,"pm10":34.7,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (97073) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (97123) MAIN: Sample Time = 96.587 s[0m
+[0;32mI (97123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (97133) MAIN: SDS011: PM2.5=31.0 µg/m³ | PM10=34.4 µg/m³[0m
+[0;32mI (97133) MAIN: BH=415.00 lx | TEMT=74.00 lx | PM2.5=31.0 | PM10=34.4[0m
+[0;32mI (97153) MAIN: SEND: {"lux":415,"temt":74.00,"pm25":31.0,"pm10":34.4,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (98073) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (98123) MAIN: Sample Time = 97.587 s[0m
+[0;32mI (98123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (98133) MAIN: SDS011: PM2.5=31.0 µg/m³ | PM10=34.4 µg/m³[0m
+[0;32mI (98133) MAIN: BH=415.00 lx | TEMT=67.80 lx | PM2.5=31.0 | PM10=34.4[0m
+[0;32mI (98153) MAIN: SEND: {"lux":415,"temt":67.80,"pm25":31.0,"pm10":34.4,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (99083) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (99083) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (99123) MAIN: Sample Time = 98.587 s[0m
+[0;32mI (99123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (99133) MAIN: SDS011: PM2.5=31.2 µg/m³ | PM10=34.6 µg/m³[0m
+[0;32mI (99133) MAIN: BH=416.00 lx | TEMT=66.40 lx | PM2.5=31.2 | PM10=34.6[0m
+[0;32mI (99153) MAIN: SEND: {"lux":416,"temt":66.40,"pm25":31.2,"pm10":34.6,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (100083) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (100123) MAIN: Sample Time = 99.587 s[0m
+[0;32mI (100123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (100133) MAIN: SDS011: PM2.5=31.4 µg/m³ | PM10=34.8 µg/m³[0m
+[0;32mI (100133) MAIN: BH=416.00 lx | TEMT=53.00 lx | PM2.5=31.4 | PM10=34.8[0m
+[0;32mI (100153) MAIN: SEND: {"lux":416,"temt":53.00,"pm25":31.4,"pm10":34.8,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (101083) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (101123) MAIN: Sample Time = 100.587 s[0m
+[0;32mI (101123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0028%[0m
+[0;32mI (101133) MAIN: SDS011: PM2.5=31.4 µg/m³ | PM10=34.9 µg/m³[0m
+[0;32mI (101133) MAIN: BH=417.00 lx | TEMT=0.00 lx | PM2.5=31.4 | PM10=34.9[0m
+[0;32mI (101153) MAIN: SEND: {"lux":417,"temt":0.00,"pm25":31.4,"pm10":34.9,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0028}[0m
+[0;32mI (102083) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (102123) MAIN: Sample Time = 101.587 s[0m
+[0;32mI (102123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (102133) MAIN: SDS011: PM2.5=31.3 µg/m³ | PM10=34.8 µg/m³[0m
+[0;32mI (102133) MAIN: BH=417.00 lx | TEMT=71.00 lx | PM2.5=31.3 | PM10=34.8[0m
+[0;32mI (102163) MAIN: SEND: {"lux":417,"temt":71.00,"pm25":31.3,"pm10":34.8,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;32mI (103093) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (103123) MAIN: Sample Time = 102.587 s[0m
+[0;32mI (103123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (103133) MAIN: SDS011: PM2.5=31.3 µg/m³ | PM10=34.8 µg/m³[0m
+[0;32mI (103133) MAIN: BH=416.00 lx | TEMT=76.60 lx | PM2.5=31.3 | PM10=34.8[0m
+[0;32mI (103153) MAIN: SEND: {"lux":416,"temt":76.60,"pm25":31.3,"pm10":34.8,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (104093) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (104123) MAIN: Sample Time = 103.587 s[0m
+[0;32mI (104123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (104133) MAIN: SDS011: PM2.5=31.0 µg/m³ | PM10=34.4 µg/m³[0m
+[0;32mI (104133) MAIN: BH=416.00 lx | TEMT=56.60 lx | PM2.5=31.0 | PM10=34.4[0m
+[0;32mI (104153) MAIN: SEND: {"lux":416,"temt":56.60,"pm25":31.0,"pm10":34.4,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (105093) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (105123) MAIN: Sample Time = 104.587 s[0m
+[0;32mI (105123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (105133) MAIN: SDS011: PM2.5=31.2 µg/m³ | PM10=34.7 µg/m³[0m
+[0;32mI (105133) MAIN: BH=416.00 lx | TEMT=69.20 lx | PM2.5=31.2 | PM10=34.7[0m
+[0;32mI (105153) MAIN: SEND: {"lux":416,"temt":69.20,"pm25":31.2,"pm10":34.7,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (106103) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (106103) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (106123) MAIN: Sample Time = 105.587 s[0m
+[0;32mI (106123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (106133) MAIN: SDS011: PM2.5=31.2 µg/m³ | PM10=34.7 µg/m³[0m
+[0;32mI (106133) MAIN: BH=416.00 lx | TEMT=69.00 lx | PM2.5=31.2 | PM10=34.7[0m
+[0;32mI (106153) MAIN: SEND: {"lux":416,"temt":69.00,"pm25":31.2,"pm10":34.7,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (107103) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (107123) MAIN: Sample Time = 106.587 s[0m
+[0;32mI (107123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (107133) MAIN: SDS011: PM2.5=31.1 µg/m³ | PM10=34.6 µg/m³[0m
+[0;32mI (107133) MAIN: BH=417.00 lx | TEMT=67.80 lx | PM2.5=31.1 | PM10=34.6[0m
+[0;32mI (107153) MAIN: SEND: {"lux":417,"temt":67.80,"pm25":31.1,"pm10":34.6,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (108103) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (108123) MAIN: Sample Time = 107.587 s[0m
+[0;32mI (108123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (108133) MAIN: SDS011: PM2.5=31.1 µg/m³ | PM10=34.7 µg/m³[0m
+[0;32mI (108133) MAIN: BH=417.00 lx | TEMT=61.80 lx | PM2.5=31.1 | PM10=34.7[0m
+[0;32mI (108153) MAIN: SEND: {"lux":417,"temt":61.80,"pm25":31.1,"pm10":34.7,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (109113) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (109123) MAIN: Sample Time = 108.587 s[0m
+[0;32mI (109123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (109133) MAIN: SDS011: PM2.5=30.9 µg/m³ | PM10=34.4 µg/m³[0m
+[0;32mI (109133) MAIN: BH=417.00 lx | TEMT=50.40 lx | PM2.5=30.9 | PM10=34.4[0m
+[0;32mI (109153) MAIN: SEND: {"lux":417,"temt":50.40,"pm25":30.9,"pm10":34.4,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (110113) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (110123) MAIN: Sample Time = 109.587 s[0m
+[0;32mI (110123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (110133) MAIN: SDS011: PM2.5=30.9 µg/m³ | PM10=34.4 µg/m³[0m
+[0;32mI (110133) MAIN: BH=417.00 lx | TEMT=68.20 lx | PM2.5=30.9 | PM10=34.4[0m
+[0;32mI (110153) MAIN: SEND: {"lux":417,"temt":68.20,"pm25":30.9,"pm10":34.4,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (111113) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (111123) MAIN: Sample Time = 110.587 s[0m
+[0;32mI (111123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (111133) MAIN: SDS011: PM2.5=31.0 µg/m³ | PM10=34.6 µg/m³[0m
+[0;32mI (111133) MAIN: BH=416.00 lx | TEMT=74.40 lx | PM2.5=31.0 | PM10=34.6[0m
+[0;32mI (111163) MAIN: SEND: {"lux":416,"temt":74.40,"pm25":31.0,"pm10":34.6,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (112113) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (112123) MAIN: Sample Time = 111.587 s[0m
+[0;32mI (112123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (112133) MAIN: SDS011: PM2.5=31.1 µg/m³ | PM10=34.7 µg/m³[0m
+[0;32mI (112133) MAIN: BH=415.00 lx | TEMT=73.00 lx | PM2.5=31.1 | PM10=34.7[0m
+[0;32mI (112153) MAIN: SEND: {"lux":415,"temt":73.00,"pm25":31.1,"pm10":34.7,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (113123) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (113123) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (113123) MAIN: Sample Time = 112.587 s[0m
+[0;32mI (113123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (113133) MAIN: SDS011: PM2.5=31.1 µg/m³ | PM10=34.6 µg/m³[0m
+[0;32mI (113143) MAIN: BH=413.00 lx | TEMT=68.80 lx | PM2.5=31.1 | PM10=34.6[0m
+[0;32mI (113163) MAIN: SEND: {"lux":413,"temt":68.80,"pm25":31.1,"pm10":34.6,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (114123) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (114123) MAIN: Sample Time = 113.587 s[0m
+[0;32mI (114123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0032%[0m
+[0;32mI (114133) MAIN: SDS011: PM2.5=30.9 µg/m³ | PM10=34.4 µg/m³[0m
+[0;32mI (114133) MAIN: BH=415.00 lx | TEMT=63.20 lx | PM2.5=30.9 | PM10=34.4[0m
+[0;32mI (114163) MAIN: SEND: {"lux":415,"temt":63.20,"pm25":30.9,"pm10":34.4,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0032}[0m
+[0;32mI (115123) MAIN: Sample Time = 114.587 s[0m
+[0;32mI (115123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0032%[0m
+[0;32mI (115123) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (115133) MAIN: SDS011: PM2.5=31.0 µg/m³ | PM10=34.5 µg/m³[0m
+[0;32mI (115143) MAIN: BH=418.00 lx | TEMT=69.20 lx | PM2.5=31.0 | PM10=34.5[0m
+[0;32mI (115163) MAIN: SEND: {"lux":418,"temt":69.20,"pm25":31.0,"pm10":34.5,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0032}[0m
+[0;32mI (116123) MAIN: Sample Time = 115.587 s[0m
+[0;32mI (116123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (116133) MAIN: SDS011: PM2.5=31.1 µg/m³ | PM10=34.6 µg/m³[0m
+[0;32mI (116133) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (116133) MAIN: BH=416.00 lx | TEMT=0.00 lx | PM2.5=31.1 | PM10=34.6[0m
+[0;32mI (116163) MAIN: SEND: {"lux":416,"temt":0.00,"pm25":31.1,"pm10":34.6,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (117123) MAIN: Sample Time = 116.587 s[0m
+[0;32mI (117123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0008%[0m
+[0;32mI (117133) MAIN: SDS011: PM2.5=30.8 µg/m³ | PM10=34.3 µg/m³[0m
+[0;32mI (117133) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (117133) MAIN: BH=416.00 lx | TEMT=0.00 lx | PM2.5=30.8 | PM10=34.3[0m
+[0;32mI (117163) MAIN: SEND: {"lux":416,"temt":0.00,"pm25":30.8,"pm10":34.3,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0008}[0m
+[0;32mI (118123) MAIN: Sample Time = 117.587 s[0m
+[0;32mI (118123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (118133) MAIN: SDS011: PM2.5=30.9 µg/m³ | PM10=34.4 µg/m³[0m
+[0;32mI (118133) MAIN: BH=417.00 lx | TEMT=34.20 lx | PM2.5=30.9 | PM10=34.4[0m
+[0;32mI (118133) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (118153) MAIN: SEND: {"lux":417,"temt":34.20,"pm25":30.9,"pm10":34.4,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (119123) MAIN: Sample Time = 118.587 s[0m
+[0;32mI (119123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (119133) MAIN: SDS011: PM2.5=30.8 µg/m³ | PM10=34.3 µg/m³[0m
+[0;32mI (119133) MAIN: BH=418.00 lx | TEMT=64.20 lx | PM2.5=30.8 | PM10=34.3[0m
+[0;32mI (119143) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (119153) MAIN: SEND: {"lux":418,"temt":64.20,"pm25":30.8,"pm10":34.3,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (120123) MAIN: Sample Time = 119.587 s[0m
+[0;32mI (120123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (120133) MAIN: SDS011: PM2.5=31.0 µg/m³ | PM10=34.5 µg/m³[0m
+[0;32mI (120133) MAIN: BH=415.00 lx | TEMT=68.40 lx | PM2.5=31.0 | PM10=34.5[0m
+[0;32mI (120143) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (120153) MAIN: SEND: {"lux":415,"temt":68.40,"pm25":31.0,"pm10":34.5,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (121123) MAIN: Sample Time = 120.587 s[0m
+[0;32mI (121123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0036%[0m
+[0;32mI (121133) MAIN: SDS011: PM2.5=31.0 µg/m³ | PM10=34.5 µg/m³[0m
+[0;32mI (121133) MAIN: BH=420.00 lx | TEMT=63.20 lx | PM2.5=31.0 | PM10=34.5[0m
+[0;32mI (121143) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (121153) MAIN: SEND: {"lux":420,"temt":63.20,"pm25":31.0,"pm10":34.5,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0036}[0m
+[0;32mI (122123) MAIN: Sample Time = 121.587 s[0m
+[0;32mI (122123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0032%[0m
+[0;32mI (122133) MAIN: SDS011: PM2.5=31.0 µg/m³ | PM10=34.5 µg/m³[0m
+[0;32mI (122133) MAIN: BH=420.00 lx | TEMT=63.20 lx | PM2.5=31.0 | PM10=34.5[0m
+[0;32mI (122143) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (122153) MAIN: SEND: {"lux":420,"temt":63.20,"pm25":31.0,"pm10":34.5,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0032}[0m
+[0;32mI (123123) MAIN: Sample Time = 122.587 s[0m
+[0;32mI (123123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (123133) MAIN: SDS011: PM2.5=31.0 µg/m³ | PM10=34.5 µg/m³[0m
+[0;32mI (123133) MAIN: BH=418.00 lx | TEMT=66.40 lx | PM2.5=31.0 | PM10=34.5[0m
+[0;33mW (123153) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (123153) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (123153) MAIN: SEND: {"lux":418,"temt":66.40,"pm25":31.0,"pm10":34.5,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (124123) MAIN: Sample Time = 123.587 s[0m
+[0;32mI (124123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (124133) MAIN: SDS011: PM2.5=31.0 µg/m³ | PM10=34.5 µg/m³[0m
+[0;32mI (124133) MAIN: BH=417.00 lx | TEMT=63.40 lx | PM2.5=31.0 | PM10=34.5[0m
+[0;32mI (124153) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (124153) MAIN: SEND: {"lux":417,"temt":63.40,"pm25":31.0,"pm10":34.5,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (125123) MAIN: Sample Time = 124.587 s[0m
+[0;32mI (125123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (125133) MAIN: SDS011: PM2.5=30.8 µg/m³ | PM10=34.3 µg/m³[0m
+[0;32mI (125133) MAIN: BH=417.00 lx | TEMT=0.00 lx | PM2.5=30.8 | PM10=34.3[0m
+[0;32mI (125153) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (125153) MAIN: SEND: {"lux":417,"temt":0.00,"pm25":30.8,"pm10":34.3,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (126123) MAIN: Sample Time = 125.587 s[0m
+[0;32mI (126123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (126133) MAIN: SDS011: PM2.5=30.8 µg/m³ | PM10=34.3 µg/m³[0m
+[0;32mI (126133) MAIN: BH=415.00 lx | TEMT=52.40 lx | PM2.5=30.8 | PM10=34.3[0m
+[0;32mI (126153) MAIN: SEND: {"lux":415,"temt":52.40,"pm25":30.8,"pm10":34.3,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (126153) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (127123) MAIN: Sample Time = 126.587 s[0m
+[0;32mI (127123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (127133) MAIN: SDS011: PM2.5=30.8 µg/m³ | PM10=34.3 µg/m³[0m
+[0;32mI (127133) MAIN: BH=415.00 lx | TEMT=49.80 lx | PM2.5=30.8 | PM10=34.3[0m
+[0;32mI (127153) MAIN: SEND: {"lux":415,"temt":49.80,"pm25":30.8,"pm10":34.3,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (127163) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (128123) MAIN: Sample Time = 127.587 s[0m
+[0;32mI (128123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (128133) MAIN: SDS011: PM2.5=30.7 µg/m³ | PM10=34.2 µg/m³[0m
+[0;32mI (128133) MAIN: BH=415.00 lx | TEMT=60.40 lx | PM2.5=30.7 | PM10=34.2[0m
+[0;32mI (128163) MAIN: SEND: {"lux":415,"temt":60.40,"pm25":30.7,"pm10":34.2,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (128163) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (129123) MAIN: Sample Time = 128.587 s[0m
+[0;32mI (129123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (129133) MAIN: SDS011: PM2.5=30.7 µg/m³ | PM10=34.2 µg/m³[0m
+[0;32mI (129133) MAIN: BH=415.00 lx | TEMT=61.40 lx | PM2.5=30.7 | PM10=34.2[0m
+[0;32mI (129153) MAIN: SEND: {"lux":415,"temt":61.40,"pm25":30.7,"pm10":34.2,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (129163) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (130123) MAIN: Sample Time = 129.587 s[0m
+[0;32mI (130123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (130133) MAIN: SDS011: PM2.5=30.7 µg/m³ | PM10=34.2 µg/m³[0m
+[0;32mI (130133) MAIN: BH=412.00 lx | TEMT=0.00 lx | PM2.5=30.7 | PM10=34.2[0m
+[0;32mI (130153) MAIN: SEND: {"lux":412,"temt":0.00,"pm25":30.7,"pm10":34.2,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (130173) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (130173) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (131123) MAIN: Sample Time = 130.587 s[0m
+[0;32mI (131123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0008%[0m
+[0;32mI (131133) MAIN: SDS011: PM2.5=30.5 µg/m³ | PM10=33.9 µg/m³[0m
+[0;32mI (131133) MAIN: BH=414.00 lx | TEMT=64.60 lx | PM2.5=30.5 | PM10=33.9[0m
+[0;32mI (131153) MAIN: SEND: {"lux":414,"temt":64.60,"pm25":30.5,"pm10":33.9,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0008}[0m
+[0;32mI (131173) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (132123) MAIN: Sample Time = 131.587 s[0m
+[0;32mI (132123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (132133) MAIN: SDS011: PM2.5=30.6 µg/m³ | PM10=34.1 µg/m³[0m
+[0;32mI (132133) MAIN: BH=416.00 lx | TEMT=65.20 lx | PM2.5=30.6 | PM10=34.1[0m
+[0;32mI (132153) MAIN: SEND: {"lux":416,"temt":65.20,"pm25":30.6,"pm10":34.1,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (132173) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (133123) MAIN: Sample Time = 132.587 s[0m
+[0;32mI (133123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (133133) MAIN: SDS011: PM2.5=30.4 µg/m³ | PM10=33.9 µg/m³[0m
+[0;32mI (133133) MAIN: BH=420.00 lx | TEMT=61.60 lx | PM2.5=30.4 | PM10=33.9[0m
+[0;32mI (133153) MAIN: SEND: {"lux":420,"temt":61.60,"pm25":30.4,"pm10":33.9,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (133183) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (134123) MAIN: Sample Time = 133.587 s[0m
+[0;32mI (134123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (134133) MAIN: SDS011: PM2.5=30.6 µg/m³ | PM10=34.1 µg/m³[0m
+[0;32mI (134133) MAIN: BH=418.00 lx | TEMT=58.80 lx | PM2.5=30.6 | PM10=34.1[0m
+[0;32mI (134153) MAIN: SEND: {"lux":418,"temt":58.80,"pm25":30.6,"pm10":34.1,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (134183) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (135123) MAIN: Sample Time = 134.587 s[0m
+[0;32mI (135123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (135133) MAIN: SDS011: PM2.5=30.6 µg/m³ | PM10=34.0 µg/m³[0m
+[0;32mI (135133) MAIN: BH=408.00 lx | TEMT=39.20 lx | PM2.5=30.6 | PM10=34.0[0m
+[0;32mI (135153) MAIN: SEND: {"lux":408,"temt":39.20,"pm25":30.6,"pm10":34.0,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (135183) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (136123) MAIN: Sample Time = 135.587 s[0m
+[0;32mI (136123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0011%[0m
+[0;32mI (136133) MAIN: SDS011: PM2.5=30.6 µg/m³ | PM10=34.0 µg/m³[0m
+[0;32mI (136133) MAIN: BH=412.00 lx | TEMT=68.40 lx | PM2.5=30.6 | PM10=34.0[0m
+[0;32mI (136153) MAIN: SEND: {"lux":412,"temt":68.40,"pm25":30.6,"pm10":34.0,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0011}[0m
+[0;32mI (136183) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (137123) MAIN: Sample Time = 136.587 s[0m
+[0;32mI (137123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0007%[0m
+[0;32mI (137133) MAIN: SDS011: PM2.5=30.5 µg/m³ | PM10=33.9 µg/m³[0m
+[0;32mI (137133) MAIN: BH=412.00 lx | TEMT=65.80 lx | PM2.5=30.5 | PM10=33.9[0m
+[0;32mI (137153) MAIN: SEND: {"lux":412,"temt":65.80,"pm25":30.5,"pm10":33.9,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0007}[0m
+[0;33mW (137193) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (137193) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (138123) MAIN: Sample Time = 137.587 s[0m
+[0;32mI (138123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (138133) MAIN: SDS011: PM2.5=30.5 µg/m³ | PM10=34.0 µg/m³[0m
+[0;32mI (138133) MAIN: BH=413.00 lx | TEMT=67.80 lx | PM2.5=30.5 | PM10=34.0[0m
+[0;32mI (138153) MAIN: SEND: {"lux":413,"temt":67.80,"pm25":30.5,"pm10":34.0,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (138193) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (139123) MAIN: Sample Time = 138.587 s[0m
+[0;32mI (139123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (139133) MAIN: SDS011: PM2.5=30.4 µg/m³ | PM10=33.9 µg/m³[0m
+[0;32mI (139133) MAIN: BH=413.00 lx | TEMT=67.00 lx | PM2.5=30.4 | PM10=33.9[0m
+[0;32mI (139153) MAIN: SEND: {"lux":413,"temt":67.00,"pm25":30.4,"pm10":33.9,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (139193) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (140123) MAIN: Sample Time = 139.587 s[0m
+[0;32mI (140123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (140133) MAIN: SDS011: PM2.5=30.5 µg/m³ | PM10=34.0 µg/m³[0m
+[0;32mI (140133) MAIN: BH=413.00 lx | TEMT=66.40 lx | PM2.5=30.5 | PM10=34.0[0m
+[0;32mI (140153) MAIN: SEND: {"lux":413,"temt":66.40,"pm25":30.5,"pm10":34.0,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (140203) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (140203) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (141123) MAIN: Sample Time = 140.587 s[0m
+[0;32mI (141123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (141133) MAIN: SDS011: PM2.5=30.4 µg/m³ | PM10=33.9 µg/m³[0m
+[0;32mI (141133) MAIN: BH=413.00 lx | TEMT=63.80 lx | PM2.5=30.4 | PM10=33.9[0m
+[0;32mI (141153) MAIN: SEND: {"lux":413,"temt":63.80,"pm25":30.4,"pm10":33.9,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (141203) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (142123) MAIN: Sample Time = 141.587 s[0m
+[0;32mI (142123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0008%[0m
+[0;32mI (142133) MAIN: SDS011: PM2.5=30.4 µg/m³ | PM10=33.8 µg/m³[0m
+[0;32mI (142133) MAIN: BH=165.00 lx | TEMT=0.00 lx | PM2.5=30.4 | PM10=33.8[0m
+[0;32mI (142153) MAIN: SEND: {"lux":165,"temt":0.00,"pm25":30.4,"pm10":33.8,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0008}[0m
+[0;32mI (142203) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (143123) MAIN: Sample Time = 142.587 s[0m
+[0;32mI (143123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (143133) MAIN: SDS011: PM2.5=30.4 µg/m³ | PM10=33.8 µg/m³[0m
+[0;32mI (143133) MAIN: BH=171.00 lx | TEMT=53.40 lx | PM2.5=30.4 | PM10=33.8[0m
+[0;32mI (143153) MAIN: SEND: {"lux":171,"temt":53.40,"pm25":30.4,"pm10":33.8,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (143203) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (144123) MAIN: Sample Time = 143.588 s[0m
+[0;32mI (144123) MAIN: [TIMING] dt=1.0005s | f_actual=0.9995Hz | error=0.0531%[0m
+[0;32mI (144133) MAIN: SDS011: PM2.5=30.7 µg/m³ | PM10=34.2 µg/m³[0m
+[0;32mI (144133) MAIN: BH=254.00 lx | TEMT=37.60 lx | PM2.5=30.7 | PM10=34.2[0m
+[0;32mI (144153) MAIN: SEND: {"lux":254,"temt":37.60,"pm25":30.7,"pm10":34.2,"dt":1.0005,"f_actual":0.9995,"error_pct":0.0531}[0m
+[0;33mW (144213) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (144213) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (145123) MAIN: Sample Time = 144.587 s[0m
+[0;32mI (145123) MAIN: [TIMING] dt=0.9995s | f_actual=1.0005Hz | error=-0.0531%[0m
+[0;32mI (145133) MAIN: SDS011: PM2.5=30.8 µg/m³ | PM10=34.3 µg/m³[0m
+[0;32mI (145133) MAIN: BH=291.00 lx | TEMT=66.40 lx | PM2.5=30.8 | PM10=34.3[0m
+[0;32mI (145153) MAIN: SEND: {"lux":291,"temt":66.40,"pm25":30.8,"pm10":34.3,"dt":0.9995,"f_actual":1.0005,"error_pct":-0.0531}[0m
+[0;32mI (145213) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (146123) MAIN: Sample Time = 145.587 s[0m
+[0;32mI (146123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0008%[0m
+[0;32mI (146133) MAIN: SDS011: PM2.5=30.7 µg/m³ | PM10=34.2 µg/m³[0m
+[0;32mI (146133) MAIN: BH=415.00 lx | TEMT=0.00 lx | PM2.5=30.7 | PM10=34.2[0m
+[0;32mI (146153) MAIN: SEND: {"lux":415,"temt":0.00,"pm25":30.7,"pm10":34.2,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0008}[0m
+[0;32mI (146213) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (147123) MAIN: Sample Time = 146.587 s[0m
+[0;32mI (147123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0008%[0m
+[0;32mI (147133) MAIN: SDS011: PM2.5=30.8 µg/m³ | PM10=34.3 µg/m³[0m
+[0;32mI (147133) MAIN: BH=415.00 lx | TEMT=66.20 lx | PM2.5=30.8 | PM10=34.3[0m
+[0;32mI (147153) MAIN: SEND: {"lux":415,"temt":66.20,"pm25":30.8,"pm10":34.3,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0008}[0m
+[0;33mW (147223) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (147223) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (148123) MAIN: Sample Time = 147.587 s[0m
+[0;32mI (148123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (148133) MAIN: SDS011: PM2.5=30.7 µg/m³ | PM10=34.1 µg/m³[0m
+[0;32mI (148133) MAIN: BH=415.00 lx | TEMT=65.40 lx | PM2.5=30.7 | PM10=34.1[0m
+[0;32mI (148153) MAIN: SEND: {"lux":415,"temt":65.40,"pm25":30.7,"pm10":34.1,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (148223) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (149123) MAIN: Sample Time = 148.587 s[0m
+[0;32mI (149123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (149133) MAIN: SDS011: PM2.5=30.9 µg/m³ | PM10=34.4 µg/m³[0m
+[0;32mI (149133) MAIN: BH=415.00 lx | TEMT=62.20 lx | PM2.5=30.9 | PM10=34.4[0m
+[0;32mI (149153) MAIN: SEND: {"lux":415,"temt":62.20,"pm25":30.9,"pm10":34.4,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (149223) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (150123) MAIN: Sample Time = 149.587 s[0m
+[0;32mI (150123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0008%[0m
+[0;32mI (150133) MAIN: SDS011: PM2.5=30.9 µg/m³ | PM10=34.4 µg/m³[0m
+[0;32mI (150133) MAIN: BH=415.00 lx | TEMT=0.00 lx | PM2.5=30.9 | PM10=34.4[0m
+[0;32mI (150153) MAIN: SEND: {"lux":415,"temt":0.00,"pm25":30.9,"pm10":34.4,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0008}[0m
+[0;32mI (150223) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (151123) MAIN: Sample Time = 150.587 s[0m
+[0;32mI (151123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0040%[0m
+[0;32mI (151133) MAIN: SDS011: PM2.5=30.8 µg/m³ | PM10=34.3 µg/m³[0m
+[0;32mI (151133) MAIN: BH=416.00 lx | TEMT=0.00 lx | PM2.5=30.8 | PM10=34.3[0m
+[0;32mI (151153) MAIN: SEND: {"lux":416,"temt":0.00,"pm25":30.8,"pm10":34.3,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0040}[0m
+[0;33mW (151233) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (151233) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (152123) MAIN: Sample Time = 151.587 s[0m
+[0;32mI (152123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0008%[0m
+[0;32mI (152133) MAIN: SDS011: PM2.5=31.0 µg/m³ | PM10=34.5 µg/m³[0m
+[0;32mI (152133) MAIN: BH=416.00 lx | TEMT=0.00 lx | PM2.5=31.0 | PM10=34.5[0m
+[0;32mI (152153) MAIN: SEND: {"lux":416,"temt":0.00,"pm25":31.0,"pm10":34.5,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0008}[0m
+[0;32mI (152233) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (153123) MAIN: Sample Time = 152.587 s[0m
+[0;32mI (153123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0008%[0m
+[0;32mI (153133) MAIN: SDS011: PM2.5=31.1 µg/m³ | PM10=34.6 µg/m³[0m
+[0;32mI (153133) MAIN: BH=416.00 lx | TEMT=40.20 lx | PM2.5=31.1 | PM10=34.6[0m
+[0;32mI (153153) MAIN: SEND: {"lux":416,"temt":40.20,"pm25":31.1,"pm10":34.6,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0008}[0m
+[0;32mI (153233) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (154123) MAIN: Sample Time = 153.587 s[0m
+[0;32mI (154123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0032%[0m
+[0;32mI (154133) MAIN: SDS011: PM2.5=31.2 µg/m³ | PM10=34.7 µg/m³[0m
+[0;32mI (154133) MAIN: BH=415.00 lx | TEMT=60.20 lx | PM2.5=31.2 | PM10=34.7[0m
+[0;32mI (154153) MAIN: SEND: {"lux":415,"temt":60.20,"pm25":31.2,"pm10":34.7,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0032}[0m
+[0;33mW (154243) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (154243) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (155123) MAIN: Sample Time = 154.587 s[0m
+[0;32mI (155123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (155133) MAIN: SDS011: PM2.5=31.4 µg/m³ | PM10=34.9 µg/m³[0m
+[0;32mI (155133) MAIN: BH=415.00 lx | TEMT=61.80 lx | PM2.5=31.4 | PM10=34.9[0m
+[0;32mI (155153) MAIN: SEND: {"lux":415,"temt":61.80,"pm25":31.4,"pm10":34.9,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (155243) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (156123) MAIN: Sample Time = 155.587 s[0m
+[0;32mI (156123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (156133) MAIN: SDS011: PM2.5=31.5 µg/m³ | PM10=35.0 µg/m³[0m
+[0;32mI (156133) MAIN: BH=415.00 lx | TEMT=59.20 lx | PM2.5=31.5 | PM10=35.0[0m
+[0;32mI (156153) MAIN: SEND: {"lux":415,"temt":59.20,"pm25":31.5,"pm10":35.0,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (156243) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (157123) MAIN: Sample Time = 156.587 s[0m
+[0;32mI (157123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0008%[0m
+[0;32mI (157133) MAIN: SDS011: PM2.5=31.4 µg/m³ | PM10=34.9 µg/m³[0m
+[0;32mI (157133) MAIN: BH=415.00 lx | TEMT=0.00 lx | PM2.5=31.4 | PM10=34.9[0m
+[0;32mI (157163) MAIN: SEND: {"lux":415,"temt":0.00,"pm25":31.4,"pm10":34.9,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0008}[0m
+[0;32mI (157253) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (158123) MAIN: Sample Time = 157.587 s[0m
+[0;32mI (158123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0008%[0m
+[0;32mI (158133) MAIN: SDS011: PM2.5=31.5 µg/m³ | PM10=35.0 µg/m³[0m
+[0;32mI (158133) MAIN: BH=415.00 lx | TEMT=57.60 lx | PM2.5=31.5 | PM10=35.0[0m
+[0;32mI (158153) MAIN: SEND: {"lux":415,"temt":57.60,"pm25":31.5,"pm10":35.0,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0008}[0m
+[0;32mI (158253) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (159123) MAIN: Sample Time = 158.587 s[0m
+[0;32mI (159123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (159133) MAIN: SDS011: PM2.5=31.3 µg/m³ | PM10=34.8 µg/m³[0m
+[0;32mI (159133) MAIN: BH=416.00 lx | TEMT=59.80 lx | PM2.5=31.3 | PM10=34.8[0m
+[0;32mI (159153) MAIN: SEND: {"lux":416,"temt":59.80,"pm25":31.3,"pm10":34.8,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (159253) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (160123) MAIN: Sample Time = 159.587 s[0m
+[0;32mI (160123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (160133) MAIN: SDS011: PM2.5=31.3 µg/m³ | PM10=34.8 µg/m³[0m
+[0;32mI (160133) MAIN: BH=416.00 lx | TEMT=42.40 lx | PM2.5=31.3 | PM10=34.8[0m
+[0;32mI (160153) MAIN: SEND: {"lux":416,"temt":42.40,"pm25":31.3,"pm10":34.8,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (160253) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (161123) MAIN: Sample Time = 160.587 s[0m
+[0;32mI (161123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (161133) MAIN: SDS011: PM2.5=31.5 µg/m³ | PM10=35.0 µg/m³[0m
+[0;32mI (161133) MAIN: BH=418.00 lx | TEMT=0.00 lx | PM2.5=31.5 | PM10=35.0[0m
+[0;32mI (161153) MAIN: SEND: {"lux":418,"temt":0.00,"pm25":31.5,"pm10":35.0,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;33mW (161263) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (161263) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (162123) MAIN: Sample Time = 161.587 s[0m
+[0;32mI (162123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0028%[0m
+[0;32mI (162133) MAIN: SDS011: PM2.5=31.4 µg/m³ | PM10=34.8 µg/m³[0m
+[0;32mI (162133) MAIN: BH=419.00 lx | TEMT=64.20 lx | PM2.5=31.4 | PM10=34.8[0m
+[0;32mI (162163) MAIN: SEND: {"lux":419,"temt":64.20,"pm25":31.4,"pm10":34.8,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0028}[0m
+[0;32mI (162263) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (163123) MAIN: Sample Time = 162.587 s[0m
+[0;32mI (163123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (163133) MAIN: SDS011: PM2.5=31.7 µg/m³ | PM10=35.2 µg/m³[0m
+[0;32mI (163133) MAIN: BH=419.00 lx | TEMT=65.60 lx | PM2.5=31.7 | PM10=35.2[0m
+[0;32mI (163153) MAIN: SEND: {"lux":419,"temt":65.60,"pm25":31.7,"pm10":35.2,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (163263) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (164123) MAIN: Sample Time = 163.587 s[0m
+[0;32mI (164123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (164133) MAIN: SDS011: PM2.5=31.5 µg/m³ | PM10=34.9 µg/m³[0m
+[0;32mI (164133) MAIN: BH=419.00 lx | TEMT=63.20 lx | PM2.5=31.5 | PM10=34.9[0m
+[0;32mI (164153) MAIN: SEND: {"lux":419,"temt":63.20,"pm25":31.5,"pm10":34.9,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (164273) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (165123) MAIN: Sample Time = 164.587 s[0m
+[0;32mI (165123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (165133) MAIN: SDS011: PM2.5=31.6 µg/m³ | PM10=35.0 µg/m³[0m
+[0;32mI (165133) MAIN: BH=419.00 lx | TEMT=61.60 lx | PM2.5=31.6 | PM10=35.0[0m
+[0;32mI (165153) MAIN: SEND: {"lux":419,"temt":61.60,"pm25":31.6,"pm10":35.0,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (165273) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (166123) MAIN: Sample Time = 165.587 s[0m
+[0;32mI (166123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (166133) MAIN: SDS011: PM2.5=31.5 µg/m³ | PM10=34.9 µg/m³[0m
+[0;32mI (166133) MAIN: BH=419.00 lx | TEMT=60.80 lx | PM2.5=31.5 | PM10=34.9[0m
+[0;32mI (166153) MAIN: SEND: {"lux":419,"temt":60.80,"pm25":31.5,"pm10":34.9,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (166273) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (167123) MAIN: Sample Time = 166.587 s[0m
+[0;32mI (167123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (167133) MAIN: SDS011: PM2.5=31.7 µg/m³ | PM10=35.1 µg/m³[0m
+[0;32mI (167133) MAIN: BH=418.00 lx | TEMT=62.20 lx | PM2.5=31.7 | PM10=35.1[0m
+[0;32mI (167153) MAIN: SEND: {"lux":418,"temt":62.20,"pm25":31.7,"pm10":35.1,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (167273) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (168123) MAIN: Sample Time = 167.587 s[0m
+[0;32mI (168123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (168133) MAIN: SDS011: PM2.5=31.7 µg/m³ | PM10=35.1 µg/m³[0m
+[0;32mI (168133) MAIN: BH=419.00 lx | TEMT=56.80 lx | PM2.5=31.7 | PM10=35.1[0m
+[0;32mI (168153) MAIN: SEND: {"lux":419,"temt":56.80,"pm25":31.7,"pm10":35.1,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (168283) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (168283) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (169123) MAIN: Sample Time = 168.587 s[0m
+[0;32mI (169123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (169133) MAIN: SDS011: PM2.5=31.8 µg/m³ | PM10=35.2 µg/m³[0m
+[0;32mI (169133) MAIN: BH=419.00 lx | TEMT=35.20 lx | PM2.5=31.8 | PM10=35.2[0m
+[0;32mI (169153) MAIN: SEND: {"lux":419,"temt":35.20,"pm25":31.8,"pm10":35.2,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (169283) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (170123) MAIN: Sample Time = 169.587 s[0m
+[0;32mI (170123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (170133) MAIN: SDS011: PM2.5=31.9 µg/m³ | PM10=35.3 µg/m³[0m
+[0;32mI (170133) MAIN: BH=420.00 lx | TEMT=66.80 lx | PM2.5=31.9 | PM10=35.3[0m
+[0;32mI (170153) MAIN: SEND: {"lux":420,"temt":66.80,"pm25":31.9,"pm10":35.3,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (170283) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (171123) MAIN: Sample Time = 170.587 s[0m
+[0;32mI (171123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (171133) MAIN: SDS011: PM2.5=31.9 µg/m³ | PM10=35.3 µg/m³[0m
+[0;32mI (171133) MAIN: BH=420.00 lx | TEMT=65.20 lx | PM2.5=31.9 | PM10=35.3[0m
+[0;32mI (171153) MAIN: SEND: {"lux":420,"temt":65.20,"pm25":31.9,"pm10":35.3,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (171293) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (171293) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (172123) MAIN: Sample Time = 171.587 s[0m
+[0;32mI (172123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (172133) MAIN: SDS011: PM2.5=31.9 µg/m³ | PM10=35.3 µg/m³[0m
+[0;32mI (172133) MAIN: BH=420.00 lx | TEMT=68.80 lx | PM2.5=31.9 | PM10=35.3[0m
+[0;32mI (172153) MAIN: SEND: {"lux":420,"temt":68.80,"pm25":31.9,"pm10":35.3,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (172293) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (173123) MAIN: Sample Time = 172.587 s[0m
+[0;32mI (173123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (173133) MAIN: SDS011: PM2.5=31.9 µg/m³ | PM10=35.3 µg/m³[0m
+[0;32mI (173133) MAIN: BH=420.00 lx | TEMT=66.20 lx | PM2.5=31.9 | PM10=35.3[0m
+[0;32mI (173153) MAIN: SEND: {"lux":420,"temt":66.20,"pm25":31.9,"pm10":35.3,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (173293) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (174123) MAIN: Sample Time = 173.587 s[0m
+[0;32mI (174123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (174133) MAIN: SDS011: PM2.5=31.6 µg/m³ | PM10=35.0 µg/m³[0m
+[0;32mI (174133) MAIN: BH=420.00 lx | TEMT=62.20 lx | PM2.5=31.6 | PM10=35.0[0m
+[0;32mI (174153) MAIN: SEND: {"lux":420,"temt":62.20,"pm25":31.6,"pm10":35.0,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (174303) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (175123) MAIN: Sample Time = 174.587 s[0m
+[0;32mI (175123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0008%[0m
+[0;32mI (175133) MAIN: SDS011: PM2.5=31.5 µg/m³ | PM10=34.9 µg/m³[0m
+[0;32mI (175133) MAIN: BH=341.00 lx | TEMT=0.00 lx | PM2.5=31.5 | PM10=34.9[0m
+[0;32mI (175153) MAIN: SEND: {"lux":341,"temt":0.00,"pm25":31.5,"pm10":34.9,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0008}[0m
+[0;32mI (175303) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (176123) MAIN: Sample Time = 175.587 s[0m
+[0;32mI (176123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0032%[0m
+[0;32mI (176133) MAIN: SDS011: PM2.5=31.5 µg/m³ | PM10=34.9 µg/m³[0m
+[0;32mI (176133) MAIN: BH=421.00 lx | TEMT=0.00 lx | PM2.5=31.5 | PM10=34.9[0m
+[0;32mI (176153) MAIN: SEND: {"lux":421,"temt":0.00,"pm25":31.5,"pm10":34.9,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0032}[0m
+[0;32mI (176303) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (177123) MAIN: Sample Time = 176.587 s[0m
+[0;32mI (177123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0028%[0m
+[0;32mI (177133) MAIN: SDS011: PM2.5=31.5 µg/m³ | PM10=34.9 µg/m³[0m
+[0;32mI (177133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=31.5 | PM10=34.9[0m
+[0;32mI (177153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":31.5,"pm10":34.9,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0028}[0m
+[0;32mI (177303) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (178123) MAIN: Sample Time = 177.587 s[0m
+[0;32mI (178123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0028%[0m
+[0;32mI (178133) MAIN: SDS011: PM2.5=31.6 µg/m³ | PM10=35.0 µg/m³[0m
+[0;32mI (178133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=31.6 | PM10=35.0[0m
+[0;32mI (178153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":31.6,"pm10":35.0,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0028}[0m
+[0;33mW (178313) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (178313) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (179123) MAIN: Sample Time = 178.587 s[0m
+[0;32mI (179123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (179133) MAIN: SDS011: PM2.5=31.4 µg/m³ | PM10=34.8 µg/m³[0m
+[0;32mI (179133) MAIN: BH=420.00 lx | TEMT=60.40 lx | PM2.5=31.4 | PM10=34.8[0m
+[0;32mI (179163) MAIN: SEND: {"lux":420,"temt":60.40,"pm25":31.4,"pm10":34.8,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;32mI (179313) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (180123) MAIN: Sample Time = 179.587 s[0m
+[0;32mI (180123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (180133) MAIN: SDS011: PM2.5=31.2 µg/m³ | PM10=34.6 µg/m³[0m
+[0;32mI (180133) MAIN: BH=420.00 lx | TEMT=48.80 lx | PM2.5=31.2 | PM10=34.6[0m
+[0;32mI (180153) MAIN: SEND: {"lux":420,"temt":48.80,"pm25":31.2,"pm10":34.6,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (180313) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (181123) MAIN: Sample Time = 180.587 s[0m
+[0;32mI (181123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0032%[0m
+[0;32mI (181133) MAIN: SDS011: PM2.5=31.1 µg/m³ | PM10=34.5 µg/m³[0m
+[0;32mI (181133) MAIN: BH=365.00 lx | TEMT=55.80 lx | PM2.5=31.1 | PM10=34.5[0m
+[0;32mI (181153) MAIN: SEND: {"lux":365,"temt":55.80,"pm25":31.1,"pm10":34.5,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0032}[0m
+[0;33mW (181323) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (181323) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (182123) MAIN: Sample Time = 181.587 s[0m
+[0;32mI (182123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0036%[0m
+[0;32mI (182133) MAIN: SDS011: PM2.5=31.0 µg/m³ | PM10=34.5 µg/m³[0m
+[0;32mI (182133) MAIN: BH=420.00 lx | TEMT=58.40 lx | PM2.5=31.0 | PM10=34.5[0m
+[0;32mI (182153) MAIN: SEND: {"lux":420,"temt":58.40,"pm25":31.0,"pm10":34.5,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0036}[0m
+[0;32mI (182323) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (183123) MAIN: Sample Time = 182.587 s[0m
+[0;32mI (183123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0028%[0m
+[0;32mI (183133) MAIN: SDS011: PM2.5=31.1 µg/m³ | PM10=34.5 µg/m³[0m
+[0;32mI (183133) MAIN: BH=421.00 lx | TEMT=0.00 lx | PM2.5=31.1 | PM10=34.5[0m
+[0;32mI (183153) MAIN: SEND: {"lux":421,"temt":0.00,"pm25":31.1,"pm10":34.5,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0028}[0m
+[0;32mI (183323) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (184123) MAIN: Sample Time = 183.587 s[0m
+[0;32mI (184123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0028%[0m
+[0;32mI (184133) MAIN: SDS011: PM2.5=31.1 µg/m³ | PM10=34.6 µg/m³[0m
+[0;32mI (184133) MAIN: BH=421.00 lx | TEMT=56.00 lx | PM2.5=31.1 | PM10=34.6[0m
+[0;32mI (184153) MAIN: SEND: {"lux":421,"temt":56.00,"pm25":31.1,"pm10":34.6,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0028}[0m
+[0;32mI (184333) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (185123) MAIN: Sample Time = 184.587 s[0m
+[0;32mI (185123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (185133) MAIN: SDS011: PM2.5=31.0 µg/m³ | PM10=34.5 µg/m³[0m
+[0;32mI (185133) MAIN: BH=421.00 lx | TEMT=55.80 lx | PM2.5=31.0 | PM10=34.5[0m
+[0;32mI (185153) MAIN: SEND: {"lux":421,"temt":55.80,"pm25":31.0,"pm10":34.5,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (185333) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (186123) MAIN: Sample Time = 185.587 s[0m
+[0;32mI (186123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (186133) MAIN: SDS011: PM2.5=30.8 µg/m³ | PM10=34.3 µg/m³[0m
+[0;32mI (186133) MAIN: BH=421.00 lx | TEMT=0.00 lx | PM2.5=30.8 | PM10=34.3[0m
+[0;32mI (186153) MAIN: SEND: {"lux":421,"temt":0.00,"pm25":30.8,"pm10":34.3,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (186333) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (187123) MAIN: Sample Time = 186.587 s[0m
+[0;32mI (187123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (187133) MAIN: SDS011: PM2.5=31.0 µg/m³ | PM10=34.5 µg/m³[0m
+[0;32mI (187133) MAIN: BH=420.00 lx | TEMT=64.80 lx | PM2.5=31.0 | PM10=34.5[0m
+[0;32mI (187153) MAIN: SEND: {"lux":420,"temt":64.80,"pm25":31.0,"pm10":34.5,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (187333) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (188123) MAIN: Sample Time = 187.587 s[0m
+[0;32mI (188123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (188133) MAIN: SDS011: PM2.5=31.0 µg/m³ | PM10=34.5 µg/m³[0m
+[0;32mI (188133) MAIN: BH=420.00 lx | TEMT=64.00 lx | PM2.5=31.0 | PM10=34.5[0m
+[0;32mI (188153) MAIN: SEND: {"lux":420,"temt":64.00,"pm25":31.0,"pm10":34.5,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (188343) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (188343) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (189123) MAIN: Sample Time = 188.587 s[0m
+[0;32mI (189123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (189133) MAIN: SDS011: PM2.5=31.3 µg/m³ | PM10=34.9 µg/m³[0m
+[0;32mI (189133) MAIN: BH=420.00 lx | TEMT=61.60 lx | PM2.5=31.3 | PM10=34.9[0m
+[0;32mI (189153) MAIN: SEND: {"lux":420,"temt":61.60,"pm25":31.3,"pm10":34.9,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (189343) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (190123) MAIN: Sample Time = 189.587 s[0m
+[0;32mI (190123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (190133) MAIN: SDS011: PM2.5=31.2 µg/m³ | PM10=34.8 µg/m³[0m
+[0;32mI (190133) MAIN: BH=420.00 lx | TEMT=61.80 lx | PM2.5=31.2 | PM10=34.8[0m
+[0;32mI (190153) MAIN: SEND: {"lux":420,"temt":61.80,"pm25":31.2,"pm10":34.8,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (190343) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (191123) MAIN: Sample Time = 190.587 s[0m
+[0;32mI (191123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (191133) MAIN: SDS011: PM2.5=31.3 µg/m³ | PM10=34.9 µg/m³[0m
+[0;32mI (191133) MAIN: BH=420.00 lx | TEMT=60.60 lx | PM2.5=31.3 | PM10=34.9[0m
+[0;32mI (191153) MAIN: SEND: {"lux":420,"temt":60.60,"pm25":31.3,"pm10":34.9,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (191353) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (192123) MAIN: Sample Time = 191.587 s[0m
+[0;32mI (192123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (192133) MAIN: SDS011: PM2.5=31.4 µg/m³ | PM10=35.1 µg/m³[0m
+[0;32mI (192133) MAIN: BH=420.00 lx | TEMT=59.20 lx | PM2.5=31.4 | PM10=35.1[0m
+[0;32mI (192153) MAIN: SEND: {"lux":420,"temt":59.20,"pm25":31.4,"pm10":35.1,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (192353) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (193123) MAIN: Sample Time = 192.587 s[0m
+[0;32mI (193123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (193133) MAIN: SDS011: PM2.5=31.4 µg/m³ | PM10=35.2 µg/m³[0m
+[0;32mI (193133) MAIN: BH=421.00 lx | TEMT=57.20 lx | PM2.5=31.4 | PM10=35.2[0m
+[0;32mI (193153) MAIN: SEND: {"lux":421,"temt":57.20,"pm25":31.4,"pm10":35.2,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (193353) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (194123) MAIN: Sample Time = 193.587 s[0m
+[0;32mI (194123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (194133) MAIN: SDS011: PM2.5=31.4 µg/m³ | PM10=35.2 µg/m³[0m
+[0;32mI (194133) MAIN: BH=420.00 lx | TEMT=47.40 lx | PM2.5=31.4 | PM10=35.2[0m
+[0;32mI (194153) MAIN: SEND: {"lux":420,"temt":47.40,"pm25":31.4,"pm10":35.2,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (194353) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (195123) MAIN: Sample Time = 194.587 s[0m
+[0;32mI (195123) MAIN: [TIMING] dt=1.0004s | f_actual=0.9996Hz | error=0.0417%[0m
+[0;32mI (195133) MAIN: SDS011: PM2.5=31.2 µg/m³ | PM10=35.0 µg/m³[0m
+[0;32mI (195133) MAIN: BH=420.00 lx | TEMT=31.80 lx | PM2.5=31.2 | PM10=35.0[0m
+[0;32mI (195153) MAIN: SEND: {"lux":420,"temt":31.80,"pm25":31.2,"pm10":35.0,"dt":1.0004,"f_actual":0.9996,"error_pct":0.0417}[0m
+[0;33mW (195363) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (195363) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (196123) MAIN: Sample Time = 195.587 s[0m
+[0;32mI (196123) MAIN: [TIMING] dt=0.9996s | f_actual=1.0004Hz | error=-0.0417%[0m
+[0;32mI (196133) MAIN: SDS011: PM2.5=31.2 µg/m³ | PM10=35.0 µg/m³[0m
+[0;32mI (196133) MAIN: BH=420.00 lx | TEMT=63.40 lx | PM2.5=31.2 | PM10=35.0[0m
+[0;32mI (196163) MAIN: SEND: {"lux":420,"temt":63.40,"pm25":31.2,"pm10":35.0,"dt":0.9996,"f_actual":1.0004,"error_pct":-0.0417}[0m
+[0;32mI (196363) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (197123) MAIN: Sample Time = 196.587 s[0m
+[0;32mI (197123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (197133) MAIN: SDS011: PM2.5=31.0 µg/m³ | PM10=34.7 µg/m³[0m
+[0;32mI (197133) MAIN: BH=420.00 lx | TEMT=59.40 lx | PM2.5=31.0 | PM10=34.7[0m
+[0;32mI (197153) MAIN: SEND: {"lux":420,"temt":59.40,"pm25":31.0,"pm10":34.7,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (197363) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (198123) MAIN: Sample Time = 197.587 s[0m
+[0;32mI (198123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (198133) MAIN: SDS011: PM2.5=30.9 µg/m³ | PM10=34.6 µg/m³[0m
+[0;32mI (198133) MAIN: BH=420.00 lx | TEMT=60.80 lx | PM2.5=30.9 | PM10=34.6[0m
+[0;32mI (198153) MAIN: SEND: {"lux":420,"temt":60.80,"pm25":30.9,"pm10":34.6,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (198373) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (198373) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (199123) MAIN: Sample Time = 198.587 s[0m
+[0;32mI (199123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (199133) MAIN: SDS011: PM2.5=30.9 µg/m³ | PM10=34.6 µg/m³[0m
+[0;32mI (199133) MAIN: BH=420.00 lx | TEMT=59.20 lx | PM2.5=30.9 | PM10=34.6[0m
+[0;32mI (199153) MAIN: SEND: {"lux":420,"temt":59.20,"pm25":30.9,"pm10":34.6,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (199373) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (200123) MAIN: Sample Time = 199.587 s[0m
+[0;32mI (200123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (200133) MAIN: SDS011: PM2.5=30.9 µg/m³ | PM10=34.7 µg/m³[0m
+[0;32mI (200133) MAIN: BH=420.00 lx | TEMT=56.60 lx | PM2.5=30.9 | PM10=34.7[0m
+[0;32mI (200153) MAIN: SEND: {"lux":420,"temt":56.60,"pm25":30.9,"pm10":34.7,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (200373) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (201123) MAIN: Sample Time = 200.587 s[0m
+[0;32mI (201123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (201133) MAIN: SDS011: PM2.5=30.8 µg/m³ | PM10=34.5 µg/m³[0m
+[0;32mI (201133) MAIN: BH=420.00 lx | TEMT=52.00 lx | PM2.5=30.8 | PM10=34.5[0m
+[0;32mI (201153) MAIN: SEND: {"lux":420,"temt":52.00,"pm25":30.8,"pm10":34.5,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (201383) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (202123) MAIN: Sample Time = 201.587 s[0m
+[0;32mI (202123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (202133) MAIN: SDS011: PM2.5=30.8 µg/m³ | PM10=34.5 µg/m³[0m
+[0;32mI (202133) MAIN: BH=420.00 lx | TEMT=56.00 lx | PM2.5=30.8 | PM10=34.5[0m
+[0;32mI (202153) MAIN: SEND: {"lux":420,"temt":56.00,"pm25":30.8,"pm10":34.5,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (202383) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (203123) MAIN: Sample Time = 202.587 s[0m
+[0;32mI (203123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (203133) MAIN: SDS011: PM2.5=30.8 µg/m³ | PM10=34.5 µg/m³[0m
+[0;32mI (203133) MAIN: BH=420.00 lx | TEMT=46.00 lx | PM2.5=30.8 | PM10=34.5[0m
+[0;32mI (203153) MAIN: SEND: {"lux":420,"temt":46.00,"pm25":30.8,"pm10":34.5,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (203383) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (204123) MAIN: Sample Time = 203.587 s[0m
+[0;32mI (204123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (204133) MAIN: SDS011: PM2.5=30.7 µg/m³ | PM10=34.4 µg/m³[0m
+[0;32mI (204133) MAIN: BH=418.00 lx | TEMT=63.20 lx | PM2.5=30.7 | PM10=34.4[0m
+[0;32mI (204153) MAIN: SEND: {"lux":418,"temt":63.20,"pm25":30.7,"pm10":34.4,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (204383) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (205123) MAIN: Sample Time = 204.587 s[0m
+[0;32mI (205123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (205133) MAIN: SDS011: PM2.5=30.7 µg/m³ | PM10=34.4 µg/m³[0m
+[0;32mI (205133) MAIN: BH=418.00 lx | TEMT=60.40 lx | PM2.5=30.7 | PM10=34.4[0m
+[0;32mI (205153) MAIN: SEND: {"lux":418,"temt":60.40,"pm25":30.7,"pm10":34.4,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (205393) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (205393) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (206123) MAIN: Sample Time = 205.587 s[0m
+[0;32mI (206123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (206133) MAIN: SDS011: PM2.5=30.6 µg/m³ | PM10=34.2 µg/m³[0m
+[0;32mI (206133) MAIN: BH=419.00 lx | TEMT=61.20 lx | PM2.5=30.6 | PM10=34.2[0m
+[0;32mI (206153) MAIN: SEND: {"lux":419,"temt":61.20,"pm25":30.6,"pm10":34.2,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (206393) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (207123) MAIN: Sample Time = 206.587 s[0m
+[0;32mI (207123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (207133) MAIN: SDS011: PM2.5=30.7 µg/m³ | PM10=34.3 µg/m³[0m
+[0;32mI (207133) MAIN: BH=418.00 lx | TEMT=61.00 lx | PM2.5=30.7 | PM10=34.3[0m
+[0;32mI (207153) MAIN: SEND: {"lux":418,"temt":61.00,"pm25":30.7,"pm10":34.3,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (207393) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (208123) MAIN: Sample Time = 207.587 s[0m
+[0;32mI (208123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0028%[0m
+[0;32mI (208133) MAIN: SDS011: PM2.5=30.5 µg/m³ | PM10=34.1 µg/m³[0m
+[0;32mI (208133) MAIN: BH=419.00 lx | TEMT=0.00 lx | PM2.5=30.5 | PM10=34.1[0m
+[0;32mI (208153) MAIN: SEND: {"lux":419,"temt":0.00,"pm25":30.5,"pm10":34.1,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0028}[0m
+[0;33mW (208403) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (208403) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (209123) MAIN: Sample Time = 208.587 s[0m
+[0;32mI (209123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0028%[0m
+[0;32mI (209133) MAIN: SDS011: PM2.5=30.5 µg/m³ | PM10=34.2 µg/m³[0m
+[0;32mI (209133) MAIN: BH=419.00 lx | TEMT=59.00 lx | PM2.5=30.5 | PM10=34.2[0m
+[0;32mI (209153) MAIN: SEND: {"lux":419,"temt":59.00,"pm25":30.5,"pm10":34.2,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0028}[0m
+[0;32mI (209403) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (210123) MAIN: Sample Time = 209.587 s[0m
+[0;32mI (210123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (210133) MAIN: SDS011: PM2.5=30.6 µg/m³ | PM10=34.2 µg/m³[0m
+[0;32mI (210133) MAIN: BH=419.00 lx | TEMT=56.60 lx | PM2.5=30.6 | PM10=34.2[0m
+[0;32mI (210153) MAIN: SEND: {"lux":419,"temt":56.60,"pm25":30.6,"pm10":34.2,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (210403) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (211123) MAIN: Sample Time = 210.587 s[0m
+[0;32mI (211123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (211133) MAIN: SDS011: PM2.5=30.6 µg/m³ | PM10=34.3 µg/m³[0m
+[0;32mI (211133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=30.6 | PM10=34.3[0m
+[0;32mI (211153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":30.6,"pm10":34.3,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;32mI (211413) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (212123) MAIN: Sample Time = 211.587 s[0m
+[0;32mI (212123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (212133) MAIN: SDS011: PM2.5=30.4 µg/m³ | PM10=34.0 µg/m³[0m
+[0;32mI (212133) MAIN: BH=405.00 lx | TEMT=34.60 lx | PM2.5=30.4 | PM10=34.0[0m
+[0;32mI (212153) MAIN: SEND: {"lux":405,"temt":34.60,"pm25":30.4,"pm10":34.0,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;32mI (212413) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (213123) MAIN: Sample Time = 212.587 s[0m
+[0;32mI (213123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (213133) MAIN: SDS011: PM2.5=30.3 µg/m³ | PM10=33.9 µg/m³[0m
+[0;32mI (213133) MAIN: BH=415.00 lx | TEMT=63.60 lx | PM2.5=30.3 | PM10=33.9[0m
+[0;32mI (213153) MAIN: SEND: {"lux":415,"temt":63.60,"pm25":30.3,"pm10":33.9,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (213413) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (214123) MAIN: Sample Time = 213.587 s[0m
+[0;32mI (214123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (214133) MAIN: SDS011: PM2.5=30.1 µg/m³ | PM10=33.7 µg/m³[0m
+[0;32mI (214133) MAIN: BH=416.00 lx | TEMT=64.00 lx | PM2.5=30.1 | PM10=33.7[0m
+[0;32mI (214153) MAIN: SEND: {"lux":416,"temt":64.00,"pm25":30.1,"pm10":33.7,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (214413) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (215123) MAIN: Sample Time = 214.587 s[0m
+[0;32mI (215123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (215133) MAIN: SDS011: PM2.5=30.3 µg/m³ | PM10=33.9 µg/m³[0m
+[0;32mI (215133) MAIN: BH=416.00 lx | TEMT=63.20 lx | PM2.5=30.3 | PM10=33.9[0m
+[0;32mI (215153) MAIN: SEND: {"lux":416,"temt":63.20,"pm25":30.3,"pm10":33.9,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (215423) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (215423) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (216123) MAIN: Sample Time = 215.587 s[0m
+[0;32mI (216123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (216133) MAIN: SDS011: PM2.5=30.4 µg/m³ | PM10=34.0 µg/m³[0m
+[0;32mI (216133) MAIN: BH=417.00 lx | TEMT=61.20 lx | PM2.5=30.4 | PM10=34.0[0m
+[0;32mI (216153) MAIN: SEND: {"lux":417,"temt":61.20,"pm25":30.4,"pm10":34.0,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (216423) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (217123) MAIN: Sample Time = 216.587 s[0m
+[0;32mI (217123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (217133) MAIN: SDS011: PM2.5=30.2 µg/m³ | PM10=33.9 µg/m³[0m
+[0;32mI (217133) MAIN: BH=417.00 lx | TEMT=61.20 lx | PM2.5=30.2 | PM10=33.9[0m
+[0;32mI (217153) MAIN: SEND: {"lux":417,"temt":61.20,"pm25":30.2,"pm10":33.9,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (217423) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (218123) MAIN: Sample Time = 217.587 s[0m
+[0;32mI (218123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (218133) MAIN: SDS011: PM2.5=30.2 µg/m³ | PM10=33.9 µg/m³[0m
+[0;32mI (218133) MAIN: BH=417.00 lx | TEMT=60.80 lx | PM2.5=30.2 | PM10=33.9[0m
+[0;32mI (218153) MAIN: SEND: {"lux":417,"temt":60.80,"pm25":30.2,"pm10":33.9,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (218433) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (218433) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (219123) MAIN: Sample Time = 218.587 s[0m
+[0;32mI (219123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (219133) MAIN: SDS011: PM2.5=30.1 µg/m³ | PM10=33.7 µg/m³[0m
+[0;32mI (219133) MAIN: BH=419.00 lx | TEMT=50.40 lx | PM2.5=30.1 | PM10=33.7[0m
+[0;32mI (219153) MAIN: SEND: {"lux":419,"temt":50.40,"pm25":30.1,"pm10":33.7,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (219433) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (220123) MAIN: Sample Time = 219.587 s[0m
+[0;32mI (220123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (220133) MAIN: SDS011: PM2.5=30.2 µg/m³ | PM10=33.8 µg/m³[0m
+[0;32mI (220133) MAIN: BH=409.00 lx | TEMT=44.20 lx | PM2.5=30.2 | PM10=33.8[0m
+[0;32mI (220153) MAIN: SEND: {"lux":409,"temt":44.20,"pm25":30.2,"pm10":33.8,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (220433) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (221123) MAIN: Sample Time = 220.587 s[0m
+[0;32mI (221123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (221133) MAIN: SDS011: PM2.5=30.1 µg/m³ | PM10=33.7 µg/m³[0m
+[0;32mI (221133) MAIN: BH=399.00 lx | TEMT=63.20 lx | PM2.5=30.1 | PM10=33.7[0m
+[0;32mI (221153) MAIN: SEND: {"lux":399,"temt":63.20,"pm25":30.1,"pm10":33.7,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (221443) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (222123) MAIN: Sample Time = 221.587 s[0m
+[0;32mI (222123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (222133) MAIN: SDS011: PM2.5=29.9 µg/m³ | PM10=33.4 µg/m³[0m
+[0;32mI (222133) MAIN: BH=409.00 lx | TEMT=61.80 lx | PM2.5=29.9 | PM10=33.4[0m
+[0;32mI (222153) MAIN: SEND: {"lux":409,"temt":61.80,"pm25":29.9,"pm10":33.4,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (222443) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (222773) wifi:state: run -> init (0x1c0)[0m
+[0;32mI (222793) wifi:pm stop, total sleep time: 158796684 us / 221798862 us[0m
+
+[0;32mI (222793) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (222793) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;31mE (222803) transport_base: tcp_read error, errno=Software caused connection abort[0m
+[0;33mW (222803) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;31mE (222803) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=113[0m
+[0;32mI (222813) wifi:[0;31mE (222823) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m[0m
+new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0
+[0;33mW (222833) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (222833) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (222983) wifi:state: auth -> init (0x3c0)[0m
+[0;32mI (222993) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (222993) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (223123) MAIN: Sample Time = 222.587 s[0m
+[0;32mI (223123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0028%[0m
+[0;32mI (223133) MAIN: SDS011: PM2.5=29.8 µg/m³ | PM10=33.2 µg/m³[0m
+[0;32mI (223133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=29.8 | PM10=33.2[0m
+[0;32mI (223153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":29.8,"pm10":33.2,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0028}[0m
+[0;32mI (223443) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (224123) MAIN: Sample Time = 223.587 s[0m
+[0;32mI (224123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (224123) MAIN: SDS011: PM2.5=29.7 µg/m³ | PM10=33.1 µg/m³[0m
+[0;32mI (224133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=29.7 | PM10=33.1[0m
+[0;32mI (224153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":29.7,"pm10":33.1,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (224443) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (225123) MAIN: Sample Time = 224.587 s[0m
+[0;32mI (225123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (225123) MAIN: SDS011: PM2.5=29.8 µg/m³ | PM10=33.2 µg/m³[0m
+[0;32mI (225133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=29.8 | PM10=33.2[0m
+[0;32mI (225153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":29.8,"pm10":33.2,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (225413) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (225453) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (225453) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (226123) MAIN: Sample Time = 225.587 s[0m
+[0;32mI (226123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (226133) MAIN: SDS011: PM2.5=29.9 µg/m³ | PM10=33.4 µg/m³[0m
+[0;32mI (226133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=29.9 | PM10=33.4[0m
+[0;32mI (226153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":29.9,"pm10":33.4,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (226453) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (227123) MAIN: Sample Time = 226.587 s[0m
+[0;32mI (227123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (227123) MAIN: SDS011: PM2.5=29.9 µg/m³ | PM10=33.4 µg/m³[0m
+[0;32mI (227133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=29.9 | PM10=33.4[0m
+[0;32mI (227153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":29.9,"pm10":33.4,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (227453) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;33mW (227833) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (228123) MAIN: Sample Time = 227.587 s[0m
+[0;32mI (228123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0020%[0m
+[0;32mI (228133) MAIN: SDS011: PM2.5=29.8 µg/m³ | PM10=33.3 µg/m³[0m
+[0;32mI (228133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=29.8 | PM10=33.3[0m
+[0;32mI (228153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":29.8,"pm10":33.3,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0020}[0m
+[0;32mI (228463) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (229123) MAIN: Sample Time = 228.587 s[0m
+[0;32mI (229123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (229123) MAIN: SDS011: PM2.5=30.0 µg/m³ | PM10=33.5 µg/m³[0m
+[0;32mI (229133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=30.0 | PM10=33.5[0m
+[0;32mI (229153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":30.0,"pm10":33.5,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (229463) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (230123) MAIN: Sample Time = 229.587 s[0m
+[0;32mI (230123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0020%[0m
+[0;32mI (230123) MAIN: SDS011: PM2.5=30.0 µg/m³ | PM10=33.5 µg/m³[0m
+[0;32mI (230133) MAIN: BH=416.00 lx | TEMT=0.00 lx | PM2.5=30.0 | PM10=33.5[0m
+[0;32mI (230153) MAIN: SEND: {"lux":416,"temt":0.00,"pm25":30.0,"pm10":33.5,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0020}[0m
+[0;33mW (230253) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (230463) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (231123) MAIN: Sample Time = 230.587 s[0m
+[0;32mI (231123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (231133) MAIN: SDS011: PM2.5=30.0 µg/m³ | PM10=33.5 µg/m³[0m
+[0;32mI (231133) MAIN: BH=415.00 lx | TEMT=0.00 lx | PM2.5=30.0 | PM10=33.5[0m
+[0;32mI (231153) MAIN: SEND: {"lux":415,"temt":0.00,"pm25":30.0,"pm10":33.5,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (231463) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (232123) MAIN: Sample Time = 231.587 s[0m
+[0;32mI (232123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (232123) MAIN: SDS011: PM2.5=30.1 µg/m³ | PM10=33.6 µg/m³[0m
+[0;32mI (232133) MAIN: BH=415.00 lx | TEMT=0.00 lx | PM2.5=30.1 | PM10=33.6[0m
+[0;32mI (232153) MAIN: SEND: {"lux":415,"temt":0.00,"pm25":30.1,"pm10":33.6,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (232473) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (232473) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;33mW (232663) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (233123) MAIN: Sample Time = 232.587 s[0m
+[0;32mI (233123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (233133) MAIN: SDS011: PM2.5=30.0 µg/m³ | PM10=33.5 µg/m³[0m
+[0;32mI (233133) MAIN: BH=415.00 lx | TEMT=0.00 lx | PM2.5=30.0 | PM10=33.5[0m
+[0;32mI (233153) MAIN: SEND: {"lux":415,"temt":0.00,"pm25":30.0,"pm10":33.5,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (233473) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (234473) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;33mW (235083) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (235483) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (235483) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (236483) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (237483) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;33mW (237503) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (238493) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (238493) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (239493) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;31mE (239843) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (239843) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (239843) mqtt_client: Error transport connect[0m
+[0;33mW (239853) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (239853) MAIN: Sample Time = 239.317 s[0m
+[0;32mI (239863) MAIN: [TIMING] dt=6.7296s | f_actual=0.1486Hz | error=572.9583%[0m
+[0;32mI (239863) MAIN: SDS011: PM2.5=30.1 µg/m³ | PM10=33.7 µg/m³[0m
+[0;32mI (239873) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=30.1 | PM10=33.7[0m
+[0;32mI (239893) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":30.1,"pm10":33.7,"dt":6.7296,"f_actual":0.1486,"error_pct":572.9583}[0m
+[0;33mW (239913) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (240123) MAIN: Sample Time = 239.587 s[0m
+[0;32mI (240123) MAIN: [TIMING] dt=0.2704s | f_actual=3.6977Hz | error=-72.9559%[0m
+[0;32mI (240133) MAIN: SDS011: PM2.5=30.2 µg/m³ | PM10=33.8 µg/m³[0m
+[0;32mI (240133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=30.2 | PM10=33.8[0m
+[0;32mI (240153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":30.2,"pm10":33.8,"dt":0.2704,"f_actual":3.6977,"error_pct":-72.9559}[0m
+[0;32mI (240493) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (241123) MAIN: Sample Time = 240.587 s[0m
+[0;32mI (241123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (241133) MAIN: SDS011: PM2.5=30.3 µg/m³ | PM10=33.9 µg/m³[0m
+[0;32mI (241133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=30.3 | PM10=33.9[0m
+[0;32mI (241153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":30.3,"pm10":33.9,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;32mI (241503) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (242123) MAIN: Sample Time = 241.587 s[0m
+[0;32mI (242123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (242123) MAIN: SDS011: PM2.5=30.4 µg/m³ | PM10=34.0 µg/m³[0m
+[0;32mI (242133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=30.4 | PM10=34.0[0m
+[0;32mI (242153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":30.4,"pm10":34.0,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;33mW (242333) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (242503) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (243123) MAIN: Sample Time = 242.587 s[0m
+[0;32mI (243123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0028%[0m
+[0;32mI (243133) MAIN: SDS011: PM2.5=30.6 µg/m³ | PM10=34.2 µg/m³[0m
+[0;32mI (243133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=30.6 | PM10=34.2[0m
+[0;32mI (243153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":30.6,"pm10":34.2,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0028}[0m
+[0;32mI (243503) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (244123) MAIN: Sample Time = 243.587 s[0m
+[0;32mI (244123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0028%[0m
+[0;32mI (244123) MAIN: SDS011: PM2.5=31.0 µg/m³ | PM10=34.6 µg/m³[0m
+[0;32mI (244133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=31.0 | PM10=34.6[0m
+[0;32mI (244153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":31.0,"pm10":34.6,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0028}[0m
+[0;32mI (244503) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;33mW (244753) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (245123) MAIN: Sample Time = 244.587 s[0m
+[0;32mI (245123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (245123) MAIN: SDS011: PM2.5=31.1 µg/m³ | PM10=34.7 µg/m³[0m
+[0;32mI (245133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=31.1 | PM10=34.7[0m
+[0;32mI (245153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":31.1,"pm10":34.7,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (245513) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (245513) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (246123) MAIN: Sample Time = 245.587 s[0m
+[0;32mI (246123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (246123) MAIN: SDS011: PM2.5=31.3 µg/m³ | PM10=35.0 µg/m³[0m
+[0;32mI (246133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=31.3 | PM10=35.0[0m
+[0;32mI (246153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":31.3,"pm10":35.0,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;32mI (246513) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (247123) MAIN: Sample Time = 246.587 s[0m
+[0;32mI (247123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0028%[0m
+[0;32mI (247123) MAIN: SDS011: PM2.5=31.4 µg/m³ | PM10=35.1 µg/m³[0m
+[0;32mI (247133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=31.4 | PM10=35.1[0m
+[0;32mI (247153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":31.4,"pm10":35.1,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0028}[0m
+[0;33mW (247173) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (247513) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (248123) MAIN: Sample Time = 247.587 s[0m
+[0;32mI (248123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (248133) MAIN: SDS011: PM2.5=31.4 µg/m³ | PM10=35.1 µg/m³[0m
+[0;32mI (248133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=31.4 | PM10=35.1[0m
+[0;32mI (248153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":31.4,"pm10":35.1,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;32mI (248523) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (249123) MAIN: Sample Time = 248.587 s[0m
+[0;32mI (249123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0016%[0m
+[0;32mI (249123) MAIN: SDS011: PM2.5=31.5 µg/m³ | PM10=35.2 µg/m³[0m
+[0;32mI (249133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=31.5 | PM10=35.2[0m
+[0;32mI (249153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":31.5,"pm10":35.2,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0016}[0m
+[0;32mI (249523) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;33mW (249583) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (250123) MAIN: Sample Time = 249.587 s[0m
+[0;32mI (250123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (250133) MAIN: SDS011: PM2.5=31.8 µg/m³ | PM10=35.4 µg/m³[0m
+[0;32mI (250133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=31.8 | PM10=35.4[0m
+[0;32mI (250153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":31.8,"pm10":35.4,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (250523) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (251123) MAIN: Sample Time = 250.587 s[0m
+[0;32mI (251123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0020%[0m
+[0;32mI (251123) MAIN: SDS011: PM2.5=31.9 µg/m³ | PM10=35.6 µg/m³[0m
+[0;32mI (251133) MAIN: BH=419.00 lx | TEMT=0.00 lx | PM2.5=31.9 | PM10=35.6[0m
+[0;32mI (251153) MAIN: SEND: {"lux":419,"temt":0.00,"pm25":31.9,"pm10":35.6,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0020}[0m
+[0;32mI (251533) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;33mW (252003) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (252123) MAIN: Sample Time = 251.588 s[0m
+[0;32mI (252123) MAIN: [TIMING] dt=1.0009s | f_actual=0.9991Hz | error=0.0945%[0m
+[0;32mI (252133) MAIN: SDS011: PM2.5=31.9 µg/m³ | PM10=35.6 µg/m³[0m
+[0;32mI (252133) MAIN: BH=415.00 lx | TEMT=0.00 lx | PM2.5=31.9 | PM10=35.6[0m
+[0;32mI (252153) MAIN: SEND: {"lux":415,"temt":0.00,"pm25":31.9,"pm10":35.6,"dt":1.0009,"f_actual":0.9991,"error_pct":0.0945}[0m
+[0;32mI (252533) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (253123) MAIN: Sample Time = 252.587 s[0m
+[0;32mI (253123) MAIN: [TIMING] dt=0.9990s | f_actual=1.0010Hz | error=-0.0965%[0m
+[0;32mI (253123) MAIN: SDS011: PM2.5=31.9 µg/m³ | PM10=35.6 µg/m³[0m
+[0;32mI (253133) MAIN: BH=415.00 lx | TEMT=0.00 lx | PM2.5=31.9 | PM10=35.6[0m
+[0;32mI (253153) MAIN: SEND: {"lux":415,"temt":0.00,"pm25":31.9,"pm10":35.6,"dt":0.9990,"f_actual":1.0010,"error_pct":-0.0965}[0m
+[0;32mI (253533) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (254123) MAIN: Sample Time = 253.587 s[0m
+[0;32mI (254123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (254123) MAIN: SDS011: PM2.5=31.8 µg/m³ | PM10=35.5 µg/m³[0m
+[0;32mI (254133) MAIN: BH=415.00 lx | TEMT=0.00 lx | PM2.5=31.8 | PM10=35.5[0m
+[0;32mI (254153) MAIN: SEND: {"lux":415,"temt":0.00,"pm25":31.8,"pm10":35.5,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (254423) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (254533) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (255123) MAIN: Sample Time = 254.587 s[0m
+[0;32mI (255123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (255133) MAIN: SDS011: PM2.5=32.1 µg/m³ | PM10=35.8 µg/m³[0m
+[0;32mI (255133) MAIN: BH=415.00 lx | TEMT=0.00 lx | PM2.5=32.1 | PM10=35.8[0m
+[0;32mI (255153) MAIN: SEND: {"lux":415,"temt":0.00,"pm25":32.1,"pm10":35.8,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (255543) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (255543) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (256543) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;33mW (256843) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (257543) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;33mW (258553) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (258553) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;33mW (259253) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (259553) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (260553) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (261563) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;33mW (261673) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;31mE (261853) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (261853) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (261853) mqtt_client: Error transport connect[0m
+[0;33mW (261863) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (261863) MAIN: Sample Time = 261.327 s[0m
+[0;32mI (261873) MAIN: [TIMING] dt=6.7397s | f_actual=0.1484Hz | error=573.9729%[0m
+[0;32mI (261873) MAIN: SDS011: PM2.5=32.0 µg/m³ | PM10=35.7 µg/m³[0m
+[0;32mI (261883) MAIN: BH=417.00 lx | TEMT=0.00 lx | PM2.5=32.0 | PM10=35.7[0m
+[0;32mI (261903) MAIN: SEND: {"lux":417,"temt":0.00,"pm25":32.0,"pm10":35.7,"dt":6.7397,"f_actual":0.1484,"error_pct":573.9729}[0m
+[0;32mI (262123) MAIN: Sample Time = 261.587 s[0m
+[0;32mI (262123) MAIN: [TIMING] dt=0.2603s | f_actual=3.8417Hz | error=-73.9701%[0m
+[0;32mI (262133) MAIN: SDS011: PM2.5=32.2 µg/m³ | PM10=35.9 µg/m³[0m
+[0;32mI (262133) MAIN: BH=416.00 lx | TEMT=0.00 lx | PM2.5=32.2 | PM10=35.9[0m
+[0;32mI (262153) MAIN: SEND: {"lux":416,"temt":0.00,"pm25":32.2,"pm10":35.9,"dt":0.2603,"f_actual":3.8417,"error_pct":-73.9701}[0m
+[0;32mI (262563) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (263123) MAIN: Sample Time = 262.587 s[0m
+[0;32mI (263123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0008%[0m
+[0;32mI (263123) MAIN: SDS011: PM2.5=32.3 µg/m³ | PM10=36.1 µg/m³[0m
+[0;32mI (263133) MAIN: BH=418.00 lx | TEMT=0.00 lx | PM2.5=32.3 | PM10=36.1[0m
+[0;32mI (263153) MAIN: SEND: {"lux":418,"temt":0.00,"pm25":32.3,"pm10":36.1,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0008}[0m
+[0;32mI (263563) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;33mW (264093) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (264123) MAIN: Sample Time = 263.587 s[0m
+[0;32mI (264123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (264133) MAIN: SDS011: PM2.5=32.4 µg/m³ | PM10=36.2 µg/m³[0m
+[0;32mI (264133) MAIN: BH=419.00 lx | TEMT=0.00 lx | PM2.5=32.4 | PM10=36.2[0m
+[0;32mI (264153) MAIN: SEND: {"lux":419,"temt":0.00,"pm25":32.4,"pm10":36.2,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;32mI (264563) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (265123) MAIN: Sample Time = 264.587 s[0m
+[0;32mI (265123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (265123) MAIN: SDS011: PM2.5=32.5 µg/m³ | PM10=36.3 µg/m³[0m
+[0;32mI (265133) MAIN: BH=418.00 lx | TEMT=0.00 lx | PM2.5=32.5 | PM10=36.3[0m
+[0;32mI (265153) MAIN: SEND: {"lux":418,"temt":0.00,"pm25":32.5,"pm10":36.3,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (265573) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (265573) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (266123) MAIN: Sample Time = 265.587 s[0m
+[0;32mI (266123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (266123) MAIN: SDS011: PM2.5=33.1 µg/m³ | PM10=37.0 µg/m³[0m
+[0;32mI (266133) MAIN: BH=418.00 lx | TEMT=0.00 lx | PM2.5=33.1 | PM10=37.0[0m
+[0;32mI (266153) MAIN: SEND: {"lux":418,"temt":0.00,"pm25":33.1,"pm10":37.0,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (266503) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (266573) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (267123) MAIN: Sample Time = 266.587 s[0m
+[0;32mI (267123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (267133) MAIN: SDS011: PM2.5=33.2 µg/m³ | PM10=37.1 µg/m³[0m
+[0;32mI (267133) MAIN: BH=418.00 lx | TEMT=0.00 lx | PM2.5=33.2 | PM10=37.1[0m
+[0;32mI (267153) MAIN: SEND: {"lux":418,"temt":0.00,"pm25":33.2,"pm10":37.1,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (267573) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (268123) MAIN: Sample Time = 267.587 s[0m
+[0;32mI (268123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0016%[0m
+[0;32mI (268123) MAIN: SDS011: PM2.5=33.2 µg/m³ | PM10=37.1 µg/m³[0m
+[0;32mI (268133) MAIN: BH=419.00 lx | TEMT=0.00 lx | PM2.5=33.2 | PM10=37.1[0m
+[0;32mI (268153) MAIN: SEND: {"lux":419,"temt":0.00,"pm25":33.2,"pm10":37.1,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0016}[0m
+[0;32mI (268583) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;33mW (268923) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (269123) MAIN: Sample Time = 268.587 s[0m
+[0;32mI (269123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (269123) MAIN: SDS011: PM2.5=33.4 µg/m³ | PM10=37.3 µg/m³[0m
+[0;32mI (269133) MAIN: BH=419.00 lx | TEMT=0.00 lx | PM2.5=33.4 | PM10=37.3[0m
+[0;32mI (269153) MAIN: SEND: {"lux":419,"temt":0.00,"pm25":33.4,"pm10":37.3,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (269583) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (270123) MAIN: Sample Time = 269.587 s[0m
+[0;32mI (270123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (270123) MAIN: SDS011: PM2.5=33.4 µg/m³ | PM10=37.3 µg/m³[0m
+[0;32mI (270133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=33.4 | PM10=37.3[0m
+[0;32mI (270153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":33.4,"pm10":37.3,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (270583) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (271123) MAIN: Sample Time = 270.587 s[0m
+[0;32mI (271123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (271123) MAIN: SDS011: PM2.5=33.5 µg/m³ | PM10=37.4 µg/m³[0m
+[0;32mI (271133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=33.5 | PM10=37.4[0m
+[0;32mI (271153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":33.5,"pm10":37.4,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;33mW (271343) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (271583) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (272123) MAIN: Sample Time = 271.587 s[0m
+[0;32mI (272123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0028%[0m
+[0;32mI (272133) MAIN: SDS011: PM2.5=33.3 µg/m³ | PM10=37.2 µg/m³[0m
+[0;32mI (272133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=33.3 | PM10=37.2[0m
+[0;32mI (272153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":33.3,"pm10":37.2,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0028}[0m
+[0;32mI (272593) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (273123) MAIN: Sample Time = 272.587 s[0m
+[0;32mI (273123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0028%[0m
+[0;32mI (273123) MAIN: SDS011: PM2.5=33.3 µg/m³ | PM10=37.2 µg/m³[0m
+[0;32mI (273133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=33.3 | PM10=37.2[0m
+[0;32mI (273153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":33.3,"pm10":37.2,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0028}[0m
+[0;32mI (273593) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;33mW (273763) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (274123) MAIN: Sample Time = 273.587 s[0m
+[0;32mI (274123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (274123) MAIN: SDS011: PM2.5=33.5 µg/m³ | PM10=37.5 µg/m³[0m
+[0;32mI (274133) MAIN: BH=421.00 lx | TEMT=0.00 lx | PM2.5=33.5 | PM10=37.5[0m
+[0;32mI (274153) MAIN: SEND: {"lux":421,"temt":0.00,"pm25":33.5,"pm10":37.5,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (274593) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (275123) MAIN: Sample Time = 274.587 s[0m
+[0;32mI (275123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (275123) MAIN: SDS011: PM2.5=33.6 µg/m³ | PM10=37.6 µg/m³[0m
+[0;32mI (275133) MAIN: BH=421.00 lx | TEMT=0.00 lx | PM2.5=33.6 | PM10=37.6[0m
+[0;32mI (275153) MAIN: SEND: {"lux":421,"temt":0.00,"pm25":33.6,"pm10":37.6,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (275603) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (275603) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (276123) MAIN: Sample Time = 275.587 s[0m
+[0;32mI (276123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0008%[0m
+[0;32mI (276123) MAIN: SDS011: PM2.5=33.5 µg/m³ | PM10=37.5 µg/m³[0m
+[0;32mI (276133) MAIN: BH=421.00 lx | TEMT=0.00 lx | PM2.5=33.5 | PM10=37.5[0m
+[0;32mI (276153) MAIN: SEND: {"lux":421,"temt":0.00,"pm25":33.5,"pm10":37.5,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0008}[0m
+[0;33mW (276183) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (276603) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (277123) MAIN: Sample Time = 276.587 s[0m
+[0;32mI (277123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0032%[0m
+[0;32mI (277133) MAIN: SDS011: PM2.5=33.5 µg/m³ | PM10=37.5 µg/m³[0m
+[0;32mI (277133) MAIN: BH=421.00 lx | TEMT=0.00 lx | PM2.5=33.5 | PM10=37.5[0m
+[0;32mI (277153) MAIN: SEND: {"lux":421,"temt":0.00,"pm25":33.5,"pm10":37.5,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0032}[0m
+[0;32mI (277603) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;33mW (278593) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (278613) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (279613) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (280613) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;33mW (281013) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (281613) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;33mW (282623) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (282623) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;33mW (283423) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (283623) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;31mE (283863) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (283863) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (283863) mqtt_client: Error transport connect[0m
+[0;33mW (283873) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (283873) MAIN: Sample Time = 283.337 s[0m
+[0;32mI (283883) MAIN: [TIMING] dt=6.7497s | f_actual=0.1482Hz | error=574.9707%[0m
+[0;32mI (283883) MAIN: SDS011: PM2.5=33.4 µg/m³ | PM10=37.4 µg/m³[0m
+[0;32mI (283893) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=33.4 | PM10=37.4[0m
+[0;32mI (283913) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":33.4,"pm10":37.4,"dt":6.7497,"f_actual":0.1482,"error_pct":574.9707}[0m
+[0;32mI (284123) MAIN: Sample Time = 283.587 s[0m
+[0;32mI (284123) MAIN: [TIMING] dt=0.2503s | f_actual=3.9958Hz | error=-74.9735%[0m
+[0;32mI (284123) MAIN: SDS011: PM2.5=33.5 µg/m³ | PM10=37.4 µg/m³[0m
+[0;32mI (284133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=33.5 | PM10=37.4[0m
+[0;32mI (284153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":33.5,"pm10":37.4,"dt":0.2503,"f_actual":3.9958,"error_pct":-74.9735}[0m
+[0;32mI (284623) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (285123) MAIN: Sample Time = 284.587 s[0m
+[0;32mI (285123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (285123) MAIN: SDS011: PM2.5=33.4 µg/m³ | PM10=37.3 µg/m³[0m
+[0;32mI (285133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=33.4 | PM10=37.3[0m
+[0;32mI (285153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":33.4,"pm10":37.3,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (285633) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (285633) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;33mW (285843) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (286123) MAIN: Sample Time = 285.587 s[0m
+[0;32mI (286123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (286123) MAIN: SDS011: PM2.5=33.4 µg/m³ | PM10=37.3 µg/m³[0m
+[0;32mI (286133) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=33.4 | PM10=37.3[0m
+[0;32mI (286153) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":33.4,"pm10":37.3,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (286633) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (287123) MAIN: Sample Time = 286.587 s[0m
+[0;32mI (287123) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m

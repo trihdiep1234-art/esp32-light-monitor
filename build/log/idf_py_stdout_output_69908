@@ -1,0 +1,522 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15660
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.5 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul  2 2026 17:08:13[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=22ab0h (142000) map[0m
+[0;32mI (153) esp_image: segment 1: paddr=00032ad8 vaddr=3ffb0000 size=0442ch ( 17452) load[0m
+[0;32mI (160) esp_image: segment 2: paddr=00036f0c vaddr=40080000 size=0910ch ( 37132) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a2670h (665200) map[0m
+[0;32mI (403) esp_image: segment 4: paddr=000e2698 vaddr=4008910c size=1117ch ( 70012) load[0m
+[0;32mI (430) esp_image: segment 5: paddr=000f381c vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (444) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (444) boot: Disabling RNG early entropy source...[0m
+[0;32mI (456) cpu_start: Multicore app[0m
+[0;32mI (465) cpu_start: Pro cpu start user code[0m
+[0;32mI (465) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (465) app_init: Application information:[0m
+[0;32mI (468) app_init: Project name:     nha[0m
+[0;32mI (472) app_init: App version:      aa5baf5-dirty[0m
+[0;32mI (477) app_init: Compile time:     Jul  2 2026 17:08:29[0m
+[0;32mI (483) app_init: ELF file SHA256:  fd03e9d62...[0m
+[0;32mI (489) app_init: ESP-IDF:          v5.3.5[0m
+[0;32mI (493) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (498) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (503) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (508) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (515) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFB8E58 len 000271A8 (156 KiB): DRAM[0m
+[0;32mI (528) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (540) heap_init: At 4009A288 len 00005D78 (23 KiB): IRAM[0m
+[0;32mI (548) spi_flash: detected chip: generic[0m
+[0;32mI (551) spi_flash: flash io: dio[0m
+[0;33mW (555) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (568) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (577) main_task: Started on CPU0[0m
+[0;32mI (587) main_task: Calling app_main()[0m
+[0;32mI (587) MAIN: System Start[0m
+[0;32mI (587) i2cdev: [Port 0] First initialization. Configuring bus with SDA=21, SCL=22 (Pullups SCL:0 SDA:0)[0m
+[0;33mW (597) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+[0;32mI (607) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (617) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (627) i2cdev: [Port 0] Successfully installed I2C master bus (Handle: 0x3ffbc078).[0m
+[0;32mI (637) i2cdev: [0x3c at 0] Device added successfully (Device Handle: 0x3ffbc588, Speed: 400000 Hz).[0m
+[0;32mI (647) SSD1306: SSD1306 initialized flawlessly via i2cdev![0m
+[0;32mI (727) wifi:wifi driver task: 3ffc1588, prio:23, stack:6656, core=0[0m
+[0;32mI (737) wifi:wifi firmware version: 18db208[0m
+[0;32mI (737) wifi:wifi certification version: v7.0[0m
+[0;32mI (737) wifi:config NVS flash: enabled[0m
+[0;32mI (737) wifi:config nano formating: disabled[0m
+[0;32mI (737) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (747) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (747) wifi:Init management short buffer num: 32[0m
+[0;32mI (757) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (757) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (767) wifi:Init static rx buffer num: 10[0m
+[0;32mI (767) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (767) wifi_init: rx ba win: 6[0m
+[0;32mI (777) wifi_init: accept mbox: 6[0m
+[0;32mI (777) wifi_init: tcpip mbox: 32[0m
+[0;32mI (787) wifi_init: udp mbox: 6[0m
+[0;32mI (787) wifi_init: tcp mbox: 6[0m
+[0;32mI (787) wifi_init: tcp tx win: 5760[0m
+[0;32mI (797) wifi_init: tcp rx win: 5760[0m
+[0;32mI (797) wifi_init: tcp mss: 1440[0m
+[0;32mI (797) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (807) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (817) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (837) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (917) wifi:mode : sta (d4:e9:f4:78:6d:44)[0m
+[0;32mI (927) wifi:enable tsf[0m
+[0;33mW (3347) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (5767) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (8177) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (10597) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;31mE (10927) MAIN: WiFi Timeout[0m
+[0;31mE (10967) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (10967) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (10967) mqtt_client: Error transport connect[0m
+[0;33mW (10977) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (10977) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffc7d68, Speed: 50000 Hz).[0m
+[0;32mI (10987) CHECK_CODE: --- TOI DA DAO THU TU HAM THANH CONG ---[0m
+[0;32mI (11167) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (11497) MAIN: SDS011: ACTIVE report mode[0m
+[0;32mI (11527) MAIN: [PHASE] -> ACTIVE (60s)[0m
+[0;32mI (11527) MAIN: SDS011: WAKE[0m
+[0;32mI (11577) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (11587) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (12167) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (12527) MAIN: Sample Time = 11.988 s | Tick #1/60[0m
+[0;32mI (12537) MAIN: SDS011 warmup... (1s/30s)[0m
+[0;32mI (12537) MAIN: BH=429.00 lx | TEMT=41.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (12547) MAIN: SEND: {"lux":429,"temt":41.80,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (13017) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (13177) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (13177) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (13527) MAIN: Sample Time = 12.988 s | Tick #2/60[0m
+[0;32mI (13527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (13537) MAIN: SDS011 warmup... (2s/30s)[0m
+[0;32mI (13537) MAIN: BH=429.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (13557) MAIN: SEND: {"lux":429,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (14177) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (14527) MAIN: Sample Time = 13.988 s | Tick #3/60[0m
+[0;32mI (14527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (14537) MAIN: SDS011 warmup... (3s/30s)[0m
+[0;32mI (14537) MAIN: BH=429.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (14557) MAIN: SEND: {"lux":429,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;32mI (15177) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;33mW (15437) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (15527) MAIN: Sample Time = 14.988 s | Tick #4/60[0m
+[0;32mI (15527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (15537) MAIN: SDS011 warmup... (4s/30s)[0m
+[0;32mI (15537) MAIN: BH=428.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (15557) MAIN: SEND: {"lux":428,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;32mI (16177) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (16527) MAIN: Sample Time = 15.988 s | Tick #5/60[0m
+[0;32mI (16527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0028%[0m
+[0;32mI (16537) MAIN: SDS011 warmup... (5s/30s)[0m
+[0;32mI (16537) MAIN: BH=428.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (16557) MAIN: SEND: {"lux":428,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0028}[0m
+[0;33mW (17187) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (17187) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (17527) MAIN: Sample Time = 16.988 s | Tick #6/60[0m
+[0;32mI (17527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (17537) MAIN: SDS011 warmup... (6s/30s)[0m
+[0;32mI (17537) MAIN: BH=429.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (17557) MAIN: SEND: {"lux":429,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (17847) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (18187) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (18527) MAIN: Sample Time = 17.988 s | Tick #7/60[0m
+[0;32mI (18527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (18537) MAIN: SDS011 warmup... (7s/30s)[0m
+[0;32mI (18537) MAIN: BH=428.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (18557) MAIN: SEND: {"lux":428,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (19187) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (19527) MAIN: Sample Time = 18.988 s | Tick #8/60[0m
+[0;32mI (19527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (19537) MAIN: SDS011 warmup... (8s/30s)[0m
+[0;32mI (19537) MAIN: BH=429.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (19557) MAIN: SEND: {"lux":429,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;32mI (20187) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;33mW (20267) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (20527) MAIN: Sample Time = 19.988 s | Tick #9/60[0m
+[0;32mI (20527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (20537) MAIN: SDS011 warmup... (9s/30s)[0m
+[0;32mI (20537) MAIN: BH=429.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (20557) MAIN: SEND: {"lux":429,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;33mW (21197) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (21197) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (21527) MAIN: Sample Time = 20.988 s | Tick #10/60[0m
+[0;32mI (21527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (21537) MAIN: SDS011 warmup... (10s/30s)[0m
+[0;32mI (21537) MAIN: BH=429.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (21557) MAIN: SEND: {"lux":429,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (22197) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (22527) MAIN: Sample Time = 21.988 s | Tick #11/60[0m
+[0;32mI (22527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (22537) MAIN: SDS011 warmup... (11s/30s)[0m
+[0;32mI (22537) MAIN: BH=429.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (22557) MAIN: SEND: {"lux":429,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (22687) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (23197) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (23527) MAIN: Sample Time = 22.988 s | Tick #12/60[0m
+[0;32mI (23527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (23537) MAIN: SDS011 warmup... (12s/30s)[0m
+[0;32mI (23537) MAIN: BH=429.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (23557) MAIN: SEND: {"lux":429,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;32mI (24207) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (24527) MAIN: Sample Time = 23.988 s | Tick #13/60[0m
+[0;32mI (24527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (24537) MAIN: SDS011 warmup... (13s/30s)[0m
+[0;32mI (24537) MAIN: BH=429.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (24557) MAIN: SEND: {"lux":429,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;33mW (25107) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (25207) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (25527) MAIN: Sample Time = 24.988 s | Tick #14/60[0m
+[0;32mI (25527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (25537) MAIN: SDS011 warmup... (14s/30s)[0m
+[0;32mI (25537) MAIN: BH=429.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (25557) MAIN: SEND: {"lux":429,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;31mE (25977) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (25977) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (25977) mqtt_client: Error transport connect[0m
+[0;33mW (25987) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (26207) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (26527) MAIN: Sample Time = 25.988 s | Tick #15/60[0m
+[0;32mI (26527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (26537) MAIN: SDS011 warmup... (15s/30s)[0m
+[0;32mI (26537) MAIN: BH=430.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (26557) MAIN: SEND: {"lux":430,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;32mI (27207) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;33mW (27527) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (27527) MAIN: Sample Time = 26.988 s | Tick #16/60[0m
+[0;32mI (27527) MAIN: [TIMING] dt=1.0003s | f_actual=0.9997Hz | error=0.0333%[0m
+[0;32mI (27567) MAIN: SDS011 warmup... (16s/30s)[0m
+[0;32mI (27567) MAIN: BH=429.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (27587) MAIN: SEND: {"lux":429,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0003,"f_actual":0.9997,"error_pct":0.0333}[0m
+[0;33mW (28217) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (28217) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (28527) MAIN: Sample Time = 27.988 s | Tick #17/60[0m
+[0;32mI (28527) MAIN: [TIMING] dt=0.9996s | f_actual=1.0004Hz | error=-0.0357%[0m
+[0;32mI (28537) MAIN: SDS011 warmup... (17s/30s)[0m
+[0;32mI (28537) MAIN: BH=429.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (28557) MAIN: SEND: {"lux":429,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":0.9996,"f_actual":1.0004,"error_pct":-0.0357}[0m
+[0;32mI (29217) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (29527) MAIN: Sample Time = 28.988 s | Tick #18/60[0m
+[0;32mI (29527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (29537) MAIN: SDS011 warmup... (18s/30s)[0m
+[0;32mI (29537) MAIN: BH=428.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (29557) MAIN: SEND: {"lux":428,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (29947) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (30217) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (30527) MAIN: Sample Time = 29.988 s | Tick #19/60[0m
+[0;32mI (30527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (30537) MAIN: SDS011 warmup... (19s/30s)[0m
+[0;32mI (30537) MAIN: BH=427.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (30557) MAIN: SEND: {"lux":427,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (31227) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (31527) MAIN: Sample Time = 30.988 s | Tick #20/60[0m
+[0;32mI (31527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (31537) MAIN: SDS011 warmup... (20s/30s)[0m
+[0;32mI (31537) MAIN: BH=428.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (31557) MAIN: SEND: {"lux":428,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (32227) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;33mW (32367) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (32527) MAIN: Sample Time = 31.988 s | Tick #21/60[0m
+[0;32mI (32527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0028%[0m
+[0;32mI (32537) MAIN: SDS011 warmup... (21s/30s)[0m
+[0;32mI (32537) MAIN: BH=425.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (32557) MAIN: SEND: {"lux":425,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0028}[0m
+[0;32mI (33227) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (33527) MAIN: Sample Time = 32.988 s | Tick #22/60[0m
+[0;32mI (33527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0028%[0m
+[0;32mI (33537) MAIN: SDS011 warmup... (22s/30s)[0m
+[0;32mI (33537) MAIN: BH=425.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (33557) MAIN: SEND: {"lux":425,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0028}[0m
+[0;32mI (34227) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (34527) MAIN: Sample Time = 33.988 s | Tick #23/60[0m
+[0;32mI (34527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (34537) MAIN: SDS011 warmup... (23s/30s)[0m
+[0;32mI (34537) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (34557) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (34787) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (35237) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (35237) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (35527) MAIN: Sample Time = 34.988 s | Tick #24/60[0m
+[0;32mI (35527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (35537) MAIN: SDS011 warmup... (24s/30s)[0m
+[0;32mI (35537) MAIN: BH=418.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (35557) MAIN: SEND: {"lux":418,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (36237) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (36527) MAIN: Sample Time = 35.988 s | Tick #25/60[0m
+[0;32mI (36527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (36537) MAIN: SDS011 warmup... (25s/30s)[0m
+[0;32mI (36537) MAIN: BH=419.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (36557) MAIN: SEND: {"lux":419,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (37197) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (37237) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (37527) MAIN: Sample Time = 36.988 s | Tick #26/60[0m
+[0;32mI (37527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (37537) MAIN: SDS011 warmup... (26s/30s)[0m
+[0;32mI (37537) MAIN: BH=417.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (37557) MAIN: SEND: {"lux":417,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;32mI (38237) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (38527) MAIN: Sample Time = 37.988 s | Tick #27/60[0m
+[0;32mI (38527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (38537) MAIN: SDS011 warmup... (27s/30s)[0m
+[0;32mI (38537) MAIN: BH=418.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (38557) MAIN: SEND: {"lux":418,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;33mW (39247) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (39247) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (39527) MAIN: Sample Time = 38.988 s | Tick #28/60[0m
+[0;32mI (39527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (39537) MAIN: SDS011 warmup... (28s/30s)[0m
+[0;32mI (39537) MAIN: BH=418.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (39557) MAIN: SEND: {"lux":418,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (39617) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (40247) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (40527) MAIN: Sample Time = 39.988 s | Tick #29/60[0m
+[0;32mI (40527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (40537) MAIN: SDS011 warmup... (29s/30s)[0m
+[0;32mI (40537) MAIN: BH=418.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (40557) MAIN: SEND: {"lux":418,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;31mE (40987) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (40987) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (40987) mqtt_client: Error transport connect[0m
+[0;33mW (40997) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (41247) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (41527) MAIN: Sample Time = 40.988 s | Tick #30/60[0m
+[0;32mI (41527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (41537) MAIN: SDS011 warmup... (30s/30s)[0m
+[0;32mI (41537) MAIN: BH=416.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (41557) MAIN: SEND: {"lux":416,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (42037) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (42247) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (42527) MAIN: Sample Time = 41.988 s | Tick #31/60[0m
+[0;32mI (42527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (42537) MAIN: PM2.5=36.9 µg/m³ | PM10=46.7 µg/m³[0m
+[0;32mI (42537) MAIN: BH=417.00 lx | TEMT=0.00 lx | PM2.5=36.9 | PM10=46.7[0m
+[0;32mI (42557) MAIN: SEND: {"lux":417,"temt":0.00,"pm25":36.9,"pm10":46.7,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (43257) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (43257) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (43527) MAIN: Sample Time = 42.988 s | Tick #32/60[0m
+[0;32mI (43527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (43537) MAIN: PM2.5=37.2 µg/m³ | PM10=46.7 µg/m³[0m
+[0;32mI (43537) MAIN: BH=417.00 lx | TEMT=0.00 lx | PM2.5=37.2 | PM10=46.7[0m
+[0;32mI (43557) MAIN: SEND: {"lux":417,"temt":0.00,"pm25":37.2,"pm10":46.7,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (44257) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;33mW (44457) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (44527) MAIN: Sample Time = 43.988 s | Tick #33/60[0m
+[0;32mI (44527) MAIN: [TIMING] dt=1.0001s | f_actual=0.9999Hz | error=0.0084%[0m
+[0;32mI (44537) MAIN: PM2.5=37.2 µg/m³ | PM10=46.6 µg/m³[0m
+[0;32mI (44537) MAIN: BH=417.00 lx | TEMT=0.00 lx | PM2.5=37.2 | PM10=46.6[0m
+[0;32mI (44557) MAIN: SEND: {"lux":417,"temt":0.00,"pm25":37.2,"pm10":46.6,"pm_valid":true,"dt":1.0001,"f_actual":0.9999,"error_pct":0.0084}[0m
+[0;32mI (45257) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (45527) MAIN: Sample Time = 44.988 s | Tick #34/60[0m
+[0;32mI (45527) MAIN: [TIMING] dt=0.9999s | f_actual=1.0001Hz | error=-0.0084%[0m
+[0;32mI (45537) MAIN: PM2.5=37.3 µg/m³ | PM10=46.2 µg/m³[0m
+[0;32mI (45537) MAIN: BH=418.00 lx | TEMT=0.00 lx | PM2.5=37.3 | PM10=46.2[0m
+[0;32mI (45567) MAIN: SEND: {"lux":418,"temt":0.00,"pm25":37.3,"pm10":46.2,"pm_valid":true,"dt":0.9999,"f_actual":1.0001,"error_pct":-0.0084}[0m
+[0;33mW (46267) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (46267) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (46527) MAIN: Sample Time = 45.988 s | Tick #35/60[0m
+[0;32mI (46527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (46537) MAIN: PM2.5=37.3 µg/m³ | PM10=46.3 µg/m³[0m
+[0;32mI (46537) MAIN: BH=418.00 lx | TEMT=0.00 lx | PM2.5=37.3 | PM10=46.3[0m
+[0;32mI (46557) MAIN: SEND: {"lux":418,"temt":0.00,"pm25":37.3,"pm10":46.3,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (46877) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (47267) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (47527) MAIN: Sample Time = 46.988 s | Tick #36/60[0m
+[0;32mI (47527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (47537) MAIN: PM2.5=38.1 µg/m³ | PM10=44.6 µg/m³[0m
+[0;32mI (47537) MAIN: BH=418.00 lx | TEMT=0.00 lx | PM2.5=38.1 | PM10=44.6[0m
+[0;32mI (47557) MAIN: SEND: {"lux":418,"temt":0.00,"pm25":38.1,"pm10":44.6,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;32mI (48267) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (48527) MAIN: Sample Time = 47.988 s | Tick #37/60[0m
+[0;32mI (48527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (48537) MAIN: PM2.5=38.3 µg/m³ | PM10=45.0 µg/m³[0m
+[0;32mI (48537) MAIN: BH=418.00 lx | TEMT=0.00 lx | PM2.5=38.3 | PM10=45.0[0m
+[0;32mI (48557) MAIN: SEND: {"lux":418,"temt":0.00,"pm25":38.3,"pm10":45.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;32mI (49267) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;33mW (49297) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (49527) MAIN: Sample Time = 48.988 s | Tick #38/60[0m
+[0;32mI (49527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (49537) MAIN: PM2.5=38.6 µg/m³ | PM10=45.1 µg/m³[0m
+[0;32mI (49537) MAIN: BH=418.00 lx | TEMT=0.00 lx | PM2.5=38.6 | PM10=45.1[0m
+[0;32mI (49557) MAIN: SEND: {"lux":418,"temt":0.00,"pm25":38.6,"pm10":45.1,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;33mW (50277) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (50277) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (50527) MAIN: Sample Time = 49.988 s | Tick #39/60[0m
+[0;32mI (50527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (50537) MAIN: PM2.5=38.7 µg/m³ | PM10=45.3 µg/m³[0m
+[0;32mI (50537) MAIN: BH=418.00 lx | TEMT=0.00 lx | PM2.5=38.7 | PM10=45.3[0m
+[0;32mI (50557) MAIN: SEND: {"lux":418,"temt":0.00,"pm25":38.7,"pm10":45.3,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;32mI (51277) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (51527) MAIN: Sample Time = 50.988 s | Tick #40/60[0m
+[0;32mI (51527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (51537) MAIN: PM2.5=38.8 µg/m³ | PM10=44.4 µg/m³[0m
+[0;32mI (51537) MAIN: BH=419.00 lx | TEMT=0.00 lx | PM2.5=38.8 | PM10=44.4[0m
+[0;32mI (51557) MAIN: SEND: {"lux":419,"temt":0.00,"pm25":38.8,"pm10":44.4,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (51717) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (52277) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (52527) MAIN: Sample Time = 51.988 s | Tick #41/60[0m
+[0;32mI (52527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0028%[0m
+[0;32mI (52537) MAIN: PM2.5=38.6 µg/m³ | PM10=44.3 µg/m³[0m
+[0;32mI (52537) MAIN: BH=418.00 lx | TEMT=0.00 lx | PM2.5=38.6 | PM10=44.3[0m
+[0;32mI (52567) MAIN: SEND: {"lux":418,"temt":0.00,"pm25":38.6,"pm10":44.3,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0028}[0m
+[0;32mI (53287) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (53527) MAIN: Sample Time = 52.988 s | Tick #42/60[0m
+[0;32mI (53527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (53537) MAIN: PM2.5=38.5 µg/m³ | PM10=44.3 µg/m³[0m
+[0;32mI (53537) MAIN: BH=418.00 lx | TEMT=0.00 lx | PM2.5=38.5 | PM10=44.3[0m
+[0;32mI (53557) MAIN: SEND: {"lux":418,"temt":0.00,"pm25":38.5,"pm10":44.3,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;33mW (54137) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (54287) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (54527) MAIN: Sample Time = 53.988 s | Tick #43/60[0m
+[0;32mI (54527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (54537) MAIN: PM2.5=38.7 µg/m³ | PM10=44.4 µg/m³[0m
+[0;32mI (54537) MAIN: BH=421.00 lx | TEMT=0.00 lx | PM2.5=38.7 | PM10=44.4[0m
+[0;32mI (54557) MAIN: SEND: {"lux":421,"temt":0.00,"pm25":38.7,"pm10":44.4,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (55287) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (55527) MAIN: Sample Time = 54.988 s | Tick #44/60[0m
+[0;32mI (55527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (55537) MAIN: PM2.5=38.6 µg/m³ | PM10=44.2 µg/m³[0m
+[0;32mI (55537) MAIN: BH=422.00 lx | TEMT=0.00 lx | PM2.5=38.6 | PM10=44.2[0m
+[0;32mI (55557) MAIN: SEND: {"lux":422,"temt":0.00,"pm25":38.6,"pm10":44.2,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;31mE (55997) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (55997) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (55997) mqtt_client: Error transport connect[0m
+[0;33mW (56007) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (56287) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (56527) MAIN: Sample Time = 55.988 s | Tick #45/60[0m
+[0;32mI (56527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (56537) MAIN: PM2.5=38.8 µg/m³ | PM10=44.5 µg/m³[0m
+[0;32mI (56537) MAIN: BH=421.00 lx | TEMT=0.00 lx | PM2.5=38.8 | PM10=44.5[0m
+[0;33mW (56547) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (56607) MAIN: SEND: {"lux":421,"temt":0.00,"pm25":38.8,"pm10":44.5,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (57297) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (57297) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (57527) MAIN: Sample Time = 56.988 s | Tick #46/60[0m
+[0;32mI (57527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (57537) MAIN: PM2.5=38.9 µg/m³ | PM10=44.6 µg/m³[0m
+[0;32mI (57537) MAIN: BH=421.00 lx | TEMT=0.00 lx | PM2.5=38.9 | PM10=44.6[0m
+[0;32mI (57557) MAIN: SEND: {"lux":421,"temt":0.00,"pm25":38.9,"pm10":44.6,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (58297) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (58527) MAIN: Sample Time = 57.988 s | Tick #47/60[0m
+[0;32mI (58527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (58537) MAIN: PM2.5=38.8 µg/m³ | PM10=44.4 µg/m³[0m
+[0;32mI (58537) MAIN: BH=422.00 lx | TEMT=0.00 lx | PM2.5=38.8 | PM10=44.4[0m
+[0;32mI (58557) MAIN: SEND: {"lux":422,"temt":0.00,"pm25":38.8,"pm10":44.4,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (58967) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (59297) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (59527) MAIN: Sample Time = 58.988 s | Tick #48/60[0m
+[0;32mI (59527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (59537) MAIN: PM2.5=38.8 µg/m³ | PM10=44.4 µg/m³[0m
+[0;32mI (59537) MAIN: BH=421.00 lx | TEMT=0.00 lx | PM2.5=38.8 | PM10=44.4[0m
+[0;32mI (59557) MAIN: SEND: {"lux":421,"temt":0.00,"pm25":38.8,"pm10":44.4,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (60297) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (60527) MAIN: Sample Time = 59.988 s | Tick #49/60[0m
+[0;32mI (60527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (60537) MAIN: PM2.5=38.6 µg/m³ | PM10=43.6 µg/m³[0m
+[0;32mI (60537) MAIN: BH=421.00 lx | TEMT=0.00 lx | PM2.5=38.6 | PM10=43.6[0m
+[0;32mI (60557) MAIN: SEND: {"lux":421,"temt":0.00,"pm25":38.6,"pm10":43.6,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (61307) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (61307) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;33mW (61387) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (61527) MAIN: Sample Time = 60.988 s | Tick #50/60[0m
+[0;32mI (61527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (61537) MAIN: PM2.5=38.4 µg/m³ | PM10=43.4 µg/m³[0m
+[0;32mI (61537) MAIN: BH=421.00 lx | TEMT=0.00 lx | PM2.5=38.4 | PM10=43.4[0m
+[0;32mI (61557) MAIN: SEND: {"lux":421,"temt":0.00,"pm25":38.4,"pm10":43.4,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;32mI (62307) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (62527) MAIN: Sample Time = 61.988 s | Tick #51/60[0m
+[0;32mI (62527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (62537) MAIN: PM2.5=38.6 µg/m³ | PM10=43.6 µg/m³[0m
+[0;32mI (62537) MAIN: BH=421.00 lx | TEMT=0.00 lx | PM2.5=38.6 | PM10=43.6[0m
+[0;32mI (62557) MAIN: SEND: {"lux":421,"temt":0.00,"pm25":38.6,"pm10":43.6,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;32mI (63307) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (63527) MAIN: Sample Time = 62.988 s | Tick #52/60[0m
+[0;32mI (63527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (63537) MAIN: PM2.5=38.6 µg/m³ | PM10=43.6 µg/m³[0m
+[0;32mI (63537) MAIN: BH=421.00 lx | TEMT=0.00 lx | PM2.5=38.6 | PM10=43.6[0m
+[0;32mI (63557) MAIN: SEND: {"lux":421,"temt":0.00,"pm25":38.6,"pm10":43.6,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (63807) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (64317) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (64527) MAIN: Sample Time = 63.988 s | Tick #53/60[0m
+[0;32mI (64527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (64537) MAIN: PM2.5=38.6 µg/m³ | PM10=43.4 µg/m³[0m
+[0;32mI (64537) MAIN: BH=421.00 lx | TEMT=0.00 lx | PM2.5=38.6 | PM10=43.4[0m
+[0;32mI (64557) MAIN: SEND: {"lux":421,"temt":0.00,"pm25":38.6,"pm10":43.4,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (65317) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (65527) MAIN: Sample Time = 64.988 s | Tick #54/60[0m
+[0;32mI (65527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (65537) MAIN: PM2.5=38.7 µg/m³ | PM10=43.5 µg/m³[0m
+[0;32mI (65537) MAIN: BH=421.00 lx | TEMT=0.00 lx | PM2.5=38.7 | PM10=43.5[0m
+[0;32mI (65557) MAIN: SEND: {"lux":421,"temt":0.00,"pm25":38.7,"pm10":43.5,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (66227) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (66317) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (66527) MAIN: Sample Time = 65.988 s | Tick #55/60[0m
+[0;32mI (66527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (66537) MAIN: PM2.5=38.6 µg/m³ | PM10=43.4 µg/m³[0m
+[0;32mI (66537) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=38.6 | PM10=43.4[0m
+[0;32mI (66557) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":38.6,"pm10":43.4,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;32mI (67317) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (67527) MAIN: Sample Time = 66.988 s | Tick #56/60[0m
+[0;32mI (67527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (67537) MAIN: PM2.5=38.6 µg/m³ | PM10=43.5 µg/m³[0m
+[0;32mI (67537) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=38.6 | PM10=43.5[0m
+[0;32mI (67567) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":38.6,"pm10":43.5,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (68327) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (68327) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (68527) MAIN: Sample Time = 67.988 s | Tick #57/60[0m
+[0;32mI (68527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (68537) MAIN: PM2.5=38.6 µg/m³ | PM10=43.4 µg/m³[0m
+[0;32mI (68537) MAIN: BH=421.00 lx | TEMT=0.00 lx | PM2.5=38.6 | PM10=43.4[0m
+[0;32mI (68557) MAIN: SEND: {"lux":421,"temt":0.00,"pm25":38.6,"pm10":43.4,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (68647) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (69327) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (69527) MAIN: Sample Time = 68.988 s | Tick #58/60[0m
+[0;32mI (69527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0028%[0m
+[0;32mI (69537) MAIN: PM2.5=38.6 µg/m³ | PM10=43.5 µg/m³[0m
+[0;32mI (69537) MAIN: BH=421.00 lx | TEMT=0.00 lx | PM2.5=38.6 | PM10=43.5[0m
+[0;32mI (69557) MAIN: SEND: {"lux":421,"temt":0.00,"pm25":38.6,"pm10":43.5,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0028}[0m
+[0;32mI (70327) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (70527) MAIN: Sample Time = 69.988 s | Tick #59/60[0m
+[0;32mI (70527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (70537) MAIN: PM2.5=38.6 µg/m³ | PM10=43.4 µg/m³[0m
+[0;32mI (70537) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=38.6 | PM10=43.4[0m
+[0;32mI (70557) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":38.6,"pm10":43.4,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;31mE (71007) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (71007) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (71007) mqtt_client: Error transport connect[0m
+[0;33mW (71017) MAIN: MQTT DISCONNECTED[0m
+[0;33mW (71067) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (71327) SDS011: Đã nhận gói tin hợp lệ từ SDS011![0m
+[0;32mI (71527) MAIN: Sample Time = 70.988 s | Tick #60/60[0m
+[0;32mI (71527) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0006%[0m
+[0;32mI (71537) MAIN: PM2.5=38.9 µg/m³ | PM10=43.7 µg/m³[0m
+[0;32mI (71537) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=38.9 | PM10=43.7[0m
+[0;32mI (71567) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":38.9,"pm10":43.7,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0006}[0m
+[0;32mI (71567) 

@@ -1,0 +1,14 @@
+esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_usb.c.obj: \
+ /home/huyen_202414629/esp/esp-idf/components/esp_hw_support/sleep_usb.c \
+ /home/huyen_202414629/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include/stdbool.h \
+ /home/huyen_202414629/esp/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
+ /home/huyen_202414629/esp/esp-idf/esp32-light-monitor/build/config/sdkconfig.h \
+ /home/huyen_202414629/esp/esp-idf/components/esp_hw_support/include/esp_private/sleep_usb.h \
+ /home/huyen_202414629/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include/stdint.h \
+ /home/huyen_202414629/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/xtensa-esp-elf/include/stdint.h \
+ /home/huyen_202414629/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/xtensa-esp-elf/include/machine/_default_types.h \
+ /home/huyen_202414629/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/xtensa-esp-elf/include/sys/features.h \
+ /home/huyen_202414629/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/xtensa-esp-elf/include/_newlib_version.h \
+ /home/huyen_202414629/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/xtensa-esp-elf/include/sys/_intsup.h \
+ /home/huyen_202414629/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/xtensa-esp-elf/include/sys/_stdint.h \
+ /home/huyen_202414629/esp/esp-idf/components/esp_common/include/esp_attr.h

@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "D:/vxlproj/nhakinh/build/CMakeFiles/bootloader"
+			"file" : "/home/huyen_202414629/esp/esp-idf/esp32-light-monitor/build/CMakeFiles/bootloader"
 		},
 		{
-			"file" : "D:/vxlproj/nhakinh/build/CMakeFiles/bootloader.rule"
+			"file" : "/home/huyen_202414629/esp/esp-idf/esp32-light-monitor/build/CMakeFiles/bootloader.rule"
 		},
 		{
-			"file" : "D:/vxlproj/nhakinh/build/CMakeFiles/bootloader-complete.rule"
+			"file" : "/home/huyen_202414629/esp/esp-idf/esp32-light-monitor/build/CMakeFiles/bootloader-complete.rule"
 		},
 		{
-			"file" : "D:/vxlproj/nhakinh/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+			"file" : "/home/huyen_202414629/esp/esp-idf/esp32-light-monitor/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
 		},
 		{
-			"file" : "D:/vxlproj/nhakinh/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+			"file" : "/home/huyen_202414629/esp/esp-idf/esp32-light-monitor/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
 		},
 		{
-			"file" : "D:/vxlproj/nhakinh/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+			"file" : "/home/huyen_202414629/esp/esp-idf/esp32-light-monitor/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
 		},
 		{
-			"file" : "D:/vxlproj/nhakinh/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+			"file" : "/home/huyen_202414629/esp/esp-idf/esp32-light-monitor/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
 		},
 		{
-			"file" : "D:/vxlproj/nhakinh/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+			"file" : "/home/huyen_202414629/esp/esp-idf/esp32-light-monitor/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
 		},
 		{
-			"file" : "D:/vxlproj/nhakinh/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+			"file" : "/home/huyen_202414629/esp/esp-idf/esp32-light-monitor/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
 		},
 		{
-			"file" : "D:/vxlproj/nhakinh/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+			"file" : "/home/huyen_202414629/esp/esp-idf/esp32-light-monitor/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
 		}
 	],
 	"target" : 

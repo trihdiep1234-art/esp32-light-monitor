@@ -1,4 +1,4 @@
-/* * Data converted from D:/vxlproj/nhakinh/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /home/huyen_202414629/esp/esp-idf/esp32-light-monitor/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 #if !defined (__APPLE__) && !defined (__linux__)

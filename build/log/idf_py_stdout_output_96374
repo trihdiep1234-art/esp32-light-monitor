@@ -1,0 +1,688 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15660
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.5 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul  2 2026 17:08:13[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=22c30h (142384) map[0m
+[0;32mI (153) esp_image: segment 1: paddr=00032c58 vaddr=3ffb0000 size=0442ch ( 17452) load[0m
+[0;32mI (160) esp_image: segment 2: paddr=0003708c vaddr=40080000 size=08f8ch ( 36748) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a276ch (665452) map[0m
+[0;32mI (403) esp_image: segment 4: paddr=000e2794 vaddr=40088f8c size=112fch ( 70396) load[0m
+[0;32mI (430) esp_image: segment 5: paddr=000f3a98 vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (444) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (444) boot: Disabling RNG early entropy source...[0m
+[0;32mI (456) cpu_start: Multicore app[0m
+[0;32mI (465) cpu_start: Pro cpu start user code[0m
+[0;32mI (465) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (465) app_init: Application information:[0m
+[0;32mI (468) app_init: Project name:     nha[0m
+[0;32mI (472) app_init: App version:      aa5baf5-dirty[0m
+[0;32mI (478) app_init: Compile time:     Jul  2 2026 17:08:29[0m
+[0;32mI (484) app_init: ELF file SHA256:  2033c6a75...[0m
+[0;32mI (489) app_init: ESP-IDF:          v5.3.5[0m
+[0;32mI (494) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (499) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (503) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (509) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (516) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (522) heap_init: At 3FFB8E58 len 000271A8 (156 KiB): DRAM[0m
+[0;32mI (528) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (541) heap_init: At 4009A288 len 00005D78 (23 KiB): IRAM[0m
+[0;32mI (548) spi_flash: detected chip: generic[0m
+[0;32mI (551) spi_flash: flash io: dio[0m
+[0;33mW (555) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (569) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (578) main_task: Started on CPU0[0m
+[0;32mI (588) main_task: Calling app_main()[0m
+[0;32mI (588) MAIN: System Start[0m
+[0;32mI (588) i2cdev: [Port 0] First initialization. Configuring bus with SDA=21, SCL=22 (Pullups SCL:0 SDA:0)[0m
+[0;33mW (598) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+[0;32mI (608) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (618) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (628) i2cdev: [Port 0] Successfully installed I2C master bus (Handle: 0x3ffbc078).[0m
+[0;32mI (638) i2cdev: [0x3c at 0] Device added successfully (Device Handle: 0x3ffbc588, Speed: 400000 Hz).[0m
+[0;32mI (648) SSD1306: SSD1306 initialized flawlessly via i2cdev![0m
+[0;32mI (728) wifi:wifi driver task: 3ffc1588, prio:23, stack:6656, core=0[0m
+[0;32mI (738) wifi:wifi firmware version: 18db208[0m
+[0;32mI (738) wifi:wifi certification version: v7.0[0m
+[0;32mI (738) wifi:config NVS flash: enabled[0m
+[0;32mI (738) wifi:config nano formating: disabled[0m
+[0;32mI (738) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (748) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (748) wifi:Init management short buffer num: 32[0m
+[0;32mI (758) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (758) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (768) wifi:Init static rx buffer num: 10[0m
+[0;32mI (768) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (768) wifi_init: rx ba win: 6[0m
+[0;32mI (778) wifi_init: accept mbox: 6[0m
+[0;32mI (778) wifi_init: tcpip mbox: 32[0m
+[0;32mI (778) wifi_init: udp mbox: 6[0m
+[0;32mI (788) wifi_init: tcp mbox: 6[0m
+[0;32mI (788) wifi_init: tcp tx win: 5760[0m
+[0;32mI (798) wifi_init: tcp rx win: 5760[0m
+[0;32mI (798) wifi_init: tcp mss: 1440[0m
+[0;32mI (798) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (808) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (808) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (818) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (908) wifi:mode : sta (d4:e9:f4:78:6d:44)[0m
+[0;32mI (908) wifi:enable tsf[0m
+[0;33mW (3338) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (5748) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (8168) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (10578) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;31mE (10918) MAIN: WiFi Timeout[0m
+[0;31mE (10958) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (10958) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (10958) mqtt_client: Error transport connect[0m
+[0;33mW (10968) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (10968) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffca3f8, Speed: 50000 Hz).[0m
+[0;32mI (10978) CHECK_CODE: --- TOI DA DAO THU TU HAM THANH CONG ---[0m
+[0;32mI (10988) MAIN: SDS011 UART1 ready: ESP32 TX=GPIO25 -> SDS011 RX, ESP32 RX=GPIO26 <- SDS011 TX[0m
+[0;32mI (11498) MAIN: SDS011: ACTIVE report mode[0m
+[0;32mI (11528) MAIN: [PHASE] -> ACTIVE (300s)[0m
+[0;32mI (11528) MAIN: SDS011: WAKE[0m
+[0;33mW (11988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (12528) MAIN: Sample Time = 11.988 s | Tick #1/300[0m
+[0;32mI (12538) MAIN: SDS011 warmup... (1s/30s)[0m
+[0;32mI (12538) MAIN: BH=423.00 lx | TEMT=131.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (12548) MAIN: SEND: {"lux":423,"temt":131.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (12988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (12998) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (13528) MAIN: Sample Time = 12.988 s | Tick #2/300[0m
+[0;32mI (13528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (13538) MAIN: SDS011 warmup... (2s/30s)[0m
+[0;32mI (13538) MAIN: BH=421.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (13558) MAIN: SEND: {"lux":421,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (13988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (14528) MAIN: Sample Time = 13.988 s | Tick #3/300[0m
+[0;32mI (14528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (14538) MAIN: SDS011 warmup... (3s/30s)[0m
+[0;32mI (14538) MAIN: BH=400.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (14558) MAIN: SEND: {"lux":400,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (14988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (15418) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (15528) MAIN: Sample Time = 14.988 s | Tick #4/300[0m
+[0;32mI (15528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0028%[0m
+[0;32mI (15538) MAIN: SDS011 warmup... (4s/30s)[0m
+[0;32mI (15538) MAIN: BH=396.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (15558) MAIN: SEND: {"lux":396,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0028}[0m
+[0;33mW (15988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (16528) MAIN: Sample Time = 15.988 s | Tick #5/300[0m
+[0;32mI (16528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0028%[0m
+[0;32mI (16538) MAIN: SDS011 warmup... (5s/30s)[0m
+[0;32mI (16538) MAIN: BH=397.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (16558) MAIN: SEND: {"lux":397,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0028}[0m
+[0;33mW (16988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (17528) MAIN: Sample Time = 16.988 s | Tick #6/300[0m
+[0;32mI (17528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (17538) MAIN: SDS011 warmup... (6s/30s)[0m
+[0;32mI (17538) MAIN: BH=395.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (17558) MAIN: SEND: {"lux":395,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (17838) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (17988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (18528) MAIN: Sample Time = 17.988 s | Tick #7/300[0m
+[0;32mI (18528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0028%[0m
+[0;32mI (18538) MAIN: SDS011 warmup... (7s/30s)[0m
+[0;32mI (18538) MAIN: BH=379.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (18558) MAIN: SEND: {"lux":379,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0028}[0m
+[0;33mW (18988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (19528) MAIN: Sample Time = 18.988 s | Tick #8/300[0m
+[0;32mI (19528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0028%[0m
+[0;32mI (19538) MAIN: SDS011 warmup... (8s/30s)[0m
+[0;32mI (19538) MAIN: BH=376.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (19558) MAIN: SEND: {"lux":376,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0028}[0m
+[0;33mW (19988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (20258) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (20528) MAIN: Sample Time = 19.988 s | Tick #9/300[0m
+[0;32mI (20528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (20538) MAIN: SDS011 warmup... (9s/30s)[0m
+[0;32mI (20538) MAIN: BH=215.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (20558) MAIN: SEND: {"lux":215,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (20988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (21528) MAIN: Sample Time = 20.988 s | Tick #10/300[0m
+[0;32mI (21528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (21538) MAIN: SDS011 warmup... (10s/30s)[0m
+[0;32mI (21538) MAIN: BH=226.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (21558) MAIN: SEND: {"lux":226,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (21988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (22528) MAIN: Sample Time = 21.988 s | Tick #11/300[0m
+[0;32mI (22528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (22538) MAIN: SDS011 warmup... (11s/30s)[0m
+[0;32mI (22538) MAIN: BH=383.00 lx | TEMT=105.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (22558) MAIN: SEND: {"lux":383,"temt":105.40,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (22668) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (22988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (23528) MAIN: Sample Time = 22.988 s | Tick #12/300[0m
+[0;32mI (23528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (23538) MAIN: SDS011 warmup... (12s/30s)[0m
+[0;32mI (23538) MAIN: BH=396.00 lx | TEMT=122.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (23558) MAIN: SEND: {"lux":396,"temt":122.80,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (23988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (24528) MAIN: Sample Time = 23.988 s | Tick #13/300[0m
+[0;32mI (24528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (24538) MAIN: SDS011 warmup... (13s/30s)[0m
+[0;32mI (24538) MAIN: BH=392.00 lx | TEMT=114.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (24558) MAIN: SEND: {"lux":392,"temt":114.40,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (24988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (25088) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (25528) MAIN: Sample Time = 24.988 s | Tick #14/300[0m
+[0;32mI (25528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (25538) MAIN: SDS011 warmup... (14s/30s)[0m
+[0;32mI (25538) MAIN: BH=392.00 lx | TEMT=111.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (25558) MAIN: SEND: {"lux":392,"temt":111.80,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;31mE (25968) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (25968) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (25968) mqtt_client: Error transport connect[0m
+[0;33mW (25978) MAIN: MQTT DISCONNECTED[0m
+[0;33mW (25988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (26528) MAIN: Sample Time = 25.988 s | Tick #15/300[0m
+[0;32mI (26528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (26538) MAIN: SDS011 warmup... (15s/30s)[0m
+[0;32mI (26538) MAIN: BH=392.00 lx | TEMT=111.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (26558) MAIN: SEND: {"lux":392,"temt":111.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (26988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (27508) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (27528) MAIN: Sample Time = 26.988 s | Tick #16/300[0m
+[0;32mI (27528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (27548) MAIN: SDS011 warmup... (16s/30s)[0m
+[0;32mI (27548) MAIN: BH=392.00 lx | TEMT=40.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (27568) MAIN: SEND: {"lux":392,"temt":40.40,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;33mW (27988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (28528) MAIN: Sample Time = 27.988 s | Tick #17/300[0m
+[0;32mI (28528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0028%[0m
+[0;32mI (28538) MAIN: SDS011 warmup... (17s/30s)[0m
+[0;32mI (28538) MAIN: BH=393.00 lx | TEMT=102.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (28558) MAIN: SEND: {"lux":393,"temt":102.20,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0028}[0m
+[0;33mW (28988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (29528) MAIN: Sample Time = 28.988 s | Tick #18/300[0m
+[0;32mI (29528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (29538) MAIN: SDS011 warmup... (18s/30s)[0m
+[0;32mI (29538) MAIN: BH=401.00 lx | TEMT=85.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (29558) MAIN: SEND: {"lux":401,"temt":85.60,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (29928) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (29988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (30528) MAIN: Sample Time = 29.988 s | Tick #19/300[0m
+[0;32mI (30528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (30538) MAIN: SDS011 warmup... (19s/30s)[0m
+[0;32mI (30538) MAIN: BH=413.00 lx | TEMT=98.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (30558) MAIN: SEND: {"lux":413,"temt":98.60,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (30988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (31528) MAIN: Sample Time = 30.988 s | Tick #20/300[0m
+[0;32mI (31528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (31538) MAIN: SDS011 warmup... (20s/30s)[0m
+[0;32mI (31538) MAIN: BH=423.00 lx | TEMT=49.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (31558) MAIN: SEND: {"lux":423,"temt":49.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (31988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (32348) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (32528) MAIN: Sample Time = 31.988 s | Tick #21/300[0m
+[0;32mI (32528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (32538) MAIN: SDS011 warmup... (21s/30s)[0m
+[0;32mI (32538) MAIN: BH=418.00 lx | TEMT=35.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (32558) MAIN: SEND: {"lux":418,"temt":35.80,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (32988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (33528) MAIN: Sample Time = 32.988 s | Tick #22/300[0m
+[0;32mI (33528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (33538) MAIN: SDS011 warmup... (22s/30s)[0m
+[0;32mI (33538) MAIN: BH=416.00 lx | TEMT=29.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (33558) MAIN: SEND: {"lux":416,"temt":29.20,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (33988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (34528) MAIN: Sample Time = 33.988 s | Tick #23/300[0m
+[0;32mI (34528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (34538) MAIN: SDS011 warmup... (23s/30s)[0m
+[0;32mI (34538) MAIN: BH=414.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (34558) MAIN: SEND: {"lux":414,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (34768) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (34988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (35528) MAIN: Sample Time = 34.988 s | Tick #24/300[0m
+[0;32mI (35528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (35538) MAIN: SDS011 warmup... (24s/30s)[0m
+[0;32mI (35538) MAIN: BH=393.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (35558) MAIN: SEND: {"lux":393,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (35988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (36528) MAIN: Sample Time = 35.988 s | Tick #25/300[0m
+[0;32mI (36528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (36538) MAIN: SDS011 warmup... (25s/30s)[0m
+[0;32mI (36538) MAIN: BH=390.00 lx | TEMT=29.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (36558) MAIN: SEND: {"lux":390,"temt":29.40,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (36988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (37178) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (37528) MAIN: Sample Time = 36.988 s | Tick #26/300[0m
+[0;32mI (37528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (37538) MAIN: SDS011 warmup... (26s/30s)[0m
+[0;32mI (37538) MAIN: BH=408.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (37558) MAIN: SEND: {"lux":408,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (37988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (38528) MAIN: Sample Time = 37.988 s | Tick #27/300[0m
+[0;32mI (38528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (38538) MAIN: SDS011 warmup... (27s/30s)[0m
+[0;32mI (38538) MAIN: BH=411.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (38558) MAIN: SEND: {"lux":411,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (38988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (39528) MAIN: Sample Time = 38.988 s | Tick #28/300[0m
+[0;32mI (39528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (39538) MAIN: SDS011 warmup... (28s/30s)[0m
+[0;32mI (39538) MAIN: BH=410.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (39558) MAIN: SEND: {"lux":410,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (39598) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (39988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (40528) MAIN: Sample Time = 39.988 s | Tick #29/300[0m
+[0;32mI (40528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (40538) MAIN: SDS011 warmup... (29s/30s)[0m
+[0;32mI (40538) MAIN: BH=410.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (40558) MAIN: SEND: {"lux":410,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;31mE (40978) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (40978) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (40978) mqtt_client: Error transport connect[0m
+[0;33mW (40988) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (40988) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (41528) MAIN: Sample Time = 40.988 s | Tick #30/300[0m
+[0;32mI (41528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (41538) MAIN: SDS011 warmup... (30s/30s)[0m
+[0;32mI (41538) MAIN: BH=409.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (41558) MAIN: SEND: {"lux":409,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (41998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (42018) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (42528) MAIN: Sample Time = 41.988 s | Tick #31/300[0m
+[0;32mI (42528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;33mW (42638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (42638) MAIN: BH=409.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (42658) MAIN: SEND: {"lux":409,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (42998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (43528) MAIN: Sample Time = 42.988 s | Tick #32/300[0m
+[0;32mI (43528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;33mW (43638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (43638) MAIN: BH=409.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (43658) MAIN: SEND: {"lux":409,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (43998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (44438) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (44528) MAIN: Sample Time = 43.988 s | Tick #33/300[0m
+[0;32mI (44528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0032%[0m
+[0;33mW (44638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (44638) MAIN: BH=409.00 lx | TEMT=29.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (44658) MAIN: SEND: {"lux":409,"temt":29.40,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0032}[0m
+[0;33mW (44998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (45528) MAIN: Sample Time = 44.988 s | Tick #34/300[0m
+[0;32mI (45528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0032%[0m
+[0;33mW (45638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (45638) MAIN: BH=409.00 lx | TEMT=78.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (45658) MAIN: SEND: {"lux":409,"temt":78.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0032}[0m
+[0;33mW (45998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (46528) MAIN: Sample Time = 45.988 s | Tick #35/300[0m
+[0;32mI (46528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;33mW (46638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (46638) MAIN: BH=409.00 lx | TEMT=99.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (46658) MAIN: SEND: {"lux":409,"temt":99.60,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (46858) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (46998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (47528) MAIN: Sample Time = 46.988 s | Tick #36/300[0m
+[0;32mI (47528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0028%[0m
+[0;33mW (47638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (47638) MAIN: BH=406.00 lx | TEMT=68.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (47658) MAIN: SEND: {"lux":406,"temt":68.40,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0028}[0m
+[0;33mW (47998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (48528) MAIN: Sample Time = 47.988 s | Tick #37/300[0m
+[0;32mI (48528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0032%[0m
+[0;33mW (48638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (48638) MAIN: BH=397.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (48658) MAIN: SEND: {"lux":397,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0032}[0m
+[0;33mW (48998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (49268) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (49528) MAIN: Sample Time = 48.988 s | Tick #38/300[0m
+[0;32mI (49528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;33mW (49638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (49638) MAIN: BH=356.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (49658) MAIN: SEND: {"lux":356,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (49998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (50528) MAIN: Sample Time = 49.988 s | Tick #39/300[0m
+[0;32mI (50528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;33mW (50638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (50638) MAIN: BH=337.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (50658) MAIN: SEND: {"lux":337,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;33mW (50998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;31mE (50998) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (50998) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (51008) mqtt_client: Error transport connect[0m
+[0;33mW (51008) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (51528) MAIN: Sample Time = 50.988 s | Tick #40/300[0m
+[0;32mI (51528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;33mW (51638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (51638) MAIN: BH=325.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (51658) MAIN: SEND: {"lux":325,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;33mW (51688) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (51998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (52528) MAIN: Sample Time = 51.988 s | Tick #41/300[0m
+[0;32mI (52528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;33mW (52638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (52638) MAIN: BH=386.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (52658) MAIN: SEND: {"lux":386,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (52998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (53528) MAIN: Sample Time = 52.988 s | Tick #42/300[0m
+[0;32mI (53528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;33mW (53638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (53638) MAIN: BH=379.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (53658) MAIN: SEND: {"lux":379,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (53998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (54108) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (54528) MAIN: Sample Time = 53.988 s | Tick #43/300[0m
+[0;32mI (54528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;33mW (54638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (54638) MAIN: BH=375.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (54658) MAIN: SEND: {"lux":375,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (54998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (55528) MAIN: Sample Time = 54.988 s | Tick #44/300[0m
+[0;32mI (55528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;33mW (55638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (55638) MAIN: BH=375.00 lx | TEMT=93.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (55658) MAIN: SEND: {"lux":375,"temt":93.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (55998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (56528) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (56528) MAIN: Sample Time = 55.988 s | Tick #45/300[0m
+[0;32mI (56528) MAIN: [TIMING] dt=1.0004s | f_actual=0.9996Hz | error=0.0449%[0m
+[0;33mW (56668) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (56668) MAIN: BH=378.00 lx | TEMT=33.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (56688) MAIN: SEND: {"lux":378,"temt":33.20,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0004,"f_actual":0.9996,"error_pct":0.0449}[0m
+[0;33mW (56998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (57528) MAIN: Sample Time = 56.988 s | Tick #46/300[0m
+[0;32mI (57528) MAIN: [TIMING] dt=0.9996s | f_actual=1.0004Hz | error=-0.0449%[0m
+[0;33mW (57638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (57638) MAIN: BH=390.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (57658) MAIN: SEND: {"lux":390,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":0.9996,"f_actual":1.0004,"error_pct":-0.0449}[0m
+[0;33mW (57998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (58528) MAIN: Sample Time = 57.988 s | Tick #47/300[0m
+[0;32mI (58528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;33mW (58638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (58638) MAIN: BH=387.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (58658) MAIN: SEND: {"lux":387,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (58948) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (58998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (59528) MAIN: Sample Time = 58.988 s | Tick #48/300[0m
+[0;32mI (59528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;33mW (59638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (59638) MAIN: BH=417.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (59658) MAIN: SEND: {"lux":417,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (59998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (60528) MAIN: Sample Time = 59.988 s | Tick #49/300[0m
+[0;32mI (60528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;33mW (60638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (60638) MAIN: BH=418.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (60658) MAIN: SEND: {"lux":418,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;33mW (60998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (61368) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (61528) MAIN: Sample Time = 60.988 s | Tick #50/300[0m
+[0;32mI (61528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;33mW (61638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (61638) MAIN: BH=421.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (61658) MAIN: SEND: {"lux":421,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (61998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (62528) MAIN: Sample Time = 61.988 s | Tick #51/300[0m
+[0;32mI (62528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0032%[0m
+[0;33mW (62638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (62638) MAIN: BH=421.00 lx | TEMT=95.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (62658) MAIN: SEND: {"lux":421,"temt":95.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0032}[0m
+[0;33mW (62998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (63528) MAIN: Sample Time = 62.988 s | Tick #52/300[0m
+[0;32mI (63528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;33mW (63638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (63638) MAIN: BH=419.00 lx | TEMT=79.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (63658) MAIN: SEND: {"lux":419,"temt":79.40,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (63788) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (63998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (64528) MAIN: Sample Time = 63.988 s | Tick #53/300[0m
+[0;32mI (64528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;33mW (64638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (64638) MAIN: BH=419.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (64658) MAIN: SEND: {"lux":419,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (64998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (65528) MAIN: Sample Time = 64.988 s | Tick #54/300[0m
+[0;32mI (65528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;33mW (65638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (65638) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (65658) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (65998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;31mE (66018) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (66018) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (66018) mqtt_client: Error transport connect[0m
+[0;33mW (66028) MAIN: MQTT DISCONNECTED[0m
+[0;33mW (66208) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (66528) MAIN: Sample Time = 65.988 s | Tick #55/300[0m
+[0;32mI (66528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;33mW (66638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (66638) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (66658) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (66998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (67528) MAIN: Sample Time = 66.988 s | Tick #56/300[0m
+[0;32mI (67528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;33mW (67638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (67638) MAIN: BH=419.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (67658) MAIN: SEND: {"lux":419,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;33mW (67998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (68528) MAIN: Sample Time = 67.988 s | Tick #57/300[0m
+[0;32mI (68528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0028%[0m
+[0;33mW (68618) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (68638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (68638) MAIN: BH=419.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (68678) MAIN: SEND: {"lux":419,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0028}[0m
+[0;33mW (68998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (69528) MAIN: Sample Time = 68.988 s | Tick #58/300[0m
+[0;32mI (69528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;33mW (69638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (69638) MAIN: BH=419.00 lx | TEMT=45.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (69658) MAIN: SEND: {"lux":419,"temt":45.60,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (69998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (70528) MAIN: Sample Time = 69.988 s | Tick #59/300[0m
+[0;32mI (70528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;33mW (70638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (70638) MAIN: BH=420.00 lx | TEMT=91.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (70658) MAIN: SEND: {"lux":420,"temt":91.20,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (70998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (71038) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (71528) MAIN: Sample Time = 70.988 s | Tick #60/300[0m
+[0;32mI (71528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;33mW (71638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (71638) MAIN: BH=419.00 lx | TEMT=47.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (71658) MAIN: SEND: {"lux":419,"temt":47.40,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (71998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (72528) MAIN: Sample Time = 71.988 s | Tick #61/300[0m
+[0;32mI (72528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;33mW (72638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (72638) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (72658) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;33mW (72998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (73458) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (73528) MAIN: Sample Time = 72.988 s | Tick #62/300[0m
+[0;32mI (73528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;33mW (73638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (73638) MAIN: BH=419.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (73658) MAIN: SEND: {"lux":419,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (73998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (74528) MAIN: Sample Time = 73.988 s | Tick #63/300[0m
+[0;32mI (74528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0032%[0m
+[0;33mW (74638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (74638) MAIN: BH=419.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (74658) MAIN: SEND: {"lux":419,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0032}[0m
+[0;33mW (74998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (75528) MAIN: Sample Time = 74.988 s | Tick #64/300[0m
+[0;32mI (75528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;33mW (75638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (75638) MAIN: BH=418.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (75658) MAIN: SEND: {"lux":418,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (75878) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (75998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (76528) MAIN: Sample Time = 75.988 s | Tick #65/300[0m
+[0;32mI (76528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;33mW (76638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (76638) MAIN: BH=419.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (76658) MAIN: SEND: {"lux":419,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (76998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (77528) MAIN: Sample Time = 76.988 s | Tick #66/300[0m
+[0;32mI (77528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;33mW (77638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (77638) MAIN: BH=416.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (77658) MAIN: SEND: {"lux":416,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;33mW (77998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (78298) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (78528) MAIN: Sample Time = 77.988 s | Tick #67/300[0m
+[0;32mI (78528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;33mW (78638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (78638) MAIN: BH=415.00 lx | TEMT=83.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (78658) MAIN: SEND: {"lux":415,"temt":83.60,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;33mW (78998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (79528) MAIN: Sample Time = 78.988 s | Tick #68/300[0m
+[0;32mI (79528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;33mW (79638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (79638) MAIN: BH=417.00 lx | TEMT=87.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (79658) MAIN: SEND: {"lux":417,"temt":87.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (79998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (80528) MAIN: Sample Time = 79.988 s | Tick #69/300[0m
+[0;32mI (80528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;33mW (80638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (80638) MAIN: BH=416.00 lx | TEMT=34.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (80658) MAIN: SEND: {"lux":416,"temt":34.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (80718) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (80998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;31mE (81028) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (81028) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (81028) mqtt_client: Error transport connect[0m
+[0;33mW (81038) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (81528) MAIN: Sample Time = 80.988 s | Tick #70/300[0m
+[0;32mI (81528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0008%[0m
+[0;33mW (81638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (81638) MAIN: BH=417.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (81658) MAIN: SEND: {"lux":417,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0008}[0m
+[0;33mW (81998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (82528) MAIN: Sample Time = 81.988 s | Tick #71/300[0m
+[0;32mI (82528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0008%[0m
+[0;33mW (82638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (82638) MAIN: BH=417.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (82658) MAIN: SEND: {"lux":417,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0008}[0m
+[0;33mW (82998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (83138) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (83528) MAIN: Sample Time = 82.988 s | Tick #72/300[0m
+[0;32mI (83528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;33mW (83638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (83638) MAIN: BH=417.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (83658) MAIN: SEND: {"lux":417,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (83998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (84528) MAIN: Sample Time = 83.988 s | Tick #73/300[0m
+[0;32mI (84528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;33mW (84638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (84638) MAIN: BH=417.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (84658) MAIN: SEND: {"lux":417,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;33mW (84998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (85528) MAIN: Sample Time = 84.988 s | Tick #74/300[0m
+[0;32mI (85528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0028%[0m
+[0;33mW (85558) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (85638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (85638) MAIN: BH=417.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (85658) MAIN: SEND: {"lux":417,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0028}[0m
+[0;33mW (85998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (86528) MAIN: Sample Time = 85.988 s | Tick #75/300[0m
+[0;32mI (86528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;33mW (86638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (86638) MAIN: BH=419.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (86658) MAIN: SEND: {"lux":419,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (86998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (87528) MAIN: Sample Time = 86.988 s | Tick #76/300[0m
+[0;32mI (87528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;33mW (87638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (87638) MAIN: BH=419.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (87658) MAIN: SEND: {"lux":419,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (87968) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (87998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (88528) MAIN: Sample Time = 87.988 s | Tick #77/300[0m
+[0;32mI (88528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;33mW (88638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (88638) MAIN: BH=415.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (88658) MAIN: SEND: {"lux":415,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (88998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (89528) MAIN: Sample Time = 88.988 s | Tick #78/300[0m
+[0;32mI (89528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;33mW (89638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (89638) MAIN: BH=415.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (89658) MAIN: SEND: {"lux":415,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (89998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (90388) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (90528) MAIN: Sample Time = 89.988 s | Tick #79/300[0m
+[0;32mI (90528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;33mW (90638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (90638) MAIN: BH=414.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (90658) MAIN: SEND: {"lux":414,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (90998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (91528) MAIN: Sample Time = 90.988 s | Tick #80/300[0m
+[0;32mI (91528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;33mW (91638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (91638) MAIN: BH=413.00 lx | TEMT=38.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (91658) MAIN: SEND: {"lux":413,"temt":38.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (91998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (92528) MAIN: Sample Time = 91.988 s | Tick #81/300[0m
+[0;32mI (92528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;33mW (92638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (92638) MAIN: BH=412.00 lx | TEMT=77.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (92658) MAIN: SEND: {"lux":412,"temt":77.40,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (92808) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (92998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (93528) MAIN: Sample Time = 92.988 s | Tick #82/300[0m
+[0;32mI (93528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0032%[0m
+[0;33mW (93638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (93638) MAIN: BH=412.00 lx | TEMT=37.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (93658) MAIN: SEND: {"lux":412,"temt":37.60,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0032}[0m
+[0;33mW (93998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (94528) MAIN: Sample Time = 93.988 s | Tick #83/300[0m
+[0;32mI (94528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0032%[0m
+[0;33mW (94638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (94638) MAIN: BH=410.00 lx | TEMT=77.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (94658) MAIN: SEND: {"lux":410,"temt":77.40,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0032}[0m
+[0;33mW (94998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (95228) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (95528) MAIN: Sample Time = 94.988 s | Tick #84/300[0m
+[0;32mI (95528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;33mW (95638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (95638) MAIN: BH=411.00 lx | TEMT=73.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (95658) MAIN: SEND: {"lux":411,"temt":73.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (95998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;31mE (96038) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (96038) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (96038) mqtt_client: Error transport connect[0m
+[0;33mW (96048) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (96528) MAIN: Sample Time = 95.988 s | Tick #85/300[0m
+[0;32mI (96528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;33mW (96638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (96638) MAIN: BH=411.00 lx | TEMT=57.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (96658) MAIN: SEND: {"lux":411,"temt":57.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (96998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (97528) MAIN: Sample Time = 96.988 s | Tick #86/300[0m
+[0;32mI (97528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0008%[0m
+[0;33mW (97638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (97638) MAIN: BH=386.00 lx | TEMT=35.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (97648) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (97698) MAIN: SEND: {"lux":386,"temt":35.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0008}[0m
+[0;33mW (97998) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (98528) MAIN: Sample Time = 97.988 s | Tick #87/300[0m
+[0;32mI (98528) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;33mW (98638) MAIN: SDS011: no PM data after warmup. Check TX/RX wiring, 5V power, GND, and sensor fan.[0m
+[0;32mI (98638) MAIN: BH=398.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (98658) MAIN: SEND: {"lux":398,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m

@@ -1,0 +1,1845 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15660
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.5 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul  2 2026 17:08:13[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=22ad0h (142032) map[0m
+[0;32mI (153) esp_image: segment 1: paddr=00032af8 vaddr=3ffb0000 size=0442ch ( 17452) load[0m
+[0;32mI (160) esp_image: segment 2: paddr=00036f2c vaddr=40080000 size=090ech ( 37100) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a267ch (665212) map[0m
+[0;32mI (403) esp_image: segment 4: paddr=000e26a4 vaddr=400890ec size=1119ch ( 70044) load[0m
+[0;32mI (430) esp_image: segment 5: paddr=000f3848 vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (444) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (444) boot: Disabling RNG early entropy source...[0m
+[0;32mI (456) cpu_start: Multicore app[0m
+[0;32mI (465) cpu_start: Pro cpu start user code[0m
+[0;32mI (465) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (465) app_init: Application information:[0m
+[0;32mI (468) app_init: Project name:     nha[0m
+[0;32mI (472) app_init: App version:      aa5baf5-dirty[0m
+[0;32mI (477) app_init: Compile time:     Jul  2 2026 17:08:29[0m
+[0;32mI (483) app_init: ELF file SHA256:  fa50cab09...[0m
+[0;32mI (489) app_init: ESP-IDF:          v5.3.5[0m
+[0;32mI (493) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (498) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (503) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (508) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (515) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFB8E58 len 000271A8 (156 KiB): DRAM[0m
+[0;32mI (528) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (540) heap_init: At 4009A288 len 00005D78 (23 KiB): IRAM[0m
+[0;32mI (548) spi_flash: detected chip: generic[0m
+[0;32mI (551) spi_flash: flash io: dio[0m
+[0;33mW (555) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (568) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (577) main_task: Started on CPU0[0m
+[0;32mI (587) main_task: Calling app_main()[0m
+[0;32mI (587) MAIN: System Start[0m
+[0;32mI (587) i2cdev: [Port 0] First initialization. Configuring bus with SDA=21, SCL=22 (Pullups SCL:0 SDA:0)[0m
+[0;33mW (597) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+[0;32mI (607) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (617) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (627) i2cdev: [Port 0] Successfully installed I2C master bus (Handle: 0x3ffbc078).[0m
+[0;32mI (637) i2cdev: [0x3c at 0] Device added successfully (Device Handle: 0x3ffbc588, Speed: 400000 Hz).[0m
+[0;32mI (647) SSD1306: SSD1306 initialized flawlessly via i2cdev![0m
+[0;32mI (727) wifi:wifi driver task: 3ffc1588, prio:23, stack:6656, core=0[0m
+[0;32mI (737) wifi:wifi firmware version: 18db208[0m
+[0;32mI (737) wifi:wifi certification version: v7.0[0m
+[0;32mI (737) wifi:config NVS flash: enabled[0m
+[0;32mI (737) wifi:config nano formating: disabled[0m
+[0;32mI (737) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (747) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (747) wifi:Init management short buffer num: 32[0m
+[0;32mI (757) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (757) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (767) wifi:Init static rx buffer num: 10[0m
+[0;32mI (767) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (767) wifi_init: rx ba win: 6[0m
+[0;32mI (777) wifi_init: accept mbox: 6[0m
+[0;32mI (777) wifi_init: tcpip mbox: 32[0m
+[0;32mI (777) wifi_init: udp mbox: 6[0m
+[0;32mI (787) wifi_init: tcp mbox: 6[0m
+[0;32mI (787) wifi_init: tcp tx win: 5760[0m
+[0;32mI (797) wifi_init: tcp rx win: 5760[0m
+[0;32mI (797) wifi_init: tcp mss: 1440[0m
+[0;32mI (797) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (807) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (807) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (817) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (907) wifi:mode : sta (d4:e9:f4:78:6d:44)[0m
+[0;32mI (907) wifi:enable tsf[0m
+[0;33mW (3337) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (5747) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (8157) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (10577) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;31mE (10917) MAIN: WiFi Timeout[0m
+[0;31mE (10957) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (10957) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (10957) mqtt_client: Error transport connect[0m
+[0;33mW (10967) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (10967) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3ffca3f8, Speed: 50000 Hz).[0m
+[0;32mI (10977) CHECK_CODE: --- TOI DA DAO THU TU HAM THANH CONG ---[0m
+[0;32mI (11487) MAIN: SDS011: ACTIVE report mode[0m
+[0;32mI (11517) MAIN: [PHASE] -> ACTIVE (300s)[0m
+[0;32mI (11517) MAIN: SDS011: WAKE[0m
+[0;33mW (11987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (12517) MAIN: Sample Time = 11.978 s | Tick #1/300[0m
+[0;32mI (12527) MAIN: SDS011 warmup... (1s/30s)[0m
+[0;32mI (12527) MAIN: BH=178.00 lx | TEMT=91.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (12537) MAIN: SEND: {"lux":178,"temt":91.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (12987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (12997) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (13517) MAIN: Sample Time = 12.978 s | Tick #2/300[0m
+[0;32mI (13517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (13527) MAIN: SDS011 warmup... (2s/30s)[0m
+[0;32mI (13527) MAIN: BH=180.00 lx | TEMT=101.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (13547) MAIN: SEND: {"lux":180,"temt":101.60,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (13987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (14517) MAIN: Sample Time = 13.978 s | Tick #3/300[0m
+[0;32mI (14517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (14527) MAIN: SDS011 warmup... (3s/30s)[0m
+[0;32mI (14527) MAIN: BH=183.00 lx | TEMT=112.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (14547) MAIN: SEND: {"lux":183,"temt":112.60,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (14987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (15407) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (15517) MAIN: Sample Time = 14.978 s | Tick #4/300[0m
+[0;32mI (15517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0028%[0m
+[0;32mI (15527) MAIN: SDS011 warmup... (4s/30s)[0m
+[0;32mI (15527) MAIN: BH=184.00 lx | TEMT=126.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (15547) MAIN: SEND: {"lux":184,"temt":126.60,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0028}[0m
+[0;33mW (15987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (16517) MAIN: Sample Time = 15.978 s | Tick #5/300[0m
+[0;32mI (16517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0028%[0m
+[0;32mI (16527) MAIN: SDS011 warmup... (5s/30s)[0m
+[0;32mI (16527) MAIN: BH=180.00 lx | TEMT=183.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (16547) MAIN: SEND: {"lux":180,"temt":183.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0028}[0m
+[0;33mW (16987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (17517) MAIN: Sample Time = 16.978 s | Tick #6/300[0m
+[0;32mI (17517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (17527) MAIN: SDS011 warmup... (6s/30s)[0m
+[0;32mI (17527) MAIN: BH=187.00 lx | TEMT=189.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (17547) MAIN: SEND: {"lux":187,"temt":189.20,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (17827) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (17987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (18517) MAIN: Sample Time = 17.978 s | Tick #7/300[0m
+[0;32mI (18517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (18527) MAIN: SDS011 warmup... (7s/30s)[0m
+[0;32mI (18527) MAIN: BH=188.00 lx | TEMT=223.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (18547) MAIN: SEND: {"lux":188,"temt":223.60,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;33mW (18987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (19517) MAIN: Sample Time = 18.978 s | Tick #8/300[0m
+[0;32mI (19517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (19527) MAIN: SDS011 warmup... (8s/30s)[0m
+[0;32mI (19527) MAIN: BH=139.00 lx | TEMT=235.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (19547) MAIN: SEND: {"lux":139,"temt":235.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;33mW (19987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (20247) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (20517) MAIN: Sample Time = 19.978 s | Tick #9/300[0m
+[0;32mI (20517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (20527) MAIN: SDS011 warmup... (9s/30s)[0m
+[0;32mI (20527) MAIN: BH=145.00 lx | TEMT=220.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (20547) MAIN: SEND: {"lux":145,"temt":220.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (20987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (21517) MAIN: Sample Time = 20.978 s | Tick #10/300[0m
+[0;32mI (21517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (21527) MAIN: SDS011 warmup... (10s/30s)[0m
+[0;32mI (21527) MAIN: BH=145.00 lx | TEMT=145.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (21547) MAIN: SEND: {"lux":145,"temt":145.60,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (21987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (22517) MAIN: Sample Time = 21.978 s | Tick #11/300[0m
+[0;32mI (22517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (22527) MAIN: SDS011 warmup... (11s/30s)[0m
+[0;32mI (22527) MAIN: BH=148.00 lx | TEMT=116.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (22547) MAIN: SEND: {"lux":148,"temt":116.20,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (22657) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (22987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (23517) MAIN: Sample Time = 22.978 s | Tick #12/300[0m
+[0;32mI (23517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0008%[0m
+[0;32mI (23527) MAIN: SDS011 warmup... (12s/30s)[0m
+[0;32mI (23527) MAIN: BH=155.00 lx | TEMT=97.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (23547) MAIN: SEND: {"lux":155,"temt":97.60,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0008}[0m
+[0;33mW (23987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (24517) MAIN: Sample Time = 23.978 s | Tick #13/300[0m
+[0;32mI (24517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (24527) MAIN: SDS011 warmup... (13s/30s)[0m
+[0;32mI (24527) MAIN: BH=155.00 lx | TEMT=62.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (24547) MAIN: SEND: {"lux":155,"temt":62.60,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (24987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (25077) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (25517) MAIN: Sample Time = 24.978 s | Tick #14/300[0m
+[0;32mI (25517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (25527) MAIN: SDS011 warmup... (14s/30s)[0m
+[0;32mI (25527) MAIN: BH=156.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (25547) MAIN: SEND: {"lux":156,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;31mE (25967) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (25967) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (25967) mqtt_client: Error transport connect[0m
+[0;33mW (25977) MAIN: MQTT DISCONNECTED[0m
+[0;33mW (25987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (26517) MAIN: Sample Time = 25.978 s | Tick #15/300[0m
+[0;32mI (26517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (26527) MAIN: SDS011 warmup... (15s/30s)[0m
+[0;32mI (26527) MAIN: BH=155.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (26547) MAIN: SEND: {"lux":155,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (26987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (27497) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (27517) MAIN: Sample Time = 26.978 s | Tick #16/300[0m
+[0;32mI (27517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (27537) MAIN: SDS011 warmup... (16s/30s)[0m
+[0;32mI (27537) MAIN: BH=151.00 lx | TEMT=98.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (27557) MAIN: SEND: {"lux":151,"temt":98.80,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (27987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (28517) MAIN: Sample Time = 27.978 s | Tick #17/300[0m
+[0;32mI (28517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (28527) MAIN: SDS011 warmup... (17s/30s)[0m
+[0;32mI (28527) MAIN: BH=163.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (28547) MAIN: SEND: {"lux":163,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (28987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (29517) MAIN: Sample Time = 28.978 s | Tick #18/300[0m
+[0;32mI (29517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (29527) MAIN: SDS011 warmup... (18s/30s)[0m
+[0;32mI (29527) MAIN: BH=71.00 lx | TEMT=57.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (29547) MAIN: SEND: {"lux":71,"temt":57.80,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (29917) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (29987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (30517) MAIN: Sample Time = 29.978 s | Tick #19/300[0m
+[0;32mI (30517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0047%[0m
+[0;32mI (30527) MAIN: SDS011 warmup... (19s/30s)[0m
+[0;32mI (30527) MAIN: BH=56.00 lx | TEMT=80.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (30547) MAIN: SEND: {"lux":56,"temt":80.80,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0047}[0m
+[0;33mW (30987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (31517) MAIN: Sample Time = 30.978 s | Tick #20/300[0m
+[0;32mI (31517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0047%[0m
+[0;32mI (31527) MAIN: SDS011 warmup... (20s/30s)[0m
+[0;32mI (31527) MAIN: BH=56.00 lx | TEMT=94.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (31547) MAIN: SEND: {"lux":56,"temt":94.80,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0047}[0m
+[0;33mW (31987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (32327) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (32517) MAIN: Sample Time = 31.978 s | Tick #21/300[0m
+[0;32mI (32517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (32527) MAIN: SDS011 warmup... (21s/30s)[0m
+[0;32mI (32527) MAIN: BH=56.00 lx | TEMT=118.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (32547) MAIN: SEND: {"lux":56,"temt":118.60,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (32987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (33517) MAIN: Sample Time = 32.978 s | Tick #22/300[0m
+[0;32mI (33517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (33527) MAIN: SDS011 warmup... (22s/30s)[0m
+[0;32mI (33527) MAIN: BH=138.00 lx | TEMT=168.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (33547) MAIN: SEND: {"lux":138,"temt":168.20,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (33987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (34517) MAIN: Sample Time = 33.978 s | Tick #23/300[0m
+[0;32mI (34517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (34527) MAIN: SDS011 warmup... (23s/30s)[0m
+[0;32mI (34527) MAIN: BH=145.00 lx | TEMT=212.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (34547) MAIN: SEND: {"lux":145,"temt":212.20,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (34747) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (34987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (35517) MAIN: Sample Time = 34.978 s | Tick #24/300[0m
+[0;32mI (35517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (35527) MAIN: SDS011 warmup... (24s/30s)[0m
+[0;32mI (35527) MAIN: BH=479.00 lx | TEMT=220.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (35547) MAIN: SEND: {"lux":479,"temt":220.20,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (35987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (36517) MAIN: Sample Time = 35.978 s | Tick #25/300[0m
+[0;32mI (36517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (36527) MAIN: SDS011 warmup... (25s/30s)[0m
+[0;32mI (36527) MAIN: BH=496.00 lx | TEMT=148.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (36547) MAIN: SEND: {"lux":496,"temt":148.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (36987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (37167) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (37517) MAIN: Sample Time = 36.978 s | Tick #26/300[0m
+[0;32mI (37517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (37527) MAIN: SDS011 warmup... (26s/30s)[0m
+[0;32mI (37527) MAIN: BH=475.00 lx | TEMT=120.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (37547) MAIN: SEND: {"lux":475,"temt":120.80,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (37987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (38517) MAIN: Sample Time = 37.978 s | Tick #27/300[0m
+[0;32mI (38517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (38527) MAIN: SDS011 warmup... (27s/30s)[0m
+[0;32mI (38527) MAIN: BH=477.00 lx | TEMT=88.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (38547) MAIN: SEND: {"lux":477,"temt":88.40,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (38987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (39517) MAIN: Sample Time = 38.978 s | Tick #28/300[0m
+[0;32mI (39517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (39527) MAIN: SDS011 warmup... (28s/30s)[0m
+[0;32mI (39527) MAIN: BH=433.00 lx | TEMT=54.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (39547) MAIN: SEND: {"lux":433,"temt":54.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (39577) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (39987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (40517) MAIN: Sample Time = 39.978 s | Tick #29/300[0m
+[0;32mI (40517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0008%[0m
+[0;32mI (40527) MAIN: SDS011 warmup... (29s/30s)[0m
+[0;32mI (40527) MAIN: BH=436.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (40547) MAIN: SEND: {"lux":436,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0008}[0m
+[0;31mE (40977) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (40977) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (40977) mqtt_client: Error transport connect[0m
+[0;33mW (40987) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (40987) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (41517) MAIN: Sample Time = 40.978 s | Tick #30/300[0m
+[0;32mI (41517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (41527) MAIN: SDS011 warmup... (30s/30s)[0m
+[0;32mI (41527) MAIN: BH=439.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (41547) MAIN: SEND: {"lux":439,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":false,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (41997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (41997) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (42517) MAIN: Sample Time = 41.978 s | Tick #31/300[0m
+[0;32mI (42517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (42627) MAIN: BH=435.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (42637) MAIN: SEND: {"lux":435,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (42997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (43517) MAIN: Sample Time = 42.978 s | Tick #32/300[0m
+[0;32mI (43517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (43627) MAIN: BH=435.00 lx | TEMT=37.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (43637) MAIN: SEND: {"lux":435,"temt":37.20,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (43997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (44417) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (44517) MAIN: Sample Time = 43.978 s | Tick #33/300[0m
+[0;32mI (44517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0028%[0m
+[0;32mI (44627) MAIN: BH=435.00 lx | TEMT=55.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (44637) MAIN: SEND: {"lux":435,"temt":55.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0028}[0m
+[0;33mW (44997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (45517) MAIN: Sample Time = 44.978 s | Tick #34/300[0m
+[0;32mI (45517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0028%[0m
+[0;32mI (45627) MAIN: BH=437.00 lx | TEMT=67.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (45637) MAIN: SEND: {"lux":437,"temt":67.60,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0028}[0m
+[0;33mW (45997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (46517) MAIN: Sample Time = 45.978 s | Tick #35/300[0m
+[0;32mI (46517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (46627) MAIN: BH=440.00 lx | TEMT=94.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (46637) MAIN: SEND: {"lux":440,"temt":94.40,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (46837) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (46997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (47517) MAIN: Sample Time = 46.978 s | Tick #36/300[0m
+[0;32mI (47517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (47627) MAIN: BH=423.00 lx | TEMT=154.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (47637) MAIN: SEND: {"lux":423,"temt":154.20,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;33mW (47997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (48517) MAIN: Sample Time = 47.978 s | Tick #37/300[0m
+[0;32mI (48517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (48627) MAIN: BH=362.00 lx | TEMT=156.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (48637) MAIN: SEND: {"lux":362,"temt":156.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (48997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (49247) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (49517) MAIN: Sample Time = 48.978 s | Tick #38/300[0m
+[0;32mI (49517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0016%[0m
+[0;32mI (49627) MAIN: BH=450.00 lx | TEMT=129.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (49637) MAIN: SEND: {"lux":450,"temt":129.40,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0016}[0m
+[0;33mW (49997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (50517) MAIN: Sample Time = 49.978 s | Tick #39/300[0m
+[0;32mI (50517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0016%[0m
+[0;32mI (50627) MAIN: BH=390.00 lx | TEMT=82.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (50637) MAIN: SEND: {"lux":390,"temt":82.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0016}[0m
+[0;33mW (50997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;31mE (50997) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (50997) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (51007) mqtt_client: Error transport connect[0m
+[0;33mW (51007) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (51517) MAIN: Sample Time = 50.978 s | Tick #40/300[0m
+[0;32mI (51517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0020%[0m
+[0;32mI (51627) MAIN: BH=381.00 lx | TEMT=53.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (51637) MAIN: SEND: {"lux":381,"temt":53.60,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0020}[0m
+[0;33mW (51667) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (51997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (52517) MAIN: Sample Time = 51.978 s | Tick #41/300[0m
+[0;32mI (52517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (52627) MAIN: BH=372.00 lx | TEMT=30.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (52637) MAIN: SEND: {"lux":372,"temt":30.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (52997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (53517) MAIN: Sample Time = 52.978 s | Tick #42/300[0m
+[0;32mI (53517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (53627) MAIN: BH=353.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (53637) MAIN: SEND: {"lux":353,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (53997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (54087) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (54517) MAIN: Sample Time = 53.978 s | Tick #43/300[0m
+[0;32mI (54517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (54627) MAIN: BH=350.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (54637) MAIN: SEND: {"lux":350,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (54997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (55517) MAIN: Sample Time = 54.978 s | Tick #44/300[0m
+[0;32mI (55517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (55627) MAIN: BH=453.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (55637) MAIN: SEND: {"lux":453,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (55997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (56507) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (56517) MAIN: Sample Time = 55.978 s | Tick #45/300[0m
+[0;32mI (56517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (56647) MAIN: BH=488.00 lx | TEMT=50.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (56657) MAIN: SEND: {"lux":488,"temt":50.40,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (56997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (57517) MAIN: Sample Time = 56.978 s | Tick #46/300[0m
+[0;32mI (57517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (57627) MAIN: BH=484.00 lx | TEMT=45.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (57637) MAIN: SEND: {"lux":484,"temt":45.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (57997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (58517) MAIN: Sample Time = 57.978 s | Tick #47/300[0m
+[0;32mI (58517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (58627) MAIN: BH=484.00 lx | TEMT=48.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (58637) MAIN: SEND: {"lux":484,"temt":48.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (58917) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (58997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (59517) MAIN: Sample Time = 58.978 s | Tick #48/300[0m
+[0;32mI (59517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (59627) MAIN: BH=483.00 lx | TEMT=60.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (59637) MAIN: SEND: {"lux":483,"temt":60.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (59997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (60517) MAIN: Sample Time = 59.978 s | Tick #49/300[0m
+[0;32mI (60517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (60627) MAIN: BH=438.00 lx | TEMT=96.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (60637) MAIN: SEND: {"lux":438,"temt":96.60,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (60997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (61337) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (61517) MAIN: Sample Time = 60.978 s | Tick #50/300[0m
+[0;32mI (61517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0020%[0m
+[0;32mI (61627) MAIN: BH=437.00 lx | TEMT=122.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (61637) MAIN: SEND: {"lux":437,"temt":122.60,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0020}[0m
+[0;33mW (61997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (62517) MAIN: Sample Time = 61.978 s | Tick #51/300[0m
+[0;32mI (62517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (62627) MAIN: BH=462.00 lx | TEMT=101.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (62637) MAIN: SEND: {"lux":462,"temt":101.20,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (62997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (63517) MAIN: Sample Time = 62.978 s | Tick #52/300[0m
+[0;32mI (63517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (63627) MAIN: BH=449.00 lx | TEMT=64.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (63637) MAIN: SEND: {"lux":449,"temt":64.20,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;33mW (63757) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (63997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (64517) MAIN: Sample Time = 63.978 s | Tick #53/300[0m
+[0;32mI (64517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (64627) MAIN: BH=453.00 lx | TEMT=30.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (64637) MAIN: SEND: {"lux":453,"temt":30.60,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (64997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (65517) MAIN: Sample Time = 64.978 s | Tick #54/300[0m
+[0;32mI (65517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (65627) MAIN: BH=455.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (65637) MAIN: SEND: {"lux":455,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (65997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;31mE (66017) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (66017) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (66017) mqtt_client: Error transport connect[0m
+[0;33mW (66027) MAIN: MQTT DISCONNECTED[0m
+[0;33mW (66177) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (66517) MAIN: Sample Time = 65.978 s | Tick #55/300[0m
+[0;32mI (66517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (66627) MAIN: BH=465.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (66637) MAIN: SEND: {"lux":465,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (66997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (67517) MAIN: Sample Time = 66.978 s | Tick #56/300[0m
+[0;32mI (67517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (67627) MAIN: BH=482.00 lx | TEMT=44.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (67637) MAIN: SEND: {"lux":482,"temt":44.60,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (67997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (68517) MAIN: Sample Time = 67.978 s | Tick #57/300[0m
+[0;32mI (68517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;33mW (68597) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (68627) MAIN: BH=510.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (68647) MAIN: SEND: {"lux":510,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (68997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (69517) MAIN: Sample Time = 68.978 s | Tick #58/300[0m
+[0;32mI (69517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (69627) MAIN: BH=517.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (69637) MAIN: SEND: {"lux":517,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (69997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (70517) MAIN: Sample Time = 69.978 s | Tick #59/300[0m
+[0;32mI (70517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (70627) MAIN: BH=517.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (70637) MAIN: SEND: {"lux":517,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (70997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (71007) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (71517) MAIN: Sample Time = 70.978 s | Tick #60/300[0m
+[0;32mI (71517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (71627) MAIN: BH=520.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (71637) MAIN: SEND: {"lux":520,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (71997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (72517) MAIN: Sample Time = 71.978 s | Tick #61/300[0m
+[0;32mI (72517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (72627) MAIN: BH=466.00 lx | TEMT=38.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (72637) MAIN: SEND: {"lux":466,"temt":38.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (72997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (73427) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (73517) MAIN: Sample Time = 72.978 s | Tick #62/300[0m
+[0;32mI (73517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0028%[0m
+[0;32mI (73627) MAIN: BH=460.00 lx | TEMT=51.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (73637) MAIN: SEND: {"lux":460,"temt":51.40,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0028}[0m
+[0;33mW (73997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (74517) MAIN: Sample Time = 73.978 s | Tick #63/300[0m
+[0;32mI (74517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0028%[0m
+[0;32mI (74627) MAIN: BH=431.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (74637) MAIN: SEND: {"lux":431,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0028}[0m
+[0;33mW (74997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (75517) MAIN: Sample Time = 74.978 s | Tick #64/300[0m
+[0;32mI (75517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (75627) MAIN: BH=531.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (75637) MAIN: SEND: {"lux":531,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (75847) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (75997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (76517) MAIN: Sample Time = 75.978 s | Tick #65/300[0m
+[0;32mI (76517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (76627) MAIN: BH=580.00 lx | TEMT=72.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (76637) MAIN: SEND: {"lux":580,"temt":72.60,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;33mW (76997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (77517) MAIN: Sample Time = 76.978 s | Tick #66/300[0m
+[0;32mI (77517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (77627) MAIN: BH=583.00 lx | TEMT=118.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (77637) MAIN: SEND: {"lux":583,"temt":118.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;33mW (77997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (78267) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (78517) MAIN: Sample Time = 77.978 s | Tick #67/300[0m
+[0;32mI (78517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (78627) MAIN: BH=583.00 lx | TEMT=127.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (78637) MAIN: SEND: {"lux":583,"temt":127.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (78997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (79517) MAIN: Sample Time = 78.978 s | Tick #68/300[0m
+[0;32mI (79517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0016%[0m
+[0;32mI (79627) MAIN: BH=590.00 lx | TEMT=152.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (79637) MAIN: SEND: {"lux":590,"temt":152.20,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0016}[0m
+[0;33mW (79997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (80517) MAIN: Sample Time = 79.978 s | Tick #69/300[0m
+[0;32mI (80517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (80627) MAIN: BH=501.00 lx | TEMT=202.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (80637) MAIN: SEND: {"lux":501,"temt":202.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;33mW (80677) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (80997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;31mE (81027) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (81027) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (81027) mqtt_client: Error transport connect[0m
+[0;33mW (81037) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (81517) MAIN: Sample Time = 80.978 s | Tick #70/300[0m
+[0;32mI (81517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0012%[0m
+[0;32mI (81627) MAIN: BH=485.00 lx | TEMT=152.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (81637) MAIN: SEND: {"lux":485,"temt":152.60,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0012}[0m
+[0;33mW (81997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (82517) MAIN: Sample Time = 81.978 s | Tick #71/300[0m
+[0;32mI (82517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0008%[0m
+[0;32mI (82627) MAIN: BH=590.00 lx | TEMT=77.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (82637) MAIN: SEND: {"lux":590,"temt":77.40,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0008}[0m
+[0;33mW (82997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (83097) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (83517) MAIN: Sample Time = 82.978 s | Tick #72/300[0m
+[0;32mI (83517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (83627) MAIN: BH=582.00 lx | TEMT=34.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (83637) MAIN: SEND: {"lux":582,"temt":34.60,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (83997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (84517) MAIN: Sample Time = 83.978 s | Tick #73/300[0m
+[0;32mI (84517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (84627) MAIN: BH=582.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (84637) MAIN: SEND: {"lux":582,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (84997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (85517) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (85517) MAIN: Sample Time = 84.978 s | Tick #74/300[0m
+[0;32mI (85517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0033%[0m
+[0;32mI (85657) MAIN: BH=465.00 lx | TEMT=141.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (85667) MAIN: SEND: {"lux":465,"temt":141.60,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0033}[0m
+[0;33mW (85997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (86517) MAIN: Sample Time = 85.978 s | Tick #75/300[0m
+[0;32mI (86517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0033%[0m
+[0;32mI (86627) MAIN: BH=452.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (86637) MAIN: SEND: {"lux":452,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0033}[0m
+[0;33mW (86997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (87517) MAIN: Sample Time = 86.978 s | Tick #76/300[0m
+[0;32mI (87517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (87627) MAIN: BH=365.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (87637) MAIN: SEND: {"lux":365,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (87937) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (87997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (88517) MAIN: Sample Time = 87.978 s | Tick #77/300[0m
+[0;32mI (88517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (88627) MAIN: BH=176.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (88637) MAIN: SEND: {"lux":176,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (88997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (89517) MAIN: Sample Time = 88.978 s | Tick #78/300[0m
+[0;32mI (89517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (89627) MAIN: BH=161.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (89637) MAIN: SEND: {"lux":161,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (89997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (90357) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (90517) MAIN: Sample Time = 89.978 s | Tick #79/300[0m
+[0;32mI (90517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (90627) MAIN: BH=151.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (90637) MAIN: SEND: {"lux":151,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (90997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (91517) MAIN: Sample Time = 90.978 s | Tick #80/300[0m
+[0;32mI (91517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (91627) MAIN: BH=164.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (91637) MAIN: SEND: {"lux":164,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (91997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (92517) MAIN: Sample Time = 91.978 s | Tick #81/300[0m
+[0;32mI (92517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (92627) MAIN: BH=386.00 lx | TEMT=30.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (92637) MAIN: SEND: {"lux":386,"temt":30.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (92767) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (92997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (93517) MAIN: Sample Time = 92.978 s | Tick #82/300[0m
+[0;32mI (93517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0008%[0m
+[0;32mI (93627) MAIN: BH=409.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (93637) MAIN: SEND: {"lux":409,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0008}[0m
+[0;33mW (93997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (94517) MAIN: Sample Time = 93.978 s | Tick #83/300[0m
+[0;32mI (94517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (94627) MAIN: BH=394.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (94637) MAIN: SEND: {"lux":394,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (94997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (95187) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (95517) MAIN: Sample Time = 94.978 s | Tick #84/300[0m
+[0;32mI (95517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (95627) MAIN: BH=289.00 lx | TEMT=67.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (95637) MAIN: SEND: {"lux":289,"temt":67.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (95997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;31mE (96037) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (96037) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (96037) mqtt_client: Error transport connect[0m
+[0;33mW (96047) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (96517) MAIN: Sample Time = 95.978 s | Tick #85/300[0m
+[0;32mI (96517) MAIN: [TIMING] dt=1.0006s | f_actual=0.9994Hz | error=0.0580%[0m
+[0;32mI (96627) MAIN: BH=364.00 lx | TEMT=178.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (96637) MAIN: SEND: {"lux":364,"temt":178.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0006,"f_actual":0.9994,"error_pct":0.0580}[0m
+[0;33mW (96997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (97517) MAIN: Sample Time = 96.978 s | Tick #86/300[0m
+[0;32mI (97517) MAIN: [TIMING] dt=0.9994s | f_actual=1.0006Hz | error=-0.0584%[0m
+[0;33mW (97607) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (97627) MAIN: BH=369.00 lx | TEMT=115.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (97657) MAIN: SEND: {"lux":369,"temt":115.20,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":0.9994,"f_actual":1.0006,"error_pct":-0.0584}[0m
+[0;33mW (97997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (98517) MAIN: Sample Time = 97.978 s | Tick #87/300[0m
+[0;32mI (98517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (98627) MAIN: BH=220.00 lx | TEMT=112.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (98637) MAIN: SEND: {"lux":220,"temt":112.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (98997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (99517) MAIN: Sample Time = 98.978 s | Tick #88/300[0m
+[0;32mI (99517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (99627) MAIN: BH=198.00 lx | TEMT=64.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (99637) MAIN: SEND: {"lux":198,"temt":64.40,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (99997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (100027) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (100517) MAIN: Sample Time = 99.978 s | Tick #89/300[0m
+[0;32mI (100517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (100627) MAIN: BH=196.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (100637) MAIN: SEND: {"lux":196,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (100997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (101517) MAIN: Sample Time = 100.978 s | Tick #90/300[0m
+[0;32mI (101517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (101627) MAIN: BH=359.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (101637) MAIN: SEND: {"lux":359,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (101997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (102437) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (102517) MAIN: Sample Time = 101.978 s | Tick #91/300[0m
+[0;32mI (102517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (102627) MAIN: BH=405.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (102637) MAIN: SEND: {"lux":405,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (102997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (103517) MAIN: Sample Time = 102.978 s | Tick #92/300[0m
+[0;32mI (103517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0016%[0m
+[0;32mI (103627) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (103637) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0016}[0m
+[0;33mW (103997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (104517) MAIN: Sample Time = 103.978 s | Tick #93/300[0m
+[0;32mI (104517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0020%[0m
+[0;32mI (104627) MAIN: BH=410.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (104637) MAIN: SEND: {"lux":410,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0020}[0m
+[0;33mW (104857) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (104997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (105517) MAIN: Sample Time = 104.978 s | Tick #94/300[0m
+[0;32mI (105517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (105627) MAIN: BH=391.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (105637) MAIN: SEND: {"lux":391,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;33mW (105997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (106517) MAIN: Sample Time = 105.978 s | Tick #95/300[0m
+[0;32mI (106517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (106627) MAIN: BH=390.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (106637) MAIN: SEND: {"lux":390,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (106997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (107277) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (107517) MAIN: Sample Time = 106.978 s | Tick #96/300[0m
+[0;32mI (107517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0016%[0m
+[0;32mI (107627) MAIN: BH=210.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (107637) MAIN: SEND: {"lux":210,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0016}[0m
+[0;33mW (107997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (108517) MAIN: Sample Time = 107.978 s | Tick #97/300[0m
+[0;32mI (108517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0012%[0m
+[0;32mI (108627) MAIN: BH=253.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (108637) MAIN: SEND: {"lux":253,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0012}[0m
+[0;33mW (108997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (109517) MAIN: Sample Time = 108.978 s | Tick #98/300[0m
+[0;32mI (109517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0016%[0m
+[0;32mI (109627) MAIN: BH=498.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (109637) MAIN: SEND: {"lux":498,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0016}[0m
+[0;33mW (109697) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (109997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (110517) MAIN: Sample Time = 109.978 s | Tick #99/300[0m
+[0;32mI (110517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (110627) MAIN: BH=475.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (110637) MAIN: SEND: {"lux":475,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (110997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;31mE (111047) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (111047) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111047) mqtt_client: Error transport connect[0m
+[0;33mW (111057) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (111517) MAIN: Sample Time = 110.978 s | Tick #100/300[0m
+[0;32mI (111517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (111627) MAIN: BH=440.00 lx | TEMT=38.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (111637) MAIN: SEND: {"lux":440,"temt":38.20,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (111997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (112117) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (112517) MAIN: Sample Time = 111.978 s | Tick #101/300[0m
+[0;32mI (112517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (112627) MAIN: BH=461.00 lx | TEMT=97.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (112637) MAIN: SEND: {"lux":461,"temt":97.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (112997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (113517) MAIN: Sample Time = 112.978 s | Tick #102/300[0m
+[0;32mI (113517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (113627) MAIN: BH=444.00 lx | TEMT=100.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (113637) MAIN: SEND: {"lux":444,"temt":100.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (113997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (114517) MAIN: Sample Time = 113.978 s | Tick #103/300[0m
+[0;32mI (114517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;33mW (114527) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (114627) MAIN: BH=427.00 lx | TEMT=77.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (114637) MAIN: SEND: {"lux":427,"temt":77.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (114997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (115517) MAIN: Sample Time = 114.978 s | Tick #104/300[0m
+[0;32mI (115517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (115627) MAIN: BH=316.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (115637) MAIN: SEND: {"lux":316,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (115997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (116517) MAIN: Sample Time = 115.978 s | Tick #105/300[0m
+[0;32mI (116517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (116627) MAIN: BH=456.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (116637) MAIN: SEND: {"lux":456,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (116947) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (116997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (117517) MAIN: Sample Time = 116.978 s | Tick #106/300[0m
+[0;32mI (117517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (117627) MAIN: BH=480.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (117637) MAIN: SEND: {"lux":480,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (117997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (118517) MAIN: Sample Time = 117.978 s | Tick #107/300[0m
+[0;32mI (118517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (118627) MAIN: BH=468.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (118637) MAIN: SEND: {"lux":468,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (118997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (119367) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (119517) MAIN: Sample Time = 118.978 s | Tick #108/300[0m
+[0;32mI (119517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (119627) MAIN: BH=471.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (119637) MAIN: SEND: {"lux":471,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (119997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (120517) MAIN: Sample Time = 119.978 s | Tick #109/300[0m
+[0;32mI (120517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (120627) MAIN: BH=478.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (120637) MAIN: SEND: {"lux":478,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (120997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (121517) MAIN: Sample Time = 120.978 s | Tick #110/300[0m
+[0;32mI (121517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (121627) MAIN: BH=486.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (121637) MAIN: SEND: {"lux":486,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (121787) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (121997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (122517) MAIN: Sample Time = 121.978 s | Tick #111/300[0m
+[0;32mI (122517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (122627) MAIN: BH=485.00 lx | TEMT=30.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (122637) MAIN: SEND: {"lux":485,"temt":30.40,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (122997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (123517) MAIN: Sample Time = 122.978 s | Tick #112/300[0m
+[0;32mI (123517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (123627) MAIN: BH=376.00 lx | TEMT=50.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (123637) MAIN: SEND: {"lux":376,"temt":50.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (123997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (124197) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (124517) MAIN: Sample Time = 123.978 s | Tick #113/300[0m
+[0;32mI (124517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (124627) MAIN: BH=384.00 lx | TEMT=128.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (124637) MAIN: SEND: {"lux":384,"temt":128.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (124997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (125517) MAIN: Sample Time = 124.978 s | Tick #114/300[0m
+[0;32mI (125517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (125627) MAIN: BH=497.00 lx | TEMT=152.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (125637) MAIN: SEND: {"lux":497,"temt":152.40,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (125997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;31mE (126057) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (126057) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (126057) mqtt_client: Error transport connect[0m
+[0;33mW (126067) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (126517) MAIN: Sample Time = 125.978 s | Tick #115/300[0m
+[0;32mI (126517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;33mW (126617) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (126627) MAIN: BH=533.00 lx | TEMT=130.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (126677) MAIN: SEND: {"lux":533,"temt":130.20,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (126997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (127517) MAIN: Sample Time = 126.978 s | Tick #116/300[0m
+[0;32mI (127517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (127627) MAIN: BH=321.00 lx | TEMT=43.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (127637) MAIN: SEND: {"lux":321,"temt":43.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (127997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (128517) MAIN: Sample Time = 127.978 s | Tick #117/300[0m
+[0;32mI (128517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (128627) MAIN: BH=474.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (128637) MAIN: SEND: {"lux":474,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (128997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (129037) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (129517) MAIN: Sample Time = 128.978 s | Tick #118/300[0m
+[0;32mI (129517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (129627) MAIN: BH=405.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (129637) MAIN: SEND: {"lux":405,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (129997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (130517) MAIN: Sample Time = 129.978 s | Tick #119/300[0m
+[0;32mI (130517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0020%[0m
+[0;32mI (130627) MAIN: BH=355.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (130637) MAIN: SEND: {"lux":355,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0020}[0m
+[0;33mW (130997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (131457) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (131517) MAIN: Sample Time = 130.978 s | Tick #120/300[0m
+[0;32mI (131517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (131627) MAIN: BH=358.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (131637) MAIN: SEND: {"lux":358,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (131997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (132517) MAIN: Sample Time = 131.978 s | Tick #121/300[0m
+[0;32mI (132517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (132627) MAIN: BH=364.00 lx | TEMT=32.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (132637) MAIN: SEND: {"lux":364,"temt":32.60,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;33mW (132997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (133517) MAIN: Sample Time = 132.978 s | Tick #122/300[0m
+[0;32mI (133517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (133627) MAIN: BH=408.00 lx | TEMT=31.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (133637) MAIN: SEND: {"lux":408,"temt":31.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (133867) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (133997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (134517) MAIN: Sample Time = 133.978 s | Tick #123/300[0m
+[0;32mI (134517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (134627) MAIN: BH=424.00 lx | TEMT=100.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (134637) MAIN: SEND: {"lux":424,"temt":100.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (134997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (135517) MAIN: Sample Time = 134.978 s | Tick #124/300[0m
+[0;32mI (135517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (135627) MAIN: BH=455.00 lx | TEMT=146.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (135637) MAIN: SEND: {"lux":455,"temt":146.40,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (135997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (136287) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (136517) MAIN: Sample Time = 135.978 s | Tick #125/300[0m
+[0;32mI (136517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0020%[0m
+[0;32mI (136627) MAIN: BH=457.00 lx | TEMT=83.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (136637) MAIN: SEND: {"lux":457,"temt":83.40,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0020}[0m
+[0;33mW (136997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (137517) MAIN: Sample Time = 136.978 s | Tick #126/300[0m
+[0;32mI (137517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0020%[0m
+[0;32mI (137627) MAIN: BH=454.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (137637) MAIN: SEND: {"lux":454,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0020}[0m
+[0;33mW (137997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (138517) MAIN: Sample Time = 137.978 s | Tick #127/300[0m
+[0;32mI (138517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0008%[0m
+[0;32mI (138627) MAIN: BH=400.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (138637) MAIN: SEND: {"lux":400,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0008}[0m
+[0;33mW (138707) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (138997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (139517) MAIN: Sample Time = 138.978 s | Tick #128/300[0m
+[0;32mI (139517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0008%[0m
+[0;32mI (139627) MAIN: BH=435.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (139637) MAIN: SEND: {"lux":435,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0008}[0m
+[0;33mW (139997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (140517) MAIN: Sample Time = 139.978 s | Tick #129/300[0m
+[0;32mI (140517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (140627) MAIN: BH=275.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (140637) MAIN: SEND: {"lux":275,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (140997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;31mE (141067) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (141067) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (141067) mqtt_client: Error transport connect[0m
+[0;33mW (141077) MAIN: MQTT DISCONNECTED[0m
+[0;33mW (141127) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (141517) MAIN: Sample Time = 140.978 s | Tick #130/300[0m
+[0;32mI (141517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (141627) MAIN: BH=172.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (141637) MAIN: SEND: {"lux":172,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (141997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (142517) MAIN: Sample Time = 141.978 s | Tick #131/300[0m
+[0;32mI (142517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (142627) MAIN: BH=178.00 lx | TEMT=44.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (142637) MAIN: SEND: {"lux":178,"temt":44.40,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (142997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (143517) MAIN: Sample Time = 142.978 s | Tick #132/300[0m
+[0;32mI (143517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;33mW (143537) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (143627) MAIN: BH=185.00 lx | TEMT=41.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (143637) MAIN: SEND: {"lux":185,"temt":41.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (143997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (144517) MAIN: Sample Time = 143.978 s | Tick #133/300[0m
+[0;32mI (144517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (144627) MAIN: BH=183.00 lx | TEMT=78.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (144637) MAIN: SEND: {"lux":183,"temt":78.60,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (144997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (145517) MAIN: Sample Time = 144.978 s | Tick #134/300[0m
+[0;32mI (145517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (145627) MAIN: BH=446.00 lx | TEMT=153.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (145637) MAIN: SEND: {"lux":446,"temt":153.40,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (145957) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (145997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (146517) MAIN: Sample Time = 145.978 s | Tick #135/300[0m
+[0;32mI (146517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (146627) MAIN: BH=407.00 lx | TEMT=170.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (146637) MAIN: SEND: {"lux":407,"temt":170.40,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (146997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (147517) MAIN: Sample Time = 146.978 s | Tick #136/300[0m
+[0;32mI (147517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (147627) MAIN: BH=464.00 lx | TEMT=60.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (147637) MAIN: SEND: {"lux":464,"temt":60.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (147997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (148377) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (148517) MAIN: Sample Time = 147.978 s | Tick #137/300[0m
+[0;32mI (148517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (148627) MAIN: BH=495.00 lx | TEMT=28.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (148637) MAIN: SEND: {"lux":495,"temt":28.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (148997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (149517) MAIN: Sample Time = 148.978 s | Tick #138/300[0m
+[0;32mI (149517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (149627) MAIN: BH=488.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (149637) MAIN: SEND: {"lux":488,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (149997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (150517) MAIN: Sample Time = 149.978 s | Tick #139/300[0m
+[0;32mI (150517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (150627) MAIN: BH=547.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (150637) MAIN: SEND: {"lux":547,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (150797) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (150997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (151517) MAIN: Sample Time = 150.978 s | Tick #140/300[0m
+[0;32mI (151517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0008%[0m
+[0;32mI (151627) MAIN: BH=544.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (151637) MAIN: SEND: {"lux":544,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0008}[0m
+[0;33mW (151997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (152517) MAIN: Sample Time = 151.978 s | Tick #141/300[0m
+[0;32mI (152517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (152627) MAIN: BH=542.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (152637) MAIN: SEND: {"lux":542,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (152997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (153207) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (153517) MAIN: Sample Time = 152.978 s | Tick #142/300[0m
+[0;32mI (153517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (153627) MAIN: BH=542.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (153637) MAIN: SEND: {"lux":542,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (153997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (154517) MAIN: Sample Time = 153.978 s | Tick #143/300[0m
+[0;32mI (154517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0016%[0m
+[0;32mI (154627) MAIN: BH=541.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (154637) MAIN: SEND: {"lux":541,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0016}[0m
+[0;33mW (154997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (155517) MAIN: Sample Time = 154.978 s | Tick #144/300[0m
+[0;32mI (155517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (155627) MAIN: BH=542.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;33mW (155627) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (155687) MAIN: SEND: {"lux":542,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;33mW (155997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;31mE (156077) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (156077) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (156077) mqtt_client: Error transport connect[0m
+[0;33mW (156087) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (156517) MAIN: Sample Time = 155.978 s | Tick #145/300[0m
+[0;32mI (156517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0008%[0m
+[0;32mI (156627) MAIN: BH=501.00 lx | TEMT=40.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (156637) MAIN: SEND: {"lux":501,"temt":40.20,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0008}[0m
+[0;33mW (156997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (157517) MAIN: Sample Time = 156.978 s | Tick #146/300[0m
+[0;32mI (157517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (157627) MAIN: BH=440.00 lx | TEMT=39.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (157637) MAIN: SEND: {"lux":440,"temt":39.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (157997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (158047) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (158517) MAIN: Sample Time = 157.978 s | Tick #147/300[0m
+[0;32mI (158517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (158627) MAIN: BH=372.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (158637) MAIN: SEND: {"lux":372,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (158997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (159517) MAIN: Sample Time = 158.978 s | Tick #148/300[0m
+[0;32mI (159517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (159627) MAIN: BH=430.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (159637) MAIN: SEND: {"lux":430,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (159997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (160467) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (160517) MAIN: Sample Time = 159.978 s | Tick #149/300[0m
+[0;32mI (160517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (160627) MAIN: BH=484.00 lx | TEMT=35.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (160637) MAIN: SEND: {"lux":484,"temt":35.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (160997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (161517) MAIN: Sample Time = 160.978 s | Tick #150/300[0m
+[0;32mI (161517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (161627) MAIN: BH=484.00 lx | TEMT=47.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (161637) MAIN: SEND: {"lux":484,"temt":47.40,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (161997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (162517) MAIN: Sample Time = 161.978 s | Tick #151/300[0m
+[0;32mI (162517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (162627) MAIN: BH=489.00 lx | TEMT=54.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (162637) MAIN: SEND: {"lux":489,"temt":54.40,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (162887) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (162997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (163517) MAIN: Sample Time = 162.978 s | Tick #152/300[0m
+[0;32mI (163517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (163627) MAIN: BH=510.00 lx | TEMT=82.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (163637) MAIN: SEND: {"lux":510,"temt":82.60,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (163997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (164517) MAIN: Sample Time = 163.978 s | Tick #153/300[0m
+[0;32mI (164517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (164627) MAIN: BH=494.00 lx | TEMT=100.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (164637) MAIN: SEND: {"lux":494,"temt":100.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (164997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (165297) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (165517) MAIN: Sample Time = 164.978 s | Tick #154/300[0m
+[0;32mI (165517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (165627) MAIN: BH=475.00 lx | TEMT=95.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (165637) MAIN: SEND: {"lux":475,"temt":95.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;33mW (165997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (166517) MAIN: Sample Time = 165.978 s | Tick #155/300[0m
+[0;32mI (166517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (166627) MAIN: BH=449.00 lx | TEMT=76.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (166637) MAIN: SEND: {"lux":449,"temt":76.60,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;33mW (166997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (167517) MAIN: Sample Time = 166.978 s | Tick #156/300[0m
+[0;32mI (167517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (167627) MAIN: BH=455.00 lx | TEMT=79.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (167637) MAIN: SEND: {"lux":455,"temt":79.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (167717) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (167997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (168517) MAIN: Sample Time = 167.978 s | Tick #157/300[0m
+[0;32mI (168517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (168627) MAIN: BH=500.00 lx | TEMT=73.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (168637) MAIN: SEND: {"lux":500,"temt":73.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (168997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (169517) MAIN: Sample Time = 168.978 s | Tick #158/300[0m
+[0;32mI (169517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (169627) MAIN: BH=511.00 lx | TEMT=88.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (169637) MAIN: SEND: {"lux":511,"temt":88.60,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (169997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (170137) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (170517) MAIN: Sample Time = 169.978 s | Tick #159/300[0m
+[0;32mI (170517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (170627) MAIN: BH=487.00 lx | TEMT=62.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (170637) MAIN: SEND: {"lux":487,"temt":62.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (170997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;31mE (171087) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (171087) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (171087) mqtt_client: Error transport connect[0m
+[0;33mW (171097) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (171517) MAIN: Sample Time = 170.978 s | Tick #160/300[0m
+[0;32mI (171517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0020%[0m
+[0;32mI (171627) MAIN: BH=390.00 lx | TEMT=56.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (171637) MAIN: SEND: {"lux":390,"temt":56.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0020}[0m
+[0;33mW (171997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (172517) MAIN: Sample Time = 171.978 s | Tick #161/300[0m
+[0;32mI (172517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0028%[0m
+[0;33mW (172557) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (172627) MAIN: BH=346.00 lx | TEMT=52.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (172637) MAIN: SEND: {"lux":346,"temt":52.40,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0028}[0m
+[0;33mW (172997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (173517) MAIN: Sample Time = 172.978 s | Tick #162/300[0m
+[0;32mI (173517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (173627) MAIN: BH=340.00 lx | TEMT=63.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (173637) MAIN: SEND: {"lux":340,"temt":63.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (173997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (174517) MAIN: Sample Time = 173.978 s | Tick #163/300[0m
+[0;32mI (174517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (174627) MAIN: BH=363.00 lx | TEMT=52.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (174637) MAIN: SEND: {"lux":363,"temt":52.20,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (174977) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (174997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (175517) MAIN: Sample Time = 174.978 s | Tick #164/300[0m
+[0;32mI (175517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (175627) MAIN: BH=359.00 lx | TEMT=52.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (175637) MAIN: SEND: {"lux":359,"temt":52.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (175997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (176517) MAIN: Sample Time = 175.978 s | Tick #165/300[0m
+[0;32mI (176517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (176627) MAIN: BH=359.00 lx | TEMT=51.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (176637) MAIN: SEND: {"lux":359,"temt":51.60,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (176997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (177387) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (177517) MAIN: Sample Time = 176.978 s | Tick #166/300[0m
+[0;32mI (177517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (177627) MAIN: BH=519.00 lx | TEMT=52.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (177637) MAIN: SEND: {"lux":519,"temt":52.20,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (177997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (178517) MAIN: Sample Time = 177.978 s | Tick #167/300[0m
+[0;32mI (178517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (178627) MAIN: BH=620.00 lx | TEMT=48.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (178637) MAIN: SEND: {"lux":620,"temt":48.40,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (178997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (179517) MAIN: Sample Time = 178.978 s | Tick #168/300[0m
+[0;32mI (179517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (179627) MAIN: BH=615.00 lx | TEMT=45.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (179637) MAIN: SEND: {"lux":615,"temt":45.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (179807) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (179997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (180517) MAIN: Sample Time = 179.978 s | Tick #169/300[0m
+[0;32mI (180517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0028%[0m
+[0;32mI (180627) MAIN: BH=615.00 lx | TEMT=46.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (180637) MAIN: SEND: {"lux":615,"temt":46.20,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0028}[0m
+[0;33mW (180997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (181517) MAIN: Sample Time = 180.978 s | Tick #170/300[0m
+[0;32mI (181517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (181627) MAIN: BH=615.00 lx | TEMT=41.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (181637) MAIN: SEND: {"lux":615,"temt":41.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;33mW (181997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (182227) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (182517) MAIN: Sample Time = 181.978 s | Tick #171/300[0m
+[0;32mI (182517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (182627) MAIN: BH=615.00 lx | TEMT=37.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (182637) MAIN: SEND: {"lux":615,"temt":37.20,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (182997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (183517) MAIN: Sample Time = 182.978 s | Tick #172/300[0m
+[0;32mI (183517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (183627) MAIN: BH=615.00 lx | TEMT=31.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (183637) MAIN: SEND: {"lux":615,"temt":31.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (183997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (184517) MAIN: Sample Time = 183.978 s | Tick #173/300[0m
+[0;32mI (184517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (184627) MAIN: BH=614.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (184637) MAIN: SEND: {"lux":614,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (184647) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (184997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (185517) MAIN: Sample Time = 184.978 s | Tick #174/300[0m
+[0;32mI (185517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (185627) MAIN: BH=610.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (185637) MAIN: SEND: {"lux":610,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (185997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;31mE (186097) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (186097) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (186097) mqtt_client: Error transport connect[0m
+[0;33mW (186107) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (186517) MAIN: Sample Time = 185.978 s | Tick #175/300[0m
+[0;32mI (186517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (186627) MAIN: BH=610.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (186637) MAIN: SEND: {"lux":610,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (186997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (187057) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (187517) MAIN: Sample Time = 186.978 s | Tick #176/300[0m
+[0;32mI (187517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (187627) MAIN: BH=614.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (187637) MAIN: SEND: {"lux":614,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (187997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (188517) MAIN: Sample Time = 187.978 s | Tick #177/300[0m
+[0;32mI (188517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (188627) MAIN: BH=613.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (188637) MAIN: SEND: {"lux":613,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (188997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (189477) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (189517) MAIN: Sample Time = 188.978 s | Tick #178/300[0m
+[0;32mI (189517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (189627) MAIN: BH=612.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (189637) MAIN: SEND: {"lux":612,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (189997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (190517) MAIN: Sample Time = 189.978 s | Tick #179/300[0m
+[0;32mI (190517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (190627) MAIN: BH=614.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (190637) MAIN: SEND: {"lux":614,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (190997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (191517) MAIN: Sample Time = 190.978 s | Tick #180/300[0m
+[0;32mI (191517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (191627) MAIN: BH=612.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (191637) MAIN: SEND: {"lux":612,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (191897) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (191997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (192517) MAIN: Sample Time = 191.978 s | Tick #181/300[0m
+[0;32mI (192517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (192627) MAIN: BH=612.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (192637) MAIN: SEND: {"lux":612,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (192997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (193517) MAIN: Sample Time = 192.978 s | Tick #182/300[0m
+[0;32mI (193517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (193627) MAIN: BH=610.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (193637) MAIN: SEND: {"lux":610,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (193997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (194317) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (194517) MAIN: Sample Time = 193.978 s | Tick #183/300[0m
+[0;32mI (194517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (194627) MAIN: BH=604.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (194637) MAIN: SEND: {"lux":604,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;33mW (194997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (195517) MAIN: Sample Time = 194.978 s | Tick #184/300[0m
+[0;32mI (195517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (195627) MAIN: BH=605.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (195637) MAIN: SEND: {"lux":605,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (195997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (196517) MAIN: Sample Time = 195.978 s | Tick #185/300[0m
+[0;32mI (196517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (196627) MAIN: BH=607.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (196637) MAIN: SEND: {"lux":607,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;33mW (196737) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (196997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (197517) MAIN: Sample Time = 196.978 s | Tick #186/300[0m
+[0;32mI (197517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0008%[0m
+[0;32mI (197627) MAIN: BH=607.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (197637) MAIN: SEND: {"lux":607,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0008}[0m
+[0;33mW (197997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (198517) MAIN: Sample Time = 197.978 s | Tick #187/300[0m
+[0;32mI (198517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (198627) MAIN: BH=605.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (198637) MAIN: SEND: {"lux":605,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (198997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (199147) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (199517) MAIN: Sample Time = 198.978 s | Tick #188/300[0m
+[0;32mI (199517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (199627) MAIN: BH=603.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (199637) MAIN: SEND: {"lux":603,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (199997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (200517) MAIN: Sample Time = 199.978 s | Tick #189/300[0m
+[0;32mI (200517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (200627) MAIN: BH=540.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (200637) MAIN: SEND: {"lux":540,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (200997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;31mE (201107) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (201107) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (201107) mqtt_client: Error transport connect[0m
+[0;33mW (201117) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (201517) MAIN: Sample Time = 200.978 s | Tick #190/300[0m
+[0;32mI (201517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;33mW (201567) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (201627) MAIN: BH=544.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (201637) MAIN: SEND: {"lux":544,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (201997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (202517) MAIN: Sample Time = 201.978 s | Tick #191/300[0m
+[0;32mI (202517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (202627) MAIN: BH=552.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (202637) MAIN: SEND: {"lux":552,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (202997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (203517) MAIN: Sample Time = 202.978 s | Tick #192/300[0m
+[0;32mI (203517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (203627) MAIN: BH=478.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (203637) MAIN: SEND: {"lux":478,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (203987) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (203997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (204517) MAIN: Sample Time = 203.978 s | Tick #193/300[0m
+[0;32mI (204517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (204627) MAIN: BH=490.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (204637) MAIN: SEND: {"lux":490,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (204997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (205517) MAIN: Sample Time = 204.978 s | Tick #194/300[0m
+[0;32mI (205517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (205627) MAIN: BH=455.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (205637) MAIN: SEND: {"lux":455,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (205997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (206407) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (206517) MAIN: Sample Time = 205.978 s | Tick #195/300[0m
+[0;32mI (206517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0028%[0m
+[0;32mI (206627) MAIN: BH=435.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (206637) MAIN: SEND: {"lux":435,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0028}[0m
+[0;33mW (206997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (207517) MAIN: Sample Time = 206.978 s | Tick #196/300[0m
+[0;32mI (207517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0028%[0m
+[0;32mI (207627) MAIN: BH=335.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (207637) MAIN: SEND: {"lux":335,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0028}[0m
+[0;33mW (207997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (208517) MAIN: Sample Time = 207.978 s | Tick #197/300[0m
+[0;32mI (208517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (208627) MAIN: BH=331.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (208637) MAIN: SEND: {"lux":331,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (208817) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (208997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (209517) MAIN: Sample Time = 208.978 s | Tick #198/300[0m
+[0;32mI (209517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (209627) MAIN: BH=389.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (209637) MAIN: SEND: {"lux":389,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;33mW (209997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (210517) MAIN: Sample Time = 209.978 s | Tick #199/300[0m
+[0;32mI (210517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (210627) MAIN: BH=283.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (210637) MAIN: SEND: {"lux":283,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;33mW (210997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (211237) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (211517) MAIN: Sample Time = 210.978 s | Tick #200/300[0m
+[0;32mI (211517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (211627) MAIN: BH=450.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (211637) MAIN: SEND: {"lux":450,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;33mW (211997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (212517) MAIN: Sample Time = 211.978 s | Tick #201/300[0m
+[0;32mI (212517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (212627) MAIN: BH=467.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (212637) MAIN: SEND: {"lux":467,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (212997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (213517) MAIN: Sample Time = 212.978 s | Tick #202/300[0m
+[0;32mI (213517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (213627) MAIN: BH=484.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (213637) MAIN: SEND: {"lux":484,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;33mW (213657) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (213997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (214517) MAIN: Sample Time = 213.978 s | Tick #203/300[0m
+[0;32mI (214517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0008%[0m
+[0;32mI (214627) MAIN: BH=474.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (214637) MAIN: SEND: {"lux":474,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0008}[0m
+[0;33mW (214997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (215517) MAIN: Sample Time = 214.978 s | Tick #204/300[0m
+[0;32mI (215517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (215627) MAIN: BH=372.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (215637) MAIN: SEND: {"lux":372,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (215997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (216077) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;31mE (216117) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (216117) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (216117) mqtt_client: Error transport connect[0m
+[0;33mW (216127) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (216517) MAIN: Sample Time = 215.978 s | Tick #205/300[0m
+[0;32mI (216517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0008%[0m
+[0;32mI (216627) MAIN: BH=331.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (216637) MAIN: SEND: {"lux":331,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0008}[0m
+[0;33mW (216997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (217517) MAIN: Sample Time = 216.978 s | Tick #206/300[0m
+[0;32mI (217517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0012%[0m
+[0;32mI (217627) MAIN: BH=341.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (217637) MAIN: SEND: {"lux":341,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0012}[0m
+[0;33mW (217997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (218487) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (218517) MAIN: Sample Time = 217.978 s | Tick #207/300[0m
+[0;32mI (218517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0025%[0m
+[0;32mI (218637) MAIN: BH=361.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (218647) MAIN: SEND: {"lux":361,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0025}[0m
+[0;33mW (218997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (219517) MAIN: Sample Time = 218.978 s | Tick #208/300[0m
+[0;32mI (219517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0041%[0m
+[0;32mI (219627) MAIN: BH=416.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (219637) MAIN: SEND: {"lux":416,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0041}[0m
+[0;33mW (219997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (220517) MAIN: Sample Time = 219.978 s | Tick #209/300[0m
+[0;32mI (220517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (220627) MAIN: BH=381.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (220637) MAIN: SEND: {"lux":381,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (220907) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (220997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (221517) MAIN: Sample Time = 220.978 s | Tick #210/300[0m
+[0;32mI (221517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (221627) MAIN: BH=317.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (221637) MAIN: SEND: {"lux":317,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (221997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (222517) MAIN: Sample Time = 221.978 s | Tick #211/300[0m
+[0;32mI (222517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (222627) MAIN: BH=342.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (222637) MAIN: SEND: {"lux":342,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (222997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (223327) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (223517) MAIN: Sample Time = 222.978 s | Tick #212/300[0m
+[0;32mI (223517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (223627) MAIN: BH=345.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (223637) MAIN: SEND: {"lux":345,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;33mW (223997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (224517) MAIN: Sample Time = 223.978 s | Tick #213/300[0m
+[0;32mI (224517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (224627) MAIN: BH=347.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (224637) MAIN: SEND: {"lux":347,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;33mW (224997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (225517) MAIN: Sample Time = 224.978 s | Tick #214/300[0m
+[0;32mI (225517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (225627) MAIN: BH=378.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (225637) MAIN: SEND: {"lux":378,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (225747) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (225997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (226517) MAIN: Sample Time = 225.978 s | Tick #215/300[0m
+[0;32mI (226517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (226627) MAIN: BH=420.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (226637) MAIN: SEND: {"lux":420,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (226997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (227517) MAIN: Sample Time = 226.978 s | Tick #216/300[0m
+[0;32mI (227517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (227627) MAIN: BH=362.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (227637) MAIN: SEND: {"lux":362,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (227997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (228167) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (228517) MAIN: Sample Time = 227.978 s | Tick #217/300[0m
+[0;32mI (228517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (228627) MAIN: BH=380.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (228637) MAIN: SEND: {"lux":380,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (228997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (229517) MAIN: Sample Time = 228.978 s | Tick #218/300[0m
+[0;32mI (229517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (229627) MAIN: BH=350.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (229637) MAIN: SEND: {"lux":350,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (229997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (230517) MAIN: Sample Time = 229.978 s | Tick #219/300[0m
+[0;32mI (230517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;33mW (230577) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (230627) MAIN: BH=374.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (230637) MAIN: SEND: {"lux":374,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (230997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;31mE (231127) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (231127) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (231127) mqtt_client: Error transport connect[0m
+[0;33mW (231137) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (231517) MAIN: Sample Time = 230.978 s | Tick #220/300[0m
+[0;32mI (231517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0008%[0m
+[0;32mI (231627) MAIN: BH=415.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (231637) MAIN: SEND: {"lux":415,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0008}[0m
+[0;33mW (231997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (232517) MAIN: Sample Time = 231.978 s | Tick #221/300[0m
+[0;32mI (232517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (232627) MAIN: BH=424.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (232637) MAIN: SEND: {"lux":424,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (232997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (232997) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (233517) MAIN: Sample Time = 232.978 s | Tick #222/300[0m
+[0;32mI (233517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (233627) MAIN: BH=445.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (233637) MAIN: SEND: {"lux":445,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (233997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (234517) MAIN: Sample Time = 233.978 s | Tick #223/300[0m
+[0;32mI (234517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (234627) MAIN: BH=421.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (234637) MAIN: SEND: {"lux":421,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (234997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (235417) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (235517) MAIN: Sample Time = 234.978 s | Tick #224/300[0m
+[0;32mI (235517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0028%[0m
+[0;32mI (235627) MAIN: BH=391.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (235637) MAIN: SEND: {"lux":391,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0028}[0m
+[0;33mW (235997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (236517) MAIN: Sample Time = 235.978 s | Tick #225/300[0m
+[0;32mI (236517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0028%[0m
+[0;32mI (236627) MAIN: BH=390.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (236637) MAIN: SEND: {"lux":390,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0028}[0m
+[0;33mW (236997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (237517) MAIN: Sample Time = 236.978 s | Tick #226/300[0m
+[0;32mI (237517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (237627) MAIN: BH=495.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (237637) MAIN: SEND: {"lux":495,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (237837) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (237997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (238517) MAIN: Sample Time = 237.978 s | Tick #227/300[0m
+[0;32mI (238517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (238627) MAIN: BH=438.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (238637) MAIN: SEND: {"lux":438,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;33mW (238997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (239517) MAIN: Sample Time = 238.978 s | Tick #228/300[0m
+[0;32mI (239517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (239627) MAIN: BH=399.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (239637) MAIN: SEND: {"lux":399,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;33mW (239997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (240257) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (240517) MAIN: Sample Time = 239.978 s | Tick #229/300[0m
+[0;32mI (240517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (240627) MAIN: BH=325.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (240637) MAIN: SEND: {"lux":325,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (240997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (241517) MAIN: Sample Time = 240.978 s | Tick #230/300[0m
+[0;32mI (241517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (241627) MAIN: BH=243.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (241637) MAIN: SEND: {"lux":243,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (241997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (242517) MAIN: Sample Time = 241.978 s | Tick #231/300[0m
+[0;32mI (242517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (242627) MAIN: BH=410.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (242637) MAIN: SEND: {"lux":410,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (242667) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (242997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (243517) MAIN: Sample Time = 242.978 s | Tick #232/300[0m
+[0;32mI (243517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0012%[0m
+[0;32mI (243627) MAIN: BH=413.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (243637) MAIN: SEND: {"lux":413,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0012}[0m
+[0;33mW (243997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (244517) MAIN: Sample Time = 243.978 s | Tick #233/300[0m
+[0;32mI (244517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0008%[0m
+[0;32mI (244627) MAIN: BH=482.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (244637) MAIN: SEND: {"lux":482,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0008}[0m
+[0;33mW (244997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (245087) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (245517) MAIN: Sample Time = 244.978 s | Tick #234/300[0m
+[0;32mI (245517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (245627) MAIN: BH=198.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (245637) MAIN: SEND: {"lux":198,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (245997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;31mE (246137) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (246137) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (246137) mqtt_client: Error transport connect[0m
+[0;33mW (246147) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (246517) MAIN: Sample Time = 245.978 s | Tick #235/300[0m
+[0;32mI (246517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (246627) MAIN: BH=203.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (246637) MAIN: SEND: {"lux":203,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (246997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (247507) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (247517) MAIN: Sample Time = 246.978 s | Tick #236/300[0m
+[0;32mI (247517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (247647) MAIN: BH=410.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (247657) MAIN: SEND: {"lux":410,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (247997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (248517) MAIN: Sample Time = 247.978 s | Tick #237/300[0m
+[0;32mI (248517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (248627) MAIN: BH=470.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (248637) MAIN: SEND: {"lux":470,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (248997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (249517) MAIN: Sample Time = 248.978 s | Tick #238/300[0m
+[0;32mI (249517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (249627) MAIN: BH=495.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (249637) MAIN: SEND: {"lux":495,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (249927) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (249997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (250517) MAIN: Sample Time = 249.978 s | Tick #239/300[0m
+[0;32mI (250517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (250627) MAIN: BH=493.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (250637) MAIN: SEND: {"lux":493,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (250997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (251517) MAIN: Sample Time = 250.978 s | Tick #240/300[0m
+[0;32mI (251517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0016%[0m
+[0;32mI (251627) MAIN: BH=490.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (251637) MAIN: SEND: {"lux":490,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0016}[0m
+[0;33mW (251997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (252337) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (252517) MAIN: Sample Time = 251.978 s | Tick #241/300[0m
+[0;32mI (252517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0016%[0m
+[0;32mI (252627) MAIN: BH=490.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (252637) MAIN: SEND: {"lux":490,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0016}[0m
+[0;33mW (252997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (253517) MAIN: Sample Time = 252.978 s | Tick #242/300[0m
+[0;32mI (253517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (253627) MAIN: BH=490.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (253637) MAIN: SEND: {"lux":490,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (253997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (254517) MAIN: Sample Time = 253.978 s | Tick #243/300[0m
+[0;32mI (254517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (254627) MAIN: BH=490.00 lx | TEMT=34.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (254637) MAIN: SEND: {"lux":490,"temt":34.60,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (254757) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (254997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (255517) MAIN: Sample Time = 254.978 s | Tick #244/300[0m
+[0;32mI (255517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (255627) MAIN: BH=490.00 lx | TEMT=46.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (255637) MAIN: SEND: {"lux":490,"temt":46.60,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (255997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (256517) MAIN: Sample Time = 255.978 s | Tick #245/300[0m
+[0;32mI (256517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (256627) MAIN: BH=490.00 lx | TEMT=52.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (256637) MAIN: SEND: {"lux":490,"temt":52.40,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (256997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (257177) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (257517) MAIN: Sample Time = 256.978 s | Tick #246/300[0m
+[0;32mI (257517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (257627) MAIN: BH=489.00 lx | TEMT=43.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (257637) MAIN: SEND: {"lux":489,"temt":43.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;33mW (257997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (258517) MAIN: Sample Time = 257.978 s | Tick #247/300[0m
+[0;32mI (258517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (258627) MAIN: BH=489.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (258637) MAIN: SEND: {"lux":489,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;33mW (258997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (259517) MAIN: Sample Time = 258.978 s | Tick #248/300[0m
+[0;32mI (259517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;33mW (259597) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (259627) MAIN: BH=488.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (259647) MAIN: SEND: {"lux":488,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (259997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (260517) MAIN: Sample Time = 259.978 s | Tick #249/300[0m
+[0;32mI (260517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (260627) MAIN: BH=488.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (260637) MAIN: SEND: {"lux":488,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (260997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;31mE (261147) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (261147) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (261147) mqtt_client: Error transport connect[0m
+[0;33mW (261157) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (261517) MAIN: Sample Time = 260.978 s | Tick #250/300[0m
+[0;32mI (261517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (261627) MAIN: BH=486.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (261637) MAIN: SEND: {"lux":486,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (261997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (262017) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (262517) MAIN: Sample Time = 261.978 s | Tick #251/300[0m
+[0;32mI (262517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (262627) MAIN: BH=485.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (262637) MAIN: SEND: {"lux":485,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (262997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (263517) MAIN: Sample Time = 262.978 s | Tick #252/300[0m
+[0;32mI (263517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (263627) MAIN: BH=485.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (263637) MAIN: SEND: {"lux":485,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (263997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (264427) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (264517) MAIN: Sample Time = 263.978 s | Tick #253/300[0m
+[0;32mI (264517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (264627) MAIN: BH=485.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (264637) MAIN: SEND: {"lux":485,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (264997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (265517) MAIN: Sample Time = 264.978 s | Tick #254/300[0m
+[0;32mI (265517) MAIN: [TIMING] dt=1.0003s | f_actual=0.9997Hz | error=0.0308%[0m
+[0;32mI (265627) MAIN: BH=485.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (265637) MAIN: SEND: {"lux":485,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0003,"f_actual":0.9997,"error_pct":0.0308}[0m
+[0;33mW (265997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (266517) MAIN: Sample Time = 265.978 s | Tick #255/300[0m
+[0;32mI (266517) MAIN: [TIMING] dt=0.9997s | f_actual=1.0003Hz | error=-0.0312%[0m
+[0;32mI (266627) MAIN: BH=485.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (266637) MAIN: SEND: {"lux":485,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":0.9997,"f_actual":1.0003,"error_pct":-0.0312}[0m
+[0;33mW (266847) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (266997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (267517) MAIN: Sample Time = 266.978 s | Tick #256/300[0m
+[0;32mI (267517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (267627) MAIN: BH=487.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (267637) MAIN: SEND: {"lux":487,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;33mW (267997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (268517) MAIN: Sample Time = 267.978 s | Tick #257/300[0m
+[0;32mI (268517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (268627) MAIN: BH=489.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (268637) MAIN: SEND: {"lux":489,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (268997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (269267) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (269517) MAIN: Sample Time = 268.978 s | Tick #258/300[0m
+[0;32mI (269517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0016%[0m
+[0;32mI (269627) MAIN: BH=489.00 lx | TEMT=30.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (269637) MAIN: SEND: {"lux":489,"temt":30.60,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0016}[0m
+[0;33mW (269997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (270517) MAIN: Sample Time = 269.978 s | Tick #259/300[0m
+[0;32mI (270517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (270627) MAIN: BH=490.00 lx | TEMT=43.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (270637) MAIN: SEND: {"lux":490,"temt":43.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (270997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (271517) MAIN: Sample Time = 270.978 s | Tick #260/300[0m
+[0;32mI (271517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (271627) MAIN: BH=486.00 lx | TEMT=49.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (271637) MAIN: SEND: {"lux":486,"temt":49.60,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (271687) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (271997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (272517) MAIN: Sample Time = 271.978 s | Tick #261/300[0m
+[0;32mI (272517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0008%[0m
+[0;32mI (272627) MAIN: BH=487.00 lx | TEMT=44.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (272637) MAIN: SEND: {"lux":487,"temt":44.40,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0008}[0m
+[0;33mW (272997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (273517) MAIN: Sample Time = 272.978 s | Tick #262/300[0m
+[0;32mI (273517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (273627) MAIN: BH=490.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (273637) MAIN: SEND: {"lux":490,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (273997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (274097) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (274517) MAIN: Sample Time = 273.978 s | Tick #263/300[0m
+[0;32mI (274517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (274627) MAIN: BH=492.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (274637) MAIN: SEND: {"lux":492,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (274997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (275517) MAIN: Sample Time = 274.978 s | Tick #264/300[0m
+[0;32mI (275517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (275627) MAIN: BH=492.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (275637) MAIN: SEND: {"lux":492,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (275997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;31mE (276157) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (276157) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (276157) mqtt_client: Error transport connect[0m
+[0;33mW (276167) MAIN: MQTT DISCONNECTED[0m
+[0;33mW (276517) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (276517) MAIN: Sample Time = 275.979 s | Tick #265/300[0m
+[0;32mI (276517) MAIN: [TIMING] dt=1.0009s | f_actual=0.9991Hz | error=0.0941%[0m
+[0;32mI (276657) MAIN: BH=490.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (276667) MAIN: SEND: {"lux":490,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0009,"f_actual":0.9991,"error_pct":0.0941}[0m
+[0;33mW (276997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (277517) MAIN: Sample Time = 276.978 s | Tick #266/300[0m
+[0;32mI (277517) MAIN: [TIMING] dt=0.9991s | f_actual=1.0009Hz | error=-0.0941%[0m
+[0;32mI (277627) MAIN: BH=493.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (277637) MAIN: SEND: {"lux":493,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":0.9991,"f_actual":1.0009,"error_pct":-0.0941}[0m
+[0;33mW (277997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (278517) MAIN: Sample Time = 277.978 s | Tick #267/300[0m
+[0;32mI (278517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (278627) MAIN: BH=492.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (278637) MAIN: SEND: {"lux":492,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (278937) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (278997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (279517) MAIN: Sample Time = 278.978 s | Tick #268/300[0m
+[0;32mI (279517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (279627) MAIN: BH=491.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (279637) MAIN: SEND: {"lux":491,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (279997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (280517) MAIN: Sample Time = 279.978 s | Tick #269/300[0m
+[0;32mI (280517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (280627) MAIN: BH=492.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (280637) MAIN: SEND: {"lux":492,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (280997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (281357) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (281517) MAIN: Sample Time = 280.978 s | Tick #270/300[0m
+[0;32mI (281517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (281627) MAIN: BH=493.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (281637) MAIN: SEND: {"lux":493,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (281997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (282517) MAIN: Sample Time = 281.978 s | Tick #271/300[0m
+[0;32mI (282517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0016%[0m
+[0;32mI (282627) MAIN: BH=494.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (282637) MAIN: SEND: {"lux":494,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0016}[0m
+[0;33mW (282997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (283517) MAIN: Sample Time = 282.978 s | Tick #272/300[0m
+[0;32mI (283517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0020%[0m
+[0;32mI (283627) MAIN: BH=493.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (283637) MAIN: SEND: {"lux":493,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0020}[0m
+[0;33mW (283777) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (283997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (284517) MAIN: Sample Time = 283.978 s | Tick #273/300[0m
+[0;32mI (284517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (284627) MAIN: BH=493.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (284637) MAIN: SEND: {"lux":493,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (284997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (285517) MAIN: Sample Time = 284.978 s | Tick #274/300[0m
+[0;32mI (285517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (285627) MAIN: BH=493.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (285637) MAIN: SEND: {"lux":493,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (285997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (286187) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (286517) MAIN: Sample Time = 285.978 s | Tick #275/300[0m
+[0;32mI (286517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (286627) MAIN: BH=490.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (286637) MAIN: SEND: {"lux":490,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (286997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (287517) MAIN: Sample Time = 286.978 s | Tick #276/300[0m
+[0;32mI (287517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0016%[0m
+[0;32mI (287627) MAIN: BH=491.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (287637) MAIN: SEND: {"lux":491,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0016}[0m
+[0;33mW (287997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (288517) MAIN: Sample Time = 287.978 s | Tick #277/300[0m
+[0;32mI (288517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0020%[0m
+[0;33mW (288607) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (288627) MAIN: BH=490.00 lx | TEMT=34.80 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (288667) MAIN: SEND: {"lux":490,"temt":34.80,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0020}[0m
+[0;33mW (288997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (289517) MAIN: Sample Time = 288.978 s | Tick #278/300[0m
+[0;32mI (289517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (289627) MAIN: BH=490.00 lx | TEMT=38.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (289637) MAIN: SEND: {"lux":490,"temt":38.60,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (289997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (290517) MAIN: Sample Time = 289.978 s | Tick #279/300[0m
+[0;32mI (290517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (290627) MAIN: BH=493.00 lx | TEMT=42.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (290637) MAIN: SEND: {"lux":493,"temt":42.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (290997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (291027) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;31mE (291167) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (291167) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (291167) mqtt_client: Error transport connect[0m
+[0;33mW (291177) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (291517) MAIN: Sample Time = 290.978 s | Tick #280/300[0m
+[0;32mI (291517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0008%[0m
+[0;32mI (291627) MAIN: BH=492.00 lx | TEMT=47.60 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (291637) MAIN: SEND: {"lux":492,"temt":47.60,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0008}[0m
+[0;33mW (291997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (292517) MAIN: Sample Time = 291.978 s | Tick #281/300[0m
+[0;32mI (292517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0008%[0m
+[0;32mI (292627) MAIN: BH=491.00 lx | TEMT=49.40 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (292637) MAIN: SEND: {"lux":491,"temt":49.40,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0008}[0m
+[0;33mW (292997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (293447) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (293517) MAIN: Sample Time = 292.978 s | Tick #282/300[0m
+[0;32mI (293517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0028%[0m
+[0;32mI (293627) MAIN: BH=492.00 lx | TEMT=40.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (293637) MAIN: SEND: {"lux":492,"temt":40.20,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0028}[0m
+[0;33mW (293997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (294517) MAIN: Sample Time = 293.978 s | Tick #283/300[0m
+[0;32mI (294517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0028%[0m
+[0;32mI (294627) MAIN: BH=490.00 lx | TEMT=34.20 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (294637) MAIN: SEND: {"lux":490,"temt":34.20,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0028}[0m
+[0;33mW (294997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (295517) MAIN: Sample Time = 294.978 s | Tick #284/300[0m
+[0;32mI (295517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;32mI (295627) MAIN: BH=490.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (295637) MAIN: SEND: {"lux":490,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (295857) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (295997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (296517) MAIN: Sample Time = 295.978 s | Tick #285/300[0m
+[0;32mI (296517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0024%[0m
+[0;32mI (296627) MAIN: BH=491.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (296637) MAIN: SEND: {"lux":491,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0024}[0m
+[0;33mW (296997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (297517) MAIN: Sample Time = 296.978 s | Tick #286/300[0m
+[0;32mI (297517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (297627) MAIN: BH=490.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (297637) MAIN: SEND: {"lux":490,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (297997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (298277) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (298517) MAIN: Sample Time = 297.978 s | Tick #287/300[0m
+[0;32mI (298517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (298627) MAIN: BH=490.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (298637) MAIN: SEND: {"lux":490,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (298997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (299517) MAIN: Sample Time = 298.978 s | Tick #288/300[0m
+[0;32mI (299517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0024%[0m
+[0;32mI (299627) MAIN: BH=492.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (299637) MAIN: SEND: {"lux":492,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0024}[0m
+[0;33mW (299997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (300517) MAIN: Sample Time = 299.978 s | Tick #289/300[0m
+[0;32mI (300517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (300627) MAIN: BH=491.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (300637) MAIN: SEND: {"lux":491,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (300697) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (300997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (301517) MAIN: Sample Time = 300.978 s | Tick #290/300[0m
+[0;32mI (301517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0008%[0m
+[0;32mI (301627) MAIN: BH=491.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (301637) MAIN: SEND: {"lux":491,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0008}[0m
+[0;33mW (301997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (302517) MAIN: Sample Time = 301.978 s | Tick #291/300[0m
+[0;32mI (302517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (302627) MAIN: BH=491.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (302637) MAIN: SEND: {"lux":491,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (302997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (303117) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (303517) MAIN: Sample Time = 302.978 s | Tick #292/300[0m
+[0;32mI (303517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (303627) MAIN: BH=491.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (303637) MAIN: SEND: {"lux":491,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (303997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (304517) MAIN: Sample Time = 303.978 s | Tick #293/300[0m
+[0;32mI (304517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (304627) MAIN: BH=490.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (304637) MAIN: SEND: {"lux":490,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (304997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (305517) MAIN: Sample Time = 304.978 s | Tick #294/300[0m
+[0;32mI (305517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0000%[0m
+[0;33mW (305537) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (305627) MAIN: BH=492.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (305637) MAIN: SEND: {"lux":492,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0000}[0m
+[0;33mW (305997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;31mE (306177) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (306177) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (306177) mqtt_client: Error transport connect[0m
+[0;33mW (306187) MAIN: MQTT DISCONNECTED[0m
+[0;32mI (306517) MAIN: Sample Time = 305.978 s | Tick #295/300[0m
+[0;32mI (306517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (306627) MAIN: BH=492.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (306637) MAIN: SEND: {"lux":492,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (306997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (307517) MAIN: Sample Time = 306.978 s | Tick #296/300[0m
+[0;32mI (307517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0004%[0m
+[0;32mI (307627) MAIN: BH=492.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (307637) MAIN: SEND: {"lux":492,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0004}[0m
+[0;33mW (307947) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;33mW (307997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (308517) MAIN: Sample Time = 307.978 s | Tick #297/300[0m
+[0;32mI (308517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0004%[0m
+[0;32mI (308627) MAIN: BH=492.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (308637) MAIN: SEND: {"lux":492,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0004}[0m
+[0;33mW (308997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (309517) MAIN: Sample Time = 308.978 s | Tick #298/300[0m
+[0;32mI (309517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0016%[0m
+[0;32mI (309627) MAIN: BH=492.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (309637) MAIN: SEND: {"lux":492,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0016}[0m
+[0;33mW (309997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;33mW (310367) MAIN: DANG KET NOI LAI WIFI...[0m
+[0;32mI (310517) MAIN: Sample Time = 309.978 s | Tick #299/300[0m
+[0;32mI (310517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=-0.0016%[0m
+[0;32mI (310627) MAIN: BH=491.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (310637) MAIN: SEND: {"lux":491,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":-0.0016}[0m
+[0;33mW (310997) SDS011: Không nhận được dữ liệu từ SDS011 (Timeout 1s)[0m
+[0;32mI (311517) MAIN: Sample Time = 310.978 s | Tick #300/300[0m
+[0;32mI (311517) MAIN: [TIMING] dt=1.0000s | f_actual=1.0000Hz | error=0.0022%[0m
+[0;32mI (311627) MAIN: BH=491.00 lx | TEMT=0.00 lx | PM2.5=0.0 | PM10=0.0[0m
+[0;32mI (311637) MAIN: SEND: {"lux":491,"temt":0.00,"pm25":0.0,"pm10":0.0,"pm_valid":true,"dt":1.0000,"f_actual":1.0000,"error_pct":0.0022}[0m
+[0;32mI (311637) MAIN: [PHASE] -> SLEEP (180s)[0m
+[0;32mI (311647) MAIN: SDS011: SLEEP[0m
+[0;32mI (311657) MAIN: [PHASE] ESP32 da thuc day tu light sleep[0m
+[0;32mI (311657) MAIN: [PHASE] -> ACTIVE (300s)[0m
+[0;32mI (311657) MAIN: SDS011: WAKE[0m
+[0;32mI (311

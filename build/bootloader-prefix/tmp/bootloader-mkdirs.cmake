@@ -3,25 +3,20 @@
 
 cmake_minimum_required(VERSION 3.5)
 
-# If CMAKE_DISABLE_SOURCE_CHANGES is set to true and the source directory is an
-# existing directory in our source tree, calling file(MAKE_DIRECTORY) on it
-# would cause a fatal error, even though it would be a no-op.
-if(NOT EXISTS "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader/subproject")
-  file(MAKE_DIRECTORY "D:/Espressif/frameworks/esp-idf-v5.3.5/components/bootloader/subproject")
-endif()
 file(MAKE_DIRECTORY
-  "D:/vxlproj/nhakinh/build/bootloader"
-  "D:/vxlproj/nhakinh/build/bootloader-prefix"
-  "D:/vxlproj/nhakinh/build/bootloader-prefix/tmp"
-  "D:/vxlproj/nhakinh/build/bootloader-prefix/src/bootloader-stamp"
-  "D:/vxlproj/nhakinh/build/bootloader-prefix/src"
-  "D:/vxlproj/nhakinh/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/huyen_202414629/esp/esp-idf/components/bootloader/subproject"
+  "/home/huyen_202414629/esp/esp-idf/esp32-light-monitor/build/bootloader"
+  "/home/huyen_202414629/esp/esp-idf/esp32-light-monitor/build/bootloader-prefix"
+  "/home/huyen_202414629/esp/esp-idf/esp32-light-monitor/build/bootloader-prefix/tmp"
+  "/home/huyen_202414629/esp/esp-idf/esp32-light-monitor/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/huyen_202414629/esp/esp-idf/esp32-light-monitor/build/bootloader-prefix/src"
+  "/home/huyen_202414629/esp/esp-idf/esp32-light-monitor/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "D:/vxlproj/nhakinh/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/huyen_202414629/esp/esp-idf/esp32-light-monitor/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "D:/vxlproj/nhakinh/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/huyen_202414629/esp/esp-idf/esp32-light-monitor/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()
