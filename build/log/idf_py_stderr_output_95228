@@ -1,9 +1,0 @@
-In file included from /home/huyen_202414629/esp/esp-idf/esp32-light-monitor/components/temt6000/include/temt6000.h:10,
-                 from /home/huyen_202414629/esp/esp-idf/esp32-light-monitor/main/app_main.c:12:
-/home/huyen_202414629/esp/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
-   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
-      |  ^~~~~~~
-In file included from /home/huyen_202414629/esp/esp-idf/esp32-light-monitor/components/temt6000/include/temt6000.h:11:
-/home/huyen_202414629/esp/esp-idf/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
-   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
-      |  ^~~~~~~
